@@ -197,9 +197,59 @@ Additionally, liquidity checks can be deferred on one or more accounts in a batc
 
 Similar to Compound and AAVE, a proportion of the interest earned in a pool is collected by the protocol as a fee. Euler again uses the same terminology as Compound, calling the aggregate amount of collected fees the "reserve". These fees are controlled by governance, and may be paid out to EUL token holders, used to compensate lenders should pools become insolvent, or applied to other uses that benefit the protocol.
 
+Reserves provide a buffer of funds that can cover losses due to positions that are too small to liquidate, and can also be a source of funds for governance to implement insurance, distribute to EUL stakers, or apply to some other purpose that benefits the protocol.
+
 Unlike Compound where the reserves are denominated in the underlying, Euler's reserves are stored in the internal bookkeeping units that represent EToken balances. This means that they accrue interest over time, as with any other EToken deposit. Of course, Compound governance could periodically choose to withdraw their reserves and re-deposit them in the pool to earn this interest, but in Euler it happens automatically and continuously. Similar to Euler, AAVE deposits earned reserve interest into a special treasury account that owns the aTokens, however this is much less efficient than the special-cased reserves model of Compound/Euler, involving several cross-contract calls. In Euler, the reserves overhead is primarily two SSTORE operations, to slots that would be written to anyway.
 
 When we issue "eTokens" to the reserve, it inflates the eToken supply (making them less valuable). However, we only do this after we increase totalBorrows, ensuring that the inflation is less than what was earned as interest, proportional to the reserve fee configured for that asset.
+
+### Derivation of Reserves Formulas
+
+#### Compound
+
+In Compound, the assets owned by CToken holders are the total "cash" (unallocated underlying units in the pool) plus the total outstanding borrows (which increase as interest is accrued), minus the total reserves (which are owned by Compound governance):
+
+    assetsCompound = totalCash + totalBorrows - totalReserves
+
+Prior to most operations, the `accruedInterest` since the last operation is computed. In Compound, this is added to `totalBorrows`, and `accruedInterest * reserveFactor` is added to `totalReserves`, resulting in new value for the assets:
+
+    newAssetsCompound = assets + accruedInterest - (accruedInterest * reserveFactor)
+
+Compound's `totalReserves` is in units of the underlying, so it does not accrue interest, however governance could vote to withdraw these reserves and re-deposit them in exchange for CTokens, which would.
+
+If `totalSupply` is the sum of the balances of all CToken holders, the exchange rate between these CToken balances and the underlying token is:
+
+    newExchangeRateCompound = newAssetsCompound / totalSupply
+
+#### Euler
+
+After applying interest, the new exchange rate is the same for both Compound and Euler, although how it is computed differs. Rather than deducting the reserve fees from the `newAssets`, Euler increases `totalSupply`. So the new value for assets is computed as though no reserve fees were being deducted:
+
+    newAssetsEuler = assets + accruedInterest
+
+In Euler, reserves are tracked in EToken units which means they earn interest automatically. When interest is accrued it is added to `totalBorrows` in the same way as Compound. But then, instead of adding the collected fee to `totalReserves` (causing it to be deducted from `newAssetsCompound`), a special number of new ETokens are minted and credited to the reserves, which increases `totalSupply`. This number of newly minted ETokens is selected so as to inflate the supply just enough to divert a `reserveFactor` proportion of the interest away from EToken holders to the reserves.
+
+In order to show that this results in the same exchange rate as Compound's method, we will derive the algorithm that Euler uses to compute `newTotalSupply` using Compound's value:
+
+    newExchangeRate = newAssetsEuler / newTotalSupply
+
+    newTotalSupply = newAssetsEuler / newExchangeRate
+
+Substituting in Compound's value of `newExchangeRate`:
+
+    newTotalSupply = newAssetsEuler / (newAssetsCompound / totalSupply)
+
+    newTotalSupply = newAssetsEuler / ((assets + accruedInterest - (accruedInterest * reserveFactor)) / totalSupply)
+
+Simplifying:
+
+    newTotalSupply = totalSupply * newAssetsEuler / (newAssetsEuler - (accruedInterest * reserveFactor))
+
+Finally, the reserve balance (denominated in ETokens) is increased by `newTotalSupply - totalSupply`.
+
+This is the algorithm used in the code, except for operation re-ordering done to avoid rounding truncation.
+
+
 
 
 
