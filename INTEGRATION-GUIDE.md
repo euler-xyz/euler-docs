@@ -108,4 +108,4 @@ Here is an example contract that demonstrates this:
         }
     }
 
-`encodedData` is a pass-through parameter that lets you
+`encodedData` is a pass-through parameter that lets you transfer data to your callback without requiring storage writes.
