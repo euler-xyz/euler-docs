@@ -786,3 +786,60 @@ Parameters:
 
 
 
+
+## IEulerLiquidation
+
+Liquidate users who are in collateral violation to protect lenders
+
+### LiquidationOpportunity
+
+Information about a prospective liquidation opportunity
+
+    struct LiquidationOpportunity {
+        uint repay;
+        uint yield;
+        uint healthScore;
+    
+        // Only populated if repay > 0:
+        uint baseDiscount;
+        uint discount;
+        uint conversionRate;
+    }
+
+
+
+
+
+### checkLiquidation
+
+Checks to see if a liquidation would be profitable, without actually doing anything
+
+    function checkLiquidation(address liquidator, address violator, address underlying, address collateral) external returns (LiquidationOpportunity memory liqOpp);
+
+Parameters:
+
+* **liquidator**: Address that will initiate the liquidation
+* **violator**: Address that may be in collateral violation
+* **underlying**: Token that is to be repayed
+* **collateral**: Token that is to be seized
+
+Returns:
+
+* **liqOpp**: The details about the liquidation opportunity
+
+### liquidate
+
+Attempts to perform a liquidation
+
+    function liquidate(address violator, address underlying, address collateral, uint repay, uint minYield) external;
+
+Parameters:
+
+* **violator**: Address that may be in collateral violation
+* **underlying**: Token that is to be repayed
+* **collateral**: Token that is to be seized
+* **repay**: The amount of underlying DTokens to be transferred from violator to sender, in units of underlying
+* **minYield**: The minimum acceptable amount of collateral ETokens to be transferred from violator to sender, in units of collateral
+
+
+
