@@ -147,6 +147,14 @@ In the event that a price's TWAP period is shorter than `twapWindow`, the RiskMa
 
 Our blog series describes our pricing system in more detail: https://medium.com/euler-xyz/prices-and-oracles-2da0126a138
 
+### Pegged prices
+
+An exception to the Uniswap 3 pricing above is for assets that are equivalent to the reference asset. These assets can have a pricing type of "pegged" which indicates their price is always 1:1 with the reference asset. Currently the only asset that is pegged *is* the reference asset itself, which is WETH.
+
+### Price forwarding
+
+Another exception is for assets that are equivalent to another asset, in which case the pricing can be "forwarded". This is currently only used for [pTokens](#PTokens).
+
 
 
 ## Liquidity Deferrals
@@ -229,13 +237,13 @@ After applying interest, the new exchange rate is the same for both Compound and
 
 In Euler, reserves are tracked in EToken units which means they earn interest automatically. When interest is accrued it is added to `totalBorrows` in the same way as Compound. But then, instead of adding the collected fee to `totalReserves` (causing it to be deducted from `newAssetsCompound`), a special number of new ETokens are minted and credited to the reserves, which increases `totalSupply`. This number of newly minted ETokens is selected so as to inflate the supply just enough to divert a `reserveFactor` proportion of the interest away from EToken holders to the reserves.
 
-In order to show that this results in the same exchange rate as Compound's method, we will derive the algorithm that Euler uses to compute `newTotalSupply` using Compound's value:
+In order to show that this results in the same exchange rate as Compound's method, we can derive the algorithm that Euler uses to compute `newTotalSupply` using Compound's value:
 
     newExchangeRate = newAssetsEuler / newTotalSupply
 
     newTotalSupply = newAssetsEuler / newExchangeRate
 
-Substituting in Compound's value of `newExchangeRate`:
+Substituting in Compound's value for `newExchangeRate`:
 
     newTotalSupply = newAssetsEuler / (newAssetsCompound / totalSupply)
 
@@ -249,6 +257,15 @@ Finally, the reserve balance (denominated in ETokens) is increased by `newTotalS
 
 This is the algorithm used in the code, except for operation re-ordering done to avoid rounding truncation.
 
+
+
+## PTokens
+
+"Protected" tokens exist to provide users the option to deposit tokens and use them as collateral, while not permitting them to be loaned out. PTokens provide users with additional safety, at the expense of not earning any interest on the deposited asset. PToken depositors don't need to worry about a pool becoming insolvent, or that their assets will be loaned out when they wish to retrieve them.
+
+Rather than applying this as universal setting on an asset, it is up to the user to decide whether they want to protect their collateral. Since Euler only supports one eToken per underlying asset, a token wrapper contract is used. Users first wrap their underlying tokens into pTokens, and then deposit these pTokens into Euler, receiving "epTokens" which can then be used for collateral.
+
+Another use-case of pTokens is to prevent tokens from being borrowed to perform governance-related attacks. Because the borrowing-prevention check happens inside `increaseBorrow()` (and not in `checkLiquidity()`), pTokens cannot even be flash borrowed.
 
 
 
@@ -269,6 +286,18 @@ FIXME: describe
 FIXME: describe
 
 ### Front-running protection
+
+### Average Liquidity Tracking
+
+In order to provide a liquidation discount that privileges investors in the system, Euler can optionally track the liquidity of an account. In order to opt-in to this, an account should call the `trackAverageLiquidity()` function in the `exec` module. This will cause most operations such as depositing and withdrawing to consume more gas, but will make the account eligible for extra discount privileges, if it participates in liquidations.
+
+The actual value that is tracked is the risk adjusted liquidity, that is, after applying collateral factors and borrow factors. So, only assets with non-zero collateral factors will contribute to the liquidity. Similarly, outstanding borrows will reduce the average liquidity.
+
+In order to prevent a user (or front-running bot) from simply depositing a large amount prior to a liquidation (perhaps using a flash loan), the average value of the liquidity over a period of time is tracked. For example, immediately after depositing for the first time, your average liquidity will be 0. Only after `AVERAGE_LIQUIDITY_PERIOD` seconds have elapsed will your full liquidity value be reflected.
+
+The averaging is implemented with an exponential moving average, that is updated with the current liquidity value before any operation (such as deposit) is performed. This is not perfect, since the average liquidity will not reflect price movements between updates. Also, a user could opportunistically cause an update when prices are exceptionally high or low, although the prices are of course TWAPs so are more difficult to manipulate.
+
+We don't believe these limitations will be significant with respect to the use case described above. That said, if enabled, the average liquidity for an account is available with `exec.getUpdatedAverageLiquidity()`, so long as your application can accept the limitations described above.
 
 
 
