@@ -1,14 +1,20 @@
-# Summary
+# Table of contents
+
+* [Getting Started](README.md)
 
 ## About
-* [White Paper](WHITE-PAPER.md)
+
+* [White Paper](about/white-paper.md)
 
 ## App users
-* [User Interface Guide](UI.md)
+
+* [User Interface Guide](app-users/ui.md)
 
 ## Developers
-* [Contract Integration Guide](INTEGRATION-GUIDE.md)
-* [Contract Reference](CONTRACT-REFERENCE.md)
-* [Architecture](ARCHITECTURE.md)
-* [Proxy Protocol](PROXY-PROTOCOL.md)
-* [Numeric Limits](NUMERIC-LIMITS.md)
+
+* [Contract Integration Guide](developers/integration-guide.md)
+* [Contract Reference](developers/contract-reference.md)
+* [Architecture](developers/architecture.md)
+* [Proxy Protocol](developers/proxy-protocol.md)
+* [Numeric Limits](developers/numeric-limits.md)
+
