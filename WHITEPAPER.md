@@ -7,43 +7,6 @@ https://www.euler.xyz
 ## Abstract
 Here, we present Euler: a permissionless lending protocol custom-built with to help users lend and borrow more Ethereum-based tokens than ever before. The purpose of this white paper is to describe how Euler works at a high level and highlight new features and innovations that help to set it apart from other popular lending protocols, like Compound and Aave.
 
-<!-- TOC FOLLOWS -->
-<!-- START OF TOC -->
-* [Authors](#authors)
-* [Abstract](#abstract)
-* [Introduction](#introduction)
-* [Getting started](#getting-started)
-  * [Transaction Builder](#transaction-builder)
-* [Permissionless Listing](#permissionless-listing)
-  * [Asset Tiers](#asset-tiers)
-  * [Sub-accounts](#sub-accounts)
-* [Lending and Borrowing](#lending-and-borrowing)
-  * [Tokenised Debts](#tokenised-debts)
-  * [eToken <> dToken Symmetry](#etoken-<>-dtoken-symmetry)
-  * [Protected Collateral](#protected-collateral)
-  * [Defer Liquidity](#defer-liquidity)
-  * [Feeless Flash Loans](#feeless-flash-loans)
-  * [Risk-adjusted Borrowing Capacity](#risk-adjusted-borrowing-capacity)
-* [Decentralised Price Oracles](#decentralised-price-oracles)
-  * [TWAP](#twap)
-  * [Time Interval](#time-interval)
-* [Liquidations](#liquidations)
-  * [MEV-resistance](#mev-resistance)
-  * [Stability Pools](#stability-pools)
-  * [Soft Liquidations](#soft-liquidations)
-* [Reserves](#reserves)
-  * [Liquidation Surcharge](#liquidation-surcharge)
-* [Interest Rates](#interest-rates)
-  * [Reactive Interest Rates](#reactive-interest-rates)
-  * [Compound Interest](#compound-interest)
-* [Smart Contracts](#smart-contracts)
-  * [Gas Optimisations](#gas-optimisations)
-* [Governance](#governance)
-* [Summary](#summary)
-* [Acknowledgements](#acknowledgements)
-* [References](#references)
-<!-- END OF TOC -->
-
 ## Introduction
 
 The ability to lend and borrow assets efficiently is a crucial feature of any financial system. In the world of traditional finance, this process is typically facilitated by trusted and permissioned third-parties such as banks, who connect people with a surplus of money to those who need access to it in the short-term. In the world of decentralised finance (DeFi), trusted and permissioned third-parties are no longer needed; banks have been replaced by trustless and permissionless lending protocols running on the blockchain [(1)](#ref1). 
