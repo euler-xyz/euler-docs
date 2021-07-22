@@ -1,9 +1,7 @@
-# Table of contents
-
+# Summary
 
 ## Welcome
-
-* [Getting started](README.md)
+* [Getting Started](GETTINGSTARTED.md)
 * [White Paper](WHITEPAPER.md)
 
 ## App users
