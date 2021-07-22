@@ -1,8 +1,16 @@
 # Table of contents
 
-* [Introduction](README.md)
+
+## Welcome
+
+* [Getting started](README.md)
+  * [White Paper](WHITEPAPER.md)
+
+## App users
 * Users
   * [User Interface Guide](UI.md)
+
+## Developers
 * Developers
   * [Contract Integration Guide](INTEGRATION-GUIDE.md)
   * [Contract Reference](CONTRACT-REFERENCE.md)
