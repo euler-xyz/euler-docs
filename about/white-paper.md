@@ -1,3 +1,9 @@
+---
+description: >-
+  Find out how Euler works and how it differs from other popular lending
+  protocols
+---
+
 # White Paper
 
 ## Authors
