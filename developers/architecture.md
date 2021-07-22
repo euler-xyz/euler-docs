@@ -2,7 +2,7 @@
 
 ## Module System
 
-Except for a small amount of dispatching logic \(see `Euler.sol`\), the contracts are organised into modules, which live in `contracts/modules/`.
+Except for a small amount of dispatching logic (see `Euler.sol`), the contracts are organised into modules, which live in `contracts/modules/`.
 
 There are several reasons why modules are used:
 
