@@ -2,7 +2,9 @@
 
 ## Authors
 
-Michael Bentley & Doug Hoyte &lt;/br&gt; [https://www.euler.xyz](https://www.euler.xyz)
+Michael Bentley & Doug Hoyte
+
+https://www.euler.xyz
 
 ## Abstract
 
