@@ -1,3 +1,7 @@
+---
+description: Find out how to start working with the Euler smart contracts
+---
+
 # Contract Integration Guide
 
 ## Modules
