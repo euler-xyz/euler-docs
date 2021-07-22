@@ -1,8 +1,7 @@
 # Summary
 
-## Welcome
-* [Getting Started](GETTINGSTARTED.md)
-* [White Paper](WHITEPAPER.md)
+## About
+* [White Paper](WHITE-PAPER.md)
 
 ## App users
 * [User Interface Guide](UI.md)
