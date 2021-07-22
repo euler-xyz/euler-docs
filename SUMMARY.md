@@ -4,17 +4,14 @@
 ## Welcome
 
 * [Getting started](README.md)
-  * [White Paper](WHITEPAPER.md)
+* [White Paper](WHITEPAPER.md)
 
 ## App users
-* Users
-  * [User Interface Guide](UI.md)
+* [User Interface Guide](UI.md)
 
 ## Developers
-* Developers
-  * [Contract Integration Guide](INTEGRATION-GUIDE.md)
-  * [Contract Reference](CONTRACT-REFERENCE.md)
-* Contract Internals
-  * [Architecture](ARCHITECTURE.md)
-  * [Proxy Protocol](PROXY-PROTOCOL.md)
-  * [Numeric Limits](NUMERIC-LIMITS.md)
+* [Contract Integration Guide](INTEGRATION-GUIDE.md)
+* [Contract Reference](CONTRACT-REFERENCE.md)
+* [Architecture](ARCHITECTURE.md)
+* [Proxy Protocol](PROXY-PROTOCOL.md)
+* [Numeric Limits](NUMERIC-LIMITS.md)
