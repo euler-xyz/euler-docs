@@ -23,7 +23,7 @@ Other modules are asset-specific:
 
 In order to invest an asset to earn interest, you need to `deposit` into an eToken.
 
-```text
+```javascript
 // Approve the main euler contract to pull your tokens:
 IERC20(underlying).approve(euler, type(uint).max);
 
@@ -49,7 +49,7 @@ EToken(eToken).withdraw(0, type(uint).max);
 
 If you would like to borrow an asset, you must have sufficient collateral, and be "entered" into the collateral's market.
 
-```text
+```javascript
 // Approve, get eToken addr, and deposit:
 IERC20(collateral).approve(euler, type(uint).max);
 address collateralEToken = IMarkets(markets).underlyingToEToken(collateral);
@@ -83,7 +83,7 @@ Since Euler only charges interest for a loan when it is held for a non-zero amou
 
 Here is an example contract that demonstrates this:
 
-```text
+```javascript
 contract MyFlashLoanContract {
     struct MyCallbackData {
         uint whatever;
