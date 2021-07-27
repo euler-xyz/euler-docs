@@ -162,6 +162,8 @@ Liquidity deferral is a general purpose solution to this. Users \(which must be 
 
 As well as gas optimisation, and normal use-cases like refinancing loans, this also allows users to take out [flash loans](https://medium.com/euler-xyz/prices-and-oracles-2da0126a138).
 
+For flash loans in particular, the protocol provides an adaptor contract `FlashLoan`, which complies with the [ERC-3156](https://eips.ethereum.org/EIPS/eip-3156) standard. The adaptor internally uses liquidity deferral to borrow tokens and additionally requires that the loan is paid back in full within the transaction.
+
 ## Sub Accounts
 
 In order to prevent a problem inherent with borrowing multiple assets using the same backing collateral, it is sometimes necessary to "isolate" borrows. This is especially important for volatile and/or untrusted tokens that shouldn't have the capability to affect more stable tokens.
