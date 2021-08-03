@@ -2,9 +2,7 @@
 description: Welcome to the Euler documentation pages!
 ---
 
-# Getting Started
-
-## Introduction
+# Welcome
 
 Here you will find our white paper, guides on how to use the app to lend and borrow crypto assets, and all the developer materials you need to start building on top of Euler.
 

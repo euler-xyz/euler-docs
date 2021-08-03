@@ -9,8 +9,7 @@ description: >-
 ## Authors
 
 Michael Bentley & Doug Hoyte
-
-https://www.euler.xyz
+[https://www.euler.xyz](https://www.euler.xyz)
 
 ## Abstract
 
@@ -239,7 +238,7 @@ We would like to give special thanks to Shaishav Todi, Luke Youngblood, Charlie 
 
 ## References
 
-1.  [What is Decentralized Finance \(DeFi\)?](https://docs.ethhub.io/built-on-ethereum/open-finance/what-is-open-finance/)
+1.  [https://docs.ethhub.io/built-on-ethereum/open-finance/what-is-open-finance/](https://docs.ethhub.io/built-on-ethereum/open-finance/what-is-open-finance/)
 2.  [Compound White Paper.](https://compound.finance/documents/Compound.Whitepaper.pdf)
 3.  [Aave White Paper.](https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf)
 4.  [Uniswap v3 white paper.](https://uniswap.org/whitepaper-v3.pdf)

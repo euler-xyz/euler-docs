@@ -1,15 +1,18 @@
 # Table of contents
 
-* [Introduction](README.md)
-
-## About
-
-* [White Paper](about/white-paper.md)
-* [Quick Links](about/quick-links.md)
+* [Welcome](README.md)
 
 ## Getting Started
 
-* [User Interface Guide](app/ui.md)
+* [Introduction](getting-started/introduction.md)
+* [White Paper](getting-started/white-paper.md)
+* [Quick Links](getting-started/quick-links.md)
+
+## Guides
+
+* [User Interface Guide](guides/ui.md)
+* [FAQ](guides/faq.md)
+* [Glossary](guides/glossary.md)
 
 ## Governance
 
@@ -22,6 +25,7 @@
 
 ## Protocol
 
+* [Tokens](protocol/tokens.md)
 * [Addresses](protocol/addresses.md)
 * [Parameters](protocol/parameters.md)
 
@@ -38,5 +42,6 @@
 * [Risk Analysis Framework](security/risk-analysis.md)
 * [Smart Contract Audits](security/smart-contract-audits.md)
 * [Bug Bounty](security/bug-bounty.md)
+* [Vault](security/vault.md)
 * [Insurance](security/insurance.md)
 
