@@ -5,10 +5,18 @@
 ## About
 
 * [White Paper](about/white-paper.md)
+* [Quick Links](about/quick-links.md)
 
-## App users
+## Governance
 
-* [User Interface Guide](app-users/ui.md)
+* [EUL](governance/eul.md)
+* [Voting](governance/voting.md)
+* [Treasury](governance/treasury.md)
+* [Grants](governance/grants.md)
+
+## App
+
+* [User Interface Guide](app/ui.md)
 
 ## Developers
 
@@ -17,4 +25,10 @@
 * [Architecture](developers/architecture.md)
 * [Proxy Protocol](developers/proxy-protocol.md)
 * [Numeric Limits](developers/numeric-limits.md)
+
+## Security
+
+* [Smart Contract Audits](security/smart-contract-audits.md)
+* [Bug Bounty](security/bug-bounty.md)
+* [Insurance](security/insurance.md)
 
