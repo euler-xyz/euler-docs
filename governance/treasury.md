@@ -9,7 +9,7 @@ The Euler Treasury will be governed by EUL token holders. A portion of the treas
 
 ## Staking
 
-TODO 
+Coming soon. 
 
 ## Grants 
 

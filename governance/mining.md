@@ -5,4 +5,4 @@ description: >-
 
 # Mining
 
-TODO
+Coming soon.

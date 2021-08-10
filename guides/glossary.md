@@ -1,6 +1,6 @@
 ---
 description: >-
-  Technical terms used in the Euler documentation
+  An explanation of terms used in the Euler documentation
 ---
 
 # Glossary

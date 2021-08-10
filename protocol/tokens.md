@@ -9,20 +9,20 @@ A variety of token types are used on Euler to give users maximum flexibility in 
 
 ## eTokens
 
-TODO
+Coming soon.
 
 ## dTokens
 
-TODO
+Coming soon.
 
 ## pTokens
 
-TODO
+Coming soon.
 
 ## sTokens
 
-TODO
+Coming soon.
 
 ## rTokens
 
-TODO
+Coming soon.

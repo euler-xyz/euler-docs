@@ -8,7 +8,7 @@ description: >-
 
 ## Authors
 
-Michael Bentley & Doug Hoyte
+Michael Bentley & Doug Hoyte\
 [https://www.euler.xyz](https://www.euler.xyz)
 
 ## Abstract
