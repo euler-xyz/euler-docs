@@ -17,11 +17,7 @@ Here, we present Euler: a permissionless lending protocol custom-built with to h
 
 ## Introduction
 
-<<<<<<< HEAD
-The ability to lend and borrow assets efficiently is a crucial feature of any financial system. In the world of traditional finance, this process is typically facilitated by trusted and permissioned third-parties such as banks, who connect people with a surplus of money to those who need access to it in the short-term. In the world of decentralised finance \(DeFi\), trusted and permissioned third-parties are no longer needed; banks have been replaced by trustless and permissionless lending protocols running on the blockchain [\(1\)](#References).
-=======
 The ability to lend and borrow assets efficiently is a crucial feature of any financial system. In the world of traditional finance, this process is typically facilitated by trusted and permissioned third-parties such as banks, who connect people with a surplus of money to those who need access to it in the short-term. In the world of decentralised finance \(DeFi\), trusted and permissioned third-parties are no longer needed; banks have been replaced by trustless and permissionless lending protocols running on the blockchain [\(1\)](white-paper.md#references).
->>>>>>> 91f1f376385b9c52af7f2d0fdecfa5a9b010a88c
 
 Among the first-generation of DeFi lending protocols are Compound [\(2\)](white-paper.md#references) and Aave [\(3\)](white-paper.md#references). These protocols provide users with access to lending and borrowing capabilities for a handful of the most liquid ERC20 tokens. However, these protocols were not designed to handle the risks associated with lending and borrowing illiquid or volatile assets and have therefore relied on a permissioned listing system to protect their users from the risks associated with such assets.
 
@@ -215,7 +211,6 @@ With special thanks to Shaishav Todi, Luke Youngblood, Charlie Noyes, Samczsun, 
 
 ## References
 
-<<<<<<< HEAD
 1.  [https://docs.ethhub.io/built-on-ethereum/open-finance/what-is-open-finance/](https://docs.ethhub.io/built-on-ethereum/open-finance/what-is-open-finance/)
 2.  [https://compound.finance/documents/Compound.Whitepaper.pdf](https://compound.finance/documents/Compound.Whitepaper.pdf)
 3.  [https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf](https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf)
@@ -226,16 +221,4 @@ With special thanks to Shaishav Todi, Luke Youngblood, Charlie Noyes, Samczsun, 
 8.  [https://docsend.com/view/bwiczmy](https://docsend.com/view/bwiczmy)
 9.  [https://www.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory/](https://www.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory/)
 10.  [https://medium.com/compound-finance/compound-governance-5531f524cf68](https://medium.com/compound-finance/compound-governance-5531f524cf68)
-=======
-1. [https://docs.ethhub.io/built-on-ethereum/open-finance/what-is-open-finance/](https://docs.ethhub.io/built-on-ethereum/open-finance/what-is-open-finance/)
-2. [Compound White Paper.](https://compound.finance/documents/Compound.Whitepaper.pdf)
-3. [Aave White Paper.](https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf)
-4. [Uniswap v3 white paper.](https://uniswap.org/whitepaper-v3.pdf)
-5. [WTF IS WETH?](https://weth.io/)
-6. [MakerDAO issues warning after a flash loan is used to pass a governance vote.](https://www.theblockcrypto.com/post/82721/makerdao-issues-warning-after-a-flash-loan-is-used-to-pass-a-governance-vote)
-7. [MEV and Me.](https://research.paradigm.xyz/MEV)
-8. [Liquity White Paper.](https://docsend.com/view/bwiczmy)
-9. [Dynamic Interest Rate Model Based On Control Theory](https://www.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory/)
-10. [Compound Governance.](https://medium.com/compound-finance/compound-governance-5531f524cf68)
->>>>>>> 91f1f376385b9c52af7f2d0fdecfa5a9b010a88c
 
