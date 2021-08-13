@@ -8,7 +8,7 @@ description: >-
 
 ## Authors
 
-Michael Bentley & Doug Hoyte\
+Michael Bentley & Doug Hoyte  
 [https://www.euler.xyz](https://www.euler.xyz)
 
 ## Abstract
@@ -27,7 +27,7 @@ Consequently, there remains significant unmet demand for lending and borrowing t
 
 Euler comprises a set of smart contracts deployed on the Ethereum blockchain that can be openly accessed by anyone with an internet connection. Euler is managed by holders of a protocol native governance token called Euler Governance Token \(EUL\). Euler is entirely non-custodial; users are responsible for managing their own funds.
 
-As creators of the protocol, the development team at Euler XYZ have provided a convenient and user-friendly front-end to the Euler smart contracts at [https://www.euler.xyz](https://www.euler.xyz). However, users are free to access the protocol in whatever format they wish, and we encourage developers to create their own front-end access points to the protocol to help decentralise access and increase censorship resistance.
+As creators of the protocol, the development team at Euler XYZ will provide a convenient and user-friendly front-end to the Euler smart contracts at [https://app.euler.finance](https://app.euler.finance). However, users are free to access the protocol in whatever format they wish, and we encourage developers to create their own front-end access points to the protocol to help decentralise access and increase censorship resistance.
 
 ## Permissionless Listing
 
@@ -62,7 +62,7 @@ Borrowers pay interest on their loans in terms of the underlying asset. The inte
 
 <!-- TODO: Doug - suggested by Dave White to move symmetry to implementation or other technical section out of white paper. -->
 
-### eToken &lt;&gt; dToken Symmetry
+<!-- ### eToken &lt;&gt; dToken Symmetry
 
 The primary operations on eTokens and dTokens are deposit/withdraw and borrow/repay, respectively. However, there is another interface that in some ways is more fundamental: mint/burn. These operations work on both eTokens and dTokens simultaneously. A mint operation creates both eTokens and dTokens in equivalent amounts, and assigns both to the user. A burn operation destroys eTokens and dTokens in equivalent amounts. These operations can be thought of as borrowing from yourself and repaying yourself. Alternatively, eTokens and dTokens can be thought of as a sort of matter and anti-matter, appearing from "nowhere" when minted \(no underlying tokens required\) and cancelling one another out of existence when burned.
 
@@ -77,7 +77,7 @@ There are some practical advantages with the mint and burn operations. One of wh
 
 Eventually Euler will implement a module that allows users to swap one eToken for another, by performing an external swap on Uniswap. This will save users gas by avoiding deposit/withdraw overhead. When combined with mint, this will allow users to construct leveraged positions without any underlying token ever transiting their wallet.
 
-Another area where the eToken/dToken symmetry is exposed is liquidations. Instead of the liquidator sending borrowed tokens and receiving collateral, Euler's liquidation flow simply transfers borrowed dTokens and collateral eTokens from the violator to the liquidator. The liquidator will typically withdraw the collateral, exchange it, and then repay to destroy the dTokens, but this is not strictly necessary. The liquidator could choose to retain the debt if, for example, there is insufficient available collateral tokens in the pool, or the swapping conditions are temporarily sub-optimal.
+Another area where the eToken/dToken symmetry is exposed is liquidations. Instead of the liquidator sending borrowed tokens and receiving collateral, Euler's liquidation flow simply transfers borrowed dTokens and collateral eTokens from the violator to the liquidator. The liquidator will typically withdraw the collateral, exchange it, and then repay to destroy the dTokens, but this is not strictly necessary. The liquidator could choose to retain the debt if, for example, there is insufficient available collateral tokens in the pool, or the swapping conditions are temporarily sub-optimal. -->
 
 ### Protected Collateral
 
