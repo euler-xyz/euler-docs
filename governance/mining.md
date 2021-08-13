@@ -1,8 +1,8 @@
 ---
-description: >-
-  Learn more about how to earn EUL rewards
+description: Learn more about how to earn EUL rewards
 ---
 
 # Mining
 
 Coming soon.
+

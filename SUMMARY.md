@@ -39,9 +39,9 @@
 
 ## Security & Risk
 
-* [Risk Analysis Framework](security/risk-analysis.md)
-* [Smart Contract Audits](security/smart-contract-audits.md)
-* [Bug Bounty](security/bug-bounty.md)
-* [Vault](security/vault.md)
-* [Insurance](security/insurance.md)
+* [Risk Analysis Framework](security-and-risk/risk-analysis.md)
+* [Smart Contract Audits](security-and-risk/smart-contract-audits.md)
+* [Bug Bounty](security-and-risk/bug-bounty.md)
+* [Vault](security-and-risk/vault.md)
+* [Insurance](security-and-risk/insurance.md)
 

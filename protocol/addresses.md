@@ -1,8 +1,8 @@
 ---
-description: >-
-  Smart contract addresses for Euler
+description: Smart contract addresses for Euler
 ---
 
 # Addresses
 
 Coming soon.
+
