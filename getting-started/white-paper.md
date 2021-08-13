@@ -59,7 +59,7 @@ Borrowers pay interest on their loans in terms of the underlying asset. The inte
 
 ### Protected Collateral
 
-On Compound and Aave, collateral deposited to the protocol is always made available for lending. Optionally, Euler allows collateral to be deposited, but not made available for lending. Such collateral is 'protected'. It earns a user no interest, but is free from the risks of borrowers defaulting, can always be withdrawn instantly, and helps protect against borrowers using tokens to influence governance decisions \(see Maker governance issue [\(5\)](white-paper.md#references) or take short positions.
+On Compound and Aave, collateral deposited to the protocol is always made available for lending. Optionally, Euler allows collateral to be deposited, but not made available for lending. Such collateral is 'protected'. It earns a user no interest, but is free from the risks of borrowers defaulting, can always be withdrawn instantly, and helps protect against borrowers using tokens to influence governance decisions \(see Maker governance issue [\(5\)](white-paper.md#references)\) or take short positions.
 
 ### Defer Liquidity
 
