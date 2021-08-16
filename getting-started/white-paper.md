@@ -9,7 +9,7 @@ description: >-
 ## Authors
 
 Michael Bentley & Doug Hoyte  
-[https://www.euler.xyz](https://www.euler.xyz)
+[https://www.euler.finance](www.euler.finance)
 
 ## Abstract
 
@@ -81,7 +81,7 @@ Compound achieves this in a one-sided way by using collateral factors to adjust 
 
 On Euler, we therefore use a two-sided approach where we also adjust up the market value of a borrower's liabilities to arrive at a 'risk-adjusted liability value'. This approach improves capital efficiency on the protocol because it allows Euler to factor in the asset-specific risks of both downside and upside price movements. These risks are encapsulated in asset-specific collateral factors \(as on Compound\) and borrow factors \(new to Euler\). Ultimately, this approach means that the liquidation threshold of every borrower is tailored to the specific risk profiles associated with the assets they are borrowing and using as collateral.
 
-To give an example, suppose a user has $1000 worth of USDC, and wants to borrow UNI. How much can they borrow? If USDC has a collateral factor of 0.9, and UNI has a borrow factor of 0.7, then a user can borrow upto $1000  _0.9_  0.7 = $630 worth of UNI. At this level of borrowing, the risk-adjusted value of their collateral is $1000 \* 0.9 = $900, and the risk-adjusted value of their liabilities is $630 / 0.7 = $900. If UNI increases in price, then the risk-adjusted value of their liabilities will also increase to &gt;$900, and the they will be eligible for liquidation. The buffer allowing for liquidation is $1000 - $630 = $370.
+To give an example, suppose a user has $1000 worth of USDC, and wants to borrow UNI. How much can they borrow? If USDC has a collateral factor of 0.9, and UNI has a borrow factor of 0.7, then a user can borrow upto $1000 _0.9_ 0.7 = $630 worth of UNI. At this level of borrowing, the risk-adjusted value of their collateral is $1000 \* 0.9 = $900, and the risk-adjusted value of their liabilities is $630 / 0.7 = $900. If UNI increases in price, then the risk-adjusted value of their liabilities will also increase to &gt;$900, and the they will be eligible for liquidation. The buffer allowing for liquidation is $1000 - $630 = $370.
 
 ## Decentralised Price Oracles
 
@@ -123,7 +123,7 @@ To alleviate this issue, Euler enables lenders to support liquidations by provid
 
 This approach can be thought of as an extended multi-collateral form of the stability pool idea pioneered by Liquity protocol [\(8\)](white-paper.md#references). The main advantage of using a stability pool is that liquidations can be processed immediately using an internal source of liquidity at the point at which a borrower is deemed by the protocol to be in violation, without a liquidator needing to source the assets themselves from a third-party exchange. See Table 1 for some of the benefits of performing liquidations using internal versus external liquidity.
 
- **Table 1.** Comparison of using an internal stability pool for liquidations rather than using an external source of liquidity.
+**Table 1.** Comparison of using an internal stability pool for liquidations rather than using an external source of liquidity.
 
 |  | External | Internal |
 | :--- | :--- | :--- |
@@ -211,14 +211,14 @@ With special thanks to Shaishav Todi, Luke Youngblood, Charlie Noyes, Samczsun, 
 
 ## References
 
-1.  [https://docs.ethhub.io/built-on-ethereum/open-finance/what-is-open-finance/](https://docs.ethhub.io/built-on-ethereum/open-finance/what-is-open-finance/)
-2.  [https://compound.finance/documents/Compound.Whitepaper.pdf](https://compound.finance/documents/Compound.Whitepaper.pdf)
-3.  [https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf](https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf)
-4.  [https://uniswap.org/whitepaper-v3.pdf](https://uniswap.org/whitepaper-v3.pdf)
-5.  [https://weth.io/](https://weth.io/)
-6.  [https://www.theblockcrypto.com/post/82721/makerdao-issues-warning-after-a-flash-loan-is-used-to-pass-a-governance-vote](https://www.theblockcrypto.com/post/82721/makerdao-issues-warning-after-a-flash-loan-is-used-to-pass-a-governance-vote)
-7.  [https://research.paradigm.xyz/MEV](https://research.paradigm.xyz/MEV)
-8.  [https://docsend.com/view/bwiczmy](https://docsend.com/view/bwiczmy)
-9.  [https://www.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory/](https://www.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory/)
-10.  [https://medium.com/compound-finance/compound-governance-5531f524cf68](https://medium.com/compound-finance/compound-governance-5531f524cf68)
+1. [https://docs.ethhub.io/built-on-ethereum/open-finance/what-is-open-finance/](https://docs.ethhub.io/built-on-ethereum/open-finance/what-is-open-finance/)
+2. [https://compound.finance/documents/Compound.Whitepaper.pdf](https://compound.finance/documents/Compound.Whitepaper.pdf)
+3. [https://github.com/aave/aave-protocol/blob/master/docs/Aave\_Protocol\_Whitepaper\_v1\_0.pdf](https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf)
+4. [https://uniswap.org/whitepaper-v3.pdf](https://uniswap.org/whitepaper-v3.pdf)
+5. [https://weth.io/](https://weth.io/)
+6. [https://www.theblockcrypto.com/post/82721/makerdao-issues-warning-after-a-flash-loan-is-used-to-pass-a-governance-vote](https://www.theblockcrypto.com/post/82721/makerdao-issues-warning-after-a-flash-loan-is-used-to-pass-a-governance-vote)
+7. [https://research.paradigm.xyz/MEV](https://research.paradigm.xyz/MEV)
+8. [https://docsend.com/view/bwiczmy](https://docsend.com/view/bwiczmy)
+9. [https://www.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory/](https://www.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory/)
+10. [https://medium.com/compound-finance/compound-governance-5531f524cf68](https://medium.com/compound-finance/compound-governance-5531f524cf68)
 
