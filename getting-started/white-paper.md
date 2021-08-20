@@ -55,6 +55,8 @@ When lenders deposit into a liquidity to a pool on Euler, they receive interest-
 
 Similarly to Aave's [debt tokens](https://docs.aave.com/developers/the-core-protocol/debt-tokens), Euler also tokenises debts on the protocol with ERC20-compliant interfaces known as dTokens. The dToken interface allows the construction of positions without needing to interact with underlying assets and can be used to create derivative products that include debt obligations.
 
+Rather than providing non-standard methods to transfer debts, Euler uses the regular transfer/approve ERC20 methods. However, the permissioning logic is reversed: rather than being able to send tokens to anyone, but requiring approval to take them, dTokens can be taken by anyone, but require approval to accept them. This also prevents users from "burning" their dTokens. For example, the zero address has no way of approving an in-bound transfer of dTokens.
+
 Borrowers pay interest on their loans in terms of the underlying asset. The interest accrued depends on an algorithmically determined interest rate for each asset. A portion of the interest accrued is held in reserves to cover the accumulation of bad debts on the protocol.
 
 ### Protected Collateral

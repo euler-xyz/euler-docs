@@ -164,6 +164,23 @@ As well as gas optimisation, and normal use-cases like refinancing loans, this a
 
 For flash loans in particular, the protocol provides an adaptor contract `FlashLoan`, which complies with the [ERC-3156](https://eips.ethereum.org/EIPS/eip-3156) standard. The adaptor internally uses liquidity deferral to borrow tokens and additionally requires that the loan is paid back in full within the transaction.
 
+## eToken &lt;&gt; dToken Symmetry
+
+The primary operations on eTokens and dTokens are deposit/withdraw and borrow/repay, respectively. However, there is another interface that in some ways is more fundamental: mint/burn. These operations work on both eTokens and dTokens simultaneously. A mint operation creates both eTokens and dTokens in equivalent amounts, and assigns both to the user. A burn operation destroys eTokens and dTokens in equivalent amounts. These operations can be thought of as borrowing from yourself and repaying yourself. Alternatively, eTokens and dTokens can be thought of as a sort of matter and anti-matter, appearing from "nowhere" when minted \(no underlying tokens required\) and cancelling one another out of existence when burned.
+
+All of the primary operations can be re-conceptualised as variants of mint and burn. For example, if there were no borrow function, it could be implemented in terms of a mint and a withdraw: the mint would create both eTokens and dTokens, and then the withdraw would destroy the eTokens leaving just dTokens.
+
+* **deposit**: mint, repay
+* **withdraw**: borrow, burn
+* **borrow**: mint, withdraw
+* **repay**: deposit, burn
+
+There are some practical advantages with the mint and burn operations. One of which is that it becomes possible to repay a loan with eTokens instead of the underlying by burning a corresponding amount of eTokens together with the dTokens from the loan. This may be useful when the underlying token is illiquid -- perhaps because it has been paused -- but there is still a market for eTokens \(incidentally, the stability pools described in the liquidation section are examples of eToken to eToken markets\).
+
+Eventually Euler will implement a module that allows users to swap one eToken for another, by performing an external swap on Uniswap. This will save users gas by avoiding deposit/withdraw overhead. When combined with mint, this will allow users to construct leveraged positions without any underlying token ever transiting their wallet.
+
+Another area where the eToken/dToken symmetry is exposed is liquidations. Instead of the liquidator sending borrowed tokens and receiving collateral, Euler's liquidation flow simply transfers borrowed dTokens and collateral eTokens from the violator to the liquidator. The liquidator will typically withdraw the collateral, exchange it, and then repay to destroy the dTokens, but this is not strictly necessary. The liquidator could choose to retain the debt if, for example, there is insufficient available collateral tokens in the pool, or the swapping conditions are temporarily sub-optimal.
+
 ## Sub Accounts
 
 In order to prevent a problem inherent with borrowing multiple assets using the same backing collateral, it is sometimes necessary to "isolate" borrows. This is especially important for volatile and/or untrusted tokens that shouldn't have the capability to affect more stable tokens.
