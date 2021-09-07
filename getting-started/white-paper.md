@@ -136,7 +136,7 @@ This approach can be thought of as an extended multi-collateral form of the stab
 | Liquidation price | Liquidation expected to take place at price determined by the wider market | Liquidation expected to take place at price determined by the internal price feed |
 | Liquidation timing | Liquidation expected to take place only after the dynamic discount exceeds operating costs and trade costs | Liquidation expected to take place soon after the dynamic discount exceeds the operating cost of liquidation |
 
-### Soft Liquidations <a id="table-1"></a>
+### Soft Liquidations
 
 The fraction of a borrower's debt that can be paid off by liquidators in one go is referred to by Compound as the \`close factor.' On both Compound and Aave, the close factor is currently fixed at 0.5, meaning liquidators can pay off upto half a borrower's loan in one go regardless of how underwater their position is. This approach has a couple of potential drawbacks.
 
@@ -146,7 +146,7 @@ On Euler, we therefore use a dynamic close factor to try to \`soft liquidate' bo
 
 ## Reserves
 
-In rare circumstances the value of a borrower's collateral might become less than the value of their liabilities. In this situation the borrower is said to be 'insolvent.' Isolvent borrowers will typically be liquidated repeatedly until they have little to no collateral left. Any leftover liabilities after liquidations have stopped can be considered 'bad debt' that we can assume will never be repaid. If bad debt accumulates on the protocol, it increases the chance that lenders might all rush at once to withdraw their funds \(to avoid becoming the bearer of the bad debt\). This phenomenon is known as \`run on the bank.'
+In rare circumstances the value of a borrower's collateral might become less than the value of their liabilities. In this situation the borrower is said to be 'insolvent.' Insolvent borrowers will typically be liquidated repeatedly until they have little to no collateral left. Any leftover liabilities after liquidations have stopped can be considered 'bad debt' that we can assume will never be repaid. If bad debt accumulates on the protocol, it increases the chance that lenders might all rush at once to withdraw their funds \(to avoid becoming the bearer of the bad debt\). This phenomenon is known as \`run on the bank.'
 
 To reduce this risk, Euler follows Compound by allowing a portion of the interest paid by borrowers in each market to accumulate into a reserve. The idea behind this is to allow the reserves to act as a lender of last resort in the event of a run on the bank. Providing that reserves accumulate at a faster pace than bad debt, lenders do not need to worry about being able to withdraw their funds. Euler reserves operate similar to those on Compound, except that Euler reserves are tracked in eToken units, rather than underlying units, which means that Euler reserves earn interest automatically whereas Compound reserves do not.
 
