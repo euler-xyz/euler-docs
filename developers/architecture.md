@@ -291,22 +291,22 @@ FIXME: describe
 
 ## Liquidations
 
-Borrowers must maintain sufficient collateral in order to support their borrows. In particular, each account must maintain a "health score" above 1. The health score is computed by dividing the user's [risk-adjusted](/getting-started/white-paper#risk-adjusted-borrowing-capacity) collateral value by the risk-adjusted liability value. Since the collateral factor decreases the effective value of the user's collateral, and the borrow factor increases the effective value of the user's liability, when the health score is 1, then the user is still technically solvent (assets are worth more than liability), but the user is said to be in "collateral violation".
+Borrowers must maintain sufficient collateral in order to support their borrows. In particular, each account must maintain a "health score" above 1. The health score is computed by dividing the account's [risk-adjusted](../getting-started/white-paper#risk-adjusted-borrowing-capacity) collateral value by its risk-adjusted liability value. Since the collateral factor decreases the effective value of the collateral, and the borrow factor increases the effective value of the liability, when the health score is 1, then the account is still technically solvent (assets are worth more than liability), but the account is said to be in "violation".
 
-When an account is in violation, the `liquidate()` method of the Liquidation module can be invoked by anyone (except by the violating account itself). The account invoking this method is called the "liquidator". This method does two things:
+When an account is in violation, the `liquidate()` method of the Liquidation module can be invoked by anyone (except by the violating account itself, to avoid aliasing bugs). The account invoking this method is called the "liquidator". This method does two things:
 
-1. Transfers an amount of DTokens from the violator to the liquidator. This represents debt that is being taken over by the liquidator.
-1. Transfers an amount of ETokens from the violator to the liquidator. This represents the collateral being seized by the liquidator.
+1. Transfers some DTokens from the violator to the liquidator. This represents debt that is being taken over by the liquidator.
+1. Transfers some ETokens from the violator to the liquidator. This represents the collateral being seized by the liquidator in exchange for taking the debt.
 
-Because of the collateral and borrow factors, reducing the assets and liabilities in equal amounts (after converting to a reference asset) will result in a user's health score increasing (except in certain pathological circumstances). The amount of DTokens/ETokens is selected to be just enough to return a user to a higher health score, by default 1.2. This is what is referred to as a [soft liquidation](/getting-started/white-paper#soft-liquidations), in contrast with some other protocols that liquidate a fixed proportion of the loan.
+Because of the collateral and borrow factors, reducing the assets and liabilities in equal values (relative to the reference asset ETH) will result in a user's health score increasing (except in certain pathological circumstances). The amount of DTokens/ETokens is selected to be just enough to return a user to a higher health score, by default 1.2. This is what is referred to as a [soft liquidation](../getting-started/white-paper#soft-liquidations), in contrast with the simpler method of liquidating a fixed proportion of the loan.
 
-Since the liquidator is taking on debt, the liquidating account's liquidity must be checked after a liquidation. Typically a liquidator will be a smart contract so it can atomically perform other operations in addition to the liquidation, and in particular can defer the liquidity check to later in the same transaction, which allows "flash liquidations".
+Since the liquidator is taking on debt, the liquidating account's liquidity must be checked after a liquidation. Typically a liquidator will be a smart contract so it can atomically perform other operations in addition to the liquidation, and in particular can [defer the liquidity check](#liquidity-deferrals) to later in the same transaction, allowing "flash liquidations".
 
-Liquidation bots that wish to operate without any capital requirements may follow the following pattern for liquidations:
+Liquidation bots that wish to operate without capital requirements may follow the following pattern for liquidations:
 
 * Defer liquidity check
 * Liquidate an account, receiving underlying DTokens and collateral ETokens
-* Withdraw enough collateral to repay the debt
+* Withdraw enough of the collateral to repay the debt
 * Convert this collateral on a decentralised exchange such as Uniswap
 * Repay the debt, zeroing-out the DToken balance
 
@@ -314,19 +314,19 @@ At this point, there is no outstanding debt so the deferred liquidity check will
 
 ### Dynamic discounts
 
-If the seized debt and collateral were each worth the same in terms of a reference asset (for example ETH), then there would be no point in performing liquidations. In order to incentivise liquidators, the amount of collateral seized is increased by a certain factor. Since the violator is effectively receiving a lower price for purchasing collateral, this factor is known as the "discount".
+If the seized debt and collateral were each worth the same in terms of a reference asset (for example ETH), then there would be no point in performing liquidations. In order to incentivise liquidators, the amount of collateral seized is increased by a certain factor. Since the violator is effectively receiving a lower price for purchasing collateral, this factor is known as a "discount".
 
-One of the innovations of Euler is to use a dynamic value for this discount rather than a fixed value. The discount increases by how far the violator's health score has decreased below `1`. For example, if an account's health score has fallen to `0.98`, then the discount received is `1 - 0.98 = 0.02`, or 2%.
+Euler uses a dynamic value for this discount rather than a fixed value. The discount increases by how far the violator's health score has decreased below `1`. For example, if an account's health score has fallen to `0.98`, then the discount received is `1 - 0.98 = 0.02`, or 2%.
 
-Euler uses Uniswap3 TWAPs for the price feeds of all assets which has the property the prices on the protocol change smoothly over time. This is central to how the dynamic discount is designed to work, and creates a Dutch auction-like mechanism that finds the lowest possible market-clearing discount level.
+Euler uses Uniswap3 TWAPs for the price feeds of all assets which has the property in which the prices on the protocol change smoothly over time. This is central to how the dynamic discount is designed to work, and creates a Dutch auction-like mechanism that finds the lowest possible market-clearing discount level.
 
 #### Dynamic discount example
 
-Let's suppose a borrower has a health score of `1.1` and then there is a large swap is performed on a borrowed asset which increases its price significantly. Immediately after this swap (ie, throughout the rest of the block the swap was included in) then the TWAP of the asset is unchanged (since no time has passed). This means that the health score is also unchanged.
+Let's suppose a borrower has a health score of `1.1` and then a large swap is performed on a borrowed asset which increases its current price on Uniswap significantly. Immediately after this swap (ie, throughout the rest of the block the swap was included in) then the TWAP of the asset is unchanged (since no time has passed). This means that the account's health score is also unchanged.
 
-However, as time goes on and the weight of the new price becomes heavier, then the price of the asset will increase which means that the health score will also increase. Note that this in fact happens at second-granularity. If the swap was large enough, then at some point in the future the averaged price will be such that the health score is exactly equal to `1`. Assuming that the TWAP hasn't yet caught up with the current price, then in any subsequent block the health score will be below `1` and there will therefore be a liquidation opportunity.
+However, as time goes on and the weight of the new price increases, then the TWAP will increase which means that the health score will decrease (the liability is becoming more valuable). Note that this in fact happens at second-granularity. If the swap was large enough, then at some point in the future the averaged price will be such that the health score is exactly equal to `1`. Assuming that the TWAP hasn't yet caught up with the current price, then in any subsequent block the health score will be below `1` and there will therefore be a liquidation opportunity.
 
-Now, at this point, the discount will be extremely small. If the health score is `0.999` then the discount would be a mere 0.1%. This level of discount is most likely not enough to make a liquidation worth-while. First of all, because the prices used to calculate the equivalent values of assets are TWAPs, they don't yet take into account the current marginal price of the underlying asset. Secondly, the discount must compensate the liquidator for any execution slippage, gas costs, and other operational overhead.
+Now, at this point, the discount will be extremely small. If the health score is `0.999` then the discount would be a mere 0.1%. This level of discount is most likely not enough to make a liquidation worth-while. First of all, because the prices used to calculate the equivalent values of assets are TWAPs, they don't yet take into account the current (non-averaged) price of the underlying asset. Secondly, the discount must compensate the liquidator for any execution slippage, gas costs, and other operational overhead.
 
 All of this is to say that it is unlikely that anybody will perform the liquidation at this point. But as time goes on and the TWAP increases, the health score decreases and the discount improves. At some instant in time a bot will determine that the current discount will result in a profitable liquidation. At this point it has two options: it can either execute the liquidation and take the small profit, or wait until the discount increases further. If the bot waits then it risks losing the liquidation opportunity to another liquidator.
 
@@ -334,9 +334,9 @@ All of this is to say that it is unlikely that anybody will perform the liquidat
 
 When a liquidation happens, a small amount of additional borrowed asset beyond the soft-liquidation amount must be repaid by the liquidator (which is compensated by a corresponding extra discount amount). This additional amount is credited to the borrowed asset's reserves.
 
-This is done to pad the reserves for assets that are frequently liquidated, since this may be indicative of volatile asset, which may have a higher risk of accruing bad debt.
+This is done to pad the reserves for assets that are frequently liquidated, since this may be indicative of volatile asset which may have a higher risk of accruing bad debt.
 
-Another option could have been to pad the reserves of the collateral asset, however on Euler not all assets can be used as collateral, so many pools would have no opportunity for their reserves to be increased in this manner.
+Another option could have been to pad the reserves of the collateral asset, however on Euler not all assets can be used as collateral so many pools would have no opportunity for their reserves to be increased in this manner.
 
 ### Front-running protection
 
@@ -344,16 +344,16 @@ The Dutch auction-like mechanism described above can provide a discount to anyon
 
 However, permissionless liquidations are often affected by so-called "front-running". This is when a bot sees a profitable new transaction and submits it for themselves with a higher gas price. While front-running isn't directly a problem for the protocol, it can be detrimental for the ecosystem:
 
-* The capture of value by miners means that it is less profitable to operate liquidation bots, so there may be fewer people doing so, and those that do may do it less aggressively.
-* A lot of gas is wasted on failed transactions and bidding up the gas prices of liquidations.
+* The capture of value by miners means that it is less profitable to operate liquidation bots, so there may be fewer people doing so, and those who do may be less aggressive.
+* A lot of resources are wasted on failed transactions and bidding up the gas prices of liquidations.
 
 In Euler we would like to reward the operators of liquidation bots instead of miners, and reduce their level of reward to the minimal level that a competitive market will bear. In order to do this, an extra "bonus" is applied to the discount for users who have assets deposited into the Euler protocol. This bonus works by increasing the slope of the discount. For instance, if a user has enough assets deposited to provide a 2x bonus, then instead of getting a 1% discount, they would get a 2% discount.
 
-If you are operating a liquidation bot, you can become profitable before front-running bots by keeping a balance of assets with a non-zero collateral factor. In order to receive the full discount, your risk-adjusted collateral should be at least equal to the risk-adjusted value of the liquidation you are processing (anything less will result in a smaller bonus).
+If you are operating a liquidation bot, you can become profitable before front-running bots by keeping a balance of non-zero collateral factor assets. In order to receive a full bonus, your risk-adjusted collateral should be at least equal to the risk-adjusted value of the liquidation you are processing (anything less will result in a smaller bonus).
 
-With bonuses and the Dutch action mechanism, our hope is that gas auctions will be unlikely to happen frequently, and the majority of the value of liquidations will accrue to users who benefit the protocol by supplying assets.
+With bonuses and the Dutch action mechanism, our hope is that gas auctions will be rare, and the majority of the value of liquidations will accrue to users who benefit the protocol by supplying assets.
 
-Note that the liquidity must be held in the Euler contracts for a period of time since the liquidity used is the average liquidity supplied over the previous day (see [Average Liquidity Tracking](#average-liquidity-tracking). This means that it is not possible to atomically supply liquidity, liquidate, and then withdraw.
+Note that the liquidity used to claim a bonus must be held in the Euler contracts for a period of time. The full averaged liquidity will be achieved after a day (see [Average Liquidity Tracking](#average-liquidity-tracking). This means that no bonus will be applied if someone atomically supply liquidity, liquidates, and then withdraws.
 
 ## Misc Details
 
