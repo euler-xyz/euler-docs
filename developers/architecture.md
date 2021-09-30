@@ -79,7 +79,9 @@ Every market also has a DToken. This is the primary interface for the tokenisati
 * **borrow**: If you have sufficient collateral, Euler sends you the underlying tokens and issues you a corresponding amount of debt tokens.
 * **repay**: Transfer tokens from your wallet in order to burn the DTokens, which reduces your debt obligation.
 
-DTokens also implement an ERC-20 compliant interface. Unlike AAVE, where these are non-transferrable, DTokens _can_ be transferred. The permissioning logic is the opposite of ETokens: While you can send your ETokens to anyone without their permission, with DTokens you can "take" anybody else's DTokens without their permission \(assuming you have sufficient collateral\). Similarly, just as you can approve another address to take some amount of your ETokens, you can approve another account permission to send you an amount of DTokens.
+DTokens also implement a partially ERC-20 compliant interface. Unlike AAVE, where these are non-transferrable, DTokens _can_ be transferred. The permissioning logic is the opposite of ETokens: While you can send your ETokens to anyone without their permission, with DTokens you can "take" anybody else's DTokens without their permission \(assuming you have sufficient collateral\). Similarly, just as you can approve another address to take some amount of your ETokens, you can use `approveDebt()` to grant another account permission to send you some amount of DTokens.
+
+The `approveDebt()` name was used instead of the ERC-20 `approve()` due to concerns that some contracts might unintentionally allow themselves to receive "negative value" tokens.
 
 As well as providing a flexible platform for debt trading and assignment, this system also permits easy transferring of debt positions between sub-accounts \(see below\).
 
