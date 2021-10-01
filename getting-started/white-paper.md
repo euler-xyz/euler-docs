@@ -9,7 +9,7 @@ description: >-
 ## Authors
 
 Michael Bentley & Doug Hoyte  
-[https://www.euler.finance](www.euler.finance)
+[https://www.euler.finance](https://github.com/euler-xyz/euler-docs/tree/5654970cd3f466f15a4954904c07c7fd222d60fc/getting-started/www.euler.finance)
 
 ## Abstract
 

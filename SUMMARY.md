@@ -37,11 +37,22 @@
 * [Proxy Protocol](developers/proxy-protocol.md)
 * [Numeric Limits](developers/numeric-limits.md)
 
-## Security & Risk
+## Risk Framework
 
-* [Risk Analysis Framework](security-and-risk/risk-analysis.md)
-* [Smart Contract Audits](security-and-risk/smart-contract-audits.md)
-* [Bug Bounty](security-and-risk/bug-bounty.md)
-* [Vault](security-and-risk/vault.md)
-* [Insurance](security-and-risk/insurance.md)
+* [Introduction](risk-framework/risk-analysis.md)
+* [Methodology](risk-framework/methodology.md)
+* [Ranking Assets](risk-framework/ranking-assets.md)
+* [Collateral and Borrow Factors](risk-framework/collateral-and-borrow-factors.md)
+* [Tiers](risk-framework/tiers.md)
+* [Simulation Environment](risk-framework/simulation-environment.md)
+* [Governance](risk-framework/governance.md)
+* [Lending and Borrowing Example](risk-framework/lending-and-borrowing-example.md)
+* [Risk Factors List](risk-framework/risk-factors-list.md)
+
+## Security
+
+* [Smart Contract Audits](security/smart-contract-audits.md)
+* [Bug Bounty](security/bug-bounty.md)
+* [Vault](security/vault.md)
+* [Insurance](security/insurance.md)
 
