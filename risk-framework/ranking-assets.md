@@ -34,7 +34,7 @@ This parameter can be measured via **realised** \(and implied, if available\) **
 
 Liquidity parameter can go from 0 to 1.
 
-An asset with 100 mio USD daily turnover is easier to buy and sell versus an asset with only 1 mio USD, all other things being equal.
+An asset with 100 mio USD daily turnover is easier to buy and sell versus an asset with only 1 mio USD turnover, all other things being equal.
 
 This is particularly important for liquidators that receive collateral assets at discount for repaying borrowed tokens, as they typically immediately sell that collateral. If they’re unable to sell that collateral at a decent price, then they do not have the incentive to liquidate. This leads to bad debts, which we need to minimise.
 
