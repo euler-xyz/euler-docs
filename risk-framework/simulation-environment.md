@@ -1,6 +1,6 @@
 # Simulation Environment
 
-To make sure we minimise bad debts whilst maximising activity, we stress-test liquidation scenarios by simulating tail risk events on individual assets as well as on portfolios of assets to estimate protocol risk. 
+To make sure we minimise bad debts whilst maximising activity, we stress-test liquidation scenarios by simulating tail risk events on individual assets as well as on portfolios of assets to estimate bad debt risk. 
 
 ### Example: One asset
 
