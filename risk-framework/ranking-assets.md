@@ -1,12 +1,12 @@
 # Ranking Assets
 
-**Scale** 
+## **Scale** 
 
 Each risk parameter goes from 0 \(highest risk\) to 1 \(lowest risk\). The combination of risk parameters results in a comprehensive index for a given digital asset, which will also go from 0 to 1.
 
-**Risk Parameters**
+## **Risk Parameters**
 
-**Smart Contract Risk** 
+### **Smart Contract Risk** 
 
 Smart contract risk parameter can either be 0, 0.5 or 1.
 
@@ -14,7 +14,7 @@ It is arguably the biggest tail risk, as a badly written smart contract can resu
 
 We assess this by checking **whether the protocol was audited**, the **number of days the protocol has been functioning without hacks** and deeper research if needed \(for promoting up the tiers\).
 
-**Centralisation** 
+### **Centralisation** 
 
 Centralisation parameter can go from 0 to 1.
 
@@ -22,7 +22,7 @@ It measures whether a small number of holders have undue influence over the toke
 
 This risk can be measured by estimating the **median size of token amount per holder**. When the ownership structure isn’t transparent, we will employ forensic due diligence.
 
-**Volatility** 
+### **Volatility** 
 
 Volatility parameter can go from 0 to 1.
 
@@ -30,7 +30,7 @@ All other things equal, an asset with 100% realised volatility is more likely to
 
 This parameter can be measured via **realised** \(and implied, if available\) **volatility**, with emphasis on downside risk for collaterals and upside risk for borrowed assets.
 
-**Liquidity** 
+### **Liquidity** 
 
 Liquidity parameter can go from 0 to 1.
 

@@ -1,10 +1,10 @@
-# Collateral and Borrow Factors
+# Collateral and Borrow Factor Methodology
 
 On Euler, we use a two-sided approach to estimate risks of borrowing any tokens versus any given collateral. These risks are encapsulated in asset-specific collateral factors \(as on Compound\) and borrow factors \(an Euler innovation\).
 
 Consequently, collateral factor reflects the risk of the asset that’s being used as collateral, whilst borrow factors reflect risks of the asset that’s being borrowed.
 
-**Collateral Assets**
+### **Collateral Assets**
 
 When it comes to quality of collateral, it is of paramount importance that it ranks very high in our index list.
 
@@ -12,7 +12,7 @@ An illiquid collateral asset can be exploited by causing a price surge to allow 
 
 Alternatively, a collateral asset that’s collapsing in price and is experiencing high slippage makes it uneconomical for liquidators to close positions, leading to bad debts. This scenario is more systemic, which is why only the highest quality assets can become eligible collaterals.
 
-**Borrowed Assets**
+### **Borrowed Assets**
 
 While borrowed assets are less systemic than collateral assets, they also have specific risks.
 
