@@ -2,7 +2,7 @@
 
 ## **Scale** 
 
-Each risk parameter goes from 0 \(highest risk\) to 1 \(lowest risk\). The combination of risk parameters results in a comprehensive index for a given digital asset, which will also go from 0 to 1.
+Each risk parameter goes from 0 \(highest risk\) to 1 \(lowest risk\). The combination of risk parameters results in a comprehensive index for a given digital asset, which also goes from 0 to 1.
 
 ## **Risk Parameters**
 
