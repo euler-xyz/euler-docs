@@ -16,7 +16,7 @@
 
 ## Risk Framework
 
-* [Introduction](risk-framework/risk-analysis.md)
+* [Introduction](risk-framework/introduction.md)
 * [Methodology](risk-framework/methodology.md)
 * [Ranking Assets](risk-framework/ranking-assets.md)
 * [Collateral and Borrow Factor Methodology](risk-framework/collateral-and-borrow-factors.md)
