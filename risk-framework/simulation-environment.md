@@ -4,7 +4,7 @@ To make sure we minimise bad debts whilst maximising activity, we stress-test li
 
 ### Example: One asset
 
-For instance, if our index list shows that a token jumped from 250th to 30th place and was able to maintain that position for a sufficient amount of time, we may simulate activity versus bad liquidations as a share of total loans given different borrow factors. As a result, we may improve the borrow factor from 0.15 to 0.35. 
+For instance, if our index list shows that a token jumped from 250th to 30th place and was able to maintain that position for a sufficient amount of time, we may simulate activity versus bad debts as a share of total loans given different borrow factors. As a result, we may improve the borrow factor from 0.28 to 0.35. 
 
 ### Example: Portfolio of assets
 
