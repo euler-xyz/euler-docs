@@ -14,6 +14,18 @@
 * [FAQ](guides/faq.md)
 * [Glossary](guides/glossary.md)
 
+## Risk Framework
+
+* [Introduction](risk-framework/risk-analysis.md)
+* [Methodology](risk-framework/methodology.md)
+* [Ranking Assets](risk-framework/ranking-assets.md)
+* [Collateral and Borrow Factor Methodology](risk-framework/collateral-and-borrow-factors.md)
+* [Tier Methodology](risk-framework/tiers.md)
+* [Simulation Environment](risk-framework/simulation-environment.md)
+* [Governance](risk-framework/governance.md)
+* [Lending and Borrowing Example](risk-framework/lending-and-borrowing-example.md)
+* [Risk Factors List](risk-framework/risk-factors-list.md)
+
 ## Governance
 
 * [EUL](governance/eul.md)
@@ -36,18 +48,6 @@
 * [Architecture](developers/architecture.md)
 * [Proxy Protocol](developers/proxy-protocol.md)
 * [Numeric Limits](developers/numeric-limits.md)
-
-## Risk Framework
-
-* [Introduction](risk-framework/risk-analysis.md)
-* [Methodology](risk-framework/methodology.md)
-* [Ranking Assets](risk-framework/ranking-assets.md)
-* [Collateral and Borrow Factor Methodology](risk-framework/collateral-and-borrow-factors.md)
-* [Tier Methodology](risk-framework/tiers.md)
-* [Simulation Environment](risk-framework/simulation-environment.md)
-* [Governance](risk-framework/governance.md)
-* [Lending and Borrowing Example](risk-framework/lending-and-borrowing-example.md)
-* [Risk Factors List](risk-framework/risk-factors-list.md)
 
 ## Security
 
