@@ -36,7 +36,11 @@ Liquidity parameter can go from 0 to 1.
 
 An asset with 100 mio USD daily turnover is easier to buy and sell versus an asset with only 1 mio USD turnover, all other things being equal.
 
-This is particularly important for liquidators that receive collateral assets at discount for repaying borrowed tokens, as they typically immediately sell that collateral. If they’re unable to sell that collateral at a decent price, then they do not have the incentive to liquidate. This leads to bad debts, which we need to minimise.
+This is particularly important for liquidators that receive collateral assets at discount for repaying borrowed tokens, as they typically immediately sell that collateral. If they’re unable to sell that collateral and/or buy the borrowed asset at a decent price given a liquidator discount, then they do not have the incentive to liquidate. This leads to bad debts, which we need to minimise.
 
-Measuring liquidity can be done by **estimating historical slippage** caused by a certain amount of volume.
+Measuring liquidity can be done by **estimating historical slippage** caused by a certain amount of volume. 
+
+It's important to note that we are estimating the liquidity **vs ETH on Uniswap v3**, as an existing ETH market on Uniswap v3 is a prerequisite to being activated on Euler and our oracles are based on Uniswap v3 TWAPs. 
+
+This means that even if a token has very high liquidity on Uniswap v2, it wouldn't have a high borrow factor if liquidity is low on Uniswap v3.
 
