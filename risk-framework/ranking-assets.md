@@ -42,5 +42,5 @@ Measuring liquidity can be done by **estimating historical slippage** caused by 
 
 It's important to note that we are estimating the liquidity **vs ETH on Uniswap v3**, as an existing ETH market on Uniswap v3 is a prerequisite to being activated on Euler and our oracles are based on Uniswap v3 TWAPs. 
 
-This means that even if a token has very high liquidity on Uniswap v2, it wouldn't have a high borrow factor if liquidity is low on Uniswap v3.
+This means that even if a token has very high liquidity on Uniswap v2, it wouldn't necessarily have a high borrow factor if liquidity is low on Uniswap v3.
 
