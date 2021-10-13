@@ -13,7 +13,7 @@ Michael Bentley & Doug Hoyte
 
 ## Abstract
 
-Here, we present Euler: a permissionless lending protocol custom-built with to help users lend and borrow more Ethereum-based tokens than ever before. The purpose of this white paper is to describe how Euler works at a high level and highlight new features and innovations that help to set it apart from other popular lending protocols, like Compound and Aave.
+Here, we present Euler: a permissionless lending protocol custom-built to help users lend and borrow more Ethereum-based tokens than ever before. The purpose of this white paper is to describe how Euler works at a high level and highlight new features and innovations that help to set it apart from other popular lending protocols, like Compound and Aave.
 
 ## Introduction
 
