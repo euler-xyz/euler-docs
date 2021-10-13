@@ -126,6 +126,17 @@ This module implements some of the more advanced ways of invoking the Euler cont
 
 It also has an entry point for querying detailed information about an account's liquidity status.
 
+### Swap
+
+This module allows users to swap their deposited underlying tokens on Uniswap V3 and 1inch DEXes. Under the hood, the tokens are swapped directly from the pool, thus saving gas, which would normally be spent to withdraw and deposit back the traded assets. From the user's perspective the swap will change the balances of their eTokens. 
+
+Paired with deferred liquidity check \(see below\), the swap module allows users to put on one-click leveraged long and short positions on any collateral vs collateral asset pairs and one-click leveraged short positions on any collateral vs non-collateral pairs.
+
+Available swap methods:
+
+* all four methods of [UniswapV3 SwapRouter](https://docs.uniswap.org/protocol/reference/periphery/SwapRouter)
+* full 1inch aggregator functionality, integrated through [1Inch API](https://docs.1inch.io/api/quote-swap)
+
 ## Storage and Inheritance
 
 Most of the modules inherit from `BaseLogic` which provides common lending logic related functionality. This contract inherits from `BaseModule`, which inherits from `Base`, which inherits from `Storage`.
