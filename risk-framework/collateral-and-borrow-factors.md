@@ -18,4 +18,4 @@ While borrowed assets are less systemic than collateral assets, they also have s
 
 For example, a borrowed token price that triples in a matter of seconds versus its collateral means there’s no incentive for the borrower to return the token, which results in bad debt. This is why the borrow factor should reflect the volatility and liquidity of the asset.
 
-Notice that unlike in the case of collateral assets, a collapse in price of the borrowed asset does not pose much risk to Euler. This is why we prioritise understanding the risk of a violent surge when assigning borrow factors. 
+Alternatively, crashing a borrowed asset's price allows a malicious actor to borrow more tokens than normally possible. This attack can happen if there's not enough liquidity overall, especially if liquidity is too concentrated around a tiny range.
