@@ -1,13 +1,148 @@
 # Risk Factors List
 
-_**To be updated soon**_
+| Asset   | Collateral Factor | Borrow Factor | Cross Tier | Reserve Factor |
+| ------- | ----------------- | ------------- | ---------- | -------------- |
+| USDC    | 0.90              | 0.94          | x          | 19%            |
+| WETH    | 0.88              | 0.91          | x          | 19%            |
+| WBTC    | 0.88              | 0.91          | x          | 19%            |
+| DAI     | 0.85              | 0.88          | x          | 19%            |
+| LINK    | 0.66              | 0.76          | x          | 19%            |
+| UNI     | 0.66              | 0.76          | x          | 19%            |
+| BAT     | 0.66              | 0.75          | x          | 19%            |
+| ZRX     | 0.66              | 0.72          | x          | 19%            |
+| TUSD    | 0.65              | 0.80          | x          | 19%            |
+| SUSHI   | 0.64              | 0.76          | x          | 19%            |
+| COMP    | 0.64              | 0.66          | x          | 19%            |
+| AAVE    | 0.61              | 0.76          | x          | 19%            |
+| MKR     | 0.53              | 0.76          | x          | 19%            |
+| DYDX    | 0.53              | 0.75          | x          | 19%            |
+| PAX     | 0.50              | 0.80          | x          | 19%            |
+| YFI     | 0.48              | 0.50          | x          | 19%            |
+| USDT    | 0.00              | 0.80          | x          | 23%            |
+| BUSD    | 0.00              | 0.80          | x          | 23%            |
+| UST     | 0.00              | 0.80          | x          | 23%            |
+| renBTC  | 0.00              | 0.80          | x          | 23%            |
+| sUSD    | 0.00              | 0.75          | x          | 23%            |
+| LUSD    | 0.00              | 0.75          | x          | 23%            |
+| DPI     | 0.00              | 0.72          | x          | 23%            |
+| PAXG    | 0.00              | 0.72          | x          | 23%            |
+| UMA     | 0.00              | 0.72          | x          | 23%            |
+| 1INCH   | 0.00              | 0.72          | x          | 23%            |
+| PERP    | 0.00              | 0.72          | x          | 23%            |
+| AXS     | 0.00              | 0.72          | x          | 23%            |
+| ALPHA   | 0.00              | 0.66          | x          | 23%            |
+| ENJ     | 0.00              | 0.66          | x          | 23%            |
+| REN     | 0.00              | 0.66          | x          | 23%            |
+| RUNE    | 0.00              | 0.66          | x          | 23%            |
+| xSUSHI  | 0.00              | 0.66          | x          | 23%            |
+| GRT     | 0.00              | 0.66          | x          | 23%            |
+| SKL     | 0.00              | 0.66          | x          | 23%            |
+| AGLD    | 0.00              | 0.66          | x          | 23%            |
+| SRM     | 0.00              | 0.66          | x          | 23%            |
+| SNX     | 0.00              | 0.66          | x          | 23%            |
+| stETH   | 0.00              | 0.50          | x          | 23%            |
+| CRV     | 0.00              | 0.50          | x          | 23%            |
+| BAL     | 0.00              | 0.50          | x          | 23%            |
+| KNC     | 0.00              | 0.50          | x          | 23%            |
+| MANA    | 0.00              | 0.50          | x          | 23%            |
+| BNT     | 0.00              | 0.50          | -          | 23%            |
+| CELR    | 0.00              | 0.50          | -          | 23%            |
+| LDO     | 0.00              | 0.50          | -          | 23%            |
+| CVX     | 0.00              | 0.50          | -          | 23%            |
+| KEEP    | 0.00              | 0.50          | -          | 23%            |
+| TRIBE   | 0.00              | 0.50          | -          | 23%            |
+| LQTY    | 0.00              | 0.50          | -          | 23%            |
+| sETH    | 0.00              | 0.50          | -          | 23%            |
+| sBTC    | 0.00              | 0.50          | -          | 23%            |
+| AMP     | 0.00              | 0.50          | -          | 23%            |
+| NEXO    | 0.00              | 0.50          | -          | 23%            |
+| RARE    | 0.00              | 0.50          | -          | 23%            |
+| OCEAN   | 0.00              | 0.50          | -          | 23%            |
+| OGN     | 0.00              | 0.50          | -          | 23%            |
+| NU      | 0.00              | 0.45          | -          | 23%            |
+| LPT     | 0.00              | 0.40          | -          | 23%            |
+| TRU     | 0.00              | 0.40          | -          | 23%            |
+| FLOAT   | 0.00              | 0.28          | -          | 23%            |
+| RAI     | 0.00              | 0.28          | -          | 23%            |
+| MIM     | 0.00              | 0.28          | -          | 23%            |
+| ALCX    | 0.00              | 0.28          | -          | 23%            |
+| alUSD   | 0.00              | 0.28          | -          | 23%            |
+| ANT     | 0.00              | 0.28          | -          | 23%            |
+| CVXCRV  | 0.00              | 0.28          | -          | 23%            |
+| OMG     | 0.00              | 0.28          | -          | 23%            |
+| BAND    | 0.00              | 0.28          | -          | 23%            |
+| BANK    | 0.00              | 0.28          | -          | 23%            |
+| CREAM   | 0.00              | 0.28          | -          | 23%            |
+| YCRV    | 0.00              | 0.28          | -          | 23%            |
+| yETH    | 0.00              | 0.28          | -          | 23%            |
+| yUSD    | 0.00              | 0.28          | -          | 23%            |
+| yvWETH  | 0.00              | 0.28          | -          | 23%            |
+| yyCRV   | 0.00              | 0.28          | -          | 23%            |
+| bBADGER | 0.00              | 0.28          | -          | 23%            |
+| CRETH2  | 0.00              | 0.28          | -          | 23%            |
+| ESD     | 0.00              | 0.28          | -          | 23%            |
+| EURT    | 0.00              | 0.28          | -          | 23%            |
+| FRAX    | 0.00              | 0.28          | -          | 23%            |
+| wNXM    | 0.00              | 0.28          | -          | 23%            |
+| BBTC    | 0.00              | 0.28          | -          | 23%            |
+| BOND    | 0.00              | 0.28          | -          | 23%            |
+| COVER   | 0.00              | 0.28          | -          | 23%            |
+| FTT     | 0.00              | 0.28          | -          | 23%            |
+| HBTC    | 0.00              | 0.28          | -          | 23%            |
+| ibBTC   | 0.00              | 0.28          | -          | 23%            |
+| KP3R    | 0.00              | 0.28          | -          | 23%            |
+| LON     | 0.00              | 0.28          | -          | 23%            |
+| MTA     | 0.00              | 0.28          | -          | 23%            |
+| PICKLE  | 0.00              | 0.28          | -          | 23%            |
+| AMPL    | 0.00              | 0.28          | -          | 23%            |
+| ARMOR   | 0.00              | 0.28          | -          | 23%            |
+| arNXM   | 0.00              | 0.28          | -          | 23%            |
+| CEL     | 0.00              | 0.28          | -          | 23%            |
+| GUSD    | 0.00              | 0.28          | -          | 23%            |
+| HFIL    | 0.00              | 0.28          | -          | 23%            |
+| HUSD    | 0.00              | 0.28          | -          | 23%            |
+| RenFIL  | 0.00              | 0.28          | -          | 23%            |
+| SWAG    | 0.00              | 0.28          | -          | 23%            |
+| SAND    | 0.00              | 0.28          | -          | 23%            |
+| YGG     | 0.00              | 0.28          | -          | 23%            |
+| UOS     | 0.00              | 0.28          | -          | 23%            |
+| GHST    | 0.00              | 0.28          | -          | 23%            |
+| RARI    | 0.00              | 0.28          | -          | 23%            |
+| PUNK    | 0.00              | 0.28          | -          | 23%            |
+| RFOX    | 0.00              | 0.28          | -          | 23%            |
+| MUST    | 0.00              | 0.28          | -          | 23%            |
+| ILV     | 0.00              | 0.28          | -          | 23%            |
+| AUDIO   | 0.00              | 0.28          | -          | 23%            |
+| ERN     | 0.00              | 0.28          | -          | 23%            |
+| GALA    | 0.00              | 0.28          | -          | 23%            |
+| FWB     | 0.00              | 0.28          | -          | 23%            |
+| DERC    | 0.00              | 0.28          | -          | 23%            |
+| MVI     | 0.00              | 0.28          | -          | 23%            |
+| BED     | 0.00              | 0.28          | -          | 23%            |
+| INDEX   | 0.00              | 0.28          | -          | 23%            |
+| WRITE   | 0.00              | 0.28          | -          | 23%            |
+| RLY     | 0.00              | 0.28          | -          | 23%            |
+| SNT     | 0.00              | 0.28          | -          | 23%            |
+| AKRO    | 0.00              | 0.28          | -          | 23%            |
+| FEI     | 0.00              | 0.28          | -          | 23%            |
+| FTM     | 0.00              | 0.28          | -          | 23%            |
+| GNO     | 0.00              | 0.28          | -          | 23%            |
+| HEGIC   | 0.00              | 0.28          | -          | 23%            |
+| MLN     | 0.00              | 0.28          | -          | 23%            |
+| RARI    | 0.00              | 0.28          | -          | 23%            |
+| SFI     | 0.00              | 0.28          | -          | 23%            |
+| SWAP    | 0.00              | 0.28          | -          | 23%            |
+| VSP     | 0.00              | 0.28          | -          | 23%            |
+| VVSP    | 0.00              | 0.28          | -          | 23%            |
+| WOO     | 0.00              | 0.28          | -          | 23%            |
+| Default | 0.00              | 0.28          | -          | 23%            |
+| FXS     | 0.00              | 0.28          | -          | 23%            |
+| alETH   | 0.00              | 0.28          | -          | 23%            |
 
-_Note: the Collateral Factor of the lent asset\(s\) is multiplied by the Borrow Factor of the borrowed asset\(s\) to arrive at the final factor._
+_Note: the Collateral Factor of the lent asset(s) is multiplied by the Borrow Factor of the borrowed asset(s) to arrive at the final factor._
 
-_For eg if you lend 1000 USD worth of USDC, you can borrow UNI in line with a final factor of 0.648 \(0.90 x 0.72\). Hence, 648 USD worth of UNI._
+_For eg if you lend 1000 USD worth of USDC, you can borrow UNI in line with a final factor of 0.648 (0.90 x 0.72). Hence, 648 USD worth of UNI._
 
-_Alternatively, if you lend 500 USD worth of USDC and 500 USD worth of WETH, your risk-adjusted collateral value is \(500 x 0.90\) + \(500 x 0.88\) = 890 USD. If you were to borrow UNI, you could borrow 890 x 0.72 = 640.8 USD worth of UNI._ 
+_Alternatively, if you lend 500 USD worth of USDC and 500 USD worth of WETH, your risk-adjusted collateral value is (500 x 0.90) + (500 x 0.88) = 890 USD. If you were to borrow UNI, you could borrow 890 x 0.72 = 640.8 USD worth of UNI. _
 
-_Note that if you borrowed less UNI, for eg 500 USD worth, you could still borrow additional UNI or a cross tier asset like LINK against your risk adjusted collateral before hitting the threshold._  
-
-
+_Note that if you borrowed less UNI, for eg 500 USD worth, you could still borrow additional UNI or a cross tier asset like LINK against your risk adjusted collateral before hitting the threshold._\
