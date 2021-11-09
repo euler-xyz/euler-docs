@@ -91,7 +91,7 @@ In the code you will also see `INTERNAL_DEBT_PRECISION`. This is because DTokens
 
 ### Markets
 
-This module allows you to activate new markets on the Euler protocol. Any token can be activated, as long as there exists a Uniswap 3 pair between it and the reference asset \(WETH version 9 in the standard deployment\).
+This module allows you to activate new markets on the Euler protocol. Any token can be activated, as long as there exists a Uniswap 3 pair between it and the reference asset \(WETH version 9 in the standard deployment, although any 18-decimal token could be used\).
 
 It also allows you to enter/exit markets, which controls which of your ETokens are used as collateral for your debts. This terminology was chosen deliberately to match Compound's, since many of our users will be familiar with Compound already.
 
