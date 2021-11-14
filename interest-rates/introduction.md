@@ -5,7 +5,7 @@ While we eventually plan to move to a reactive interest rate model that will opt
 1. Majors
 2. Stables
 3. Mid caps
-4. Small caps
+4. Small caps (default)
 
 The parameters are:
 
