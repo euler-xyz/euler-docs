@@ -47,7 +47,19 @@ Given the default assets can be extremely volatile, it's important the lenders a
 
 To that end, should utilisation sharply rise beyond the Kink%, high Max IR makes borrowing too expensive to maintain. This helps bring utilisation below 100% and hence lowers withdrawal risk for lenders.
 
-## TWAP Length
+## Pricing Parameters
+
+### Uniswap3 Pool Fee-Level
+
+The default uniswap3 pool fee-level is the **first existing of 0.3%, 0.05%, 1%**.
+
+In order to retrieve asset prices, Euler uses Uniswap3's Time-Weighted Average Price (TWAP) for the pair XYZ/WETH, where XYZ is the asset in question and WETH is the reference asset. Since Uniswap3 supports multiple pools for the same pair which differ by fee-level, which pool to actually query needs to be configured on a per-asset basis.
+
+Although in theory pools should converge to similar prices due to arbitrage, this is not always the case. For example when a pool has insufficient liquidity to be profitable for arbitrage bots. Additionally, the amount of liquidity has an impact on the cost of price manipulation.
+
+In order to be promoted up a tier, a review of the configured pool fee must be conducted. In some cases, extra "full-range liquidity" must be added to increase the cost of price manipulation.
+
+### TWAP Length
 
 The **default TWAP length is set at 30 minutes.**
 
@@ -69,7 +81,9 @@ Check out this paper written by Michael Bentley on cost of attacking TWAP pricin
 
 Additionally, have a look at this blog post by Seraphim on possible attacks involving oracle manipulation and how Euler is preventing them: [https://blog.euler.finance/risks-in-crypto-a-lending-protocol-perspective-376e19c1d01a](https://blog.euler.finance/risks-in-crypto-a-lending-protocol-perspective-376e19c1d01a)
 
-## Uniswap Observation Cardinality
+### Uniswap Observation Cardinality
+
+The **minimum uniswap3 cardinality is 10**. When a market is activated, the cardinality of the uniswap3 pool that will be used for pricing is increased to this value, if it is currently below it.
 
 In order to maintain the TWAP, each Uniswap3 pool needs to keep a historical record of accumulated prices at previous points in time. Each record is called an observation, and their number is called the observation cardinality. Unfortunately, reserving the storage for these records costs gas.
 
@@ -77,9 +91,7 @@ The larger the cardinality, the longer the possible TWAP window. If a swap is ex
 
 On Euler, if it is not possible to retrieve a TWAP of the configured length, then the oldest available price is used instead. This means that the protocol can always be interacted with, and prevents some types of attacks that aim to prevent liquidation. However, it also means that the cardinality is an important security parameter for a pool.
 
-The **minimum uniswap3 cardinality is 10**. When a market is activated, the cardinality of the uniswap3 pool that will be used for pricing is increased to this value, if it is currently below it.
-
-This lower value ensures that activating a market is not too expensive. However, since a larger cardinality is required to ensure a longer TWAP window, in order for an asset to be promoted to a higher tier, a larger value cardinality will be required, typically 144 or higher.
+This low minimum value ensures that activating a market is not too expensive. However, since a larger cardinality is required to ensure a longer TWAP window, in order for an asset to be promoted to a higher tier, a larger value cardinality will be required, typically 144 or higher.
 
 ## Target Health Factor
 
