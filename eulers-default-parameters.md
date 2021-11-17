@@ -69,9 +69,17 @@ Check out this paper written by Michael Bentley on cost of attacking TWAP pricin
 
 Additionally, have a look at this blog post by Seraphim on possible attacks involving oracle manipulation and how Euler is preventing them: [https://blog.euler.finance/risks-in-crypto-a-lending-protocol-perspective-376e19c1d01a](https://blog.euler.finance/risks-in-crypto-a-lending-protocol-perspective-376e19c1d01a)
 
-## Uniswap Cardinality Window
+## Uniswap Observation Cardinality
 
+In order to maintain the TWAP, each Uniswap3 pool needs to keep a historical record of accumulated prices at previous points in time. Each record is called an observation, and their number is called the observation cardinality. Unfortunately, reserving the storage for these records costs gas.
 
+The larger the cardinality, the longer the possible TWAP window. If a swap is executed every block, the longest TWAP that is possible is the cardinality times the average block time over the last N blocks.
+
+On Euler, if it is not possible to retrieve a TWAP of the configured length, then the oldest available price is used instead. This means that the protocol can always be interacted with, and prevents some types of attacks that aim to prevent liquidation. However, it also means that the cardinality is an important security parameter for a pool.
+
+The **minimum uniswap3 cardinality is 10**. When a market is activated, the cardinality of the uniswap3 pool that will be used for pricing is increased to this value, if it is currently below it.
+
+This lower value ensures that activating a market is not too expensive. However, since a larger cardinality is required to ensure a longer TWAP window, in order for an asset to be promoted to a higher tier, a larger value cardinality will be required, typically 144 or higher.
 
 ## Target Health Factor
 
