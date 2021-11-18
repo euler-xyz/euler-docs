@@ -38,9 +38,9 @@ The **default interest rate model may be found in the interest rate docs.**
 
 While we eventually plan to move to a reactive interest rate model that will optimise for utilisation, we start off with a standard kink model. The default kink model is the "small cap" model and its parameters are:
 
-1. Base IR: **0%** (APR when utilisation is 0%)
-2. Kink IR: **25%** (APR when utilisation is exactly Kink%)
-3. Max IR: **500% **(APR when utilisation is 100%)
+1. Base IR: **0%** (APY when utilisation is 0%)
+2. Kink IR: **25%** (APY when utilisation is exactly Kink%)
+3. Max IR: **500% **(APY when utilisation is 100%)
 4. Kink%: **50%** (Percent utilisation where kink occurs)
 
 Given the default assets and their respective utilisation can be extremely volatile, it's important the lenders aren't constantly exposed to withdrawal risk.
