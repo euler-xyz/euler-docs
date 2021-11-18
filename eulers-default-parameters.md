@@ -43,7 +43,7 @@ While we eventually plan to move to a reactive interest rate model that will opt
 
 Given the default assets and their respective utilisation can be extremely volatile, it's important that the lenders aren't constantly exposed to withdrawal risk.
 
-To that end, should utilisation sharply rise beyond the Kink%, high Max IR makes borrowing too expensive to maintain. This helps bring utilisation below 100% and hence lowers withdrawal risk for lenders.
+To that end, should utilisation sharply rise beyond the Kink%, high Max IR makes borrowing too expensive to maintain and hence lowers the withdrawal risk
 
 ## Pricing Parameters
 
