@@ -37,8 +37,8 @@ We think a reserve factor of 23% is a perfect balance between building reserves 
 While we eventually plan to move to a reactive interest rate model that will optimise for utilisation, we start off with a standard kink model. The default kink model is the "small cap" model and its parameters are:
 
 1. Base IR: **0%** (APY when utilisation is 0%)
-2. Kink IR: **25%** (APY when utilisation is exactly Kink%)
-3. Max IR: **500% **(APY when utilisation is 100%)
+2. Kink IR: **10%** (APY when utilisation is exactly Kink%)
+3. Max IR: **300% **(APY when utilisation is 100%)
 4. Kink%: **50%** (Percent utilisation where kink occurs)
 
 Given the default assets and their respective utilisation can be extremely volatile, it's important that the lenders aren't constantly exposed to withdrawal risk.
