@@ -93,7 +93,9 @@ On Euler, if it is not possible to retrieve a TWAP of the configured length, the
 
 This low minimum value ensures that activating a market is not too expensive. However, since a larger cardinality is required to ensure a longer TWAP window, in order for an asset to be promoted to a higher tier, a larger value cardinality will be required, typically 144 or higher.
 
-## Target Health Factor
+## Liquidation Parameters
+
+### Target Health Factor
 
 The **default target health factor is 1.25. **
 
@@ -107,7 +109,7 @@ Similarly, in a volatile market, being restored to 1.00 means a user may quickly
 
 We think 1.25 is a good trade-off between a good borrowing experience and well-incentivised liquidations.&#x20;
 
-## Maximum Liquidation Discount
+### Maximum Liquidation Discount
 
 The **default maximum liquidation discount is set at 20%.**
 
@@ -121,7 +123,7 @@ If the discount is too low, a liquidator may be discouraged from conducting the 
 
 Hence, a liquidation discount has an upper ceiling of 20% to improve the borrowers' experience.
 
-## Liquidation Surcharge
+### Liquidation Surcharge
 
 The **default liquidation surcharge is set at 2%.**
 
@@ -132,7 +134,7 @@ This is intended to do two things:
 1. The surcharge accumulates in the reserve pool, hence every liquidation makes the pool healthier. The more volatile an asset, the more often liquidations occur, and the bigger the pool is.
 2. Discourage malicious self-liquidation strategies. Due to the surcharge, every self-liquidation ends up being net negative.
 
-## Liquidation Booster Ceiling and Slope
+### Liquidation Booster Ceiling and Slope
 
 The **default liquidation booster is ceiling and slope are set at 2.5% and 2x respectively.**
 
@@ -149,7 +151,7 @@ TotalLiqDiscount = (1-HealthFactor)*LiqBooster + LiqSurcharge
 $$
 
 $$
-LiqBooster = 2*(RASAL/RADV)
+LiqBooster = 2 * \frac{min(RADV, RASAL)}{RADV}
 $$
 
 RASAL = Risk-adjusted supplied assets by the liquidator
