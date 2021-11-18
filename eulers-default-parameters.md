@@ -6,13 +6,13 @@ description: All of these parameters may be amended by governance
 
 ## Borrow Factor
 
-When someone activates a lending market on Euler for an asset XYZ, it is by default an isolated tier asset and its** borrow factor is 0.28**.
+When someone activates a lending market on Euler for an asset XYZ, it is by default an isolated tier asset and its **borrow factor is 0.28**.
 
 This means that if you lend USDC (Collateral Factor of 0.90) and borrow XYZ at Default Borrow Factor (Borrow Factor of 0.28), your effective factor is approximately 0.25 (0.90 x 0.28).
 
 Consequently, when borrowing default assets, you are required to be at minimum 4x overcollateralised. The factor is even more conservative if you borrow against an asset with a lower collateral factor.
 
-Conservative overcollateralisation is intended to prevent bad debts.&#x20;
+Conservative overcollateralisation is intended to prevent bad debts.
 
 For eg, suppose the borrowed asset XYZ sharply skyrockets in price, causing a user's health factor to dip below 1, which means he is subject to liquidation. For the liquidator to be incentivised to liquidate the user, he needs to receive an attractive liquidation bonus in terms of violator's lent assets. If there are simply not enough lent assets to back the bonus, a liquidator will choose not to liquidate. This leads to bad debts.
 
@@ -22,13 +22,13 @@ For more info on collateral and borrow factors, check out our risk docs: [https:
 
 ## Reserve Factor
 
-The **default reserve factor is set at 23%. **
+The **default reserve factor is set at 23%**.&#x20;
 
-This means that for every $1 of interest paid by borrowers on an XYZ asset, 23c is paid into the reserve pool of XYZ while the remaining 77c are paid to lenders of XYZ. These reserves may later be used to repay the bad debts that accrue in the pool.&#x20;
+This means that for every $1 of interest paid by borrowers on an XYZ asset, 23c is paid into the reserve pool of XYZ while the remaining 77c are paid to lenders of XYZ. These reserves may later be used to repay the bad debts that accrue in the pool.
 
-While a higher reserve factor would in theory help accumulate more substantial reserves to backstop the Euler lending pools, at some point it would discourage lenders as they'll receive too little interest.&#x20;
+While a higher reserve factor would in theory help accumulate more substantial reserves to backstop the Euler lending pools, at some point it would discourage lenders as they'll receive too little interest.
 
-Alternatively, a reserve factor that's too low is a lost opportunity to build reserves and hence trust with lenders.&#x20;
+Alternatively, a reserve factor that's too low is a lost opportunity to build reserves and hence trust with lenders.
 
 We think a reserve factor of 23% is a perfect balance between building reserves and encouraging lending, especially given our generous EUL distribution scheme that will run in the first few years of Euler protocol's existence.
 
@@ -38,12 +38,12 @@ The **default interest rate model may be found in the interest rate docs.**
 
 While we eventually plan to move to a reactive interest rate model that will optimise for utilisation, we start off with a standard kink model. The default kink model is the "small cap" model and its parameters are:
 
-1. Base IR: **0% **(APR when utilisation is 0%)
-2. Kink IR: **30%** (APR when utilisation is exactly Kink%)
+1. Base IR: **0%** (APR when utilisation is 0%)
+2. Kink IR: **25%** (APR when utilisation is exactly Kink%)
 3. Max IR: **500% **(APR when utilisation is 100%)
-4. Kink%: **70%** (Percent utilisation where kink occurs)
+4. Kink%: **50%** (Percent utilisation where kink occurs)
 
-Given the default assets can be extremely volatile, it's important the lenders are adequately remunerated for depositing assets with high interest rates.&#x20;
+Given the default assets and their respective utilisation can be extremely volatile, it's important the lenders aren't constantly exposed to withdrawal risk.
 
 To that end, should utilisation sharply rise beyond the Kink%, high Max IR makes borrowing too expensive to maintain. This helps bring utilisation below 100% and hence lowers withdrawal risk for lenders.
 
@@ -63,17 +63,17 @@ In order to be promoted up a tier, a review of the configured pool fee must be c
 
 The **default TWAP length is set at 30 minutes.**
 
-Euler uses Uniswap v3 TWAPs as the pricing oracle for all assets and debts on Euler.&#x20;
+Euler uses Uniswap v3 TWAPs as the pricing oracle for all assets and debts on Euler.
 
-As explained in our [whitepaper](https://docs.euler.finance/getting-started/white-paper#twap), a TWAP is essentially a moving average of trades that occurred in a given Uniswap v3 pool. The intention for using TWAPs is that it makes price manipulations prohibitively expensive the longer the TWAP window is.&#x20;
+As explained in our [whitepaper](https://docs.euler.finance/getting-started/white-paper#twap), a TWAP is essentially a moving average of trades that occurred in a given Uniswap v3 pool. The intention for using TWAPs is that it makes price manipulations prohibitively expensive the longer the TWAP window is.
 
-However, a TWAP that's too long causes a significant lag between last-traded price on Uniswap and the TWAP, leading to risks of bad debt.&#x20;
+However, a TWAP that's too long causes a significant lag between last-traded price on Uniswap and the TWAP, leading to risks of bad debt.
 
-For eg, a user deposits ETH as collateral and borrows XYZ token. Imagine that the user's XYZ debt swells to $70 worth and he's subject to liquidation. A liquidator would have to take on some of that XYZ debt and repay it.&#x20;
+For eg, a user deposits ETH as collateral and borrows XYZ token. Imagine that the user's XYZ debt swells to $70 worth and he's subject to liquidation. A liquidator would have to take on some of that XYZ debt and repay it.
 
-However, recall that while the debt is priced in TWAP terms, a liquidator would need to buy XYZ on the market to repay that debt. If the market price of his debt is $120, the liquidator would be buying high on the market to receive a smaller amount of TWAP-priced assets of the violator plus liquidation bonus.&#x20;
+However, recall that while the debt is priced in TWAP terms, a liquidator would need to buy XYZ on the market to repay that debt. If the market price of his debt is $120, the liquidator would be buying high on the market to receive a smaller amount of TWAP-priced assets of the violator plus liquidation bonus.
 
-Hence, when the TWAP - Market Price spread become significantly large due to the TWAP lag, a liquidation may be uneconomical.&#x20;
+Hence, when the TWAP - Market Price spread become significantly large due to the TWAP lag, a liquidation may be uneconomical.
 
 Alternatively, a TWAP that's too short means it becomes a lot cheaper to manipulate asset prices. For eg, one could artificially pump a collateral asset's price to be able to borrow disproportionate amount of XYZ tokens and run away with them.
 
@@ -97,29 +97,29 @@ This low minimum value ensures that activating a market is not too expensive. Ho
 
 ### Target Health Factor
 
-The **default target health factor is 1.25. **
+The **default target health factor is 1.25**.&#x20;
 
 When a user is in violation due to his risk-adjusted liabilities exceeding his risk-adjusted collateral, his health factor dips below 1. However, should a liquidator come in, he may only take enough debt and assets from the violator to shift his health factor to 1.25.
 
-This is feature is called **soft liquidating **someone [as described in the whitepaper](https://docs.euler.finance/getting-started/white-paper#soft-liquidations), and it creates a much better borrowing experience than on other protocols, where 50% of your debt is liquidated.&#x20;
+This is feature is called \*\*soft liquidating \*\*someone [as described in the whitepaper](https://docs.euler.finance/getting-started/white-paper#soft-liquidations), and it creates a much better borrowing experience than on other protocols, where 50% of your debt is liquidated.
 
-Nevertheless, had we set the target health factor to 1.00, we would have ran into the risk of making liquidations uneconomic. Namely, the size of debt being repaid and the consequent reward may be too small to incentivise a liquidator.&#x20;
+Nevertheless, had we set the target health factor to 1.00, we would have ran into the risk of making liquidations uneconomic. Namely, the size of debt being repaid and the consequent reward may be too small to incentivise a liquidator.
 
 Similarly, in a volatile market, being restored to 1.00 means a user may quickly dip below 1.00 again and again, which implied higher gas fees for liquidators and ever-decreasing rewards.
 
-We think 1.25 is a good trade-off between a good borrowing experience and well-incentivised liquidations.&#x20;
+We think 1.25 is a good trade-off between a good borrowing experience and well-incentivised liquidations.
 
 ### Maximum Liquidation Discount
 
 The **default maximum liquidation discount is set at 20%.**
 
-When a user is subject to liquidation, some of his debt (dTokens) and assets (eTokens) are transferred to the liquidator, which leads to the health score shifting to 1.25.&#x20;
+When a user is subject to liquidation, some of his debt (dTokens) and assets (eTokens) are transferred to the liquidator, which leads to the health score shifting to 1.25.
 
-However, to incentivise the liquidator to do this work, he receives the eTokens at a discount. Another way of thinking about the discount is receiving a bonus on top of the asset value.&#x20;
+However, to incentivise the liquidator to do this work, he receives the eTokens at a discount. Another way of thinking about the discount is receiving a bonus on top of the asset value.
 
-Let's imagine a simple example without liquidation surcharges and boosters (explained in this page below): assume a user's health factor is 0.90. This implies a liquidation discount of 10% (1 - 0.90). Hence, for taking on $100 worth of dTokens, a liquidator receives $110 worth of eTokens.&#x20;
+Let's imagine a simple example without liquidation surcharges and boosters (explained in this page below): assume a user's health factor is 0.90. This implies a liquidation discount of 10% (1 - 0.90). Hence, for taking on $100 worth of dTokens, a liquidator receives $110 worth of eTokens.
 
-If the discount is too low, a liquidator may be discouraged from conducting the liquidation. Alternatively, a discount that's too high means borrowers are giving away too much of their assets to liquidators. This also creates a risk of never going back to 1.25 health score, as every liquidation decreases the amount of assets a user has.&#x20;
+If the discount is too low, a liquidator may be discouraged from conducting the liquidation. Alternatively, a discount that's too high means borrowers are giving away too much of their assets to liquidators. This also creates a risk of never going back to 1.25 health score, as every liquidation decreases the amount of assets a user has.
 
 Hence, a liquidation discount has an upper ceiling of 20% to improve the borrowers' experience.
 
@@ -138,9 +138,9 @@ This is intended to do two things:
 
 The **default liquidation booster is ceiling and slope are set at 2.5% and 2x respectively.**
 
-To incentivise liquidators to lend, they may be more competitive than their peers should they lend through Euler.&#x20;
+To incentivise liquidators to lend, they may be more competitive than their peers should they lend through Euler.
 
-For eg, if a user's health score is at 0.90 and value of risk-adjusted debt is $1000, the implied liquidation discount is 10% (1 - Health Score). However, due to slippage and gas fees, liquidators are only profitable at a 11% discount.&#x20;
+For eg, if a user's health score is at 0.90 and value of risk-adjusted debt is $1000, the implied liquidation discount is 10% (1 - Health Score). However, due to slippage and gas fees, liquidators are only profitable at a 11% discount.
 
 At the same time, a liquidator that supplied $1000 risk-adjusted collateral can be 2x more competitive than the rest of the market with a ceiling of 2.5%. Should he take on the user's debt at a 10% discount, he will actually receive a more generous 12.5% discount (2.5% booster + 10% liquidation discount).
 
