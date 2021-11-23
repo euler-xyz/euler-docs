@@ -26,6 +26,15 @@
 * [Lending and Borrowing Example](risk-framework/lending-and-borrowing-example.md)
 * [Risk Factors List](risk-framework/risk-factors-list.md)
 
+## Interest Rates
+
+* [Introduction](interest-rates/introduction.md)
+* [Borrow APY per Asset](interest-rates/list-of-assets.md)
+
+***
+
+* [Euler's Default Parameters](eulers-default-parameters.md)
+
 ## Governance
 
 * [EUL](governance/eul.md)
@@ -55,12 +64,3 @@
 * [Bug Bounty](security/bug-bounty.md)
 * [Vault](security/vault.md)
 * [Insurance](security/insurance.md)
-
-## Interest Rates
-
-* [Introduction](interest-rates/introduction.md)
-* [List of Assets](interest-rates/list-of-assets.md)
-
-***
-
-* [Euler's Default Parameters](eulers-default-parameters.md)
