@@ -4,9 +4,23 @@
 
 Main storage contract for the Euler system
 
+### moduleIdToImplementation
+
+Lookup the current implementation contract for a module
+
+    function moduleIdToImplementation(uint moduleId) external view returns (address);
+
+Parameters:
+
+* **moduleId**: Fixed constant that refers to a module type (ie MODULEID__ETOKEN)
+
+Returns:
+
+* An internal address specifies the module's implementation code
+
 ### moduleIdToProxy
 
-Lookup a proxy that can be used to interact with a module
+Lookup a proxy that can be used to interact with a module (only valid for single-proxy modules)
 
     function moduleIdToProxy(uint moduleId) external view returns (address);
 
@@ -643,6 +657,16 @@ Balance of the reserves, in underlying units (increases as interest is earned)
 
 
 
+### touch
+
+Updates interest accumulator and totalBorrows, credits reserves, re-targets interest rate, and logs asset status
+
+    function touch() external;
+
+
+
+
+
 ### deposit
 
 Transfer underlying tokens from sender to the Euler pool, and increase account's eTokens
@@ -691,7 +715,7 @@ Pay off dToken liability with eTokens ("self-repay")
 Parameters:
 
 * **subAccountId**: 0 for primary, 1-255 for a sub-account
-* **amount**: In underlying units (use max uint256 to repay full dToken balance)
+* **amount**: In underlying units (use max uint256 to repay the debt in full or up to the available underlying balance)
 
 
 
@@ -971,6 +995,235 @@ Parameters:
 * **collateral**: Token that is to be seized
 * **repay**: The amount of underlying DTokens to be transferred from violator to sender, in units of underlying
 * **minYield**: The minimum acceptable amount of collateral ETokens to be transferred from violator to sender, in units of collateral
+
+
+
+
+## IEulerSwap
+
+Trading assets on Uniswap V3 and 1Inch V4 DEXs
+
+### SwapUniExactInputSingleParams
+
+Params for Uniswap V3 exact input trade on a single pool
+
+    struct SwapUniExactInputSingleParams {
+        uint subAccountIdIn;
+        uint subAccountIdOut;
+        address underlyingIn;
+        address underlyingOut;
+        uint amountIn;
+        uint amountOutMinimum;
+        uint deadline;
+        uint24 fee;
+        uint160 sqrtPriceLimitX96;
+    }
+
+Parameters:
+
+* **subAccountIdIn**: subaccount id to trade from
+* **subAccountIdOut**: subaccount id to trade to
+* **underlyingIn**: sold token address
+* **underlyingOut**: bought token address
+* **amountIn**: amount of token to sell
+* **amountOutMinimum**: minimum amount of bought token
+* **deadline**: trade must complete before this timestamp
+* **fee**: uniswap pool fee to use
+* **sqrtPriceLimitX96**: maximum acceptable price
+
+
+
+### SwapUniExactInputParams
+
+Params for Uniswap V3 exact input trade routed through multiple pools
+
+    struct SwapUniExactInputParams {
+        uint subAccountIdIn;
+        uint subAccountIdOut;
+        uint amountIn;
+        uint amountOutMinimum;
+        uint deadline;
+        bytes path; // list of pools to hop - constructed with uni SDK 
+    }
+
+Parameters:
+
+* **subAccountIdIn**: subaccount id to trade from
+* **subAccountIdOut**: subaccount id to trade to
+* **underlyingIn**: sold token address
+* **underlyingOut**: bought token address
+* **amountIn**: amount of token to sell
+* **amountOutMinimum**: minimum amount of bought token
+* **deadline**: trade must complete before this timestamp
+* **path**: list of pools to use for the trade
+
+
+
+### SwapUniExactOutputSingleParams
+
+Params for Uniswap V3 exact output trade on a single pool
+
+    struct SwapUniExactOutputSingleParams {
+        uint subAccountIdIn;
+        uint subAccountIdOut;
+        address underlyingIn;
+        address underlyingOut;
+        uint amountOut;
+        uint amountInMaximum;
+        uint deadline;
+        uint24 fee;
+        uint160 sqrtPriceLimitX96;
+    }
+
+Parameters:
+
+* **subAccountIdIn**: subaccount id to trade from
+* **subAccountIdOut**: subaccount id to trade to
+* **underlyingIn**: sold token address
+* **underlyingOut**: bought token address
+* **amountOut**: amount of token to buy
+* **amountInMaximum**: maximum amount of sold token
+* **deadline**: trade must complete before this timestamp
+* **fee**: uniswap pool fee to use
+* **sqrtPriceLimitX96**: maximum acceptable price
+
+
+
+### SwapUniExactOutputParams
+
+Params for Uniswap V3 exact output trade routed through multiple pools
+
+    struct SwapUniExactOutputParams {
+        uint subAccountIdIn;
+        uint subAccountIdOut;
+        uint amountOut;
+        uint amountInMaximum;
+        uint deadline;
+        bytes path;
+    }
+
+Parameters:
+
+* **subAccountIdIn**: subaccount id to trade from
+* **subAccountIdOut**: subaccount id to trade to
+* **underlyingIn**: sold token address
+* **underlyingOut**: bought token address
+* **amountOut**: amount of token to buy
+* **amountInMaximum**: maximum amount of sold token
+* **deadline**: trade must complete before this timestamp
+* **path**: list of pools to use for the trade
+
+
+
+### Swap1InchParams
+
+Params for 1Inch trade
+
+    struct Swap1InchParams {
+        uint subAccountIdIn;
+        uint subAccountIdOut;
+        address underlyingIn;
+        address underlyingOut;
+        uint amount;
+        uint amountOutMinimum;
+        bytes payload;
+    }
+
+Parameters:
+
+* **subAccountIdIn**: subaccount id to trade from
+* **subAccountIdOut**: subaccount id to trade to
+* **underlyingIn**: sold token address
+* **underlyingOut**: bought token address
+* **amount**: amount of token to sell
+* **amountOutMinimum**: minimum amount of bought token
+* **payload**: call data passed to 1Inch contract
+
+
+
+### swapUniExactInputSingle
+
+Execute Uniswap V3 exact input trade on a single pool
+
+    function swapUniExactInputSingle(SwapUniExactInputSingleParams memory params) external;
+
+Parameters:
+
+* **params**: struct defining trade parameters
+
+
+
+### swapUniExactInput
+
+Execute Uniswap V3 exact input trade routed through multiple pools
+
+    function swapUniExactInput(SwapUniExactInputParams memory params) external;
+
+Parameters:
+
+* **params**: struct defining trade parameters
+
+
+
+### swapUniExactOutputSingle
+
+Execute Uniswap V3 exact output trade on a single pool
+
+    function swapUniExactOutputSingle(SwapUniExactOutputSingleParams memory params) external;
+
+Parameters:
+
+* **params**: struct defining trade parameters
+
+
+
+### swapUniExactOutput
+
+Execute Uniswap V3 exact output trade routed through multiple pools
+
+    function swapUniExactOutput(SwapUniExactOutputParams memory params) external;
+
+Parameters:
+
+* **params**: struct defining trade parameters
+
+
+
+### swapAndRepayUniSingle
+
+Trade on Uniswap V3 single pool and repay debt with bought asset
+
+    function swapAndRepayUniSingle(SwapUniExactOutputSingleParams memory params, uint targetDebt) external;
+
+Parameters:
+
+* **params**: struct defining trade parameters (amountOut is ignored)
+* **targetDebt**: amount of debt that is expected to remain after trade and repay (0 to repay full debt)
+
+
+
+### swapAndRepayUni
+
+Trade on Uniswap V3 through multiple pools pool and repay debt with bought asset
+
+    function swapAndRepayUni(SwapUniExactOutputParams memory params, uint targetDebt) external;
+
+Parameters:
+
+* **params**: struct defining trade parameters (amountOut is ignored)
+* **targetDebt**: amount of debt that is expected to remain after trade and repay (0 to repay full debt)
+
+
+
+### swap1Inch
+
+Execute 1Inch V4 trade
+
+    function swap1Inch(Swap1InchParams memory params) external;
+
+Parameters:
+
+* **params**: struct defining trade parameters
 
 
 
