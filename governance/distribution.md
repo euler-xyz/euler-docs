@@ -14,7 +14,8 @@ The schedule begins with ~3% annual inflation and changes gradually over time, i
 
 <img src="EUL Distribution Inflation.svg"
      alt="EUL Distribution Inflation"
-     style="" />
+     style="clear: all; float: left;" />
+<br clear="all" />
 
 ## Schedule Details
 
