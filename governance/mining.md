@@ -1,10 +1,10 @@
 ---
-description: Learn more about how the decentralisation of governance votes on Euler through the EUL Distribution Programme.
+description: Learn more about how the decentralisation of governance votes on Euler through the EUL Distribution Programme
 ---
 
 # Distribution
 
-**EUL Distribution Schedule**
+**EUL Distribution Inflation**
 
 <object data="https://docs.euler.finance/governance/eul/EUL\ Distribution\ Inflation.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://docs.euler.finance/governance/eul/EUL\ Distribution\ Inflation.pdf">
