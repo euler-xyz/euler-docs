@@ -4,17 +4,25 @@ description: Learn more about the decentralisation of governance on Euler throug
 
 # Distribution
 
-**EUL Distribution Inflation**
+## Implied Inflation
 
-<object data="https://docs.euler.finance/governance/eul/EUL\ Distribution\ Inflation.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://docs.euler.finance/governance/eul/EUL\ Distribution\ Inflation.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://docs.euler.finance/governance/eul/EUL\ Distribution\ Inflation.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+The EUL distribution is higher in the first two years of the protocol’s launch to hand increased vote weight to those individuals who will play the largest role in shaping its growth and development. The implied annual inflation (as a percentage of total supply) is shown in Figure 1.
+
+The schedule begins with ~3% annual inflation and changes gradually over time, increasing to a peak of around ~14% after 1.5 years of launch, before tending towards a steady state of 2.718% by 4 years (see Figure 1).
+
+**Figure 1 | EUL Distribution Inflation**
+
+<img src="EUL Distribution Inflation.svg"
+     alt="EUL Distribution Inflation"
+     style="" />
 
 ## Schedule Details
 
-| Epoch | Block       | Length (blocks) | Length (weeks) | EUL Distribution |
+Governance tokens are distributed to using 100,000 block epoch cycles. Each epoch lasts a little over two weeks. The amount of EUL distributed each epoch has been determined in advance according to a non-linear schedule. The amount distributed is shown in Table 1.
+
+**Table 1 | EUL Distribution Schedule by Epoch.**
+
+| Epoch | Block       | Length (blocks) | Length (weeks) | EUL distribution |
 | ----- | ----------- | --------------- | -------------- | ---------------- |
 | 1     | Coming soon | 100000          | 2.2            | 34,805.05        |
 | 2     | Coming soon | 200000          | 4.4            | 35,609.52        |
