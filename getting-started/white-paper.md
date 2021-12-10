@@ -27,7 +27,7 @@ Consequently, there remains significant unmet demand for lending and borrowing t
 
 Euler comprises a set of smart contracts deployed on the Ethereum blockchain that can be openly accessed by anyone with an internet connection. Euler is managed by holders of a protocol native governance token called Euler Governance Token \(EUL\). Euler is entirely non-custodial; users are responsible for managing their own funds.
 
-As creators of the protocol, the development team at Euler XYZ will provide a convenient and user-friendly front-end to the Euler smart contracts at [https://app.euler.finance](https://app.euler.finance). However, users are free to access the protocol in whatever format they wish, and we encourage developers to create their own front-end access points to the protocol to help decentralise access and increase censorship resistance.
+As creators of the protocol, the Euler development team have produced a convenient and user-friendly front-end to the Euler smart contracts which is hosted at [https://app.euler.finance](https://app.euler.finance). However, users are free to access the protocol in whatever format they wish, and we encourage developers to create their own front-end access points to the protocol to help decentralise access and increase censorship resistance.
 
 ## Permissionless Listing
 
@@ -35,7 +35,7 @@ Euler lets its users determine which assets are listed. To enable this functiona
 
 ### Asset Tiers
 
-Permissionless listing is much riskier on decentralised lending protocols than on other DeFi protocols, like decentralised exchanges, because of the potential for risk to spill over from one pool to another in quick succession. For example, if a collateral asset suddenly decreases in price, and subsequent liquidations fail to repay borrower's debts sufficiently, then the pools of multiple different types of assets can be left with bad debts.
+Permissionless listing is much riskier on decentralised lending protocols than on other DeFi protocols, like decentralised exchanges, because of the potential for risk to spill over from one pool to another in quick succession. For example, if a collateral asset suddenly decreases in price, and subsequent liquidations fail to repay borrowers' debts sufficiently, then the pools of multiple different types of assets can be left with bad debts.
 
 To counter these challenges, Euler uses risk-based asset tiers to protect the protocol and its users:
 
@@ -127,14 +127,14 @@ This approach can be thought of as an extended multi-collateral form of the stab
 
 **Table 1.** Comparison of using an internal stability pool for liquidations rather than using an external source of liquidity.
 
-|  | External | Internal |
-| :--- | :--- | :--- |
-| Liquidity source | Liquidator typically purchases from a DEX or has existing source of funds themselves | Liquidator uses internal liquidity in the stability pool |
-| Transaction costs | Gas costs may be high for DEX trades and cross-contract calls | Gas costs often relatively cheap for internal token transfers |
-| Explicit trade costs | Swap fees | No swap fees |
-| Implicit trade costs | Slippage on illiquid markets | No slippage |
-| Liquidation price | Liquidation expected to take place at price determined by the wider market | Liquidation expected to take place at price determined by the internal price feed |
-| Liquidation timing | Liquidation expected to take place only after the dynamic discount exceeds operating costs and trade costs | Liquidation expected to take place soon after the dynamic discount exceeds the operating cost of liquidation |
+|                      | External                                                                                                   | Internal                                                                                                     |
+| :------------------- | :--------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
+| Liquidity source     | Liquidator typically purchases from a DEX or has existing source of funds themselves                       | Liquidator uses internal liquidity in the stability pool                                                     |
+| Transaction costs    | Gas costs may be high for DEX trades and cross-contract calls                                              | Gas costs often relatively cheap for internal token transfers                                                |
+| Explicit trade costs | Swap fees                                                                                                  | No swap fees                                                                                                 |
+| Implicit trade costs | Slippage on illiquid markets                                                                               | No slippage                                                                                                  |
+| Liquidation price    | Liquidation expected to take place at price determined by the wider market                                 | Liquidation expected to take place at price determined by the internal price feed                            |
+| Liquidation timing   | Liquidation expected to take place only after the dynamic discount exceeds operating costs and trade costs | Liquidation expected to take place soon after the dynamic discount exceeds the operating cost of liquidation |
 
 ### Soft Liquidations
 
@@ -172,17 +172,9 @@ To avoid the problem of having to choose the right parameters for every lending 
 
 Compound interest is accrued on Euler on a per-second basis. This differs from other lending protocols, where interest is typically accrued on a per-block basis. A per-second basis is generally expected to perform more predictably in the long-run even if upgrades to Ethereum lead to changes in the average time between blocks.
 
-## Smart Contracts
-
-TODO: Doug maybe a brief word on any cool architecture stuff?
-
 ### Gas Optimisations
 
 Euler’s smart contracts minimise the amount of storage used, implement a module system to reduce the amount of cross-contract calls, and have had a number of other gas usage optimisations applied. This makes the protocol cheaper on most operations than other lending protocols.
-
-## UI
-
-TODO:
 
 ### Transaction Builder
 
@@ -198,14 +190,12 @@ Euler therefore enables every Ethereum account using the protocol to access up t
 
 Euler will broadly follow the governance model pioneered by Compound [\(10\)](white-paper.md#ref10). The protocol will be managed by holders of a protocol native governance token called Euler Governance Token \(EUL\). EUL tokens will represent voting shares. Holders with enough EUL tokens will be able to make a formal proposal for change on the protocol. Token holders will then be able to vote on the proposal themselves or delegate their vote shares to a third party. Examples of the kinds of decisions token holders might vote on include proposals to alter include:
 
-* The tier of an asset
-* Collateral and borrow factors
-* Price oracle parameters
-* Reactive interest rate model parameters
-* Reserve factors
-* Governance mechanisms themselves
-
-## Summary
+- The tier of an asset
+- Collateral and borrow factors
+- Price oracle parameters
+- Reactive interest rate model parameters
+- Reserve factors
+- Governance mechanisms themselves
 
 ## Acknowledgements
 
@@ -215,7 +205,7 @@ With special thanks to Shaishav Todi, Luke Youngblood, Charlie Noyes, Samczsun, 
 
 1. [https://docs.ethhub.io/built-on-ethereum/open-finance/what-is-open-finance/](https://docs.ethhub.io/built-on-ethereum/open-finance/what-is-open-finance/)
 2. [https://compound.finance/documents/Compound.Whitepaper.pdf](https://compound.finance/documents/Compound.Whitepaper.pdf)
-3. [https://github.com/aave/aave-protocol/blob/master/docs/Aave\_Protocol\_Whitepaper\_v1\_0.pdf](https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf)
+3. [https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf](https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf)
 4. [https://uniswap.org/whitepaper-v3.pdf](https://uniswap.org/whitepaper-v3.pdf)
 5. [https://weth.io/](https://weth.io/)
 6. [https://www.theblockcrypto.com/post/82721/makerdao-issues-warning-after-a-flash-loan-is-used-to-pass-a-governance-vote](https://www.theblockcrypto.com/post/82721/makerdao-issues-warning-after-a-flash-loan-is-used-to-pass-a-governance-vote)
@@ -223,4 +213,3 @@ With special thanks to Shaishav Todi, Luke Youngblood, Charlie Noyes, Samczsun, 
 8. [https://docsend.com/view/bwiczmy](https://docsend.com/view/bwiczmy)
 9. [https://www.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory/](https://www.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory/)
 10. [https://medium.com/compound-finance/compound-governance-5531f524cf68](https://medium.com/compound-finance/compound-governance-5531f524cf68)
-

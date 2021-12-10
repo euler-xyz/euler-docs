@@ -1,5 +1,5 @@
 ---
-description: Learn more about how the decentralisation of governance votes on Euler through the EUL Distribution Programme
+description: Learn more about the decentralisation of governance on Euler through the EUL Distribution Programme
 ---
 
 # Distribution
