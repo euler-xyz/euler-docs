@@ -76,7 +76,7 @@ description: Find out how to lend and borrow crypto assets using the Euler app a
 6. Enter the amount you wish to transfer:
 * Select Max to transfer all the selected asset.
 
-### Transfer DTokens
+#### Transfer DTokens
 1. Ensure that the asset you are interested in is already activated; if it is not you can do this from the Markets table on the homepage (https://app.euler.finance/).
 2. Ensure that you have sufficient debt tokens in the sub-account you are transferring from.
 3. Select the Euler sub-account that you want to transfer from.
