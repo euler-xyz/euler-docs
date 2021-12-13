@@ -768,7 +768,7 @@ Transfer eTokens to another address (from sub-account 0)
 Parameters:
 
 * **to**: Xor with the desired sub-account ID (if applicable)
-* **amount**: In internal book-keeping units (as returned from balanceOf). Use max uint256 for full balance.
+* **amount**: In internal book-keeping units (as returned from balanceOf).
 
 
 
@@ -782,7 +782,7 @@ Parameters:
 
 * **from**: This address must've approved the to address, or be a sub-account of msg.sender
 * **to**: Xor with the desired sub-account ID (if applicable)
-* **amount**: In internal book-keeping units (as returned from balanceOf). Use max uint256 for full balance.
+* **amount**: In internal book-keeping units (as returned from balanceOf).
 
 
 
