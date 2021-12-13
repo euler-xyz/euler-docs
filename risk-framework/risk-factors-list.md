@@ -2,6 +2,7 @@
 
 | Token | collateralFactor | borrowFactor | reserveFactor | borrowIsolated | crossBorrow | InterestRateModel | Uniswap V3 fee tier (%) |
 |-------|------|-------|-------|------|-------|-------|------|
+| ILV | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | WBTC | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | DAI | 0.85| 0.88 | 0.23 | false | true | Default | 0.3 |
 | WETH | 0.88| 0.91 | 0.23 | false | true | Default | Pegged |
