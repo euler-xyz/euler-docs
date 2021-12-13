@@ -1,5 +1,13 @@
 # Risk Factors List
 
+| Token | collateralFactor | borrowFactor | reserveFactor | borrowIsolated | crossBorrow | InterestRateModel | Uniswap V3 fee tier (%) |
+|-------|------|-------|-------|------|-------|-------|------|
+| WBTC | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| DAI | 0.85| 0.88 | 0.23 | false | true | Default | 0.3 |
+| WETH | 0.88| 0.91 | 0.23 | false | true | Default | Pegged |
+| USDC | 0.9| 0.94 | 0.23 | false | true | Default | 0.3 |
+
+
 _Note: the Collateral Factor of the lent asset(s) is multiplied by the Borrow Factor of the borrowed asset(s) to arrive at the final factor._
 
 _For eg if you lend 1000 USD worth of USDC, you can borrow UNI in line with a final factor of 0.648 (0.90 x 0.72). Hence, 648 USD worth of UNI._
