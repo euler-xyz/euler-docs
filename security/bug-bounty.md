@@ -10,4 +10,4 @@ The Euler protocol smart contracts having gone through several audits may contai
 
 To do this, we are in the process of setting up a bug bounty program which will be hosted on [Immunefi](https://immunefi.com/), DeFi's leading bug bounty platform and we will be announcing this once it is launched. 
 
-Please check this page back later for more information or look out for our announcement on all our social media and community pages.
+Please check this page later for more information or look out for our announcement on all our social media and community pages.
