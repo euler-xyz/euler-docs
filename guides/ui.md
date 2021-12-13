@@ -1,4 +1,7 @@
-# UI
+# User Interface Guide
+---
+description: Find out how to lend and borrow crypto assets using the Euler app at https://www.euler.xyz
+---
 
 ## How to connect to metamask
 
@@ -95,4 +98,3 @@
 * Part of opening up ourselves to lending on every market means that we have to protect the system against volatile and potentially malicious tokens. To do this we have categorised assets as isolated, cross and collateral. <- Check
 * If the asset is isolated then you are only able to borrow and lend on one single asset per sub account.
 * To create a new account is free and simple, you just have to press the plus button in the top right navigation and you will automatically add a new subaccount and simulateonously switch to it.
-
