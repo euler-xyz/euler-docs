@@ -35,4 +35,4 @@ _Alternatively, if you lend 500 USD worth of USDC and 500 USD worth of WETH, you
 _Note that if you borrowed less UNI, for eg 500 USD worth, you could still borrow additional UNI or a cross tier asset like LINK against your risk adjusted collateral before hitting the threshold._
 
 
-_Note that the risk factors list will be periodically updated. If a token/market is activated on the DApp but not listed, please check back later for an updated list._
+_Lastly, please note that the risk factors list will be periodically updated. If a token/market is activated on the DApp but not listed, please check back later for an updated list._
