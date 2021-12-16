@@ -1,4 +1,6 @@
-# List of Assets
+# Borrow APY per Asset
+
+_Note that as Euler is in Phase 1 launch stage, all tokens will be subject to the default interest rate model for now._
 
 | Asset   | Base IR | Kink IR | Max IR | Kink% |
 | ------- | ------- | ------- | ------ | ----- |
