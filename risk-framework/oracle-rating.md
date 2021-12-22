@@ -16,21 +16,21 @@ Even more of concern is when the attacker can manipulate the asset pricing to th
 
 There are two main factors that influence the ease of attacking a Uniswap V3 oracle: TVL and concentration of liquidity.&#x20;
 
-This is why we’ve come up with a **rating** that incorporates 3 factors:
+This is why we’ve come up with a rating that incorporates 3 factors:
 
-1. TVL locked in the Uniswap V3 pool:
+### TVL locked in the Uniswap V3 pool:
 
 ![](https://cdn-images-1.medium.com/max/1000/1\*M2xlub1qmc-hqY7ly-jHcw.png)
 
-2\. Slippage occurring on a $1mil XYZ vs ETH buy order on Uniswap:
+### Slippage on a $1mil XYZ vs ETH buy order on Uniswap:
 
 ![](https://cdn-images-1.medium.com/max/1000/1\*hF4E9s0dgqGvTkdBjH-NSQ.png)
 
-3\. Slippage occurring on a $1mil XYZ vs ETH sell order on Uniswap:
+### Slippage on a $1mil XYZ vs ETH sell order on Uniswap:
 
 ![](https://cdn-images-1.medium.com/max/1000/1\*Leu9q4CQu03CHBy5UD\_lgw.png)
 
-The sum of these ratings yields a comprehensive rating that goes from A to F:
+### The sum of these ratings yields a comprehensive rating:
 
 ![](https://cdn-images-1.medium.com/max/1000/1\*ELg4AQ5eo\_5uSotJgjSsJw.png)
 
