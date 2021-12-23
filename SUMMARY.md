@@ -14,11 +14,20 @@
 - [FAQ](guides/faq.md)
 - [Glossary](guides/glossary.md)
 
+## Protocol
+
+<!-- - [Tokens](protocol/tokens.md) -->
+
+- [Addresses](protocol/addresses.md)
+<!-- - [Parameters](protocol/parameters.md) -->
+- [Parameters](protocol/eulers-default-parameters.md)
+
 ## Risk Framework
 
 - [Introduction](risk-framework/introduction.md)
 - [Methodology](risk-framework/methodology.md)
 - [Ranking Assets](risk-framework/ranking-assets.md)
+- [Oracle Rating](risk-framework/oracle-rating.md)
 - [Collateral and Borrow Factor Methodology](risk-framework/collateral-and-borrow-factors.md)
 - [Tier Methodology](risk-framework/tiers.md)
 - [Simulation Environment](risk-framework/simulation-environment.md)
@@ -31,10 +40,6 @@
 - [Introduction](interest-rates/introduction.md)
 - [Borrow APY per Asset](interest-rates/list-of-assets.md)
 
----
-
-- [Euler's Default Parameters](eulers-default-parameters.md)
-
 ## Governance
 
 - [EUL](governance/eul.md)
@@ -43,12 +48,6 @@
 - [Staking](governance/staking.md)
 - [Treasury](governance/treasury.md)
 - [Grants](governance/grants.md)
-
-## Protocol
-
-- [Tokens](protocol/tokens.md)
-- [Addresses](protocol/addresses.md)
-- [Parameters](protocol/parameters.md)
 
 ## Developers
 
