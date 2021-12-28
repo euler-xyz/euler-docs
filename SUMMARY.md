@@ -63,3 +63,7 @@
 - [Bug Bounty](security/bug-bounty.md)
 - [Vault](security/vault.md)
 - [Insurance](security/insurance.md)
+
+## Languages
+
+- [White Paper ENG-CHN](languages/white-paper-ENG-CHN.md)
