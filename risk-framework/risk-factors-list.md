@@ -2,6 +2,7 @@
 
 | Token | collateralFactor | borrowFactor | reserveFactor | borrowIsolated | crossBorrow | InterestRateModel | Uniswap V3 fee tier (%) |
 |-------|------|-------|-------|------|-------|-------|------|
+| FLX | 0| 2.5e-10 | 0.23 | true | false | Default | 0.3 |
 | WOO | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | ENS | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | TCR | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
@@ -11,7 +12,6 @@
 | RENDOGE | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | RAD | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | MPL | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
-| FLX | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | RAI | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | IDLE | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | BRIGHT | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
