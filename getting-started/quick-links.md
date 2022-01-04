@@ -6,20 +6,24 @@ description: Quick access to everything you need to know about Euler
 
 ## Websites
 
-[Website](https://www.euler.finance/#/)
+[Website](https://www.euler.finance/#/)\
 [DApp](https://app.euler.finance/)
 
 ## Social
 
-[Twitter](https://twitter.com/eulerfinance)
-[Discord](https://t.co/yqSIrrJfWi?amp=1)
-[Telegram](https://t.me/eulerfinance_official)
-[Telegram Announcements](https://t.me/eulerfinance)
+[Twitter](https://twitter.com/eulerfinance)\
+[Discord](https://t.co/yqSIrrJfWi?amp=1)\
+[Telegram](https://t.me/eulerfinance_official)\
+[Telegram Announcements](https://t.me/eulerfinance)\
 [LinkedIn](https://www.linkedin.com/company/euler-xyz/)
+
+## Security
+
+[Immunefi Bug Bounty](https://immunefi.com/bounty/euler/)
 
 ## Content
 
-[Blog](https://blog.euler.finance/)
+[Blog](https://blog.euler.finance/)\
 [Newsletter](https://newsletter.euler.finance/)
 
 ## Videos
@@ -28,5 +32,5 @@ description: Quick access to everything you need to know about Euler
 
 ## Dashboards
 
-[DefiLlama](https://defillama.com/protocol/euler)
+[DefiLlama](https://defillama.com/protocol/euler)\
 [DeBank](https://debank.com/projects/euler)
