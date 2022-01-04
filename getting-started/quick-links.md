@@ -20,6 +20,7 @@ description: Quick access to everything you need to know about Euler
 ## Security
 
 [Immunefi Bug Bounty](https://immunefi.com/bounty/euler/)
+[Report A Bug](mailto:security@euler.xyz)
 
 ## Content
 
