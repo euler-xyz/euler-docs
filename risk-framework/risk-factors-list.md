@@ -11,6 +11,7 @@
 | ILV | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | CVX | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | RENDOGE | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| FLOAT | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | RAD | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | MPL | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | RAI | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
