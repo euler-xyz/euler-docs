@@ -20,7 +20,7 @@ Michael Bentley & Doug Hoyte\
 
 Here, we present Euler: a permissionless lending protocol custom-built to help users lend and borrow more Ethereum-based tokens than ever before. The purpose of this white paper is to describe how Euler works at a high level and highlight new features and innovations that help to set it apart from other popular lending protocols, like Compound and Aave.
 
-我们在此向您介绍 Euler:为帮助用户借贷更多基于以太坊的代币而生，去（无）审批化的借贷协议。
+我们在此向您介绍 Euler:为帮助用户借贷更多基于以太坊的代币而生，去（无）审批化的借贷协议。我们在此向您介绍 Euler:一个为了帮助更多用户更方便地借贷各类以太坊代币而出生，去（无）审批化的借贷协议。本白皮书的目的是描述 Eule 如何在高层次上（宏观上）工作，并强调（那些）有助于将 Euler 与其他流行的借贷协议（如 Compound 和 Aave）区分开来的新功能和创新。
 
 ## 导览 - Introduction
 
@@ -34,7 +34,7 @@ Among the first-generation of DeFi lending protocols are Compound [(2)](white-pa
 
 Consequently, there remains significant unmet demand for lending and borrowing the long tail of crypto assets. On the lending side, users want to deposit tokens to earn yield and take leveraged long positions. On the borrowing side, users want to reduce their exposure to volatility and take leveraged short positions. Here, we present Euler: a permissionless lending protocol custom-built with an array of new features to help users lend and borrow more types of tokens than ever before.
 
-从结果上来说，市场上存在着借贷长尾资产的巨大需求。在出借方的角度看，用户希望存入代币来获得收益并且建立带杠杆的多仓。在借款方来看的角度看，用户需要减少波动性（风险）并且建立带杠杆的空仓。在此，我们向各位介绍 Euler:一个去审批化的借贷协议——它拥有多项量身定做的新特性，可以帮助用户借贷更多的代币。
+从结果上来说，市场上存在着借贷长尾资产的巨大需求。在出借方的角度看，用户希望存入代币来获得收益并且建立带杠杆的多仓。在借款方来看的角度看，用户需要减少波动性（风险）并且建立带杠杆的空仓。在此，我们向各位介绍 Euler:一个去审批化的借贷协议——它拥有多项量身定做的新特性，可以帮助用户借贷更多种类的代币。
 
 ## 准备开始 - Getting Started
 
@@ -49,7 +49,7 @@ Euler 包含了一些列部署在以太坊上，任何人都可以上网公开�
 
 Euler lets its users determine which assets are listed. To enable this functionality, Euler uses Uniswap v3 as a core dependency [(4)](white-paper.md#references). Any asset that has a WETH pair on Uniswap v3 can be added as a lending market on Euler by anyone straight away [(5)](white-paper.md#references).
 
-Euler 让用户自行决定哪些资产可以上市。Euler 主要使用了 Uniswap V3 来实现这个功能。任何在 Uniswap V3 有 WETH 交易对的资产都可以被 Euler 直接添加。
+Euler 让用户自行决定哪些资产可以上市。Euler 主要使用了 Uniswap V3 来实现这个功能(4)。任何在 Uniswap V3 有 WETH 交易对的资产都可以被 Euler 直接添加(5)。
 
 ### 资产梯队/分层 - Asset Tiers
 
@@ -198,7 +198,7 @@ To alleviate this issue, Euler enables lenders to support liquidations by provid
 
 This approach can be thought of as an extended multi-collateral form of the stability pool idea pioneered by Liquity protocol [(8)](white-paper.md#references). The main advantage of using a stability pool is that liquidations can be processed immediately using an internal source of liquidity at the point at which a borrower is deemed by the protocol to be in violation, without a liquidator needing to source the assets themselves from a third-party exchange. See Table 1 for some of the benefits of performing liquidations using internal versus external liquidity.
 
-这被认为是多渠道抵押稳定池形式的一种扩展， Liquity protocol (8) 是这方面的先驱。使用稳定池主要的好处是，在借款人因被认为“违约”而面临清算时，可以使用内部流动性来进行清算，清算人则不比向外部/第三方交易所寻求资源。具体的好处请查看表 1：
+这被认为是多渠道抵押稳定池形式的一种扩展， Liquity protocol (8) 是这方面的先驱。使用稳定池主要的好处是，在借款人因被认为“违约”而面临清算时，可以使用内部流动性来进行清算，清算人则不必向外部/第三方交易所寻求资源。具体的好处请查看表 1：
 
 **Table 1.** Comparison of using an internal stability pool for liquidations rather than using an external source of liquidity.
 
@@ -211,7 +211,7 @@ This approach can be thought of as an extended multi-collateral form of the stab
 | Liquidation price    | Liquidation expected to take place at price determined by the wider market                                 | Liquidation expected to take place at price determined by the internal price feed                            |
 | Liquidation timing   | Liquidation expected to take place only after the dynamic discount exceeds operating costs and trade costs | Liquidation expected to take place soon after the dynamic discount exceeds the operating cost of liquidation |
 
-**表 1.**使用内部/外部资源进行清算的比较:
+**Table 表 1.** 使用内部/外部资源进行清算的比较:
 
 | 文字         | 外部                                          | 内部                                         |
 | ------------ | --------------------------------------------- | -------------------------------------------- |

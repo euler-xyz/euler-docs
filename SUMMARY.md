@@ -66,4 +66,4 @@
 
 ## Languages
 
-- [White Paper ENG-CHN](languages/white-paper-ENG-CHN.md)
+- [White Paper (ENG-CHN)](languages/white-paper-ENG-CHN.md)
