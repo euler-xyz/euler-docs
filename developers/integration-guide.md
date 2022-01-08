@@ -98,7 +98,7 @@ contract MyFlashLoanContract {
     function somethingThatNeedsFlashLoan() {
         // Setup whatever data you need
         MyCallbackData memory data;
-        args.whatever = 1234;
+        data.whatever = 1234;
 
         // Disable the liquidity check for "this" and call-back into onDeferredLiquidityCheck:
         IExec(exec).deferLiquidityCheck(address(this), abi.encode(data));
