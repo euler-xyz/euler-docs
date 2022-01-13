@@ -8,8 +8,10 @@
 | ENS | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | TCR | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | 1INCH | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| SHIB | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | ILV | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | CVX | 0| 0.28 | 0.23 | true | false | Default | 1 |
+| UBI | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | RENDOGE | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | FLOAT | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | RAD | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
@@ -17,6 +19,7 @@
 | RAI | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | IDLE | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | BRIGHT | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| EXRD | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | AGEUR | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | ANT | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | BANK | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
