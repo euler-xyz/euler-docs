@@ -102,6 +102,34 @@ description: Find out how to lend and borrow crypto assets using the Euler app a
 
 - Select Max to transfer all the selected asset.
 
+#### Swap
+
+1. Ensure you have sufficient supply tokens in the sub-account you want to swap from.
+2. Select the Euler sub-account that you want to swap from.
+3. Select the Euler sub-account that you want to swap to.
+4. Select the asset you wish to sell.
+5. Select the asset you wish to buy.
+6. Enter the amount you wish to sell:
+
+- Select safe max to sell the amount such that your Euler sub-account will result in having a health score of 1.25.
+- Select liquidation to sell the amount such that your Euler sub-account will end up at health score 1 (right on the edge of a liquidation).
+- Select max to sell all the selected asset.
+
+7. Wait for a quote and click the Swap button.
+
+#### Short
+
+1. Ensure that you have sufficient collateral in the sub-account you are shorting on.
+2. Select the Euler sub-account that you want to short on.
+3. Select the asset you wish to short on.
+5. Select the asset you wish to use as the collateral.
+6. Enter the amount you wish to short:
+
+- Select safe max to short the amount such that your Euler sub-account will result in having a health score of 1.25.
+- Select liquidation to short the amount such that your Euler sub-account will end up at health score 1 (right on the edge of a liquidation).
+
+7. Wait for a quote and click the Short button
+
 ### Toggle Collateral
 
 - Ensure that you have no outstanding borrows on the account.
