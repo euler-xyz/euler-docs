@@ -41,3 +41,23 @@ Which will be displayed on the front-end page of the respective lending pool:
 The overall rating goes from A to F (A meaning good and F meaning avoid at all cost) and should give users an idea of what the oracle risk is. _**Overall, anything below B should probably be avoided!**_
 
 **Keep in mind that this is merely an indicative tool and we bear no responsibility for loss of funds.**
+
+## **How to Improve the Oracle Rating?**
+
+If you are a project that wants to improve its token's oracle rating and be eligible for higher borrow and collateral factors, it's crucial to _**provide full-range liquidity to the XYZ/ETH pair on Uniswap V3.**_&#x20;
+
+By **full-range liquidity** we mean providing liquidity **from the lowest tick all the way to the highest tick** without any gaps in between.&#x20;
+
+A good example is PAX/ETH:
+
+![](<../.gitbook/assets/image (1).png>)
+
+A suboptimal scenario is MIM/ETH, where similar liquidity is uber-concentrated:
+
+![](../.gitbook/assets/image.png)
+
+Check out this video going through different manipulation scenarios for a more in depth explanation:&#x20;
+
+{% embed url="https://www.youtube.com/watch?t=1s&v=snwUwj3QQ7M" %}
+
+Check out Michael's paper on how even small amount of full range liquidity can make an attack incredibly costly: [https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf](https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf)
