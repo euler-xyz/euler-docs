@@ -1,5 +1,7 @@
 ---
-description: Learn more about the decentralisation of governance on Euler through the EUL Distribution Programme
+description: >-
+  Learn more about the decentralisation of governance on Euler through the EUL
+  Distribution Programme
 ---
 
 # Distribution
@@ -8,14 +10,12 @@ description: Learn more about the decentralisation of governance on Euler throug
 
 The EUL distribution is higher in the first two years of the protocol’s launch to hand increased vote weight to those individuals who will play the largest role in shaping its growth and development. The implied annual inflation (as a percentage of total supply) is shown in Figure 1.
 
-The schedule begins with ~3% annual inflation and changes gradually over time, increasing to a peak of around ~14% after 1.5 years of launch, before tending towards a steady state of 2.718% by 4 years (see Figure 1).
+The schedule begins with \~3% annual inflation and changes gradually over time, increasing to a peak of around \~14% after 1.5 years of launch, before tending towards a steady state of 2.718% by 4 years (see Figure 1).
 
 **Figure 1 | EUL Distribution Inflation**
 
-<img src="EUL Distribution Inflation.svg" height="271px"
-     alt="EUL Distribution Inflation"
-     style="float: left;" />
-<br clear="all" />
+![EUL Distribution Inflation](<EUL Distribution Inflation.svg>)\
+
 
 ## Schedule Details
 

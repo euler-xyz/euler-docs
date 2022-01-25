@@ -2,7 +2,7 @@
 description: All of these parameters may be amended by governance
 ---
 
-# Euler's Default Parameters
+# Parameters
 
 ## Borrow Factor
 
@@ -38,7 +38,7 @@ While we eventually plan to move to a reactive interest rate model that will opt
 
 1. Base IR: **0%** (APY when utilisation is 0%)
 2. Kink IR: **10%** (APY when utilisation is exactly Kink%)
-3. Max IR: **300% **(APY when utilisation is 100%)
+3. Max IR: **300%** (APY when utilisation is 100%)
 4. Kink%: **50%** (Percent utilisation where kink occurs)
 
 Given the default assets and their respective utilisation can be extremely volatile, it's important that the lenders aren't constantly exposed to withdrawal risk.

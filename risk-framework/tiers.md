@@ -1,6 +1,6 @@
 # Tier Methodology
 
-Euler assets fall into three different tiers: isolated, cross and collateral tiers. 
+Euler assets fall into three different tiers: isolated, cross and collateral tiers.&#x20;
 
 ### **Isolated Tier**
 
@@ -14,6 +14,4 @@ Governance allows to promote assets to cross and collateral tiers, but also to a
 
 ### Collateral Tier
 
-**Collateral tier** assets are available for ordinary lending and borrowing, cross-borrowing, and they can be used as collateral. For example, a user can deposit collateral assets DAI and USDC, and use them to borrow collateral assets UNI and LINK, all from a single account.   
-
-
+**Collateral tier** assets are available for ordinary lending and borrowing, cross-borrowing, and they can be used as collateral. For example, a user can deposit collateral assets DAI and USDC, and use them to borrow collateral assets UNI and LINK, all from a single account. \
