@@ -4,6 +4,7 @@
 |-------|------|-------|-------|------|-------|-------|------|
 | FLX | 0| 2.5e-10 | 0.23 | true | false | Default | 0.3 |
 | SOS | 0| 0.28 | 0.23 | true | false | Default | 1 |
+| AXS | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | WOO | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | ENS | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | TCR | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
@@ -13,7 +14,7 @@
 | UNI | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | ILV | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | CVX | 0| 0.28 | 0.23 | true | false | Default | 1 |
-| UBI | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| UBI | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | RENDOGE | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | FLOAT | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | RAD | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
