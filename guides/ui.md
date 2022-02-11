@@ -122,13 +122,21 @@ description: Find out how to lend and borrow crypto assets using the Euler app a
 1. Ensure that you have sufficient collateral in the sub-account you are shorting on.
 2. Select the Euler sub-account that you want to short on.
 3. Select the asset you wish to short on.
-5. Select the asset you wish to use as the collateral.
-6. Enter the amount you wish to short:
+4. Select the asset you wish to use as the collateral.
+5. Enter the amount you wish to short:
 
 - Select safe max to short the amount such that your Euler sub-account will result in having a health score of 1.25.
 - Select liquidation to short the amount such that your Euler sub-account will end up at health score 1 (right on the edge of a liquidation).
 
 7. Wait for a quote and click the Short button
+
+#### Wrap
+
+1. Ensure that you have sufficient amount of ETH or WETH in your account.
+2. Click on swap icon to change the mode to wrap-unwrap or unwrap-wrap.
+3. Enter the amount you wish to wrap or unwrap.
+4. Enter ETH value to wrap ETH into WETH.
+5. Enter WETH value to unwrap into ETH.
 
 ### Toggle Collateral
 
