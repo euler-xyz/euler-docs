@@ -1,8 +1,8 @@
 # EUL Token Liquidity Mining
 
-EUL tokens are issued to users of the protocol who borrow assets, according to a time-weighted record of how long they retain those debts. The goal of this is to increase borrowing utilisation of the pools, including for longer-tail assets. This should have the effect of increasing interest rates for depositors in the pool which allow passive investors such as yield aggregators to indirectly benefit from liquidity mining without having to directly participate themselves.
+EUL tokens are issued to users of the protocol who borrow assets, according to a time-weighted record of how long they retain those debts. The goal of this is to increase borrowing utilisation of the pools, including for longer-tail assets. This should have the effect of increasing interest rates for depositors in the pool which allow passive investors such as yield aggregators to indirectly benefit from liquidity mining without having to participate themselves.
 
-Not all assets are eligible for mining rewards, however. A user could activate a custom market of which underlying they control the entire supply, and easily capture all the rewards for that market. Instead, only a subset of markets will receive rewards. This subset is determined by a staking system where participants allocate EUL tokens to the markets they would like to earn rewards on. Each epoch (approximately 2 weeks), the top `N` markets will be selected to earn rewards during the following epoch. The proportion of the total rewards issued for each markets is based on the square root of the number of tokens staked on that market. Both the total EUL distributed and the `N` parameter that controls the number of tokens are controlled by Euler governance.
+Not all assets are eligible for mining rewards, however. A user could activate a custom market of which they control the entire underlying supply, and easily capture all the rewards for that market. Instead, only a subset of markets will receive rewards. This subset is determined by a staking system where participants allocate EUL tokens to the markets they would like to earn rewards on. Each epoch (approximately 2 weeks), the top `N` markets will be selected to earn rewards during the following epoch. The proportion of the total rewards issued for each markets is based on the square root of the number of tokens staked on that market. Both the total EUL distributed and the `N` parameter that controls the number of tokens are controlled by Euler governance.
 
 ## EulDistributor
 
@@ -10,9 +10,9 @@ This contract implements a merkle drop. Governance will seed it with an amount o
 
 The current merkle root as well as the previous merkle root is kept in storage. They are typically (but not necessarily) updated once per epoch. Either root is eligible to claim rewards so as to prevent pending transactions from failing when the root is updated.
 
-The leaves of the merkle tree are 72 bytes long, preventing their preimages from being re-interpreted as interior nodes in the merkle tree.
+The leaves of the merkle tree are 72 bytes long, preventing interior nodes from being reinterpreted as leaves.
 
-In its constructor, this contract approves its sister contract `EulStakes` access to its EUL tokens. This is necessary to implement "auto-staking". This feature allows a user to claim EUL tokens and directly stake them on a market for voting purposes, which allows EOA wallets to do this operation in one transaction, and also to saves gas since it doesn't need to transit the user's wallet.
+In its constructor, this contract approves its sister contract `EulStakes` access to its EUL tokens. This is necessary to implement "auto-staking", a feature which allows a user to claim EUL tokens and directly stake them on a market for voting purposes. This allows EOA wallets to do this operation in one transaction and save gas since it doesn't need to transit the user's wallet.
 
 ## EulStakes
 
