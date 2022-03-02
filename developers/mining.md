@@ -2,7 +2,7 @@
 
 EUL tokens are issued to users of the protocol who borrow assets, according to a time-weighted record of how long they retain those debts. The goal of this is to increase borrowing utilisation of the pools, including for longer-tail assets. This should have the effect of increasing interest rates for depositors in the pool which allow passive investors such as yield aggregators to indirectly benefit from liquidity mining without having to directly participate themselves.
 
-Not all assets are eligible for mining rewards, however. A user could activate a custom token of which they control the entire supply, and easily capture all the rewards for that token. Instead, only a subset of tokens will receive rewards. This subset is determined by a staking system where participants allocate EUL tokens to the tokens they would like to earn rewards on. Each epoch (approximately 2 weeks), the top `N` tokens will be selected to earn rewards during the following epoch. The proportion of the total rewards issued for each token is based on the square root of the number of tokens staked on that token. Both the total EUL distributed and the `N` parameter that controls the number of tokens are controlled by Euler governance.
+Not all assets are eligible for mining rewards, however. A user could activate a custom market of which underlying they control the entire supply, and easily capture all the rewards for that market. Instead, only a subset of markets will receive rewards. This subset is determined by a staking system where participants allocate EUL tokens to the markets they would like to earn rewards on. Each epoch (approximately 2 weeks), the top `N` markets will be selected to earn rewards during the following epoch. The proportion of the total rewards issued for each markets is based on the square root of the number of tokens staked on that market. Both the total EUL distributed and the `N` parameter that controls the number of tokens are controlled by Euler governance.
 
 ## EulDistributor
 
@@ -12,13 +12,13 @@ The current merkle root as well as the previous merkle root is kept in storage. 
 
 The leaves of the merkle tree are 72 bytes long, preventing their preimages from being re-interpreted as interior nodes in the merkle tree.
 
-In its constructor, this contract approves its sister contract `EulStakes` access to its EUL tokens. This is necessary to implement "auto-staking". This feature allows a user to claim EUL tokens and directly stake them on a token for voting purposes, which allows EOA wallets to do this operation in one transaction, and also to saves gas since it doesn't need to transit the user's wallet.
+In its constructor, this contract approves its sister contract `EulStakes` access to its EUL tokens. This is necessary to implement "auto-staking". This feature allows a user to claim EUL tokens and directly stake them on a market for voting purposes, which allows EOA wallets to do this operation in one transaction, and also to saves gas since it doesn't need to transit the user's wallet.
 
 ## EulStakes
 
-This contract maintains the record of how much each user has staked on each token, for the purposes of voting. To save gas, the aggregate amount voted on each token is not available on-chain and must be reconstructed from the contract's logs.
+This contract maintains the record of how much each user has staked on each market, for the purposes of voting. To save gas, the aggregate amount voted on each market is not available on-chain and must be reconstructed from the contract's logs.
 
-Rather than implementing disjoint staking/unstaking functions, the interface is unified into a compound operation that accepts an array of `StakeOp` commands. Each command can either increase or decrease a user's stake on a token. After applying all the operations, the sum of all modifications is checked. If this amount is positive, that amount of EUL tokens must be transferred *in* to the contract. If negative, that amount is transferred *out* to the user's wallet. If zero, then no tokens are transferred. This allows EOAs to easily deposit/withdraw and rebalance stakes in a single operation.
+Rather than implementing disjoint staking/unstaking functions, the interface is unified into a compound operation that accepts an array of `StakeOp` commands. Each command can either increase or decrease a user's stake on a market. After applying all the operations, the sum of all modifications is checked. If this amount is positive, that amount of EUL tokens must be transferred *in* to the contract. If negative, that amount is transferred *out* to the user's wallet. If zero, then no tokens are transferred. This allows EOAs to easily deposit/withdraw and rebalance stakes in a single operation.
 
 In order to implement "auto-staking" described in previous section, `stakeGift` allows somebody to apply a single *deposit* operation on behalf of another "beneficiary" account.
 
