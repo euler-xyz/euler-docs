@@ -149,9 +149,9 @@ Almost all the functions in the Base modules are declared as private or internal
 
 Euler uses Uniswap 3 as its pricing oracle. In order to ensure that prices are not vulnerable to snapshot manipulation, this requires using the time-weighted average price \(TWAP\) of a recent time period.
 
-When a market is activated, the RiskManager calls `increaseObservationCardinalityNext()` on the uniswap pool to increase the size of the uniswap oracle's ring buffer to a minimum size \(by default 10\). It will try to retrieve prices averaged over the per-instrument `twapWindow` parameter. If it cannot be serviced because the oldest value in the ring buffer is too recent, it will use the oldest price available \(which we have ensured is at least 10 blocks old\). In this case, it will pay the gas cost to increase the ring buffer by 1. The intent is to apply this feedback to tokens that have too short a ring-buffer, and dynamically lengthen it until such time as this is no longer the case.
+When a market is activated, the RiskManager calls `increaseObservationCardinalityNext()` on the uniswap pool to increase the size of the uniswap oracle's ring buffer to a minimum size. By default this size is 144, because this is on-average sufficient to satisfy a TWAP window of 30 minutes, assuming 12.5 second block times.
 
-In the event that a price's TWAP period is shorter than `twapWindow`, the RiskManager may apply an extra factor to decrease the token's collateral/borrow factor for the purposes of borrowing/withdrawing \(but not for liquidations\). This is still TBD.
+The Euler contracts will try to retrieve prices averaged over the per-instrument `twapWindow` parameter. If it cannot be serviced because the oldest value in the ring buffer is too recent, it will use the oldest price available \(which we have ensured is at least 144 blocks old\).
 
 Our blog series describes our pricing system in more detail: [https://medium.com/euler-xyz/prices-and-oracles-2da0126a138](https://medium.com/euler-xyz/prices-and-oracles-2da0126a138)
 
