@@ -49,7 +49,7 @@ EUL holders can vote to liberate assets from the isolation-tier and promote them
 
 ## Lending and Borrowing
 
-When lenders deposit into a liquidity to a pool on Euler, they receive interest-bearing ERC20 eTokens in return, which can be redeemed for their share of the underlying assets in the pool at any time, as long as there are unborrowed tokens in the pool (similar to Compound's [cTokens](https://compound.finance/docs/ctokens)). Borrowers take liquidity out of a pool and return it with interest. Thus, the total assets in the pool grows through time. In this way, lenders earn interest on the assets they supply, because their eTokens can be redeemed for an increasing amount of the underlying asset over time.
+When lenders deposit into a liquidity pool on Euler, they receive interest-bearing ERC20 eTokens in return, which can be redeemed for their share of the underlying assets in the pool at any time, as long as there are unborrowed tokens in the pool (similar to Compound's [cTokens](https://compound.finance/docs/ctokens)). Borrowers take liquidity out of a pool and return it with interest. Thus, the total assets in the pool grows through time. In this way, lenders earn interest on the assets they supply, because their eTokens can be redeemed for an increasing amount of the underlying asset over time.
 
 ### Tokenised Debts
 
