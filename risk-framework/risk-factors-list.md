@@ -3,19 +3,23 @@
 | Token | collateralFactor | borrowFactor | reserveFactor | borrowIsolated | crossBorrow | InterestRateModel | Uniswap V3 fee tier (%) |
 |-------|------|-------|-------|------|-------|-------|------|
 | FLX | 0| 2.5e-10 | 0.23 | true | false | Default | 0.3 |
+| oSQTH | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | SOS | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | SNX | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | AXS | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
-| LINK | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| LINK | 0| 0.28 | 0.23 | true | false | Major | 0.3 |
+| MATIC | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | WOO | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | ENS | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | TCR | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | 1INCH | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | RPL | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | SHIB | 0| 0.28 | 0.23 | true | false | Default | 1 |
-| UNI | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| UNI | 0| 0.28 | 0.23 | true | false | Major | 0.3 |
 | ILV | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | CVX | 0| 0.28 | 0.23 | true | false | Default | 1 |
+| MTA | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| REQ | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | UBI | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | RENDOGE | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | FLOAT | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
@@ -26,7 +30,9 @@
 | PERP | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | MIM | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | RAI | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| WILD | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | LRC | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| RBN | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | IDLE | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | BRIGHT | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | EXRD | 0| 0.28 | 0.23 | true | false | Default | 1 |
@@ -34,11 +40,11 @@
 | WNXM | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | ANT | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | BANK | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
-| WBTC | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
-| USDT | 0| 0.5 | 0.23 | true | false | Default | 0.3 |
-| DAI | 0.85| 0.88 | 0.23 | false | true | Default | 0.3 |
+| USDT | 0| 0.5 | 0.23 | true | false | Stable | 0.3 |
+| DAI | 0.85| 0.88 | 0.23 | false | true | Stable | 0.3 |
+| WBTC | 0.88| 0.91 | 0.23 | false | true | 2000503 | 0.3 |
 | WETH | 0.88| 0.91 | 0.23 | false | true | Default | Pegged |
-| USDC | 0.9| 0.94 | 0.23 | false | true | Default | 0.3 |
+| USDC | 0.9| 0.94 | 0.23 | false | true | Stable | 0.3 |
 
 
 
