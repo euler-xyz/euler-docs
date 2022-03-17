@@ -24,7 +24,7 @@ Using the tool, we can calculate the cost of moving the TWAP by 20.89% (minimum 
 
 Then, we take the minimum of these 4 values: $469.63 million and assign a rating to it according to this table:
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (1).png>)
 
 Consequently, UNI/WETH pool safety is deemed **high** as the minimum cost of attack up and down over 1-2 blocks is > $50 million.
 
@@ -36,7 +36,7 @@ _**Keep in mind that this is merely an indicative tool and we bear no responsibi
 
 ## **How to Improve the Oracle Rating?**
 
-If you are a project that wants to improve its token's oracle rating and be eligible for higher borrow and collateral factors, it's crucial to _**provide full-range liquidity to the XYZ/ETH pair on Uniswap V3.**_&#x20;
+If you are a project that wants to improve its token's oracle rating and be eligible for higher borrow and collateral factors, it's crucial to _**provide full-range liquidity to the XYZ/WETH pair on Uniswap V3.**_&#x20;
 
 By **full-range liquidity** we mean providing liquidity **from the lowest tick all the way to the highest tick** without any gaps in between.&#x20;
 
@@ -44,11 +44,15 @@ A good example is [METIS/WETH](https://info.uniswap.org/#/pools/0x1c98562a2fab5a
 
 ![](<../.gitbook/assets/image (3).png>)
 
-A suboptimal scenario is [HEGIC/WETH](https://info.uniswap.org/#/pools/0xf2c3bd0328bdb6106d34a3bd0df0ef744551cc82), where similar liquidity is uber-concentrated:
+A suboptimal scenario is [HEGIC/WETH](https://info.uniswap.org/#/pools/0xf2c3bd0328bdb6106d34a3bd0df0ef744551cc82), where liquidity is uber-concentrated:
 
 ![](<../.gitbook/assets/image (2).png>)
 
-In fact, according to our grading system, minimum cost of attacking METIS is $4 billion, while for HEGIC it's just $4.22.&#x20;
+According to our grading system, minimum cost of attacking METIS is $4 billion, while for HEGIC it's just $4.22.&#x20;
+
+It's important to note **that even a small amount of fully-spread liquidity can significantly increase the cost of attack**. For eg, the[ IDLE/WETH](https://info.uniswap.org/#/pools/0x79e42a2bb91a0f9118e2b5231958c1eaefce390c) pool has a mere $52k TVL, yet the minimum cost of attack is a whopping $115 million:
+
+![T](<../.gitbook/assets/image (4).png>)
 
 ## References
 
