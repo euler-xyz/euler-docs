@@ -8,39 +8,31 @@ Within the context of pricing, an oracle is an on-chain API for price. Different
 
 While we think Uniswap's oracles are best suited for our permissionless lending protocol, depositing into an Euler pool backed by illiquid liquidity pools on Uniswap can lead to devastating results.&#x20;
 
-If the Uniswap V3 oracle of the borrowed asset is manipulated to the upside, the attack could trigger liquidations and sweep borrowers' collateral.&#x20;
+For instance, inflating the value of a collateral allows the attacker to borrow an inflated amount of tokens, leading to bad debt. This is the most systemic and widespread attack on lending protocols.
+
+Alternatively, if the Uniswap V3 oracle of the borrowed asset is manipulated to the upside, the attack could trigger liquidations and sweep borrowers' collateral.&#x20;
 
 Even more of concern is when the attacker can manipulate the asset pricing to the downside. Hypothetically, if the price drops to almost zero, the attacker only needs a small amount of collateral to borrow the entire pool and run away with a hefty profit.&#x20;
 
 ## Euler’s Oracle Risk Grading System
 
-There are two main factors that influence the ease of attacking a Uniswap V3 oracle: TVL and concentration of liquidity.&#x20;
+In order to assess an oracle's safety, our team have developed a tool to calculate the cost of moving a given Uniswap v3 TWAP: [oracle.euler.finance](https://oracle.euler.finance).
 
-This is why we’ve come up with a rating that incorporates 3 factors:
+Using the tool, we can calculate the cost of moving the TWAP by 20.89% (minimum required to break even on highest-quality assets) up and down over 1 and 2 blocks:
 
-### TVL locked in the Uniswap V3 pool:
+![](../.gitbook/assets/uniweth.JPG)
 
-![](https://cdn-images-1.medium.com/max/1000/1\*M2xlub1qmc-hqY7ly-jHcw.png)
+Then, we take the minimum of these 4 values: $469.63 million and assign a rating to it according to this table:
 
-### Slippage on a $1mil XYZ vs ETH buy order on Uniswap:
+![](<../.gitbook/assets/image (4).png>)
 
-![](https://cdn-images-1.medium.com/max/1000/1\*hF4E9s0dgqGvTkdBjH-NSQ.png)
+Consequently, UNI/WETH pool safety is deemed **high** as the minimum cost of attack up and down over 1-2 blocks is > $50 million.
 
-### Slippage on a $1mil XYZ vs ETH sell order on Uniswap:
+This is displayed on the front-end page of the respective lending pool:
 
-![](https://cdn-images-1.medium.com/max/1000/1\*Leu9q4CQu03CHBy5UD\_lgw.png)
+![](<../.gitbook/assets/usdc rating2.png>)
 
-### The sum of these ratings yields a comprehensive rating:
-
-![](https://cdn-images-1.medium.com/max/1000/1\*ELg4AQ5eo\_5uSotJgjSsJw.png)
-
-Which will be displayed on the front-end page of the respective lending pool:
-
-![](https://cdn-images-1.medium.com/max/1000/1\*Y0tqJ3WmEcg3mMJjBAzB8A.jpeg)
-
-The overall rating goes from A to F (A meaning good and F meaning avoid at all cost) and should give users an idea of what the oracle risk is. _**Overall, anything below B should probably be avoided!**_
-
-**Keep in mind that this is merely an indicative tool and we bear no responsibility for loss of funds.**
+_**Keep in mind that this is merely an indicative tool and we bear no responsibility for loss of funds.**_
 
 ## **How to Improve the Oracle Rating?**
 
@@ -48,16 +40,18 @@ If you are a project that wants to improve its token's oracle rating and be elig
 
 By **full-range liquidity** we mean providing liquidity **from the lowest tick all the way to the highest tick** without any gaps in between.&#x20;
 
-A good example is PAX/ETH:
+A good example is [METIS/WETH](https://info.uniswap.org/#/pools/0x1c98562a2fab5af19d8fb3291a36ac3c618835d9):
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (3).png>)
 
-A suboptimal scenario is MIM/ETH, where similar liquidity is uber-concentrated:
+A suboptimal scenario is [HEGIC/WETH](https://info.uniswap.org/#/pools/0xf2c3bd0328bdb6106d34a3bd0df0ef744551cc82), where similar liquidity is uber-concentrated:
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (2).png>)
 
-Check out this video going through different manipulation scenarios for a more in depth explanation:&#x20;
+In fact, according to our grading system, minimum cost of attacking METIS is $4 billion, while for HEGIC it's just $4.22.&#x20;
 
-{% embed url="https://www.youtube.com/watch?t=1s&v=snwUwj3QQ7M" %}
+## References
 
-Check out Michael's paper on how even small amount of full range liquidity can make an attack incredibly costly: [https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf](https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf)
+Check out this blog post written by Darek explaining the oracle tool: [https://blog.euler.finance/uniswap-oracle-attack-simulator-42d18adf65af](https://blog.euler.finance/uniswap-oracle-attack-simulator-42d18adf65af)
+
+Also check out Michael's paper on how even small amount of full range liquidity can make an attack incredibly costly: [https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf](https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf)
