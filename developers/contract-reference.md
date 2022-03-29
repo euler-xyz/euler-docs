@@ -355,7 +355,7 @@ Single item in a batch response
 
 Compute aggregate liquidity for an account
 
-    function liquidity(address account) external returns (LiquidityStatus memory status);
+    function liquidity(address account) external view returns (LiquidityStatus memory status);
 
 Parameters:
 
@@ -369,7 +369,7 @@ Returns:
 
 Compute detailed liquidity for an account, broken down by asset
 
-    function detailedLiquidity(address account) external returns (AssetLiquidity[] memory assets);
+    function detailedLiquidity(address account) external view returns (AssetLiquidity[] memory assets);
 
 Parameters:
 
@@ -383,7 +383,7 @@ Returns:
 
 Retrieve Euler's view of an asset's price
 
-    function getPrice(address underlying) external returns (uint twap, uint twapPeriod);
+    function getPrice(address underlying) external view returns (uint twap, uint twapPeriod);
 
 Parameters:
 
@@ -398,7 +398,7 @@ Returns:
 
 Retrieve Euler's view of an asset's price, as well as the current marginal price on uniswap
 
-    function getPriceFull(address underlying) external returns (uint twap, uint twapPeriod, uint currPrice);
+    function getPriceFull(address underlying) external view returns (uint twap, uint twapPeriod, uint currPrice);
 
 Parameters:
 
@@ -562,6 +562,71 @@ Parameters:
 
 
 
+### usePermit
+
+Apply EIP2612 signed permit on a target token from sender to euler contract
+
+    function usePermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external;
+
+Parameters:
+
+* **token**: Token address
+* **value**: Allowance value
+* **deadline**: Permit expiry timestamp
+* **v**: secp256k1 signature v
+* **r**: secp256k1 signature r
+* **s**: secp256k1 signature s
+
+
+
+### usePermitAllowed
+
+Apply DAI like (allowed) signed permit on a target token from sender to euler contract
+
+    function usePermitAllowed(address token, uint256 nonce, uint256 expiry, bool allowed, uint8 v, bytes32 r, bytes32 s) external;
+
+Parameters:
+
+* **token**: Token address
+* **nonce**: Sender nonce
+* **expiry**: Permit expiry timestamp
+* **allowed**: If true, set unlimited allowance, otherwise set zero allowance
+* **v**: secp256k1 signature v
+* **r**: secp256k1 signature r
+* **s**: secp256k1 signature s
+
+
+
+### usePermitPacked
+
+Apply allowance to tokens expecting the signature packed in a single bytes param
+
+    function usePermitPacked(address token, uint256 value, uint256 deadline, bytes calldata signature) external;
+
+Parameters:
+
+* **token**: Token address
+* **value**: Allowance value
+* **deadline**: Permit expiry timestamp
+* **signature**: secp256k1 signature encoded as rsv
+
+
+
+### doStaticCall
+
+Execute a staticcall to an arbitrary address with an arbitrary payload.
+
+    function doStaticCall(address contractAddress, bytes memory payload) external view returns (bytes memory);
+
+Parameters:
+
+* **contractAddress**: Address of the contract to call
+* **payload**: Encoded call payload
+
+Returns:
+
+* **result**: Encoded return data
+
 
 ## IEulerEToken
 
@@ -656,6 +721,34 @@ Balance of the reserves, in underlying units (increases as interest is earned)
 
 
 
+
+### convertBalanceToUnderlying
+
+Convert an eToken balance to an underlying amount, taking into account current exchange rate
+
+    function convertBalanceToUnderlying(uint balance) external view returns (uint);
+
+Parameters:
+
+* **balance**: eToken balance, in internal book-keeping units (18 decimals)
+
+Returns:
+
+* Amount in underlying units, (same decimals as underlying token)
+
+### convertUnderlyingToBalance
+
+Convert an underlying amount to an eToken balance, taking into account current exchange rate
+
+    function convertUnderlyingToBalance(uint underlyingAmount) external view returns (uint);
+
+Parameters:
+
+* **underlyingAmount**: Amount in underlying units (same decimals as underlying token)
+
+Returns:
+
+* **eToken**: balance, in internal book-keeping units (18 decimals)
 
 ### touch
 
@@ -769,6 +862,19 @@ Parameters:
 
 * **to**: Xor with the desired sub-account ID (if applicable)
 * **amount**: In internal book-keeping units (as returned from balanceOf).
+
+
+
+### transferFromMax
+
+Transfer the full eToken balance of an address to another
+
+    function transferFromMax(address from, address to) external returns (bool);
+
+Parameters:
+
+* **from**: This address must've approved the to address, or be a sub-account of msg.sender
+* **to**: Xor with the desired sub-account ID (if applicable)
 
 
 
@@ -1378,6 +1484,102 @@ Claim any surplus tokens held by the PToken contract. This should only be used b
 Parameters:
 
 * **who**: Beneficiary to be credited for the surplus token amount
+
+
+
+
+## IEulerEulDistributor
+
+
+
+### claim
+
+Claim distributed tokens
+
+    function claim(address account, address token, uint claimable, bytes32[] calldata proof, address stake) external;
+
+Parameters:
+
+* **account**: Address that should receive tokens
+* **token**: Address of token being claimed (ie EUL)
+* **proof**: Merkle proof that validates this claim
+* **stake**: If non-zero, then the address of a token to auto-stake to, instead of claiming
+
+
+
+
+## IEulerEulStakes
+
+
+
+### staked
+
+Retrieve current amount staked
+
+    function staked(address account, address underlying) external view returns (uint);
+
+Parameters:
+
+* **account**: User address
+* **underlying**: Token staked upon
+
+Returns:
+
+* Amount of EUL token staked
+
+### StakeOp
+
+Staking operation item. Positive amount means to increase stake on this underlying, negative to decrease.
+
+    struct StakeOp {
+        address underlying;
+        int amount;
+    }
+
+
+
+
+
+### stake
+
+Modify stake of a series of underlyings. If the sum of all amounts is positive, then this amount of EUL will be transferred in from the sender's wallet. If negative, EUL will be transferred out to the sender's wallet.
+
+    function stake(StakeOp[] memory ops) external;
+
+Parameters:
+
+* **ops**: Array of operations to perform
+
+
+
+### stakeGift
+
+Increase stake on an underlying, and transfer this stake to a beneficiary
+
+    function stakeGift(address beneficiary, address underlying, uint amount) external;
+
+Parameters:
+
+* **beneficiary**: Who is given credit for this staked EUL
+* **underlying**: The underlying token to be staked upon
+* **amount**: How much EUL to stake
+
+
+
+### stakePermit
+
+Applies a permit() signature to EUL and then applies a sequence of staking operations
+
+    function stakePermit(StakeOp[] memory ops, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external;
+
+Parameters:
+
+* **ops**: Array of operations to perform
+* **value**: The value field of the permit message
+* **deadline**: The deadline field of the permit message
+* **v**: Signature field
+* **r**: Signature field
+* **s**: Signature field
 
 
 
