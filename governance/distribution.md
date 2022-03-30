@@ -10,7 +10,7 @@ description: >-
 
 ## Schedule Details
 
-Governance tokens are distributed to using 100,000 block epoch cycles. Each epoch lasts a little over two weeks. The amount of EUL distributed each epoch has been determined according to a non-linear schedule. The amount distributed is shown in Table 1.
+Governance tokens are distributed to using 100,000 block epoch cycles. Each epoch lasts a little over two weeks. The amount of EUL distributed in each epoch has been determined in advance according to a non-linear schedule. The amount distributed is shown in Table 1.
 
 **Table 1 | EUL Distribution Schedule by Epoch.**
 

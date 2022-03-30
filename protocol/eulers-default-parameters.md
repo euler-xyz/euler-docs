@@ -14,9 +14,9 @@ Consequently, when borrowing default assets, you are required to be at minimum 4
 
 Conservative overcollateralisation is intended to prevent bad debts.
 
-For eg, suppose the borrowed asset XYZ sharply skyrockets in price, causing a user's health factor to dip below 1, which means he is subject to liquidation. For the liquidator to be incentivised to liquidate the user, he needs to receive an attractive liquidation bonus in terms of violator's lent assets. If there are simply not enough lent assets to back the bonus, a liquidator will choose not to liquidate. This leads to bad debts.
+For example, suppose the borrowed asset XYZ sharply skyrockets in price, causing a user's health factor to dip below 1, which means he is subject to liquidation. For the liquidator to be incentivised to liquidate the user, he needs to receive an attractive liquidation bonus in terms of the violator's lent assets. If there are simply not enough lent assets to back the bonus, a liquidator will choose not to liquidate. This leads to bad debts.
 
-Alternatively, someone could manipulate XYZ pricing lower to be able to borrow a lot more XYZ than normally possible. Eventually, the price gets arbed and normalises, which leads to the health factor dipping below 1. Since the position is heavily overcollateralised, there is still enough collateral backing the loan and hence liquidators are incentivised to repay the debts.
+Alternatively, someone could manipulate XYZ pricing lower to be able to borrow a lot more XYZ than normally possible. Eventually, the price gets arbitraged and normalises, which leads to the health factor dipping below 1. Since the position is heavily overcollateralised, there is still enough collateral backing the loan, and hence liquidators are incentivised to repay the debts.
 
 For more info on collateral and borrow factors, check out our risk docs: [https://docs.euler.finance/risk-framework/collateral-and-borrow-factors](https://docs.euler.finance/risk-framework/collateral-and-borrow-factors)
 
@@ -53,7 +53,7 @@ The default uniswap3 pool fee-level is the **first existing of 0.3%, 0.05%, 1%**
 
 In order to retrieve asset prices, Euler uses Uniswap3's Time-Weighted Average Price (TWAP) for the pair XYZ/WETH, where XYZ is the asset in question and WETH is the reference asset. Since Uniswap3 supports multiple pools for the same pair which differ by fee-level, which pool to actually query needs to be configured on a per-asset basis.
 
-Although in theory pools should converge to similar prices due to arbitrage, this is not always the case. For example when a pool has insufficient liquidity to be profitable for arbitrage bots. Additionally, the amount of liquidity has an impact on the cost of price manipulation.
+Although in theory pools should converge to similar prices due to arbitrage, this is not always the case. For example, when a pool has insufficient liquidity to be profitable for arbitrage bots. Additionally, the amount of liquidity has an impact on the cost of price manipulation.
 
 In order to be promoted up a tier, a review of the configured pool fee must be conducted. In some cases, extra "full-range liquidity" must be added to increase the cost of price manipulation.
 
@@ -67,13 +67,13 @@ As explained in our [whitepaper](https://docs.euler.finance/getting-started/whit
 
 However, a TWAP that's too long causes a significant lag between last-traded price on Uniswap and the TWAP, leading to risks of bad debt.
 
-For eg, a user deposits ETH as collateral and borrows XYZ token. Imagine that the user's XYZ debt swells to $70 worth and he's subject to liquidation. A liquidator would have to take on some of that XYZ debt and repay it.
+For eg, a user deposits ETH as collateral and borrows XYZ token. Imagine that the user's XYZ debt swells to $70 worth, and he's subject to liquidation. A liquidator would have to take on some of that XYZ debt and repay it.
 
 However, recall that while the debt is priced in TWAP terms, a liquidator would need to buy XYZ on the market to repay that debt. If the market price of his debt is $120, the liquidator would be buying high on the market to receive a smaller amount of TWAP-priced assets of the violator plus liquidation bonus.
 
 Hence, when the TWAP - Market Price spread become significantly large due to the TWAP lag, a liquidation may be uneconomical.
 
-Alternatively, a TWAP that's too short means it becomes a lot cheaper to manipulate asset prices. For eg, one could artificially pump a collateral asset's price to be able to borrow disproportionate amount of XYZ tokens and run away with them.
+Alternatively, a TWAP that's too short means it becomes a lot cheaper to manipulate asset prices. For example, one could artificially pump a collateral asset's price to be able to borrow a disproportionate amount of XYZ tokens and run away with them.
 
 Check out this paper written by Michael Bentley on cost of attacking TWAP pricing: [https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf](https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf)
 
@@ -99,9 +99,9 @@ The **default target health factor is 1.25**.&#x20;
 
 When a user is in violation due to his risk-adjusted liabilities exceeding his risk-adjusted collateral, his health factor dips below 1. However, should a liquidator come in, he may only take enough debt and assets from the violator to shift his health factor to 1.25.
 
-This is feature is called \*\*soft liquidating \*\*someone [as described in the whitepaper](https://docs.euler.finance/getting-started/white-paper#soft-liquidations), and it creates a much better borrowing experience than on other protocols, where 50% of your debt is liquidated.
+This is feature is called soft liquidating [as described in the whitepaper](https://docs.euler.finance/getting-started/white-paper#soft-liquidations), and it creates a much better borrowing experience than on other protocols where 50% of your debt is liquidated.
 
-Nevertheless, had we set the target health factor to 1.00, we would have ran into the risk of making liquidations uneconomic. Namely, the size of debt being repaid and the consequent reward may be too small to incentivise a liquidator.
+Nevertheless, had we set the target health factor to 1.00, we would have run into the risk of making liquidations uneconomic. Namely, the size of debt being repaid, and the consequent reward may be too small to incentivise a liquidator.
 
 Similarly, in a volatile market, being restored to 1.00 means a user may quickly dip below 1.00 again and again, which implied higher gas fees for liquidators and ever-decreasing rewards.
 
@@ -129,7 +129,7 @@ Whenever a liquidator takes on someone's debt, they need to repay 2% more than o
 
 This is intended to do two things:
 
-1. The surcharge accumulates in the reserve pool, hence every liquidation makes the pool healthier. The more volatile an asset, the more often liquidations occur, and the bigger the pool is.
+1. The surcharge accumulates in the reserve pool, and hence every liquidation makes the pool healthier. The more volatile an asset, the more often liquidations occur, and the bigger the pool is.
 2. Discourage malicious self-liquidation strategies. Due to the surcharge, every self-liquidation ends up being net negative.
 
 ### Liquidation Booster Ceiling and Slope
@@ -138,9 +138,9 @@ The **default liquidation booster is ceiling and slope are set at 2.5% and 2x re
 
 To incentivise liquidators to lend, they may be more competitive than their peers should they lend through Euler.
 
-For eg, if a user's health score is at 0.90 and value of risk-adjusted debt is $1000, the implied liquidation discount is 10% (1 - Health Score). However, due to slippage and gas fees, liquidators are only profitable at a 11% discount.
+For example, if a user's health score is at 0.90 and value of risk-adjusted debt is $1,000, the implied liquidation discount is 10% (1 - Health Score). However, due to slippage and gas fees, liquidators are only profitable at an 11% discount.
 
-At the same time, a liquidator that supplied $1000 risk-adjusted collateral can be 2x more competitive than the rest of the market with a ceiling of 2.5%. Should he take on the user's debt at a 10% discount, he will actually receive a more generous 12.5% discount (2.5% booster + 10% liquidation discount).
+At the same time, a liquidator that supplied $1,000 risk-adjusted collateral can be 2x more competitive than the rest of the market with a ceiling of 2.5%. Should he take on the user's debt at a 10% discount, he will actually receive a more generous 12.5% discount (2.5% booster + 10% liquidation discount).
 
 How did we arrive at that number? The **total liquidation discount** is calculated the following way:
 

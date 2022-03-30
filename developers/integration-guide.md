@@ -6,12 +6,12 @@ description: Find out how to start working with the Euler smart contracts
 
 ## Modules
 
-The Euler protocol is a collection of smart contracts, connected together with a module system. Each module handles specific areas of the protocol, so depending on what you want to do, you will interact with several different contract addresses.
+The Euler protocol is a collection of smart contracts connected together with a module system. Each module handles specific areas of the protocol, so depending on what you want to do, you will interact with several different contract addresses.
 
 Some modules are global, for example:
 
 * [markets](integration-guide.md#markets): Activating markets, enter/exiting markets, and querying various market-related information.
-* [exec](integration-guide.md#exec): Batch requests, liquidity deferrals \(ie, flash loans\)
+* [exec](integration-guide.md#exec): Batch requests, liquidity deferrals (ie, flash loans)
 * [liquidation](integration-guide.md#liquidation): Seizure of assets for users in violation
 
 Other modules are asset-specific:

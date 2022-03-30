@@ -48,7 +48,7 @@ A suboptimal scenario is [HEGIC/WETH](https://info.uniswap.org/#/pools/0xf2c3bd0
 
 ![](<../.gitbook/assets/image (2).png>)
 
-According to our grading system, minimum cost of attacking METIS is $4 billion, while for HEGIC it's just $4.22.&#x20;
+Check out this video going through different manipulation scenarios for a more in-depth explanation:&#x20;
 
 It's important to note **that even a small amount of fully-spread liquidity can significantly increase the cost of attack**. For eg, the[ IDLE/WETH](https://info.uniswap.org/#/pools/0x79e42a2bb91a0f9118e2b5231958c1eaefce390c) pool has a mere $52k TVL, yet the minimum cost of attack is a whopping $115 million:
 
@@ -58,4 +58,4 @@ It's important to note **that even a small amount of fully-spread liquidity can 
 
 Check out this blog post written by Darek explaining the oracle tool: [https://blog.euler.finance/uniswap-oracle-attack-simulator-42d18adf65af](https://blog.euler.finance/uniswap-oracle-attack-simulator-42d18adf65af)
 
-Also check out Michael's paper on how even small amount of full range liquidity can make an attack incredibly costly: [https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf](https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf)
+Check out Michael's paper on how even a small amount of full-range liquidity can make an attack incredibly costly: [https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf](https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf)
