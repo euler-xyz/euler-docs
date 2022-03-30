@@ -124,6 +124,6 @@ After epoch 0, the schedule begins with \~3% annual inflation and changes gradua
 
 **Figure 1 | EUL Distribution Inflation**
 
-![](<../.gitbook/assets/Implied Annual Inflation.png>)
+![](<../.gitbook/assets/Implied Annual Inflation (1).png>)
 
 ##
