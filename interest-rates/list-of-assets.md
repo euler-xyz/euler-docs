@@ -3,7 +3,7 @@
 _Note that as Euler is in Phase 1 launch stage, all tokens will be subject to the default interest rate model for now._
 
 | Asset | Base IR % | Kink IR % | Max IR % | Kink % |
-|-------|------|-------|-------|
+|-------|------|-------|-------|-------|
 | WETH | 0.00| 4.00 | 100.00 | 0.80 |
 | USDC | 0.00| 4.00 | 100.00 | 0.80 |
 | DAI | 0.00| 4.00 | 100.00 | 0.80 |
