@@ -48,7 +48,7 @@ A suboptimal scenario is [HEGIC/WETH](https://info.uniswap.org/#/pools/0xf2c3bd0
 
 ![](<../.gitbook/assets/image (2).png>)
 
-Check out this video going through different manipulation scenarios for a more in-depth explanation:&#x20;
+Check out this [video ](https://www.youtube.com/watch?v=snwUwj3QQ7M\&t=1s\&ab\_channel=EulerFinance)going through different manipulation scenarios for a more in-depth explanation:&#x20;
 
 It's important to note **that even a small amount of fully-spread liquidity can significantly increase the cost of attack**. For eg, the[ IDLE/WETH](https://info.uniswap.org/#/pools/0x79e42a2bb91a0f9118e2b5231958c1eaefce390c) pool has a mere $52k TVL, yet the minimum cost of attack is a whopping $115 million:
 
