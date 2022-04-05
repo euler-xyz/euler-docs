@@ -22,7 +22,7 @@ The total supply of EUL is 27,182,818 (in homage to Euler’s number, e). The in
 
 Note that the initial allocations may be subject to change as the ecosystem evolves. As EUL is distributed to users of the protocol they may see fit to vote to alter the EUL Distribution Programme or allocations to the Safety Module, for example.&#x20;
 
-## Inflation and Liquid Supply
+## Inflation & Liquid Supply
 
 The approximate schedule for the inflation of the liquid supply of EUL is shown below.
 
