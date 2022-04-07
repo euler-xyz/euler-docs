@@ -11,7 +11,7 @@ The Euler protocol is a collection of smart contracts connected together with a 
 Some modules are global, for example:
 
 * [markets](https://docs.euler.finance/developers/contract-reference#ieulermarkets): Activating markets, enter/exiting markets, and querying various market-related information.
-* [exec](integration-guide.md#exec): Batch requests, liquidity deferrals (ie, flash loans)
+* [exec](https://docs.euler.finance/developers/contract-reference#ieulerexec): Batch requests, liquidity deferrals (ie, flash loans)
 * [liquidation](https://docs.euler.finance/developers/contract-reference#ieulerliquidation): Seizure of assets for users in violation
 
 Other modules are asset-specific:
