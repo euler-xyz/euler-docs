@@ -662,6 +662,16 @@ Decimals, always normalised to 18.
 
 
 
+### underlyingAsset
+
+Address of underlying asset
+
+    function underlyingAsset() external view returns (address);
+
+
+
+
+
 ### totalSupply
 
 Sum of all balances, in internal book-keeping units (non-increasing)
@@ -919,9 +929,19 @@ Debt token symbol, ie "dDAI"
 
 ### decimals
 
-Decimals, always normalised to 18.
+Decimals of underlying
 
-    function decimals() external pure returns (uint8);
+    function decimals() external view returns (uint8);
+
+
+
+
+
+### underlyingAsset
+
+Address of underlying asset
+
+    function underlyingAsset() external view returns (address);
 
 
 
@@ -939,7 +959,7 @@ Sum of all outstanding debts, in underlying units (increases as interest is accr
 
 ### totalSupplyExact
 
-Sum of all outstanding debts, in underlying units with extra precision (increases as interest is accrued)
+Sum of all outstanding debts, in underlying units normalized to 27 decimals (increases as interest is accrued)
 
     function totalSupplyExact() external view returns (uint);
 
@@ -959,7 +979,7 @@ Debt owed by a particular account, in underlying units
 
 ### balanceOfExact
 
-Debt owed by a particular account, in underlying units with extra precision
+Debt owed by a particular account, in underlying units normalized to 27 decimals
 
     function balanceOfExact(address account) external view returns (uint);
 
@@ -1003,7 +1023,7 @@ Parameters:
 
 * **subAccountId**: 0 for primary, 1-255 for a sub-account
 * **spender**: Trusted address
-* **amount**: Use max uint256 for "infinite" allowance
+* **amount**: In underlying units (use max uint256 for "infinite" allowance)
 
 
 
@@ -1043,7 +1063,7 @@ Parameters:
 
 * **from**: Xor with the desired sub-account ID (if applicable)
 * **to**: This address must've approved the from address, or be a sub-account of msg.sender
-* **amount**: In underlying. Use max uint256 for full balance.
+* **amount**: In underlying units. Use max uint256 for full balance.
 
 
 
