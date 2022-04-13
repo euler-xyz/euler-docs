@@ -2,21 +2,22 @@
 description: Subgraph
 ---
 
-### TODO
-
-- GitBook
-  - Add examples
-  - Change subgraph link for prod once deployed
-- Subgraph
-  - Make sure we are linking to entity when possible instead of referring to id (i.e Liquidation entity => use Account type instead of Bytes for liquidator and violator fields)
-
 # Subgraph
 
 ## Links
 
-- The Graph: https://thegraph.com/hosted-service/subgraph/hboisselle/euler-mainnet-dev?selected=playground
-- API: https://api.thegraph.com/subgraphs/name/hboisselle/euler-mainnet-dev
 - GitHub: https://github.com/euler-xyz/euler-subgraph
+- Querying the subgraph: https://thegraph.com/docs/en/developer/query-the-graph/
+
+### Mainnet
+
+- The Graph: https://thegraph.com/hosted-service/subgraph/euler-xyz/euler-mainnet
+- API: https://api.thegraph.com/subgraphs/name/euler-xyz/euler-mainnet
+
+### Ropsten
+
+- The Graph: https://thegraph.com/hosted-service/subgraph/euler-xyz/euler-ropsten
+- API: https://api.thegraph.com/subgraphs/name/euler-xyz/euler-ropsten
 
 ## About
 
@@ -30,7 +31,7 @@ description: Subgraph
 
 Contains information about all Euler markets, pulled from EulerGeneralView contract.
 
-```
+```GraphQL
 type Asset @entity {
   "asset_address"
   id: ID!
@@ -82,7 +83,13 @@ type Asset @entity {
 }
 ```
 
-```
+Sometimes, gouvernance will manually set asset configuration, it is displayed in the AssetConfig entity. If an asset has a null AssetConfig, it is safe to assume that it was never explicitly set and is isolated.
+
+For further tier information, refer to [Tier Methodology](../risk-framework/tiers.md).
+
+`borrowFactor` and `collateralFactor` can be transformed in a decimal fraction by dividing by `4e9`.
+
+```GraphQL
 type AssetConfig @entity {
   "asset_address"
   id: ID!
@@ -98,7 +105,7 @@ type AssetConfig @entity {
 
 Account that transacts on Euler. Could be a sub-account or a main account.
 
-```
+```GraphQL
 type Account @entity {
   "account_address"
   id: ID!
@@ -111,7 +118,9 @@ type Account @entity {
 
 ```
 
-```
+A Balance represents the current amount of each assets held by an account.
+
+```GraphQL
 type Balance @entity {
   "account_address:underlying"
   id: ID!
@@ -122,7 +131,14 @@ type Balance @entity {
 
 ```
 
-```
+A BalanceChange is a transaction within the platform. `type` can be one of the following values: 
+
+ - borrow
+ - deposit
+ - withdraw
+ - repay
+
+```GraphQL
 type BalanceChange @entity {
   "transaction_hash:event_log_index"
   id: ID!
@@ -141,7 +157,7 @@ type BalanceChange @entity {
 Aggregate of the sub-accounts associated with a wallet.
 TopLevelAccount id corresponds to main sub-account id.
 
-```
+```GraphQL
 type TopLevelAccount @entity {
   "account_address"
   id: ID!
@@ -153,7 +169,7 @@ type TopLevelAccount @entity {
 }
 ```
 
-```
+```GraphQL
 type TopLevelAccountBalance @entity {
   "top_level_account_address:underlying"
   id: ID!
@@ -168,7 +184,7 @@ type TopLevelAccountBalance @entity {
 
 Contains list of all active markets on Euler.
 
-```
+```GraphQL
 type EulerMarketStore @entity {
   id: ID!
   markets: [Asset!]
@@ -179,7 +195,7 @@ type EulerMarketStore @entity {
 
 Aggregated metrics for all markets as a whole.
 
-```
+```GraphQL
 type EulerOverview @entity {
   id: ID!
   reserveBalanceUsd: BigInt!
@@ -197,7 +213,7 @@ Contains all liquidation transactions.
 
 `liquidator` and `violator` fields correspond to account addresses.
 
-```
+```GraphQL
 type Liquidation @entity {
   "transaction_hash:event_log_index"
   id: ID!
@@ -222,7 +238,7 @@ type Liquidation @entity {
 
 GovConvertReserve and GovSetReserveFee contain all on-chain information about governance.
 
-```
+```GraphQL
 type GovConvertReserve @entity {
   "transaction_hash:event_log_index"
   id: ID!
@@ -236,7 +252,7 @@ type GovConvertReserve @entity {
 }
 ```
 
-```
+```GraphQL
 type GovSetReserveFee @entity {
   "transaction_hash:event_log_index"
   id: ID!
@@ -253,7 +269,7 @@ type GovSetReserveFee @entity {
 
 Aggregated metrics of a specific market over hourly, daily and monthly time period.
 
-```
+```GraphQL
 type HourlyAssetStatus @entity {
   "start_of_hour_timestamp:asset_address"
   id: ID!
@@ -272,7 +288,7 @@ type HourlyAssetStatus @entity {
 
 Aggregated metrics for repay transactions over hourly, daily and monthly time period.
 
-```
+```GraphQL
 type HourlyRepay @entity {
   "start_of_hour_timestamp"
   id: ID!
@@ -288,7 +304,7 @@ type HourlyRepay @entity {
 
 Aggregated metrics for deposits over hourly, daily and monthly time period.
 
-```
+```GraphQL
 type HourlyDeposit @entity {
   "start_of_hour_timestamp"
   id: ID!
@@ -304,7 +320,7 @@ type HourlyDeposit @entity {
 
 Aggregated metrics for withdrawals over hourly, daily and monthly time period.
 
-```
+```GraphQL
 type HourlyWithdraw @entity {
   "start_of_hour_timestamp"
   id: ID!
@@ -320,7 +336,7 @@ type HourlyWithdraw @entity {
 
 Aggregated for borrow transactions over hourly, daily and monthly time period.
 
-```
+```GraphQL
 type HourlyBorrow @entity {
   "start_of_hour_timestamp"
   id: ID!
@@ -330,4 +346,106 @@ type HourlyBorrow @entity {
   totalUsdAmount: BigDecimal!
 }
 
+```
+
+## Querying time based aggregates
+
+Every entity that has `hourly`, `daily` or `monthly` in its name can be queried by its ID. The documentation for those is located within each entity. Below lies the rules used to create the required timestamps.
+
+| Parameter                | Value                                                      |
+| :----------------------- | :--------------------------------------------------------- |
+| start_of_hour_timestamp  | unix timestamp at minute 0                                 |
+| start_of_day_timestamp   | unix timestamp at hour 0, minute 0                         |
+| start_of_month_timestamp | unix timestamp at first day of the month, hour 0, minute 0 |
+
+## Examples
+
+### Fetch the 5 biggest markets by total borrowed in USD
+
+```GraphQL
+{
+  assets(first: 5, orderBy: totalBorrowsUsd, orderDirection: desc) {
+    symbol
+    totalBorrows
+    totalBorrowsUsd
+    currPriceUsd
+  }
+}
+```
+
+### Get the current balances of an account
+
+```GraphQL
+{
+  account(id: "0x0000000002732779240fe05873611dc4203dfb71") {
+    balances {
+      amount
+      asset {
+        symbol
+      }
+    }
+  }
+}
+```
+
+### Get the transaction history of an account
+
+```GraphQL
+{
+  account(id: "0x0000000002732779240fe05873611dc4203dfb71") {
+    balanceChanges {
+      type
+      timestamp
+      amount
+      amountUsd
+      asset {
+        symbol
+      }
+    }
+  }
+}
+```
+
+### Get USD amount borrowed on February 10th 2022
+
+First we need to create our ID using the parameters define in the [Querying time based aggregates](#querying-time-based-aggregates) section. In this case, February 10th 2020 = 1644451200.
+
+```GraphQL
+{
+  dailyBorrow(id: "1644451200") {
+  	count
+    totalUsdAmount
+  }
+}
+```
+
+### Last 30 days of deposit amounts
+
+```GraphQL
+{
+  dailyDeposits(first: 30, orderBy: timestamp, orderDirection: desc) {
+    id
+    timestamp
+    totalUsdAmount
+  }
+}
+```
+
+### All transactions between February 1st 2022 and February 3rd 2022 
+
+```GraphQL
+{
+  balanceChanges(orderBy: timestamp, orderDirection: asc, where: {timestamp_gte: 1643673600, timestamp_lte: 1643932799}) {
+    timestamp
+    type
+    amount
+    amountUsd
+  	account {
+      id
+    }
+    asset {
+      symbol
+    }
+  }
+}
 ```

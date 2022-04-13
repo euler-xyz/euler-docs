@@ -52,6 +52,7 @@
 * [Architecture](developers/architecture.md)
 * [Proxy Protocol](developers/proxy-protocol.md)
 * [Numeric Limits](developers/numeric-limits.md)
+* [Subgraph](developers/subgraph.md)
 
 ## Security
 
