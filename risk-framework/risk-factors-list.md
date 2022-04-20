@@ -27,6 +27,7 @@
 | WILD | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | LRC | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | INDEX | 0| 0.28 | 0.23 | true | false | Default | 1 |
+| MKR | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | DPX | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | DPI | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | IDLE | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
