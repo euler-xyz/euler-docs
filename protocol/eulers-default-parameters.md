@@ -149,7 +149,7 @@ TotalLiqDiscount = (1-HealthFactor)*LiqBooster + LiqSurcharge
 $$
 
 $$
-LiqBooster = 2 * \frac{min(RADV, RASAL)}{RADV}
+LiqBooster = 1 + 2 * \frac{min(RADV, RASAL)}{RADV}
 $$
 
 RASAL = Risk-adjusted supplied assets by the liquidator
