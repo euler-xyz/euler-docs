@@ -43,9 +43,7 @@
 * [Epochs](governance/distribution.md)
 * [Gauges](governance/gauges.md)
 * [Voting](governance/voting.md)
-* [Staking](governance/staking.md)
 * [Treasury](governance/treasury.md)
-* [Grants](governance/grants.md)
 
 ## Developers
 
@@ -59,7 +57,7 @@
 
 * [Smart Contract Audits](security/smart-contract-audits.md)
 * [Bug Bounty](security/bug-bounty.md)
-* [Vault](security/vault.md)
+* [Safety Module](security/vault.md)
 * [Insurance](security/insurance.md)
 
 ## Languages

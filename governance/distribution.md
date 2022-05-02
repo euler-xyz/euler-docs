@@ -14,7 +14,7 @@ Epoch 0 covers the 3 month period from 26/11/2021 to 21/03/2022 during which Eul
 
 ### Implementation&#x20;
 
-**Lenders** and **borrowers** using the protocol during this period were allocated a share of 1% of the total supply of EUL as a one-off retroactive airdrop.&#x20;
+**Lenders** and **borrowers** using the protocol during this period were allocated a share of 1% of the total supply of EUL as a one-off retroactive distribution.&#x20;
 
 The distribution took place as follows:
 
@@ -34,7 +34,7 @@ Epochs 1-96 cover the 4 year period from 21/03/2022 to 11/03/2026 during which E
 
 ### Implementation&#x20;
 
-**Borrowers** using the protocol during this period will be allocated a share of 25% of the total supply of EUL via a rolling merkle drop. The amount distributed each epoch will follow a non-linear schedule (see below).
+**Borrowers** using the protocol during this period will be allocated a share of 25% of the total supply of EUL via a rolling merkle distribution. The amount distributed each epoch will follow a non-linear schedule (see below).
 
 Within each market, borrowers will receive an EUL distribution proportional to their time-weighted borrowing on that market. The amount of EUL allocated to each market every epoch will be determined by EUL token holders (see [Gauges](https://app.gitbook.com/o/-MJloiaY-UMc3SjaxzA6/s/-MJlqpE4apPrZurt7BNr/\~/changes/8TZLu5aIjb41difegSzr/governance/gauges)). &#x20;
 

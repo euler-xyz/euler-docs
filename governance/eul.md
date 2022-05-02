@@ -6,7 +6,7 @@ description: Learn more about the protocol native governance token of Euler
 
 ## Introduction&#x20;
 
-Euler will be managed in the long term by a decentralised community. The community are holders of a protocol native governance token called EUL. Tokens can be used to propose upgrades to the protocol or vote on the proposals of others. EUL tokens represent voting shares. Community members can vote on proposals directly or delegate their votes to a third party.
+Euler will be managed in the long term by a decentralised community through on-chain governance on the Ethereum network. The community are holders of a protocol-native governance token called EUL. Tokens can be used to propose upgrades to the protocol or vote on the proposals of others. EUL tokens represent voting powers over the protocol.&#x20;
 
 ## Allocations & Vesting
 
@@ -16,9 +16,9 @@ The total supply of EUL is 27,182,818 (in homage to Euler’s number, e). The in
 * 1% (271,828 EUL) to all users who deposited or borrowed assets on Euler during its soft launch (see Distribution).
 * 2.5% (679,570 EUL) to users staking EUL to a safety staking pool over 4 years (see Safety Module).&#x20;
 * 20.54% (5,585,389 EUL) to an ecosystem treasury, unlocked (see Treasury).&#x20;
-* 26.2% (7,122,577 EUL) to past investors, with an 18 month linear vesting schedule.&#x20;
-* 20.75% (5,640,434 EUL) to employees, advisors and consultants of Euler XYZ or the Euler Foundation, with a 48 month linear vesting schedule.&#x20;
-* 4% (1,087,312 EUL) to future employees, advisors & consultants of Euler XYZ or the Euler Foundation, with a non-linear 48 month vesting schedule.
+* 26.2% (7,122,577 EUL) to investors in Euler XYZ Ltd, with an 18 month linear vesting schedule.&#x20;
+* 20.75% (5,640,434 EUL) to employees, advisors and consultants of Euler XYZ Ltd or the Euler Foundation, with a 48 month linear vesting schedule.&#x20;
+* 4% (1,087,312 EUL) to future employees, advisors & consultants of Euler XYZ Ltd or the Euler Foundation, with a non-linear 48 month vesting schedule.
 
 Here is the breakdown:
 
