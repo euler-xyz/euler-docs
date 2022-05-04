@@ -5,6 +5,7 @@
 | FLX | 0| 2.5e-10 | 0.23 | true | false | Default | 0.3 |
 | SOS | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | SNX | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| OGN | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | WOO | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | TCR | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | RPL | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
@@ -13,6 +14,7 @@
 | REQ | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | TRDL | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | MVI | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| WSTETH | 0| 0.28 | 0.23 | true | false | Default | 0.05 |
 | UBI | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | RENDOGE | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | FLOAT | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
@@ -43,7 +45,7 @@
 | CVX | 0| 0.5 | 0.23 | false | true | Major | 1 |
 | PERP | 0| 0.5 | 0.23 | false | true | Major | 0.3 |
 | RBN | 0| 0.5 | 0.23 | false | true | Major | 1 |
-| AGEUR | 0| 0.5 | 0.23 | false | true | Stable | 0.3 |
+| AGEUR | 0| 0.5 | 0.23 | false | true | Stable | 0.05 |
 | oSQTH | 0| 0.56 | 0.23 | false | true | Major | 0.3 |
 | AXS | 0| 0.66 | 0.23 | false | true | Major | 0.3 |
 | MATIC | 0| 0.66 | 0.23 | false | true | Major | 0.3 |
