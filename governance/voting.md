@@ -25,7 +25,7 @@ Examples of the kinds of decisions token holders might vote on include proposals
 * Price oracle parameters
 * Reactive interest rate model parameters
 * Reserve factors
-* Governance configurations themselves, e.g., voting duraton, quorum, proposal threshold, etc.
+* Governance configurations themselves, i.e., voting period, voting delay and proposal threshold via a newly released [GovernorSettings.sol base contract](https://github.com/OpenZeppelin/openzeppelin-contracts/pull/2904) in v4.6.0 of the OpenZeppelin Smart Contracts.
 
 When a governance proposal is created, it enters a 2 day review period, after which voting weights are recorded and voting begins. Voting lasts for 7 days; once the voting period is over, if quorum was reached (enough voting power participated) and the majority voted in favour, the proposal is considered successful and can proceed to be executed 2 days (48 hours) later.
 
