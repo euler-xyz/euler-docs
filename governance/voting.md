@@ -10,7 +10,9 @@ This ensures the protocol can quickly adapt to evolving market conditions, as we
 
 ## General Governance Process
 
-[General Governance Process](https://forum.euler.finance/t/welcome-to-the-euler-governance-forum/7)
+The [General Governance Process](https://forum.euler.finance/t/welcome-to-the-euler-governance-forum/7) is documented on the Governance Forum.
+
+Governance Forum → Snapshot → eIP (Euler Improvement Proposal) → Create Proposal → Voting and Execution
 
 
 ## Overview
