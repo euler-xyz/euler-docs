@@ -66,11 +66,6 @@ type Asset @entity {
   pricingType: Int!
   pricingParameters: BigInt!
   pricingForwarded: Bytes!
-  underlyingBalance: BigInt!
-  eulerAllowance: BigInt!
-  eTokenBalance: BigInt!
-  eTokenBalanceUnderlying: BigInt!
-  dTokenBalance: BigInt!
   collateralValue: BigInt!
   liabilityValue: BigInt!
   numBorrows: BigInt!
@@ -115,7 +110,6 @@ type Account @entity {
   balanceChanges: [BalanceChange!]
   balanceChangesCount: Int!
 }
-
 ```
 
 A Balance represents the current amount of each assets held by an account.
@@ -128,7 +122,6 @@ type Balance @entity {
   amount: BigInt!
   asset: Asset!
 }
-
 ```
 
 A BalanceChange is a transaction within the platform. `type` can be one of the following values: 
@@ -177,7 +170,6 @@ type TopLevelAccountBalance @entity {
   amount: BigInt!
   asset: Asset!
 }
-
 ```
 
 ### EulerMarketStore
@@ -231,7 +223,6 @@ type Liquidation @entity {
   discount: BigInt!
   baseDiscount: BigInt!
 }
-
 ```
 
 ### Governance
@@ -262,7 +253,6 @@ type GovSetReserveFee @entity {
   reserveFee: Int!
   asset: Asset!
 }
-
 ```
 
 ### Hourly/Daily/MonthlyAssetStatus
@@ -297,7 +287,6 @@ type HourlyRepay @entity {
   totalAmount: BigInt!
   totalUsdAmount: BigDecimal!
 }
-
 ```
 
 ### Hourly/Daily/MonthlyDeposit
@@ -313,7 +302,6 @@ type HourlyDeposit @entity {
   totalAmount: BigInt!
   totalUsdAmount: BigDecimal!
 }
-
 ```
 
 ### Hourly/Daily/MonthlyWithdraw
@@ -329,7 +317,6 @@ type HourlyWithdraw @entity {
   totalAmount: BigInt!
   totalUsdAmount: BigDecimal!
 }
-
 ```
 
 ### Hourly/Daily/MonthlyBorrow
@@ -345,7 +332,108 @@ type HourlyBorrow @entity {
   totalAmount: BigInt!
   totalUsdAmount: BigDecimal!
 }
+```
 
+## Querying time based aggregates
+
+Every entity that has `hourly`, `daily` or `monthly` in its name can be queried by its ID. The documentation for those is located within each entity. Below lies the rules used to create the required timestamps.
+
+| Parameter                | Value                                                      |
+| :----------------------- | :--------------------------------------------------------- |
+| start_of_hour_timestamp  | unix timestamp at minute 0                                 |
+| start_of_day_timestamp   | unix timestamp at hour 0, minute 0                         |
+| start_of_month_timestamp | unix timestamp at first day of the month, hour 0, minute 0 |
+
+## Examples
+
+### Fetch the 5 biggest markets by total borrowed in USD
+
+```GraphQL
+{
+  assets(first: 5, orderBy: totalBorrowsUsd, orderDirection: desc) {
+    symbol
+    totalBorrows
+    totalBorrowsUsd
+    currPriceUsd
+  }
+}
+```
+
+### Get the current balances of an account
+
+```GraphQL
+{
+  account(id: "0x0000000002732779240fe05873611dc4203dfb71") {
+    balances {
+      amount
+      asset {
+        symbol
+      }
+    }
+  }
+}
+```
+
+### Get the transaction history of an account
+
+```GraphQL
+{
+  account(id: "0x0000000002732779240fe05873611dc4203dfb71") {
+    balanceChanges {
+      type
+      timestamp
+      amount
+      amountUsd
+      asset {
+        symbol
+      }
+    }
+  }
+}
+```
+
+### Get USD amount borrowed on February 10th 2022
+
+First we need to create our ID using the parameters define in the [Querying time based aggregates](#querying-time-based-aggregates) section. In this case, February 10th 2020 = 1644451200.
+
+```GraphQL
+{
+  dailyBorrow(id: "1644451200") {
+  	count
+    totalUsdAmount
+  }
+}
+```
+
+### Last 30 days of deposit amounts
+
+```GraphQL
+{
+  dailyDeposits(first: 30, orderBy: timestamp, orderDirection: desc) {
+    id
+    timestamp
+    totalUsdAmount
+  }
+}
+```
+
+### All transactions between February 1st 2022 and February 3rd 2022 
+
+```GraphQL
+{
+  balanceChanges(orderBy: timestamp, orderDirection: asc, where: {timestamp_gte: 1643673600, timestamp_lte: 1643932799}) {
+    timestamp
+    type
+    amount
+    amountUsd
+  	account {
+      id
+    }
+    asset {
+      symbol
+    }
+  }
+}
 ```
 
 ## Querying time based aggregates
