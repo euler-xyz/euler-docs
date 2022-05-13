@@ -21,7 +21,9 @@ The [Euler protocol](https://www.euler.finance/) is governed and upgraded by EUL
 
 Euler will be managed by holders of a protocol native governance token called Euler Token (EUL). EUL tokens represent voting shares. A holder can vote on a governance proposal themselves or delegate their votes to a third party. Addresses that own or have been delegated at least 0.5% of the total EUL supply can create governance proposals.
 
-Examples of the kinds of decisions token holders might vote on include proposals to alter include:
+Specifically, the smart contract functions capable of modifying the protocol and controlled via governance have been implemented in the [governance module](https://github.com/euler-xyz/euler-contracts/blob/457e5302fd506d5b578776e57188661e047fda81/contracts/modules/Governance.sol) of the protocol.
+
+Examples of the kinds of decisions token holders might vote on include proposals to modify:
 * The tier of an asset
 * Collateral and borrow factors
 * Price oracle parameters
