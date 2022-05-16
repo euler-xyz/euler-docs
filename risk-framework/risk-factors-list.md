@@ -2,6 +2,7 @@
 
 | Token | collateralFactor | borrowFactor | reserveFactor | borrowIsolated | crossBorrow | InterestRateModel | Uniswap V3 fee tier (%) |
 |-------|------|-------|-------|------|-------|-------|------|
+| WSTETH | 0.85| 0.89 | 0.1 | false | true | Mega | 0.05 |
 | FLX | 0| 2.5e-10 | 0.23 | true | false | Default | 0.3 |
 | SOS | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | SNX | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
@@ -14,7 +15,6 @@
 | REQ | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | TRDL | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | MVI | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
-| WSTETH | 0| 0.28 | 0.23 | true | false | Default | 0.05 |
 | UBI | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | RENDOGE | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | FLOAT | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
@@ -26,10 +26,10 @@
 | MPL | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | MIM | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | RAI | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| GTC | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | WILD | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | LRC | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | INDEX | 0| 0.28 | 0.23 | true | false | Default | 1 |
-| MKR | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | DPX | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | DPI | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | IDLE | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
@@ -39,6 +39,7 @@
 | WNXM | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | ANT | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | BANK | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| BABL | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | USDT | 0| 0.5 | 0.23 | false | true | Major | 0.3 |
 | 1INCH | 0| 0.5 | 0.23 | true | false | Major | 0.3 |
 | SHIB | 0| 0.5 | 0.23 | false | true | Major | 1 |
@@ -50,6 +51,7 @@
 | AXS | 0| 0.66 | 0.23 | false | true | Major | 0.3 |
 | MATIC | 0| 0.66 | 0.23 | false | true | Major | 0.3 |
 | ENS | 0| 0.66 | 0.23 | false | true | Major | 0.3 |
+| MKR | 0| 0.66 | 0.23 | false | true | Major | 0.3 |
 | LINK | 0.66| 0.76 | 0.23 | false | true | Major | 0.3 |
 | UNI | 0.66| 0.76 | 0.23 | false | true | Major | 0.3 |
 | DAI | 0.85| 0.88 | 0.23 | false | true | Stable | 0.3 |
