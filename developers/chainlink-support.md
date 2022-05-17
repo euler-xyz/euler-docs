@@ -38,3 +38,54 @@ Moreover, natspec documentation was modified to reflect the addition of a new pr
 `RiskManager.sol` contains the most significant changes to the system. The `getPriceInternal()` function was updated to support `PRICINGTYPE__CHAINLINK`. It calls a new function `callChainlinkLatestAnswer()` that calls the Chainlink oracle's `latestAnswer()` function to get the current price. `callChainlinkLatestAnswer()` fetches the price and implements the verification of staleness in the same way Aave does. Although it calls the `latestAnswer()`, which is marked as deprecated, the answer is validated and if less than or equal to 0 the transaction will either be reverted with `e/unable-to-get-the-price` error or Uniswap price will be fetched if pool fee previously configured. The highest supported price in the Euler system is `1e36` hence the returned price is limited if greater.
 
 Important to note is the fact that up to now the system has been relying on TWAP hence `twap` and `twapPeriod` were returned by `getPriceInternal()`. Now, because the price reported by Chainlink is the current price, the returned `twap` represents the current price and `twapPeriod` period returned is always 0. Also for `PRICINGTYPE__CHAINLINK`, `getPriceFull()` returns current Chainlink price both for `twap` and `currPrice`.
+
+- Aave defending use of `latestAnswer()` function: https://github.com/aave/aave-v3-core/issues/292
+- Open Zeppelin guideline: https://blog.openzeppelin.com/secure-smart-contract-guidelines-the-dangers-of-price-oracles/
+
+
+## Additional considerations
+
+In the light of the recent incident of minimum value circuit breaker triggered for Chainlink LUNA/USD price feed, we are hesitant whether the way Aave handles the Chainlink prices is best. Other approaches that can be explored. None of them, however, guarantees quick detection of price staleness.
+
+The incident references:
+- https://twitter.com/Hacxyk/status/1524891329141960704?t=GV9g9OX10ET6VUra4YvqYw&s=19
+- https://ambcrypto.com/chainlink-how-a-price-discrepancy-resulted-in-millions-lost-from-defi-protocols/
+
+### Check against min/max value instead of 0
+
+The fetched price can be checked against the min/max price that can be taken from the Chainlink aggregator contract for a given price feed. As can be read in the incident descriptions, the triggered circuit breaker resulted in serving the price close to min value rather than 0. Therefore, it would not be possible to detect oracle failure.
+
+Pros:
+- greater chance to detect the failure
+- transaction cost does not increase significantly
+
+Cons:
+- necessity to store min/max values in the contract storage
+- min/max values are stored in the aggregator contract and can change when the aggregator contract is replaced/updated
+- comparison against min/max value is not enough, the comparison would have to be against (min + delta)/(max - delta) where delta would have to be an arbitrarily chosen parameter. This is because min and max values are improbable to occur (LUNA/USD price stopped at 0.107 instead 0.1 which was the min value)
+
+### Addtional `latestTimestamp()` call
+
+`latestTimestamp()` can be called in addition to the `latestAnswer()`. The timestamp of the latest answer can be compared against given oracle heartbeat information from the Chainlink website. Such comparison can indicate whether the answer has been updated within the heartbeat period and detect oracle staleness if not.
+
+Pros:
+- greater chance to detect the failure
+- transaction cost increases but not significantly
+
+Cons:
+- necessity to store heartbeat in the contract storage
+- a long time to detect failure as most oracles have 24h heartbeat
+
+### Use of recommended `latestRoundData()`
+
+`latestRoundData()` returns not only the answer but also other parameters that increase the chance to detect failure. A comparison of returned `roundId` and `answeredInRound` is believed to earlier detect whether the answer is stale as `roundId` is supposed to get larger as the time moves forward. Moreover, the `updatedAt` which is the timestamp of the latest answer can be compared against the given oracle heartbeat, as described above.
+
+Pros:
+- greater chance to detect the failure
+- transaction cost increases significantly
+
+Cons:
+- necessity to store heartbeat in the contract storage
+- no guarantee that the failure will be detected quickly. When looked into ubiquitous `AccessControlledOffchainAggregator` contract type of Chainlink ([also used for mentioned LUNA/USD price feed](https://bscscan.com/address/0xec72d46011d67a6ac4fa7d3f476fa2049dc807ee#code)) one can notice that `roundId` and `answeredInRound` returned from `latestRoundData()` are duplicates. It gives a false sense of security and makes the comparison useless
+
+To sum up, it seems like currently there's no way to robustly assume Chainlink price feed failure without comparison against other price sources.
