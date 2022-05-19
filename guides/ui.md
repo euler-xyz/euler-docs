@@ -1,10 +1,10 @@
 ---
 description: >-
-  Find out how to lend and borrow crypto assets using the Euler app at
+  Find out how to use the Euler Protocol through the interface at
   https://app.euler.finance/
 ---
 
-# User Interface Guide
+# How To
 
 ## How to connect to metamask
 

@@ -10,7 +10,7 @@
 
 ## Guides
 
-* [User Interface Guide](guides/ui.md)
+* [How To](guides/ui.md)
 * [FAQ](guides/faq.md)
 * [Glossary](guides/glossary.md)
 
@@ -40,10 +40,12 @@
 ## Governance
 
 * [EUL](governance/eul.md)
-* [Epochs](governance/distribution.md)
-* [Gauges](governance/gauges.md)
+* [Distribution](governance/distribution/README.md)
+  * [Epochs](governance/distribution/distribution.md)
+  * [Gauges](governance/distribution/gauges.md)
 * [Voting](governance/voting.md)
 * [Treasury](governance/treasury.md)
+* [Grants](governance/grants.md)
 
 ## Developers
 

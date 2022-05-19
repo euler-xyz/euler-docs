@@ -16,7 +16,7 @@ Even more of concern is when the attacker can manipulate the asset pricing to th
 
 ## Euler’s Oracle Risk Grading System
 
-In order to assess an oracle's safety, our team have developed a tool to calculate the cost of moving a given Uniswap v3 TWAP: [oracle.euler.finance](https://oracle.euler.finance).
+In order to assess an oracle's safety, our team have developed a tool to calculate the cost of moving a given Uniswap v3 TWAP: [oracle.euler.finance](https://oracle.euler.finance/).
 
 Using the tool, we can calculate the cost of moving the TWAP by 20.89% (minimum required to break even on highest-quality assets) up and down over 1 and 2 blocks:
 
