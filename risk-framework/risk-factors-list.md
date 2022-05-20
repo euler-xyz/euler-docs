@@ -6,7 +6,7 @@ description: Find information about the risk factors for each asset on Euler
 
 ## Introduction&#x20;
 
-This page outlines the main risk parameters on Euler, as determined by [governance](../../governance/governance.md). All parameters are displayed in Table 1 below.
+This page outlines the main risk parameters on Euler, as determined by [governance](../governance/governance/). All parameters are displayed in Table 1 below.
 
 **Table 1** | Collateral, borrow, and reserve factor parameter settings on Euler_._
 

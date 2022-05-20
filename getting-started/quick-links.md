@@ -9,17 +9,22 @@ description: Quick access to everything you need to know about Euler
 [Website](https://www.euler.finance/#/)\
 [DApp](https://app.euler.finance/)
 
+## EUL&#x20;
+
+[Etherscan](https://etherscan.io/token/0xd9fcd98c322942075a5c3860693e9f4f03aae07b)\
+[CoinMarketCap](https://coinmarketcap.com/currencies/euler-finance/)
+
 ## Social
 
 [Twitter](https://twitter.com/eulerfinance)\
 [Discord](https://t.co/yqSIrrJfWi?amp=1)\
-[Telegram](https://t.me/eulerfinance_official)\
+[Telegram](https://t.me/eulerfinance\_official)\
 [Telegram Announcements](https://t.me/eulerfinance)\
 [LinkedIn](https://www.linkedin.com/company/euler-xyz/)
 
 ## Security
 
-[Immunefi Bug Bounty](https://immunefi.com/bounty/euler/)
+[Immunefi Bug Bounty](https://immunefi.com/bounty/euler/) \
 [Report A Bug](mailto:security@euler.xyz)
 
 ## Content

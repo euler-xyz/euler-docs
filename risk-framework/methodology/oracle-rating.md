@@ -20,17 +20,17 @@ In order to assess an oracle's safety, our team have developed a tool to calcula
 
 Using the tool, we can calculate the cost of moving the TWAP by 20.89% (minimum required to break even on highest-quality assets) up and down over 1 and 2 blocks:
 
-![](../.gitbook/assets/uniweth.JPG)
+![](../../.gitbook/assets/uniweth.JPG)
 
 Then, we take the minimum of these 4 values: $469.63 million and assign a rating to it according to this table:
 
-![](<../.gitbook/assets/image (4) (1).png>)
+![](<../../.gitbook/assets/image (4) (1).png>)
 
 Consequently, UNI/WETH pool safety is deemed **high** as the minimum cost of attack up and down over 1-2 blocks is > $50 million.
 
 This is displayed on the front-end page of the respective lending pool:
 
-![](<../.gitbook/assets/usdc rating2.png>)
+![](<../../.gitbook/assets/usdc rating2.png>)
 
 _**Keep in mind that this is merely an indicative tool and we bear no responsibility for loss of funds.**_
 
@@ -42,17 +42,17 @@ By **full-range liquidity** we mean providing liquidity **from the lowest tick a
 
 A good example is [METIS/WETH](https://info.uniswap.org/#/pools/0x1c98562a2fab5af19d8fb3291a36ac3c618835d9):
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (3).png>)
 
 A suboptimal scenario is [HEGIC/WETH](https://info.uniswap.org/#/pools/0xf2c3bd0328bdb6106d34a3bd0df0ef744551cc82), where liquidity is uber-concentrated:
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (2).png>)
 
 Check out this [video ](https://www.youtube.com/watch?v=snwUwj3QQ7M\&t=1s\&ab\_channel=EulerFinance)going through different manipulation scenarios for a more in-depth explanation:&#x20;
 
 It's important to note **that even a small amount of fully-spread liquidity can significantly increase the cost of attack**. For eg, the[ IDLE/WETH](https://info.uniswap.org/#/pools/0x79e42a2bb91a0f9118e2b5231958c1eaefce390c) pool has a mere $52k TVL, yet the minimum cost of attack is a whopping $115 million:
 
-![T](<../.gitbook/assets/image (4).png>)
+![T](<../../.gitbook/assets/image (4).png>)
 
 ## References
 
