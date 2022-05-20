@@ -17,7 +17,9 @@
 ## Protocol
 
 * [Addresses](protocol/addresses.md)
-* [Parameters](protocol/eulers-default-parameters.md)
+* [Parameters](protocol/eulers-default-parameters/README.md)
+  * [Interest Rates](protocol/eulers-default-parameters/list-of-assets.md)
+  * [Risk Factors](protocol/eulers-default-parameters/risk-factors-list.md)
 
 ## Risk Framework
 
@@ -28,14 +30,7 @@
 * [Collateral and Borrow Factor Methodology](risk-framework/collateral-and-borrow-factors.md)
 * [Tier Methodology](risk-framework/tiers.md)
 * [Simulation Environment](risk-framework/simulation-environment.md)
-* [Governance](risk-framework/governance.md)
 * [Lending and Borrowing Example](risk-framework/lending-and-borrowing-example.md)
-* [Risk Factors List](risk-framework/risk-factors-list.md)
-
-## Interest Rates
-
-* [Introduction](interest-rates/introduction.md)
-* [Borrow APY per Asset](interest-rates/list-of-assets.md)
 
 ## Governance
 
@@ -43,6 +38,7 @@
 * [Distribution](governance/distribution/README.md)
   * [Epochs](governance/distribution/distribution.md)
   * [Gauges](governance/distribution/gauges.md)
+* [Governance](governance/governance.md)
 * [Voting](governance/voting.md)
 * [Treasury](governance/treasury.md)
 * [Grants](governance/grants.md)
