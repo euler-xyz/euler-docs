@@ -57,6 +57,9 @@
 * [Safety Module](security/vault.md)
 * [Insurance](security/insurance.md)
 
+## Support
+
+* [General Errors](support/errors.md)
 ## Languages
 
 * [White Paper (ENG-CHN)](languages/white-paper-ENG-CHN.md)
