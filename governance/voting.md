@@ -9,7 +9,7 @@ This ensures the protocol can quickly adapt to evolving market conditions, as we
 
 ## Euler DAO Launch Phases
 
-The Euler DAO will be launched in three phases for a safe / guarded launch towards full decentralisation of the Euler protocol. Each phase is described below.
+The Euler DAO will be launched in three phases for a guarded launch towards full decentralisation of the Euler protocol. Each phase is described below.
 
 ### Phase 1 (Partial Decentralisation)
 The first phase of the launch will be semi-decentralised wherein actions to be performed directly on the Euler protocol smart contracts will be performed or executed by the Euler team on behalf of the community. In this case, all on-chain governance proposals will point to or target a function in a stub smart contract (in place of the Euler protocol smart contracts). Should the proposal become successful and executed, the target function will then be executed (via the TimelockController controller smart contract) and it will emit the proposal description string and proposal transaction data which will then be validated by the Euler team and executed against the Exec module via the Euler multisig.
@@ -57,7 +57,7 @@ A good governance proposal example can be found here: [eIP: Promote WBTC to coll
 Stay updated by subscribing to the [community newsletter](https://newsletter.euler.finance/) and follow the [Twitter Page](https://twitter.com/eulerfinance)!
 
 
-## Overview
+## Governance Overview and Smart Contracts
 
 The [Euler protocol](https://www.euler.finance/) is governed and upgraded by EUL token-holders, using three distinct components; the EUL token, governance module, and Timelock. Together, these contracts allow the community to propose, vote, and implement changes. Proposals can modify system parameters, support new markets, or add entirely new functionality to the protocol. Euler uses OpenZeppelin Governor for governance. It is a governance protocol — similar to the one Compound uses — where voters/delegates vote on active proposals to make changes to the Euler governance configurations and Euler protocol.
 
@@ -122,9 +122,7 @@ If you wish to have a say in governance, you need to delegate your vote to self 
 
 In summary, delegates are token holders that have completed a one-time setup process (executing the delegate function of the token to delegate another user or the token holder themselves to enable the governor contract determine their voting power). Once you become a delegate, you can vote on active proposals, and create proposals if you have enough voting power. If you choose not to directly vote on proposals, you can pass your voting power on to a delegate as well.
 
-
 [Delegation process using Tally governance dashboard](https://medium.com/silo-protocol/introducing-silos-on-chain-governance-1de76452072b)
-
 
 
 ### Delegate
