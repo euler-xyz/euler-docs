@@ -10,6 +10,10 @@ This ensures the protocol can quickly adapt to evolving market conditions, as we
 ## Euler DAO Launch Phases
 
 The Euler DAO will be launched in three phases for a guarded launch towards full decentralisation of the Euler protocol. Each phase is described below.
+The Euler DAO uses the OpenZeppelin Governor smart contracts (version 4.6.0) for governance (as well as the EUL token contract). It is a governance protocol — similar to the one Compound uses — where delegates vote on active proposals to make changes to the Euler DAO and Euler protocol.
+
+Euler uses the Tally governance dashboard application to manage the governance process. Through Tally, you can set up your wallet to become a delegate, create on-chain proposals, vote on active proposals, discover delegates in the community, and delegate your voting power to a community member.
+
 
 ### Phase 1 (Partial Decentralisation)
 The first phase of the launch will be semi-decentralised wherein actions to be performed directly on the Euler protocol smart contracts will be performed or executed by the Euler team on behalf of the community. In this case, all on-chain governance proposals will point to or target a function in a stub smart contract (in place of the Euler protocol smart contracts). Should the proposal become successful and executed, the target function will then be executed (via the TimelockController controller smart contract) and it will emit the proposal description string and proposal transaction data which will then be validated by the Euler team and executed against the Exec module via the Euler multisig.
@@ -118,6 +122,7 @@ The image below shows the Snapshot user interface:
 Snapshot proposals are not binding. Team members and multisignature key holders for the projects are expected to execute the proposals, but the process relies entirely on their goodwill. Full Snapshot documentation can be accessed online at: [Snapshot](https://docs.snapshot.org).
 
 
+
 ## EUL
 
 EUL is an ERC-20 token that allows token holders to delegate voting rights to any address, including their own address. Changes to the owner’s token balance automatically adjust the voting rights of the delegate. In order to enable these features, the Euler Token smart contract inherits the features from the openzeppelin [ERC20Votes](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Votes.sol) abstract contract. 
@@ -126,12 +131,36 @@ If you wish to have a say in governance, you need to delegate your vote to self 
 
 In summary, delegates are token holders that have completed a one-time setup process (executing the delegate function of the token to delegate another user or the token holder themselves to enable the governor contract determine their voting power). Once you become a delegate, you can vote on active proposals, and create proposals if you have enough voting power. If you choose not to directly vote on proposals, you can pass your voting power on to a delegate as well.
 
-[Delegation process using Tally governance dashboard](https://medium.com/silo-protocol/introducing-silos-on-chain-governance-1de76452072b)
 
+The delegate sections below describe the delegation using the ERC20Votes (EUL token) smart contract and via the Tally Governance Dashboard.
 
 ### Delegate
 
 Delegate votes from the sender to a delegatee. Users can delegate to 1 address at a time, and the number of votes added to the delegatee’s vote count is equivalent to the balance of EUL in the user’s account. Votes are delegated from the current block and onward, until the sender delegates again, or transfers their EUL. Delegation can be done via the smart contract function described below or via the Tally user interface.
+
+#### Tally Governance Dashboard
+
+The first step in the delegation process via the Tally governance application is to visit the Euler DAO page on the Tally governance application and connect your wallet. 
+
+![](<../.gitbook/governance/connect_wallet.png>)
+
+The second step is to click on "Delegate vote" at the top right corner of the screen. 
+
+Users can then choose to either delegate to themselves or to another wallet, delegate or community member. By delegating to self, you retain your voting power. Next time there is an active proposal, you can choose to vote in any way you choose.
+
+![](<../.gitbook/governance/delegate_to_self.png>)
+
+If you choose to delegate to an address or delegate, the following screen will be shown instead where you can enter the address you wish to delegate your voting power to. 
+
+This will not transfer any of your tokens to the delegate, you will only be delegating your voting power, i.e., voting via proxy who will be voting on your behalf or repsenting you at the polls! You can always change the delegate later on or delegate to yourself again. This helps to ensure that there is a good degree of participation from the community on on-chain governance proposals voting.
+
+![](<../.gitbook/governance/delegate_to_address.png>)
+
+Finally, regardless of whether you are delegating to yourself or delegating to a delegate, you will be required to confirm the transaction in your wallet and this transaction will cost gas.
+![](<../.gitbook/governance/delegate_to_self_metamask.png>)
+
+
+To recap, delegates are token holders that have completed a one-time setup process. Once you become a delegate, you can then vote on active proposals, and create proposals if you have enough voting power. If you choose not to directly vote on proposals, you can pass your voting power on to a delegate as we have seen.
 
 
 #### EUL
