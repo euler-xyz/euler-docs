@@ -152,9 +152,9 @@ Users can then choose to either delegate to themselves or to another wallet, del
 
 If you choose to delegate to an address or delegate, the following screen will be shown instead where you can enter the address you wish to delegate your voting power to. 
 
-This will not transfer any of your tokens to the delegate, you will only be delegating your voting power, i.e., voting via proxy who will be voting on your behalf or repsenting you at the polls! You can always change the delegate later on or delegate to yourself again. This helps to ensure that there is a good degree of participation from the community on on-chain governance proposals voting.
+![](<../.gitbook/governance/delegate_to_other_address.png>)
 
-![](<../.gitbook/governance/delegate_to_address.png>)
+This will not transfer any of your tokens to the delegate, you will only be delegating your voting power, i.e., voting via proxy who will be voting on your behalf or repsenting you at the polls! You can always change the delegate later on or delegate to yourself again. This helps to ensure that there is a good degree of participation from the community on on-chain governance proposals voting.
 
 Finally, regardless of whether you are delegating to yourself or delegating to a delegate, you will be required to confirm the transaction in your wallet and this transaction will cost gas.
 ![](<../.gitbook/governance/delegate_to_self_metamask.png>)
