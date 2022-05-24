@@ -83,21 +83,25 @@ Tally is a governance app in the form of a web-based platform focused on enablin
 
 Tally empowers user owned governance through a voting dashboard, governance tooling, and real time research and analysis. Users can use the app to review data on governance systems, active and prior proposals, and individual delegates or token holders. The platform also enabled direct on-chain voting and vote delegation, helping users put their governance insights into action. Through integration with the Euler governance smart contract, Euler token holders can connect their wallets and create proposals, vote, delegate voting power to a community member, discover other delegates in the community, and more.
 
-For example, the image below shows active, passed and failed proposals for the Compound protocol:
+For example, the image below shows a list of active and succeeded proposals:
 
-![](<../.gitbook/assets/proposals.png>)
+![](<../.gitbook/governance/recent_proposals.png>)
 
-The image below shows the top voters on proposals created for the Compound protocol:
+The image below shows the top voters on proposals created for the Euler test DAO:
 
-![](<../.gitbook/assets/top_voters.png>)
+![](<../.gitbook/governance/top_voters.png>)
 
-Users can also view the total percentage of votes in support or against a specific proposal as shown in the image below:
+Users can also view the total percentage of votes in support or against a specific proposal. In the image below, the test proposal succeeded with all votes in support:
 
-![](<../.gitbook/assets/votes_in_support_against.png>)
+![](<../.gitbook/governance/succeeded_proposal.png>)
 
-And when voting, users have the option to vote for or against a proposal or an abstain vote as shown in the image below:
+And when voting, users have the option to vote for or against a proposal or an abstain vote as shown in the images below:
 
-![](<../.gitbook/assets/tally-vote.png>)
+Firstly users will need to connect their wallet to cast a vote
+![](<../.gitbook/governance/connect_to_vote.png>)
+
+Followed by casting a vote with or without a comment for the community
+![](<../.gitbook/governance/vote_for.png>)
 
 Full Tally documentation can be accessed online at: [Tally](https://docs.withtally.com). The documentation describes how to navigate the web app, voting and delegation and creating a Tally account.
 
