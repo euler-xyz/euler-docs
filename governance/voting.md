@@ -323,7 +323,7 @@ Note: The `blockNumber` parameter corresponds to the snaphot used for counting v
     const quorum = await gov.methods.quorumVotes(blockNumber).call();
 
 
-### Timelock (Governance)
+### Timelock
 Public accessor to check the address of the timelock.
 
 #### Governance
@@ -547,8 +547,7 @@ Previously, the cancel function was callable by the proposal creator, or any Eth
 
 In the latest version (4.6.0) of the TimelockController smart contract, there is now a separate [canceller role for the ability to cancel](https://github.com/OpenZeppelin/openzeppelin-contracts/pull/3165). The contract introduces a new `CANCELLER_ROLE` that requires set up to be assignable. As such, only addresses with this role will have the ability to cancel. Proposers will no longer be able to cancel. Assigning cancellers can be done by an admin (including the timelock itself) once the role admin is set up.
 
-The canceller can cancel proposals which have not been executed or do not have a ```state == Executed```. The canceller will only cancel proposals in the event of an unforeseen vulnerability. The canceller cannot execute proposals or alter any voting on proposals nor can it prevent users from voting on proposals. The canceller role is assigned to the Euler multisig.
-
+The canceller can cancel proposals which have been queued but not executed or do not have a ```state == Executed```. The canceller will only cancel proposals in the event of an unforeseen vulnerability. The canceller cannot execute proposals or alter any voting on proposals nor can it prevent users from voting on proposals. The canceller role is assigned to the Euler multisig. On the other hand, the governance smart contract can only be used to cancel proposals that have not been queued for execution within the TimeLockController smart contract.
 
 
 #### Governance
@@ -675,9 +674,9 @@ Cast a vote on a proposal. The account's voting weight is determined by the numb
 #### Web3 1.2.6
     const tx = await gov.methods.castVoteBySig(proposalId, 1, v, r, s).send({});
 
-## Timelock
-Certain smart contracts within the Euler protocol allow the TimelockController smart contract address to modify them. The Timelock contract can modify system parameters, logic, and contracts in a 'time-delayed, opt-out' upgrade pattern.
+## TimelockController
+Certain smart contracts within the Euler protocol allow the TimelockController smart contract address to modify them. The TimelockController contract can modify system parameters, logic, and contracts in a 'time-delayed, opt-out' upgrade pattern.
 
-The Timelock has a hard-coded minimum delay of 2 days (48 hours), which is the least amount of notice possible for a governance action. Each proposed action will be published at a minimum of 2 days in the future from the time of announcement.
+The TimelockController has a hard-coded minimum delay of 2 days (48 hours), which is the least amount of notice possible for a governance action. Each proposed action will be published at a minimum of 2 days in the future from the time of announcement.
 
-The Timelock is controlled by the governance module; pending and completed governance actions can be monitored via the Timelock.
+The TimelockController is controlled by the governance module; pending and completed governance actions can be monitored via the TimelockController.
