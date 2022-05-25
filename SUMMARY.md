@@ -59,7 +59,7 @@
 
 ## Support
 
-* [General Errors](support/errors.md)
+* [How to retrieve errors from developer console](support/retrieve-errors.md)
 ## Languages
 
 * [White Paper (ENG-CHN)](languages/white-paper-ENG-CHN.md)
