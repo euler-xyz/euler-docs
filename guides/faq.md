@@ -68,7 +68,7 @@ Euler uses [Uniswap](https://docs.uniswap.org/protocol/concepts/V3-overview/orac
 
 #### What is the oracle rating?&#x20;
 
-The [Oracle Rating system](../risk-framework/oracle-rating.md) attempts to rank Uniswap v3 price oracles for different markets high, medium, or low based on the ease with which they can be manipulated.&#x20;
+The [Oracle Rating system](../risk-framework/methodology/oracle-rating.md) attempts to rank Uniswap v3 price oracles for different markets high, medium, or low based on the ease with which they can be manipulated.&#x20;
 
 #### What are the reserves?&#x20;
 
@@ -88,11 +88,11 @@ Euler is currently only on Ethereum Mainnet. Euler is open to and exploring othe
 
 #### What are Mint and Burn?&#x20;
 
-[Mint](ui.md#mint) enables users to more efficiently create leveraged positions of borrowers and deposits. For example, a user can deposit $1,000 USDC, and mint $2,000 USDC. Then you will have $3,000 USDC deposits, and $2,000 USDC liabilities. Burn closes Mint positions.
+[Mint](ui/#mint) enables users to more efficiently create leveraged positions of borrowers and deposits. For example, a user can deposit $1,000 USDC, and mint $2,000 USDC. Then you will have $3,000 USDC deposits, and $2,000 USDC liabilities. Burn closes Mint positions.
 
 #### What does the Transfer action do?&#x20;
 
-Users can [transfer](ui.md#transfer-etokens) deposits (eTokens) and debt (dTokens) to other accounts. Always check the accounts involved in your operation will have sufficient collateral to support it.
+Users can [transfer](ui/#transfer-etokens) deposits (eTokens) and debt (dTokens) to other accounts. Always check the accounts involved in your operation will have sufficient collateral to support it.
 
 #### Can I swap tokens?&#x20;
 
@@ -100,7 +100,7 @@ Yes, the swap feature enables users to exchange one deposited asset for another 
 
 #### How can I short a token?&#x20;
 
-The [Short](ui.md#short) action allows users to build a leveraged short position by borrowing and then immediately selling an asset on an external exchange, including 1inch and Uniswap.&#x20;
+The [Short](ui/#short) action allows users to build a leveraged short position by borrowing and then immediately selling an asset on an external exchange, including 1inch and Uniswap.&#x20;
 
 #### Should I mine at 19x?&#x20;
 
@@ -124,7 +124,7 @@ Users can go to the [Euler app](https://app.euler.finance/), click on the Claim 
 
 #### What utility does EUL have?&#x20;
 
-EUL’s main utility is as a [governance token](../governance/voting.md) for the Euler protocol. Users with EUL can have a say in the future decisions and direction, as well as the EUL distribution in the Euler gauges.
+EUL’s main utility is as a [governance token](../governance/governance/voting.md) for the Euler protocol. Users with EUL can have a say in the future decisions and direction, as well as the EUL distribution in the Euler gauges.
 
 #### What is the distribution of EUL tokens for borrowers?&#x20;
 
@@ -140,11 +140,11 @@ Users can add or remove EUL distribution eligible markets simply by staking EUL 
 
 #### Is there a token? How can I earn it?&#x20;
 
-The Euler token (EUL) is distributed to borrowers on select markets on the platform. Please see the [Governance](../governance/eul.md) section for more details.&#x20;
+The Euler token (EUL) is distributed to borrowers on select markets on the platform. Please see the [Governance](../governance/eul/) section for more details.&#x20;
 
 #### What are the tokenomics?&#x20;
 
-Allocation, vesting and other information about the EUL token can be found in the EUL section under [Governance](../governance/eul.md).
+Allocation, vesting and other information about the EUL token can be found in the EUL section under [Governance](../governance/eul/).
 
 #### Is there a TGE/ICO/IDO?&#x20;
 

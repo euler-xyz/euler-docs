@@ -1,5 +1,5 @@
 ---
-description: Learn more about the phases of the EUL Distribution Programme
+description: Learn more about the phases of the EUL Distribution programme
 ---
 
 # Epochs

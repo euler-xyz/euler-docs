@@ -132,6 +132,14 @@ description: >-
 
 1. Wait for a quote and click the Short button
 
+#### Wrap
+
+1. Ensure that you have sufficient amount of ETH or WETH in your account.
+2. Click on swap icon to change the mode to wrap-unwrap or unwrap-wrap.
+3. Enter the amount you wish to wrap or unwrap.
+4. Enter ETH value to wrap ETH into WETH.
+5. Enter WETH value to unwrap into ETH.
+
 ### Toggle Collateral
 
 * Ensure that you have no outstanding borrows on the account.

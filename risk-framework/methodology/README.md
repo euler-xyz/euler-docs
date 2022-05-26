@@ -1,4 +1,19 @@
+---
+description: Learn more about how risk parameters on Euler are determined
+---
+
 # Methodology
+
+## I**ntroduction**&#x20;
+
+The Euler risk framework aims to do two things:
+
+1. **Maximise** capital efficiency through borrowing and lending **activity**; and
+2. **Minimise** risk and the probability of **bad debts.**
+
+To achieve this, a methodology to stress test individual assets as well as simulate a portfolio of assets in tail risk scenarios.
+
+## Methodology
 
 **Ranking** all available ERC20 tokens according to risk parameters:
 

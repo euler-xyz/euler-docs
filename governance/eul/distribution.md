@@ -8,7 +8,7 @@ description: >-
 
 ## Introduction&#x20;
 
-In order to progressively decentralise governance of the Euler Protocol, EUL will be distibuted to protocol users over a period of (at least) 4 years. The distribution programme is broken down into cycles called [epochs](distribution.md). Every epoch EUL gets distributed to borrowers on a subset of community-selected markets. The markets eligible for a distribution are determined by an EUL staking [gauge ](gauges.md)system.
+In order to progressively decentralise governance of the Euler Protocol, EUL will be distibuted to protocol users over a period of (at least) 4 years. The distribution programme is broken down into cycles called [epochs](distribution-1.md). Every epoch EUL gets distributed to borrowers on a subset of community-selected markets. The markets eligible for a distribution are determined by an EUL staking [gauge ](gauges.md)system.
 
 ## How it Works
 
