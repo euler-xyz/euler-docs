@@ -6,18 +6,18 @@ description: Find out how to start working with the Euler smart contracts
 
 ## Modules
 
-The Euler protocol is a collection of smart contracts, connected together with a module system. Each module handles specific areas of the protocol, so depending on what you want to do, you will interact with several different contract addresses.
+The Euler protocol is a collection of smart contracts connected together with a module system. Each module handles specific areas of the protocol, so depending on what you want to do, you will interact with several different contract addresses.
 
 Some modules are global, for example:
 
-* [markets](integration-guide.md#markets): Activating markets, enter/exiting markets, and querying various market-related information.
-* [exec](integration-guide.md#exec): Batch requests, liquidity deferrals \(ie, flash loans\)
-* [liquidation](integration-guide.md#liquidation): Seizure of assets for users in violation
+* [markets](https://docs.euler.finance/developers/contract-reference#ieulermarkets): Activating markets, enter/exiting markets, and querying various market-related information.
+* [exec](https://docs.euler.finance/developers/contract-reference#ieulerexec): Batch requests, liquidity deferrals (ie, flash loans)
+* [liquidation](https://docs.euler.finance/developers/contract-reference#ieulerliquidation): Seizure of assets for users in violation
 
 Other modules are asset-specific:
 
-* [eTokens](integration-guide.md#eTokens): ERC20-compatible tokens that represent assets
-* [dTokens](integration-guide.md#dTokens): ERC20-compatible tokens that represent liabilities
+* [eTokens](https://docs.euler.finance/developers/contract-reference#ieuleretoken): ERC20-compatible tokens that represent assets
+* [dTokens](https://docs.euler.finance/developers/contract-reference#ieulerdtoken): ERC20-compatible tokens that represent liabilities
 
 ## Deposit and withdraw
 
@@ -83,7 +83,11 @@ borrowedDToken.repay(0, type(uint).max);
 
 ## Flash loans
 
-Euler doesn't have any specific flash loan functionality. Instead, you can defer the liquidity check for your account. The Euler contract will call back into your contract, where you can perform operations like `borrow()` without worrying about liquidity violations. As long as your callback leaves the account in a non-violating state, the transaction will complete successfully.
+Euler has flash loans built-in as an integral component of the protocol. There are two ways to take a flash loan, a low-level Euler-specific way, and a way that uses an [EIP-3156](https://eips.ethereum.org/EIPS/eip-3156) compatible flash-loan adaptor.
+
+### Low-level Flash Loans
+
+The low-level way to take a flash loan is to defer the liquidity check for your account. The Euler contract will call back into your contract, where you can perform operations like `borrow()` without worrying about liquidity violations. As long as your callback leaves the account in a non-violating state, the transaction will complete successfully.
 
 Since Euler only charges interest for a loan when it is held for a non-zero amount of time, this results in fee-less flash loans.
 
@@ -123,3 +127,10 @@ contract MyFlashLoanContract {
 
 `encodedData` is a pass-through parameter that lets you transfer data to your callback without requiring storage writes.
 
+### EIP-3156 Flash Loans
+
+There is also an adaptor smart contract that exposes Euler's flash loan functionality as an [EIP-3156](https://eips.ethereum.org/EIPS/eip-3156) compatible API.
+
+The smart contract addresses are: [mainnet](https://etherscan.io/address/0x07df2ad9878F8797B4055230bbAE5C808b8259b3), [ropsten](https://ropsten.etherscan.io/address/0x0e60a8406a94787842f07221d2Fb5Bf19856CeA5).
+
+Examples of how to use the adaptor can be found in the EIP documentation, as well as the [Euler test suite](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/test/FlashLoanAdaptorTest.sol). The fee value is always 0.

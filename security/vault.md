@@ -1,8 +1,9 @@
 ---
-description: Discover how the Euler Vault provides a backstop to the protocol
+description: >-
+  Discover how the Euler Safety Module reduces helps to mitigate risks for
+  lenders on the protocol
 ---
 
-# Vault
+# Safety Module
 
-TODO
-
+Coming soon.

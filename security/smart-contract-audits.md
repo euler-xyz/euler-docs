@@ -19,3 +19,5 @@ The Euler protocol has been reviewed and audited by top security firms including
 ## Sherlock - December 2021
 * [Audit Report](https://github.com/euler-xyz/euler-audits/blob/master/smart_contract_audits/Euler_-_Sherlock_Report.pdf)
 
+## Omniscia - March 2022
+* [Audit Report](https://omniscia.io/euler-merkle-mining-staking/)

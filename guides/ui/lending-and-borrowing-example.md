@@ -18,7 +18,7 @@ If you decide to borrow 700 USD worth of XYZ, Euler will mint an equivalent amou
 
 If XYZ token rose in price and/or borrowing interest rose significantly so that the value of your dXYZ rose above 720 USD, you are subject to liquidation and your claim on the collateral (eABC) will be given to a liquidator at a discount as well as your debts (dXYZ) in exchange for repaying the debt.&#x20;
 
-Similarly, should the value of ABC plummet, your eABC won’t be enough to maintain the 0.72 factor and you will be subject to the same liquidation procedure.
+Similarly, should the value of ABC plummet, your eABC won’t be enough to maintain the 0.72 factor, and you will be subject to the same liquidation procedure.
 
 ### Profit Potential
 
