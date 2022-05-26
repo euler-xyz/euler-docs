@@ -59,6 +59,10 @@
 * [Safety Module](security/vault.md)
 * [Insurance](security/insurance.md)
 
+## Support
+
+* [How to retrieve errors from developer console](support/retrieve-errors.md)
+* [Common Errors](support/common-errors.md)
 ## Languages
 
 * [White Paper (ENG-CHN)](languages/white-paper-ENG-CHN.md)
