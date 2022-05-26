@@ -138,22 +138,15 @@ Burn creates a self-collateralized loan position, which is a loan collateralized
 
 1. Wait for a quote and click the Short button
 
-### Wrap
+#### Wrap
 
-1. Ensure that you have sufficient amount of asset you are wrapping.
-2. Select the asset you wish to wrap.
-3. Select the asset you wish to wrap to.
-4. Enter the amount you wish to wrap.
+1. Ensure that you have sufficient amount of ETH or WETH in your account.
+2. Click on swap icon to change the mode to wrap-unwrap or unwrap-wrap.
+3. Enter the amount you wish to wrap or unwrap.
+4. Enter ETH value to wrap ETH into WETH.
+5. Enter WETH value to unwrap into ETH.
 
-* Remember that wrapping ETH to stETH or wstETH is a one-way transaction. It is not possible to unwrap stETH and wstETH. The only way to convert those assets back is to swap them on the external exchange.
-
-### Activate
-
-1. Select the asset you wish to activate.
-2. Click Activate button to open new lending market on Euler.
-
-### Enter/Exit Market
-
+### Toggle Collateral
 * Ensure that you have no outstanding borrows on the account that are collateralized by given asset.
 * Click the toggle button in the Entered column in the Account view to enter/exit market.
 
