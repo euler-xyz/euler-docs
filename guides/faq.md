@@ -20,7 +20,7 @@ EulerDAO is a decentralised autonomous organisation encapsulating all holders of
 
 #### What is the Euler Foundation?
 
-Since DAOs not have a formal legal strucutre, the Euler Foundation was established as a non-profit Foundation Company designed to represent EulerDAO in the ‘real world’. The Euler Foundation has no shareholders and cannot pay out dividends to its members. Its purpose is to provide a vehicle by which EulerDAO can sign a contract or engage a company for a service that the DAO requires.
+Since DAOs not have a formal legal structure, the Euler Foundation was established as a non-profit Foundation Company designed to represent EulerDAO in the ‘real world’. The Euler Foundation has no shareholders and cannot pay out dividends to its members. Its purpose is to provide a vehicle by which EulerDAO can sign a contract or engage a company for a service that the DAO requires.
 
 ###
 
@@ -82,6 +82,10 @@ An asset must have substantial liquidity with wide distribution in its Uniswap V
 
 Euler is currently only on Ethereum Mainnet. Euler is open to and exploring other chains and layers, but nothing is currently imminent.
 
+#### What is the difference between Sign Permit and Enable?
+
+Enable is the standard approval transaction that allows Euler smart contracts access to that asset. You can edit the amount from unlimited in Metamask. Sign Permit is a gasless way of approving a contract to use your tokens as a one-time allowance ([EIP-2612](https://eips.ethereum.org/EIPS/eip-2612)).&#x20;
+
 
 
 ### Features
@@ -96,7 +100,7 @@ Users can [transfer](ui/#transfer-etokens) deposits (eTokens) and debt (dTokens)
 
 #### Can I swap tokens?&#x20;
 
-Yes, the swap feature enables users to exchange one deposited asset for another using Uniswap V3 and 1inch DEXes.
+Yes, the swap feature enables users to exchange one deposited asset for another using Uniswap V3 and 1inch DEXs.
 
 #### How can I short a token?&#x20;
 
