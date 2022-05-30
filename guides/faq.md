@@ -200,7 +200,7 @@ Not yet, but you can earn Epoints for contributing to the Euler community. For m
 
 
 
-### Regulatory
+### Miscellaneous
 
 
 #### How does the Euler dApp detect wallets associated with illicit activities?
