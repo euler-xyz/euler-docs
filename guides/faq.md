@@ -197,3 +197,16 @@ Sorry, Euler does not accept payments or donations of any kind to promote activa
 #### Do you have an Ambassador programme?&#x20;
 
 Not yet, but you can earn Epoints for contributing to the Euler community. For more information, please check out the blog post on [Epoints](https://blog.euler.finance/whats-the-point-in-points-31c2d3ae040f).
+
+
+
+### Regulatory
+
+
+#### Chainalysis wallet screening
+
+In alignment with industry best-practices, Euler utilizes Chainalysis to identify and block wallets that are associated with certain illicit activities. 
+
+Chainalysis is a market leader in protecting against interactions with bad actors linked to sanctions, financial crime, child sexual abuse material, terrorist financing, scams, hacked or stolen funds, ransomware, and human trafficking. 
+
+It is Euler’s aim to prevent those engaged or associated with illegal activity from using the protocol. Euler is committed to responsible development, innovation, and financial inclusion.
