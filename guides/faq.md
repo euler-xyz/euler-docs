@@ -203,7 +203,7 @@ Not yet, but you can earn Epoints for contributing to the Euler community. For m
 ### Regulatory
 
 
-#### How does Euler prevent wallets associated with illicit activities?
+#### How does the Euler dApp detect wallets associated with illicit activities?
 
 In alignment with industry best-practices, Euler utilizes Chainalysis to identify and block wallets that are associated with certain illicit activities. 
 
