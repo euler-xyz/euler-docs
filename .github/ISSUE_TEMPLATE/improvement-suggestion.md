@@ -1,0 +1,64 @@
+---
+name: Improvement suggestion
+about: Template for how to suggest and improvement
+title: ''
+labels: ''
+assignees: ''
+
+---
+
+name: Improve Docs
+description: Something isn't described correctly in the documentation, needs to be updated, missing, or badly structured? Here is the right place to report.
+title: "<short description>"
+labels: ["unconfirmed"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us improve our documentation. Please complete the following so we can have the necessary details about your suggestion.
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm before submitting a new issue.
+      options:
+        - label: My suggestion/issue is about the [latest version of the documentation](https://docs.euler.finance/).
+          required: true
+        - label: I checked the [existing issues](https://github.com/euler-xyz/euler-docs/issues/new) to make sure my problem has not already been reported.
+          required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: What is this issue about?
+      options:
+        - Bug
+        - Something is missing
+        - Something needs improving (e.g. is badly explained)
+        - Something is wrong
+        - General suggestion
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: More details
+      description: Give a detailed description of the bug/improvement/suggestion.
+    validations:
+      required: true
+  - type: textarea
+    id: permalink
+    attributes:
+      label: Relevant Section(s)
+      description: Insert the links to the relevant section(s) in the docs. Choose the most specific section / lowest-level heading to which your suggested change applies.
+      placeholder: "For example: https://docs.euler.finance/guides/ui/lending-and-borrowing-example"
+    validations:
+      required: false
+  - type: textarea
+    id: assets
+    attributes:
+      label: Assets
+      description: Include any relevant files or links here.
+    validations:
+      required: false
