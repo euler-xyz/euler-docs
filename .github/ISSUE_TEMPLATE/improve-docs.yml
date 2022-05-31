@@ -1,12 +1,3 @@
----
-name: Improvement suggestion
-about: Template for how to suggest and improvement
-title: ''
-labels: ''
-assignees: ''
-
----
-
 name: Improve Docs
 description: Something isn't described correctly in the documentation, needs to be updated, missing, or badly structured? Here is the right place to report.
 title: "<short description>"
