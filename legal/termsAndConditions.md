@@ -349,7 +349,7 @@ behalf (as applicable) is:
   unauthorised access to the Interface, the server on which the
   Interface is stored or any server, computer or database connected
   to the Interface. You must not attack the Interface via a
-  denial-of-service attack or a distributed denial-of service
+  denial-of-service attack or a distributed denial-of-service
   attack. By breaching this provision, you acknowledge that you
   commit a criminal offence under the Computer Misuse Act 1990 (as
   amended, extended or re-enacted from time to time). We will report
