@@ -94,7 +94,9 @@ If you have any queries or concerns about the processing of your
 information that is available with us, you may email us at
 [contact@euler.foundation](mailto:contact@euler.foundation)
 and we will address your concerns in accordance with applicable law.
-
+/
+/
+/
 *Last updated on: 06-June-2022*
 
 *Effective date: 06-June-2022*

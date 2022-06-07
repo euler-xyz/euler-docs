@@ -430,7 +430,9 @@ behalf (as applicable) is:
 
 ### Contact Us
 To contact us, please email [contact@euler.foundation](mailto:contact@euler.foundation).
-
+\
+\
+\
 *Last updated on: 06-June-2022*
 
 *Effective date: 06-June-2022*
