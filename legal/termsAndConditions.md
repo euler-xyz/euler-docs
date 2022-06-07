@@ -58,9 +58,7 @@ from any user of the Euler Protocol for operating, maintaining or
 developing the Interface.
 
 ### 4. Accepting the Terms
-4.1 **By accessing or using the Interface, you confirm that you can form
-a binding contract with us, that you accept these Terms and that
-you agree to comply with them.**
+4.1 **By accessing or using the Interface, you confirm that you can form a binding contract with us, that you accept these Terms and that you agree to comply with them.**
 Your access to and use of the Interface is also subject to our
 Privacy Policy, the terms of which can be found directly on the
 Website, and is incorporated herein by reference. The Interface may
