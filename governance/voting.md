@@ -44,7 +44,13 @@ In the final phase of the DAO launch, we will be moving towards full decentralis
 The [General Governance Process](https://forum.euler.finance/t/welcome-to-the-euler-governance-forum/7) is documented on the Governance Forum.
 
 The general flow for the governance process is proposed as follows:
-Governance Forum Idea/Proposal Discussion → eIP (Euler Improvement Proposal) Created on Tally → On-chain Voting (and Execution if successful)
+Governance forum Idea/Proposal Discussion → eIP (Euler Improvement Proposal) creation on Governance forum by forum moderator → eIP created on Tally → On-chain Voting (and Execution if successful)
+
+The image below depicts the on-chain governance phases and durations for each phase:
+
+![](<../.gitbook/governance/governance_process.png>)
+
+
 
 ### Idea
 A great place to start a discussion on a potential governance proposal is the idea section. If you feel confident that your idea is relevant to the community and is well-formulated, head over the to Governance Forum to begin a discussion with the community around your idea (following the process described on the forum). 
