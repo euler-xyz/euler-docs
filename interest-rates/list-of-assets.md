@@ -58,6 +58,7 @@ The main consideration is maintaining target utilisation (typically at Kink%).&#
 | RPL | 0.00| 10.00 | 300.00 | 0.50 |
 | SNX | 0.00| 10.00 | 300.00 | 0.50 |
 | SOS | 0.00| 10.00 | 300.00 | 0.50 |
+| STETH | 0.00| 10.00 | 300.00 | 0.50 |
 | STG | 0.00| 10.00 | 300.00 | 0.50 |
 | TCR | 0.00| 10.00 | 300.00 | 0.50 |
 | TRDL | 0.00| 10.00 | 300.00 | 0.50 |
