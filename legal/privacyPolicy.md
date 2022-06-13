@@ -62,12 +62,12 @@ data, ask us to share (port) your personal information to another
 entity, withdraw any consent you provided to us to process your
 data, a right to lodge a complaint with a statutory authority and
 such other rights as may be relevant under applicable laws. To
-exercise these rights, you can write to us at [contact@euler.xyz](mailto:contact@euler.xyz). 
+exercise these rights, you can write to us at [contact@euler.finance](mailto:contact@euler.finance). 
 We will respond to your request in accordance with applicable law.
 
 You may opt-out of direct marketing communications or the profiling
 we carry out for marketing purposes by writing to us at
-[contact@euler.xyz](mailto:contact@euler.xyz).
+[contact@euler.finance(mailto:contact@euler.finance).
 
 Do note that if you do not allow us to collect or process the
 required personal information or withdraw the consent to process the
