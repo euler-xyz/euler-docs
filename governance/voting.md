@@ -129,7 +129,6 @@ Below, we will describe the steps required to accomplish this goal.
 Head over to the EulerDAO dashboard on Tally and connect your MetaMask wallet.
 
 
-
 #### Step 2
 
 Click on `Create new proposal` at the right corner of the window. 
@@ -143,7 +142,7 @@ It should then take you to the proposal creation window below.
 Click on `Continue` to move onto the next step (`Name your proposal`). 
 
 
-#### Step 3
+#### Step 3
 
 Enter a proposal title and description and click `Continue`.
 
@@ -161,7 +160,8 @@ To add the proposal transaction hex from Section 1 and set the governance stub c
 ![](<../.gitbook/governance/dao_1_tally_4_ii.png>)
 
 
-#### Step 5
+
+#### Step 5
 
 Once done, click continue and review the proposal. Once you are happy, you can click `Submit on-chain` which will open a MetaMask pop-up window for you to sign the transaction to create the proposal on-chain, via the Governance smart contract.
 
