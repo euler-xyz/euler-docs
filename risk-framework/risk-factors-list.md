@@ -46,6 +46,7 @@ This page outlines the main risk parameters on Euler, as determined by [governan
 | RPL | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | SNX | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | SOS | 0| 0.28 | 0.23 | true | false | Default | 1 |
+| STETH | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | STG | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | TCR | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | TRDL | 0| 0.28 | 0.23 | true | false | Default | 1 |
@@ -72,6 +73,8 @@ This page outlines the main risk parameters on Euler, as determined by [governan
 | WBTC | 0.88| 0.91 | 0.23 | false | true | Mega | 0.3 |
 | WETH | 0.88| 0.91 | 0.23 | false | true | Default | Pegged |
 | USDC | 0.9| 0.94 | 0.23 | false | true | Stable | 0.3 |
+
+
 
 _Note: the Collateral Factor of the lent asset(s) is multiplied by the Borrow Factor of the borrowed asset(s) to arrive at the final factor._
 
