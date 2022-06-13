@@ -64,8 +64,8 @@ The web application should look like the following image:
 ![](<../.gitbook/governance/gov_tool_1.png>)
 
 
-
 #### Step 2 
+
 
 The tool requires MetaMask to be installed in your browser. 
 Switch your MetaMask wallet to mainnet. 
