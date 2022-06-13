@@ -129,7 +129,8 @@ Below, we will describe the steps required to accomplish this goal.
 Head over to the EulerDAO dashboard on Tally and connect your MetaMask wallet.
 
 
-#### Step 2
+
+#### Step 2
 
 Click on `Create new proposal` at the right corner of the window. 
 
