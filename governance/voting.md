@@ -39,6 +39,21 @@ During execution, the TimelockController smart contract will call the target fun
 In the final phase of the DAO launch, we will be moving towards full decentralisation. In this phase, the Installer Admin will also be switched to the TimelockController smart contract. Not only giving the community control over the Governance module for asset configuration modifications but also full control over the protocol including the installer module. This module is used to bootstrap install the rest of the modules, and can later on be used to upgrade modules to add new features and/or fix bugs.
 
 
+## Introducing Euler's Governance Proposal Creation Tool (for Euler DAO Phase 1)
+
+### Introduction
+
+The first phase of Euler’s DAO / Governance launch will be semi-decentralised wherein actions to be performed directly on the Euler protocol smart contracts will be performed or executed by the Euler team on behalf of the community. In this case, all on-chain governance proposals will point to or target a function in a stub smart contract (in place of the Euler protocol smart contracts). 
+
+Should the proposal become successful and executed, the target function will then be executed (via the TimelockController controller smart contract. It will emit the proposal description string and proposal transaction hex data, which will then be validated by the Euler team and executed against the `Exec` module via the Euler multisig (on OpenZeppelin Defender).
+
+Hence, the `governorOnly()` modifier in the [Euler Governance module](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Governance.sol) will be checking that the caller of its functions is the Euler mulisig and not the TimelockController smart contract of the DAO.
+
+To create the proposal transaction data, we have implemented a [tool](https://governance.euler.finance/) which will help the proposal creator to auto-generate it depending on what actions should be executed. The proposal transaction data is simply an encoded version of the on-chain transaction to the Exec module’s batchDispatch function.
+
+The rest of the article will describe the process of creating the proposal transaction data on Euler’s governance proposal creation tool and using the generated proposal transaction data to create an on-chain proposal on the [Tally](https://www.tally.xyz/) governance dashboard.
+
+
 ## General Governance Process
 
 The [General Governance Process](https://forum.euler.finance/t/welcome-to-the-euler-governance-forum/7) is documented on the Governance Forum.
