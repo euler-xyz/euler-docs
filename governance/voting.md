@@ -61,6 +61,7 @@ Navigate to the [proposal transaction data creation tool](https://governance.eul
 
 The web application should look like the following image:
 
+![](<../.gitbook/governance/gov_tool_1.png>)
 
 #### Step 2
 
@@ -77,8 +78,9 @@ At the left of the window, under the token list, we have a set of dropdown menus
 
 To create the proposal transaction data, the proposer needs to enter a proposal description and then select a token from the token list. Once selected, the rest of the fields will be automatically populated with the current configuration of the token or market on Euler if it has an activated market.
 
-The image below shows the proposal description and the fields on the left populated with the current market configuration for USDC on Euler.
+The image below shows the proposal description and the fields on the left populated with the current market configuration for USDC on Euler:
 
+![](<../.gitbook/governance/gov_tool_3.png>)
 
 #### Step 4
 
@@ -86,19 +88,21 @@ The proposer can then make modifications and generate the proposal transaction h
 
 For example purposes, let’s change the borrow factor of USDC to 0.6. To do this, we simply change the collateral factor from 0.9 to 0.6 in the text field for collateral factor and click on `CREATE PROPOSAL DATA`. Once we do this, we should see the markdown table showing the changes we want to make to the asset. We will also see the batch items Hex transaction data which we need for our on-chain governance proposal stub smart contract on Tally. 
 
-
+![](<../.gitbook/governance/gov_tool_4_i.png>)
 
 Note: This process can be repeated for multiple tokens and configurations (or multiple configurations of the same token). They will be added in a batch and encoded to form the transaction data for the batchDispatch functionality in the Euler Exec module.
 
 For example, let us select DAI from the token list and change the borrow factor of DAI to 0.3. Again, the fields are automatically populated when we select DAI and when we change the borrow factor to 0.3 and click on `CREATE PROPOSAL DATA`. The list of configuration updates is updated to reflect the change we are making to DAI, while the USDC update information still remains. The transaction hex is also updated.
 
-
+![](<../.gitbook/governance/gov_tool_4_ii.png>)
 
 #### Step 5
 
 To validate the updates we have selected, we can copy the auto-generated hex under batch items hex TX data (under batch items, which is under proposal description) and click on `DEBUG TX HEX DATA` and paste the copied hex into the text field. 
 
 The tool should also decode the hex and show us a markdown with the updates the Euler team will be applying to the selected tokens once the proposal gets executed. The Euler team will also follow this process to make sure that the proposal description reflects the updates to be made before executing the transaction in the Exec module on behalf of the community. 
+
+![](<../.gitbook/governance/gov_tool_5.png>)
 
 As shown in the image above, the hex data is decoded to show the updates we selected to be applied to DAI and USDC. There is a close button at the bottom right of the window to close the debug modal and return to the main page. 
 
@@ -124,7 +128,11 @@ Head over to the EulerDAO dashboard on Tally and connect your MetaMask wallet.
 
 Click on `Create new proposal` at the right corner of the window. 
 
+![](<../.gitbook/governance/dao_1_tally_2.png>)
+
 It should then take you to the proposal creation window below.
+
+![](<../.gitbook/governance/dao_1_tally_2i.png>)
 
 Click on `Continue` to move onto the next step (`Name your proposal`). 
 
@@ -133,18 +141,24 @@ Click on `Continue` to move onto the next step (`Name your proposal`).
 
 Enter a proposal title and description and click `Continue`.
 
+![](<../.gitbook/governance/dao_1_tally_3.png>)
+
 
 #### Step 4
 
 In the next section, you will be required to specify the governance proposal actions, i.e., target smart contract, target function and parameters. The Tally dashboard allows you to specify multiple actions in a single proposal which will be called/executed if the proposal is successful and executed.
 
+![](<../.gitbook/governance/dao_1_tally_4_i.png>)
 
 To add the proposal transaction hex from Section 1 and set the governance stub contract as the target smart contract, we will click on `Add custom action` => enter the stub smart contract address as the target smart contract. Then select the `executeProposal` function from the dropdown menu under `contract method` as the target function in the target smart contract. Here is the interesting part: enter the required parameters, i.e., proposal description string and the proposalData which is your proposal transaction hex data from Section 1.
 
+![](<../.gitbook/governance/dao_1_tally_4_ii.png>)
 
 #### Step 5
 
 Once done, click continue and review the proposal. Once you are happy, you can click `Submit on-chain` which will open a MetaMask pop-up window for you to sign the transaction to create the proposal on-chain, via the Governance smart contract.
+
+![](<../.gitbook/governance/dao_1_tally_5.png>)
 
 
 ## General Governance Process
