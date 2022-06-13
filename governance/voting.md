@@ -42,8 +42,7 @@ In the final phase of the DAO launch, we will be moving towards full decentralis
 ## Introducing Euler's Governance Proposal Creation Tool (for Euler DAO Phase 1)
 
 
-### Introduction
-
+### Introducton
 
 The first phase of Euler’s DAO / Governance launch will be semi-decentralised wherein actions to be performed directly on the Euler protocol smart contracts will be performed or executed by the Euler team on behalf of the community. In this case, all on-chain governance proposals will point to or target a function in a stub smart contract (in place of the Euler protocol smart contracts). 
 
@@ -65,14 +64,17 @@ The web application should look like the following image:
 
 ![](<../.gitbook/governance/gov_tool_1.png>)
 
-#### Step 2
+
+
+#### Step 2 
 
 The tool requires MetaMask to be installed in your browser. 
 Switch your MetaMask wallet to mainnet. 
 
 The tool currently supports the Ethereum Mainnet and our Ropsten testnet Exec modules. It will create the appropriate transaction data to be executed depending on the selected network.
 
-#### Step 3
+
+#### Step 3
 
 At the top left of the window, we have a text field for proposal description and below that we have a dropdown menu representing a list of tokens, e.g., USDC, DAI, etc.
 
@@ -84,7 +86,8 @@ The image below shows the proposal description and the fields on the left popula
 
 ![](<../.gitbook/governance/gov_tool_3.png>)
 
-#### Step 4
+
+#### Step 4
 
 The proposer can then make modifications and generate the proposal transaction hex data to be executed via the Euler Exec module (`batchDispatch()` function) and use this hex data as the input to the target function in the stub smart contract when creating a proposal on Tally (this is described in Section 2 below).
 
@@ -98,7 +101,8 @@ For example, let us select DAI from the token list and change the borrow factor 
 
 ![](<../.gitbook/governance/gov_tool_4_ii.png>)
 
-#### Step 5
+
+#### Step 5
 
 To validate the updates we have selected, we can copy the auto-generated hex under batch items hex TX data (under batch items, which is under proposal description) and click on `DEBUG TX HEX DATA` and paste the copied hex into the text field. 
 
@@ -121,9 +125,10 @@ At this point, we assume you now have the proposal transaction hex data needed f
 Below, we will describe the steps required to accomplish this goal.
 
 
-#### Step 1
+#### Step 1
 
 Head over to the EulerDAO dashboard on Tally and connect your MetaMask wallet.
+
 
 
 #### Step 2
@@ -146,7 +151,7 @@ Enter a proposal title and description and click `Continue`.
 ![](<../.gitbook/governance/dao_1_tally_3.png>)
 
 
-#### Step 4
+#### Step 4
 
 In the next section, you will be required to specify the governance proposal actions, i.e., target smart contract, target function and parameters. The Tally dashboard allows you to specify multiple actions in a single proposal which will be called/executed if the proposal is successful and executed.
 
@@ -155,6 +160,7 @@ In the next section, you will be required to specify the governance proposal act
 To add the proposal transaction hex from Section 1 and set the governance stub contract as the target smart contract, we will click on `Add custom action` => enter the stub smart contract address as the target smart contract. Then select the `executeProposal` function from the dropdown menu under `contract method` as the target function in the target smart contract. Here is the interesting part: enter the required parameters, i.e., proposal description string and the proposalData which is your proposal transaction hex data from Section 1.
 
 ![](<../.gitbook/governance/dao_1_tally_4_ii.png>)
+
 
 #### Step 5
 
