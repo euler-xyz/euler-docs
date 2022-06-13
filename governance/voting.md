@@ -41,7 +41,9 @@ In the final phase of the DAO launch, we will be moving towards full decentralis
 
 ## Introducing Euler's Governance Proposal Creation Tool (for Euler DAO Phase 1)
 
+
 ### Introduction
+
 
 The first phase of Euler’s DAO / Governance launch will be semi-decentralised wherein actions to be performed directly on the Euler protocol smart contracts will be performed or executed by the Euler team on behalf of the community. In this case, all on-chain governance proposals will point to or target a function in a stub smart contract (in place of the Euler protocol smart contracts). 
 
@@ -55,7 +57,7 @@ The rest of the article will describe the process of creating the proposal trans
 
 ### Section 1. Creating the proposal transaction data for Euler’s Exec Module
 
-#### Step 1
+#### Step 1
 
 Navigate to the [proposal transaction data creation tool](https://governance.euler.finance/).
 
