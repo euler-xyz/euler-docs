@@ -182,7 +182,7 @@ Once done, click continue and review the proposal. Once you are happy, you can c
 The [General Governance Process](https://forum.euler.finance/t/welcome-to-the-euler-governance-forum/7) is documented on the Governance Forum.
 
 The general flow for the governance process is proposed as follows:
-Governance forum Idea/Proposal Discussion → eIP (Euler Improvement Proposal) creation on Governance forum by forum moderator → eIP created on Tally → On-chain Voting (and Execution if successful)
+Governance forum Idea/Proposal Discussion → eIP (Euler Improvement Proposal) creation on Governance forum by forum moderator → eIP created on Tally (On-chain Proposal Creation) → On-chain Voting (and Execution if successful)
 
 The image below depicts the on-chain governance phases and durations for each phase:
 
@@ -223,7 +223,9 @@ Examples of the kinds of decisions token holders might vote on include proposals
 
 When a governance proposal is created, it enters a 2 day review period, after which voting weights are recorded and voting begins. Voting lasts for 7 days; once the voting period is over, if quorum was reached (enough voting power participated) and the majority voted in favour, the proposal is considered successful and can proceed to be executed 2 days (48 hours) later.
 
-On-chain governance actions (proposal, voting, etc.) for the Euler protocol can be done via the [Tally](#tally) governance dashboard (described below) while off-chain governance actions can be carried out via [Snapshot](#snapshot). More information on on-chain and off-chain governance (i.e., proposals and voting) is described under the [Propose](#propose) section while both platforms are described as follows:
+On-chain governance actions (proposal, voting, etc.) for the Euler protocol can be done via the [Tally](#tally) governance dashboard (described below. 
+
+More information on on-chain and off-chain governance (i.e., proposals and voting) is described under the [Propose](#propose) section while both platforms are described as follows:
 
 ### Tally
 
@@ -252,19 +254,6 @@ Followed by casting a vote with or without a comment for the community
 ![](<../.gitbook/governance/vote_for.png>)
 
 Full Tally documentation can be accessed online at: [Tally](https://docs.withtally.com). The documentation describes how to navigate the web app, voting and delegation and creating a Tally account.
-
-
-### Snapshot
-Snapshot is an off-chain, gasless, multi-governance community polling dashboard. It allows soft voting (e.g. gauging how the community feels about a certain topic) and does not implement changes to the DAO or the protocol.
-
-It is described by Cointelegraph as a [“governance-as-a-service” provider for a number of decentralized finance projects, including Yearn.finance, SushiSwap, Balancer, Aave, Cream and others](https://cointelegraph.com/news/gnosis-and-snapshot-create-tool-to-bind-defi-governance-votes-on-chain). It provides a simple interface to create governance proposals and lets users vote on them by connecting their wallets and the governance tokens contained within. However, the actual voting process is conducted off-chain to save on gas costs and complexity.
-
-The image below shows the Snapshot user interface:
-
-![](<../.gitbook/assets/snapshot_ui.png>)
-
-Snapshot proposals are not binding. Team members and multisignature key holders for the projects are expected to execute the proposals, but the process relies entirely on their goodwill. Full Snapshot documentation can be accessed online at: [Snapshot](https://docs.snapshot.org).
-
 
 
 ## EUL
@@ -585,7 +574,7 @@ The duration of voting on a proposal, in Ethereum blocks. This can be changed th
 
 The first step is to canvas support from the wider community for making an upgrade. This will usually involve submission of a description of the general idea to the [Euler Forum](https://forum.euler.finance/t/welcome-to-the-euler-governance-forum/7). 
 
-Once the idea has been debated and refined with input from others, it can be put forward for an off-chain vote via Snapshot, here. Off-chain voting is non-binding, but helps the community verify that there is real support for a proposal before it goes to the final stage.
+Once the idea has been debated and refined with input from others, it can be put forward for an on-chain vote via Tally. Off-chain discussion of the proposal on the governance forum helps the community verify that there is real support for a proposal before it goes to the final stage (on-chain voting process).
 
 The final stage of a proposal requires a governance action to be created and submitted as a formal on-chain proposal. An on-chain proposal requires a user to have 0.5% of the total EUL supply owned or delegated to them.
 A governance action is a package of executable code that can be used to alter the state of the protocol in some way or transfer funds from the Euler Treasury. For example, it could be code that alters an interest rate parameter (see Euler Parameters), or promotes an asset from Isolation Tier to Collateral Tier (see Asset Tiers), or a much more involved proposal that adds an entirely new module to the Euler smart contracts (see Euler Smart Contracts).
