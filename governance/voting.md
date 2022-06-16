@@ -25,7 +25,7 @@ Hence, the `governorOnly()` modifier in the Euler Governance module smart contra
 
 To create the proposal transaction data, we have implemented a [tool](https://governance.euler.finance/) which will help the proposer to auto generate this depending on what actions should be executed. 
 
-The proposer can select a token from the dropdown token list (this will auto populate the fields with the current configuration for the token/market on Euler), the proposer can then make modifications and generate the proposal transaction hex to be executed via the Euler Exec module (`batchDispatch()` function) and use this hex data as the input to the target function in the stub smart contract when creating a propsal on Tally.
+The proposer can select a token from the dropdown token list (this will auto populate the fields with the current configuration for the token/market on Euler), the proposer can then make modifications and generate the proposal transaction hex to be executed via the Euler Exec module (`batchDispatch()` function) and use this hex data as the input to the target function in the stub smart contract when creating a proposal on Tally.
 
 Examples of the kinds of decisions token holders might vote on include proposals to modify:
 * The tier of an asset
@@ -191,7 +191,7 @@ The image below depicts the on-chain governance phases and durations for each ph
 
 
 ### Idea
-A great place to start a discussion on a potential governance proposal is the idea section. If you feel confident that your idea is relevant to the community and is well-formulated, head over the to Governance Forum to begin a discussion with the community around your idea (following the process described on the forum). 
+A great place to start a discussion on a potential governance proposal is the idea section. If you feel confident that your idea is relevant to the community and is well-formulated, head over to the Governance Forum to begin a discussion with the community around your idea (following the process described on the forum). 
 
 Once a discussion / commenting begins around your idea, be proactive with the community and be open to suggestions. It typically takes a week for the request for comments to mature before it becomes an eIP.
 
@@ -273,7 +273,7 @@ EUL is an ERC-20 token that allows token holders to delegate voting rights to an
 
 If you wish to have a say in governance, you need to delegate your vote to self or someone in the community. 
 
-In summary, delegates are token holders that have completed a one-time setup process (executing the delegate function of the token to delegate another user or the token holder themselves to enable the governor contract determine their voting power). Once you become a delegate, you can vote on active proposals, and create proposals if you have enough voting power. If you choose not to directly vote on proposals, you can pass your voting power on to a delegate as well.
+In summary, delegates are token holders that have completed a one-time setup process (executing the delegate function of the token to delegate another user or the token holder themselves to enable the governor contract to determine their voting power). Once you become a delegate, you can vote on active proposals, and create proposals if you have enough voting power. If you choose not to directly vote on proposals, you can pass your voting power on to a delegate as well.
 
 
 The delegate sections below describe the delegation using the ERC20Votes (EUL token) smart contract and via the Tally Governance Dashboard.
@@ -298,7 +298,7 @@ If you choose to delegate to an address or delegate, the following screen will b
 
 ![](<../.gitbook/governance/delegate_to_other_address.png>)
 
-This will not transfer any of your tokens to the delegate, you will only be delegating your voting power, i.e., voting via proxy who will be voting on your behalf or repsenting you at the polls! You can always change the delegate later on or delegate to yourself again. This helps to ensure that there is a good degree of participation from the community on on-chain governance proposals voting.
+This will not transfer any of your tokens to the delegate, you will only be delegating your voting power, i.e., voting via proxy who will be voting on your behalf or representing you at the polls! You can always change the delegate later on or delegate to yourself again. This helps to ensure that there is a good degree of participation from the community on on-chain governance proposals voting.
 
 Finally, regardless of whether you are delegating to yourself or delegating to a delegate, you will be required to confirm the transaction in your wallet and this transaction will cost gas.
 ![](<../.gitbook/governance/delegate_to_self_metamask.png>)
@@ -452,7 +452,7 @@ NOTE: The string can be decoded by the standard [`URLSearchParams`](https://deve
 ### Quorum Votes
 
 The required minimum number of votes required for a proposal to succeed.
-Note: The `blockNumber` parameter corresponds to the snaphot used for counting vote. This allows to scale the quroum depending on values such as the totalSupply of a token at this block (see the openzeppelin [ERC20Votes](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Votes.sol) abstract contract).
+Note: The `blockNumber` parameter corresponds to the snapshot used for counting the vote. This allows to scale the quorum depending on values such as the totalSupply of a token at this block (see the openzeppelin [ERC20Votes](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Votes.sol) abstract contract).
 
 #### Governance
     function quorum(uint blockNumber) public pure returns (uint)
@@ -494,7 +494,7 @@ Public accessor to check the eta of a queued proposal.
     uint proposalEta = gov.proposalEta();
 
 #### Web3 1.2.6
-    const proposalEta = await gov.methods.proposalEta(proposalIds).call();
+    const proposalEta = await gov.methods.proposalEta(proposalId).call();
 
 
 ### Proposal Threshold
@@ -706,7 +706,7 @@ The canceller can cancel proposals which have been queued but not executed or do
     const tx = gov.methods.cancel(id).send({ from: sender });
 
 ### Has Voted
-Returns weither an address has casted a vote on a proposal ID.
+Returns whether an address has casted a vote on a proposal ID.
 
 #### Governance
     function hasVoted(uint proposalId, address voterAddress) returns (bool)
