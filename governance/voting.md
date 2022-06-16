@@ -583,7 +583,7 @@ The duration of voting on a proposal, in Ethereum blocks. This can be changed th
 
 ### Propose
 
-The first step is to canvas support from the wider community for making an upgrade. This will usually involve submission of a description of the general idea to the Euler Forum, here. 
+The first step is to canvas support from the wider community for making an upgrade. This will usually involve submission of a description of the general idea to the [Euler Forum](https://forum.euler.finance/t/welcome-to-the-euler-governance-forum/7). 
 
 Once the idea has been debated and refined with input from others, it can be put forward for an off-chain vote via Snapshot, here. Off-chain voting is non-binding, but helps the community verify that there is real support for a proposal before it goes to the final stage.
 
