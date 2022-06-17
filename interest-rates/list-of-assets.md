@@ -46,6 +46,7 @@ The main consideration is maintaining target utilisation (typically at Kink%).&#
 | ILV | 0.00| 10.00 | 300.00 | 0.50 |
 | INDEX | 0.00| 10.00 | 300.00 | 0.50 |
 | LRC | 0.00| 10.00 | 300.00 | 0.50 |
+| LUSD | 0.00| 10.00 | 300.00 | 0.50 |
 | MIM | 0.00| 10.00 | 300.00 | 0.50 |
 | MPL | 0.00| 10.00 | 300.00 | 0.50 |
 | MTA | 0.00| 10.00 | 300.00 | 0.50 |

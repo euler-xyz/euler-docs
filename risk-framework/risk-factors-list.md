@@ -34,6 +34,7 @@ This page outlines the main risk parameters on Euler, as determined by [governan
 | ILV | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | INDEX | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | LRC | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| LUSD | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | MIM | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | MPL | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | MTA | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
