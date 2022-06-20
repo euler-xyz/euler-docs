@@ -91,7 +91,7 @@ To create the proposal transaction data, the proposer needs to enter a proposal 
 
 The image below shows the proposal description and the fields on the left populated with the current market configuration for USDC on Euler:
 
-![](<../.gitbook/governance/gov_tool_3.png>)
+![](<../../.gitbook/governance/gov_tool_3.png>)
 
 
 #### Step 4
@@ -100,13 +100,13 @@ The proposer can then make modifications and generate the proposal transaction h
 
 For example purposes, let’s change the borrow factor of USDC to 0.6. To do this, we simply change the collateral factor from 0.9 to 0.6 in the text field for collateral factor and click on `CREATE PROPOSAL DATA`. Once we do this, we should see the markdown table showing the changes we want to make to the asset. We will also see the batch items Hex transaction data which we need for our on-chain governance proposal stub smart contract on Tally. 
 
-![](<../.gitbook/governance/gov_tool_4_i.png>)
+![](<../../.gitbook/governance/gov_tool_4_i.png>)
 
 Note: This process can be repeated for multiple tokens and configurations (or multiple configurations of the same token). They will be added in a batch and encoded to form the transaction data for the batchDispatch functionality in the Euler Exec module.
 
 For example, let us select DAI from the token list and change the borrow factor of DAI to 0.3. Again, the fields are automatically populated when we select DAI and when we change the borrow factor to 0.3 and click on `CREATE PROPOSAL DATA`. The list of configuration updates is updated to reflect the change we are making to DAI, while the USDC update information still remains. The transaction hex is also updated.
 
-![](<../.gitbook/governance/gov_tool_4_ii.png>)
+![](<../../.gitbook/governance/gov_tool_4_ii.png>)
 
 
 #### Step 5
@@ -115,7 +115,7 @@ To validate the updates we have selected, we can copy the auto-generated hex und
 
 The tool should also decode the hex and show us a markdown with the updates the Euler team will be applying to the selected tokens once the proposal gets executed. The Euler team will also follow this process to make sure that the proposal description reflects the updates to be made before executing the transaction in the Exec module on behalf of the community. 
 
-![](<../.gitbook/governance/gov_tool_5.png>)
+![](<../../.gitbook/governance/gov_tool_5.png>)
 
 As shown in the image above, the hex data is decoded to show the updates we selected to be applied to DAI and USDC. There is a close button at the bottom right of the window to close the debug modal and return to the main page. 
 
@@ -142,11 +142,11 @@ Head over to the EulerDAO dashboard on Tally and connect your MetaMask wallet.
 
 Click on `Create new proposal` at the right corner of the window. 
 
-![](<../.gitbook/governance/dao_1_tally_2.png>)
+![](<../../.gitbook/governance/dao_1_tally_2.png>)
 
 It should then take you to the proposal creation window below.
 
-![](<../.gitbook/governance/dao_1_tally_2i.png>)
+![](<../../.gitbook/governance/dao_1_tally_2i.png>)
 
 Click on `Continue` to move onto the next step (`Name your proposal`). 
 
@@ -155,18 +155,18 @@ Click on `Continue` to move onto the next step (`Name your proposal`).
 
 Enter a proposal title and description and click `Continue`.
 
-![](<../.gitbook/governance/dao_1_tally_3.png>)
+![](<../../.gitbook/governance/dao_1_tally_3.png>)
 
 
 #### Step 4
 
 In the next section, you will be required to specify the governance proposal actions, i.e., target smart contract, target function and parameters. The Tally dashboard allows you to specify multiple actions in a single proposal which will be called/executed if the proposal is successful and executed.
 
-![](<../.gitbook/governance/dao_1_tally_4_i.png>)
+![](<../../.gitbook/governance/dao_1_tally_4_i.png>)
 
 To add the proposal transaction hex from Section 1 and set the governance stub contract as the target smart contract, we will click on `Add custom action` => enter the stub smart contract address as the target smart contract. Then select the `executeProposal` function from the dropdown menu under `contract method` as the target function in the target smart contract. Here is the interesting part: enter the required parameters, i.e., proposal description string and the proposalData which is your proposal transaction hex data from Section 1.
 
-![](<../.gitbook/governance/dao_1_tally_4_ii.png>)
+![](<../../.gitbook/governance/dao_1_tally_4_ii.png>)
 
 
 
@@ -174,7 +174,7 @@ To add the proposal transaction hex from Section 1 and set the governance stub c
 
 Once done, click continue and review the proposal. Once you are happy, you can click `Submit on-chain` which will open a MetaMask pop-up window for you to sign the transaction to create the proposal on-chain, via the Governance smart contract.
 
-![](<../.gitbook/governance/dao_1_tally_5.png>)
+![](<../../.gitbook/governance/dao_1_tally_5.png>)
 
 
 ## General Governance Process
@@ -186,7 +186,7 @@ Governance forum Idea/Proposal Discussion → eIP (Euler Improvement Proposal) c
 
 The image below depicts the on-chain governance phases and durations for each phase:
 
-![](<../.gitbook/governance/governance_process.png>)
+![](<../../.gitbook/governance/governance_process.png>)
 
 
 
@@ -235,23 +235,23 @@ Tally empowers user owned governance through a voting dashboard, governance tool
 
 For example, the image below shows a list of active and succeeded proposals:
 
-![](<../.gitbook/governance/recent_proposals.png>)
+![](<../../.gitbook/governance/recent_proposals.png>)
 
 The image below shows the top voters on proposals created for the Euler test DAO:
 
-![](<../.gitbook/governance/top_voters.png>)
+![](<../../.gitbook/governance/top_voters.png>)
 
 Users can also view the total percentage of votes in support or against a specific proposal. In the image below, the test proposal succeeded with all votes in support:
 
-![](<../.gitbook/governance/succeeded_proposal.png>)
+![](<../../.gitbook/governance/succeeded_proposal.png>)
 
 And when voting, users have the option to vote for or against a proposal or an abstain vote as shown in the images below:
 
 Firstly users will need to connect their wallet to cast a vote
-![](<../.gitbook/governance/connect_to_vote.png>)
+![](<../../.gitbook/governance/connect_to_vote.png>)
 
 Followed by casting a vote with or without a comment for the community
-![](<../.gitbook/governance/vote_for.png>)
+![](<../../.gitbook/governance/vote_for.png>)
 
 Full Tally documentation can be accessed online at: [Tally](https://docs.withtally.com). The documentation describes how to navigate the web app, voting and delegation and creating a Tally account.
 
@@ -275,22 +275,22 @@ Delegate votes from the sender to a delegatee. Users can delegate to 1 address a
 
 The first step in the delegation process via the Tally governance application is to visit the Euler DAO page on the Tally governance application and connect your wallet. 
 
-![](<../.gitbook/governance/connect_wallet.png>)
+![](<../../.gitbook/governance/connect_wallet.png>)
 
 The second step is to click on "Delegate vote" at the top right corner of the screen. 
 
 Users can then choose to either delegate to themselves or to another wallet, delegate or community member. By delegating to self, you retain your voting power. Next time there is an active proposal, you can choose to vote in any way you choose.
 
-![](<../.gitbook/governance/delegate_to_self.png>)
+![](<../../.gitbook/governance/delegate_to_self.png>)
 
 If you choose to delegate to an address or delegate, the following screen will be shown instead where you can enter the address you wish to delegate your voting power to. 
 
-![](<../.gitbook/governance/delegate_to_other_address.png>)
+![](<../../.gitbook/governance/delegate_to_other_address.png>)
 
 This will not transfer any of your tokens to the delegate, you will only be delegating your voting power, i.e., voting via proxy who will be voting on your behalf or representing you at the polls! You can always change the delegate later on or delegate to yourself again. This helps to ensure that there is a good degree of participation from the community on on-chain governance proposals voting.
 
 Finally, regardless of whether you are delegating to yourself or delegating to a delegate, you will be required to confirm the transaction in your wallet and this transaction will cost gas.
-![](<../.gitbook/governance/delegate_to_self_metamask.png>)
+![](<../../.gitbook/governance/delegate_to_self_metamask.png>)
 
 
 To recap, delegates are token holders that have completed a one-time setup process. Once you become a delegate, you can then vote on active proposals, and create proposals if you have enough voting power. If you choose not to directly vote on proposals, you can pass your voting power on to a delegate as we have seen.
