@@ -70,7 +70,7 @@ Navigate to the [proposal transaction data creation tool](https://governance.eul
 
 The web application should look like the following image:
 
-![](<../.gitbook/governance/gov_tool_1.png>)
+![](<../../.gitbook/governance/gov_tool_1.png>) 
 
 
 
