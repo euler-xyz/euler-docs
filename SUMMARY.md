@@ -10,7 +10,8 @@
 
 ## Guides
 
-* [User Interface Guide](guides/ui.md)
+* [How To](guides/ui/README.md)
+  * [Lending and Borrowing](guides/ui/lending-and-borrowing-example.md)
 * [FAQ](guides/faq.md)
 * [Glossary](guides/glossary.md)
 
@@ -18,32 +19,28 @@
 
 * [Addresses](protocol/addresses.md)
 * [Parameters](protocol/eulers-default-parameters.md)
+  * [Interest Rates](interest-rates/list-of-assets.md)
+  * [Risk Factors](risk-framework/risk-factors-list.md)
 
 ## Risk Framework
 
-* [Introduction](risk-framework/introduction.md)
-* [Methodology](risk-framework/methodology.md)
-* [Ranking Assets](risk-framework/ranking-assets.md)
-* [Oracle Rating](risk-framework/oracle-rating.md)
-* [Collateral and Borrow Factor Methodology](risk-framework/collateral-and-borrow-factors.md)
-* [Tier Methodology](risk-framework/tiers.md)
+* [Methodology](risk-framework/methodology/README.md)
+  * [Asset Tiers](risk-framework/methodology/tiers.md)
+  * [Collateral and Borrow Factor](risk-framework/methodology/collateral-and-borrow-factors.md)
+  * [Ranking Assets](risk-framework/methodology/ranking-assets.md)
+  * [Oracle Rating](risk-framework/methodology/oracle-rating.md)
 * [Simulation Environment](risk-framework/simulation-environment.md)
-* [Governance](risk-framework/governance.md)
-* [Lending and Borrowing Example](risk-framework/lending-and-borrowing-example.md)
-* [Risk Factors List](risk-framework/risk-factors-list.md)
-
-## Interest Rates
-
-* [Introduction](interest-rates/introduction.md)
-* [Borrow APY per Asset](interest-rates/list-of-assets.md)
 
 ## Governance
 
-* [EUL](governance/eul.md)
-* [Epochs](governance/distribution.md)
-* [Gauges](governance/gauges.md)
-* [Voting](governance/voting.md)
+* [Governance](governance/governance/README.md)
+  * [Voting](governance/governance/voting.md)
+* [EUL](governance/eul/README.md)
+  * [Distribution](governance/eul/distribution.md)
+  * [Epochs](governance/eul/distribution-1.md)
+  * [Gauges](governance/eul/gauges.md)
 * [Treasury](governance/treasury.md)
+* [Grants](governance/grants.md)
 
 ## Developers
 
@@ -52,6 +49,8 @@
 * [Architecture](developers/architecture.md)
 * [Proxy Protocol](developers/proxy-protocol.md)
 * [Numeric Limits](developers/numeric-limits.md)
+* [SDK](developers/sdk.md)
+* [Subgraph](developers/subgraph.md)
 
 ## Security
 
@@ -60,6 +59,10 @@
 * [Safety Module](security/vault.md)
 * [Insurance](security/insurance.md)
 
+## Support
+
+* [How to retrieve errors from developer console](support/retrieve-errors.md)
+* [Common Errors](support/common-errors.md)
 ## Languages
 
 * [White Paper (ENG-CHN)](languages/white-paper-ENG-CHN.md)

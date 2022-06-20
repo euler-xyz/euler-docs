@@ -22,7 +22,7 @@ For more info on collateral and borrow factors, check out our risk docs: [https:
 
 ## Reserve Factor
 
-The **default reserve factor is set at 23%**.&#x20;
+The **default reserve factor is set at 23%**.
 
 This means that for every $1 of interest paid by borrowers on an XYZ asset, 23c is paid into the reserve pool of XYZ while the remaining 77c are paid to lenders of XYZ. These reserves may later be used to repay the bad debts that accrue in the pool.
 
@@ -95,7 +95,7 @@ This low minimum value ensures that activating a market is not too expensive. Ho
 
 ### Target Health Factor
 
-The **default target health factor is 1.25**.&#x20;
+The **default target health factor is 1.25**.
 
 When a user is in violation due to his risk-adjusted liabilities exceeding his risk-adjusted collateral, his health factor dips below 1. However, should a liquidator come in, he may only take enough debt and assets from the violator to shift his health factor to 1.25.
 

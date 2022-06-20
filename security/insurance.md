@@ -8,4 +8,4 @@ Euler has access to $10M in smart contract coverage provided by [Sherlock](https
 
 Sherlock's coverage is managed by the protocols/DAO instead of users, while its claims decisions are made by an unbiased 3rd party.
 
-Read more about Sherlock's insurance program at their [website](https://www.sherlock.xyz) or in their [documentation](https://docs.sherlock.xyz/faq) for further details.
+Read more about Sherlock's insurance program at their [website](https://www.sherlock.xyz/) or in their [documentation](https://docs.sherlock.xyz/faq) for further details.
