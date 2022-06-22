@@ -2,7 +2,10 @@
 description: Learn more about the Euler Governance launch phases
 ---
 
-# Euler DAO Launch Phases
+# Governance Launch Phases
+
+
+## Introduction
 
 EulerDAO will kick off in three phases for a guarded launch towards full decentralisation of the Euler protocol. Each phase is described below.
 
@@ -18,7 +21,7 @@ Should the proposal become successful and executed, the target function will the
 
 Hence, the `governorOnly()` modifier in the Euler Governance module smart contract will be checking that the caller of its functions is the Euler mulisig and not the TimelockController smart contract.
 
-To create the proposal transaction data, we have implemented a [tool](https://governance.euler.finance/) which will help the proposer to auto generate this depending on what actions should be executed. 
+To create the proposal transaction data, we have implemented a [tool](https://proposal.euler.finance/) which will help the proposer to auto generate this depending on what actions should be executed. 
 
 The proposer can select a token from the dropdown token list (this will auto populate the fields with the current configuration for the token/market on Euler), the proposer can then make modifications and generate the proposal transaction hex to be executed via the Euler Exec module (`batchDispatch()` function) and use this hex data as the input to the target function in the stub smart contract when creating a proposal on Tally.
 
@@ -53,7 +56,7 @@ Should the proposal become successful and executed, the target function will the
 
 Hence, the `governorOnly()` modifier in the [Euler Governance module](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Governance.sol) will be checking that the caller of its functions is the Euler mulisig and not the TimelockController smart contract of the DAO.
 
-To create the proposal transaction data, we have implemented a [tool](https://governance.euler.finance/) which will help the proposal creator to auto-generate it depending on what actions should be executed. The proposal transaction data is simply an encoded version of the on-chain transaction to the Exec module’s batchDispatch function.
+To create the proposal transaction data, we have implemented a [tool](https://proposal.euler.finance/) which will help the proposal creator to auto-generate it depending on what actions should be executed. The proposal transaction data is simply an encoded version of the on-chain transaction to the Exec module’s batchDispatch function.
 
 The rest of the article will describe the process of creating the proposal transaction data on Euler’s governance proposal creation tool and using the generated proposal transaction data to create an on-chain proposal on the [Tally](https://www.tally.xyz/) governance dashboard.
 
@@ -61,7 +64,7 @@ The rest of the article will describe the process of creating the proposal trans
 
 ### Step 1
 
-Navigate to the [proposal transaction data creation tool](https://governance.euler.finance/).
+Navigate to the [proposal transaction data creation tool](https://proposal.euler.finance/).
 
 The web application should look like the following image:
 
