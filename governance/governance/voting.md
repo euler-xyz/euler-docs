@@ -85,8 +85,9 @@ For developers who wish to interact with the EUL token contract directly, the EU
     const tx = await eul.methods.delegate(delegateeAddress).send({ from: sender });
 
 
-### On-Chain Proposal Creation and Voting   
- 
+
+### Proposal Creation and Voting
+
 For example, the image below shows a list of active and succeeded proposals:
 
 ![](<../../.gitbook/governance/recent_proposals.png>)
