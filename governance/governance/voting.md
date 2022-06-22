@@ -6,7 +6,11 @@ description: Learn more about how to participate in Euler Governance
 
 ## Introduction
 
-The [Euler protocol](https://www.euler.finance/) is governed and upgraded by EUL token-holders, using three distinct components; the EUL token, governance module, and timelock module. Together, these contracts allow the community to propose, vote, and implement changes. Proposals can modify system parameters, support new markets, or add entirely new functionality to the protocol. Euler uses OpenZeppelin Governor for governance. It is a governance protocol — similar to the one Compound uses — where voters/delegates vote on active proposals to make changes to the Euler governance configurations and Euler protocol.
+The [Euler protocol](https://www.euler.finance/) is governed and upgraded by EUL token-holders, using three distinct components; the EUL token, governance module, and timelock module. Together, these contracts allow the community to propose, vote, and implement changes. Proposals can modify system parameters, support new markets, or add entirely new functionality to the protocol. 
+
+EUL is an ERC-20 token that allows token holders to delegate voting rights to any address, including their own address. Changes to the owner’s token balance automatically adjust the voting rights of the delegate. In order to enable these features, the Euler Token smart contract inherits the features from the openzeppelin [ERC20Votes](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Votes.sol) abstract contract. 
+
+On the other hand, Euler uses OpenZeppelin Governor for governance. It is a governance protocol — similar to the one Compound uses — where voters/delegates vote on active proposals to make changes to the Euler governance configurations and Euler protocol.
 
 Euler will be managed by holders of a protocol native governance token called Euler Token (EUL). EUL tokens represent voting shares. A holder can vote on a governance proposal themselves or delegate their votes to a third party. Addresses that own or have been delegated at least 0.5% of the total EUL supply can create governance proposals.
 
@@ -30,33 +34,7 @@ Tally is a governance app in the form of a web-based platform focused on enablin
 
 Tally empowers user owned governance through a voting dashboard, governance tooling, and real time research and analysis. Users can use the app to review data on governance systems, active and prior proposals, and individual delegates or token holders. The platform also enabled direct on-chain voting and vote delegation, helping users put their governance insights into action. Through integration with the Euler governance smart contract, Euler token holders can connect their wallets and create proposals, vote, delegate voting power to a community member, discover other delegates in the community, and more.
 
-For example, the image below shows a list of active and succeeded proposals:
-
-![](<../../.gitbook/governance/recent_proposals.png>)
-
-The image below shows the top voters on proposals created for the Euler test DAO:
-
-![](<../../.gitbook/governance/top_voters.png>)
-
-Users can also view the total percentage of votes in support or against a specific proposal. In the image below, the test proposal succeeded with all votes in support:
-
-![](<../../.gitbook/governance/succeeded_proposal.png>)
-
-And when voting, users have the option to vote for or against a proposal or an abstain vote as shown in the images below:
-
-Firstly users will need to connect their wallet to cast a vote
-![](<../../.gitbook/governance/connect_to_vote.png>)
-
-Followed by casting a vote with or without a comment for the community
-![](<../../.gitbook/governance/vote_for.png>)
-
-Full Tally documentation can be accessed online at: [Tally](https://docs.withtally.com). The documentation describes how to navigate the web app, voting and delegation and creating a Tally account.
-
-
-
 ### Delegate
-
-EUL is an ERC-20 token that allows token holders to delegate voting rights to any address, including their own address. Changes to the owner’s token balance automatically adjust the voting rights of the delegate. In order to enable these features, the Euler Token smart contract inherits the features from the openzeppelin [ERC20Votes](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Votes.sol) abstract contract. 
 
 If you wish to have a say in governance, you need to delegate your vote to self or someone in the community. 
 
@@ -105,5 +83,31 @@ For developers who wish to interact with the EUL token contract directly, the EU
 
 #### Web3
     const tx = await eul.methods.delegate(delegateeAddress).send({ from: sender });
+
+
+### On-Chain Proposal Creation and Voting   
+ 
+For example, the image below shows a list of active and succeeded proposals:
+
+![](<../../.gitbook/governance/recent_proposals.png>)
+
+The image below shows the top voters on proposals created for the Euler test DAO:
+
+![](<../../.gitbook/governance/top_voters.png>)
+
+Users can also view the total percentage of votes in support or against a specific proposal. In the image below, the test proposal succeeded with all votes in support:
+
+![](<../../.gitbook/governance/succeeded_proposal.png>)
+
+And when voting, users have the option to vote for or against a proposal or an abstain vote as shown in the images below:
+
+Firstly users will need to connect their wallet to cast a vote
+![](<../../.gitbook/governance/connect_to_vote.png>)
+
+Followed by casting a vote with or without a comment for the community
+![](<../../.gitbook/governance/vote_for.png>)
+
+Full Tally documentation can be accessed online at: [Tally](https://docs.withtally.com). The documentation describes how to navigate the web app, voting and delegation and creating a Tally account.
+
 
 
