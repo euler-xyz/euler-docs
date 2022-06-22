@@ -22,7 +22,7 @@ The image below depicts the on-chain governance phases and durations for each ph
 
 
 ### Idea
-A great place to start a discussion on a potential governance proposal is the idea section. If you feel confident that your idea is relevant to the community and is well-formulated, head over to the Governance Forum to begin a discussion with the community around your idea (following the process described on the forum). 
+A great place to start a discussion on a potential governance proposal is the idea section on the forum website. If you feel confident that your idea is relevant to the community and is well-formulated, head over to the Governance Forum to begin a discussion with the community around your idea (following the process described on the forum). 
 
 Once a discussion / commenting begins around your idea, be proactive with the community and be open to suggestions. It typically takes a week for the request for comments to mature before it becomes an eIP.
 
