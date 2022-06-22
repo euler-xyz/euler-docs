@@ -46,7 +46,7 @@ In this phase, the Installer Admin will also be switched to the TimelockControll
 Not only giving the community control over the Governance module for asset configuration modifications but also full control over the protocol including the installer module. This module is used to bootstrap install the rest of the modules, and can later on be used to upgrade modules to add new features and/or fix bugs.
 
 
-# Introducing Euler's Governance Proposal Creation Tool (for Euler DAO Phase 1)
+# Euler's Governance Proposal Creation Tool for Phase 1
 
 ## Introduction
 
