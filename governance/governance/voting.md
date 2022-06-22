@@ -89,11 +89,13 @@ For developers who wish to interact with the EUL token contract directly, the EU
 
 ### Proposal Creation and Voting
 
-For example, the image below shows a list of active and succeeded proposals:
+The images below depict the use of the Tally governance dashboard for governance proposal creation and voting.
+
+The governance home page on Tally shows a list of active and succeeded proposals:
 
 ![](<../../.gitbook/governance/recent_proposals.png>)
 
-The image below shows the top voters on proposals created for the Euler test DAO:
+On Tally, users can also see the top voters on proposals created for the Euler test DAO as shown below:
 
 ![](<../../.gitbook/governance/top_voters.png>)
 
@@ -101,7 +103,37 @@ Users can also view the total percentage of votes in support or against a specif
 
 ![](<../../.gitbook/governance/succeeded_proposal.png>)
 
-And when voting, users have the option to vote for or against a proposal or an abstain vote as shown in the images below:
+
+#### Proposal Creation
+
+To create a new proposal, users will need to click on `Create New Proposal` from the DAO home page on Tally as shown in the top right corner in the image below:
+
+![](<../../.gitbook/governance/dao_1_tally_2.png>)
+
+This will then open up the proposal creation dialog taking users through the required steps to create an on-chain proposal. In the initial step / screen, it will check that the user has enough voting power to meet the proposal threshold specified within the governance smart: 
+
+![](<../../.gitbook/governance/new_proposal_1.png>)
+
+The next step will require users to name the proposal and add a short description as shown below:
+
+![](<../../.gitbook/governance/new_proposal_2.png>)
+
+In the next step, users will need to add the actions to be executed should the proposal become successful or receive majority of vote in support. In this step, users can specify the target smart contract and required function parameters:
+
+![](<../../.gitbook/governance/new_proposal_3.png>)
+
+The following page will then be the review page allowing the user to review and confirm that the specified actions are correct: 
+
+![](<../../.gitbook/governance/new_proposal_review.png>)
+
+
+Once confirmed, the proposal will then be created on-chain and if successful, Tally will display the proposal page with the description and status (e.g., pending, active, succeeded, queued, executed). 
+![](<../../.gitbook/governance/new_proposal_submitted.png>)
+
+
+#### Voting
+
+When voting, users have the option to vote for or against a proposal or an abstain vote as shown in the images below:
 
 Firstly users will need to connect their wallet to cast a vote
 ![](<../../.gitbook/governance/connect_to_vote.png>)
@@ -110,6 +142,3 @@ Followed by casting a vote with or without a comment for the community
 ![](<../../.gitbook/governance/vote_for.png>)
 
 Full Tally documentation can be accessed online at: [Tally](https://docs.withtally.com). The documentation describes how to navigate the web app, voting and delegation and creating a Tally account.
-
-
-
