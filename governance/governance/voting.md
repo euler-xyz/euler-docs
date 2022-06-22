@@ -87,8 +87,7 @@ For developers who wish to interact with the EUL token contract directly, the EU
 
 
 
-
-### Proposal Creation and Voting
+### Proposal Creation and Voting
 
 For example, the image below shows a list of active and succeeded proposals:
 
