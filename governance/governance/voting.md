@@ -40,7 +40,7 @@ If you wish to have a say in governance, you need to delegate your vote to self 
 
 In summary, delegates are token holders that have completed a one-time setup process (executing the delegate function of the token to delegate another user or the token holder themselves to enable the governor contract to determine their voting power). Once you become a delegate, you can vote on active proposals, and create proposals if you have enough voting power. If you choose not to directly vote on proposals, you can pass your voting power on to a delegate as well.
 
-The delegate sections below describe the delegation using the ERC20Votes (EUL token) smart contract and via the Tally Governance Dashboard.
+The delegate sections below describe the delegation using the EUL token smart contract and via the Tally Governance Dashboard.
 
 Delegate votes from the sender to a delegatee. Users can delegate to 1 address at a time, and the number of votes added to the delegatee’s vote count is equivalent to the balance of EUL in the user’s account. Votes are delegated from the current block and onward, until the sender delegates again, or transfers their EUL. Delegation can be done via the smart contract function described below or via the Tally user interface.
 
