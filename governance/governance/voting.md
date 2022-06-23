@@ -42,7 +42,7 @@ In summary, delegates are token holders that have completed a one-time setup pro
 
 The delegate sections below describe the delegation using the EUL token smart contract and via the Tally Governance Dashboard.
 
-Delegate votes from the sender to a delegatee. Users can delegate to 1 address at a time, and the number of votes added to the delegatee’s vote count is equivalent to the balance of EUL in the user’s account. Votes are delegated from the current block and onward, until the sender delegates again, or transfers their EUL. Delegation can be done via the smart contract function described below or via the Tally user interface.
+Delegate votes from the sender to a delegatee. Users can delegate to 1 address at a time, and the number of votes added to the delegatee’s vote count is equivalent to the balance of EUL in the user’s account. Votes are delegated from the current block and onward, until the sender delegates again, or transfers their EUL. Delegation can be carried out via the smart contract function described below or via the Tally user interface.
 
 #### Tally Governance Dashboard
 
