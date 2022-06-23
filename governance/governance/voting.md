@@ -10,11 +10,11 @@ The [Euler protocol](https://www.euler.finance/) is governed and upgraded by EUL
 
 EUL is an ERC-20 token that allows token holders to delegate voting rights to any address, including their own address. Changes to the owner’s token balance automatically adjust the voting rights of the delegate. In order to enable these features, the Euler Token smart contract inherits the features from the openzeppelin [ERC20Votes](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Votes.sol) abstract contract. 
 
-On the other hand, Euler uses OpenZeppelin Governor for governance. It is a governance protocol — similar to the one Compound uses — where voters/delegates vote on active proposals to make changes to the Euler governance configurations and Euler protocol.
+On the other hand, Euler uses [OpenZeppelin Governor](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/governance) for governance. It is a governance protocol allowing voters/delegates vote on active proposals to make changes to the Euler governance configurations and Euler protocol.
 
 Euler will be managed by holders of a protocol native governance token called Euler Token (EUL). EUL tokens represent voting shares. A holder can vote on a governance proposal themselves or delegate their votes to a third party. Addresses that own or have been delegated at least 0.5% of the total EUL supply can create governance proposals.
 
-Specifically, the smart contract functions capable of modifying the protocol and controlled via governance have been implemented in the [governance module](https://github.com/euler-xyz/euler-contracts/blob/457e5302fd506d5b578776e57188661e047fda81/contracts/modules/Governance.sol) of the protocol.
+Specifically, the smart contract functions capable of modifying the protocol and controlled via governance have been implemented in the Euler [Governance module](https://github.com/euler-xyz/euler-contracts/blob/457e5302fd506d5b578776e57188661e047fda81/contracts/modules/Governance.sol) of the protocol.
 
 Examples of the kinds of decisions token holders might vote on include proposals to modify:
 * The tier of an asset

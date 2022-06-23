@@ -34,11 +34,12 @@
 ## Governance
 
 * [Governance](governance/governance/README.md)
-  * [Governance Launch Phases](governance/governance/governance-launch-phases.md)
   * [Addresses](governance/governance/addresses.md)
   * [Governance Parameters](governance/governance/governance-parameters.md)
   * [Governance Process](governance/governance/governance-process.md)
   * [Voting](governance/governance/voting.md)
+  * [Governance Launch Phases](governance/governance/governance-launch-phases.md)
+
 * [EUL](governance/eul/README.md)
   * [Distribution](governance/eul/distribution.md)
   * [Epochs](governance/eul/distribution-1.md)
