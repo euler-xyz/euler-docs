@@ -46,7 +46,7 @@ Delegate votes from the sender to a delegatee. Users can delegate to 1 address a
 
 #### Tally Governance Dashboard
 
-The first step in the delegation process via the Tally governance application is to visit the Euler DAO page on the Tally governance application and connect your wallet. 
+The first step in the delegation process via the Tally governance application is to visit the EulerDAO page on the Tally governance application and connect your wallet. 
 
 ![](<../../.gitbook/governance/connect_wallet.png>)
 
