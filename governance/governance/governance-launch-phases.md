@@ -9,7 +9,7 @@ description: Learn more about the Euler Governance launch phases
 
 EulerDAO will kick off in three phases for a guarded launch towards full decentralisation of the Euler protocol. Each phase is described below.
 
-The EulerDAO uses the OpenZeppelin Governor smart contracts (version 4.6.0) for governance (as well as the EUL token contract). It is a governance protocol — similar to the one Compound uses — where delegates vote on active proposals to make changes to the EulerDAO and Euler protocol.
+The EulerDAO uses the [OpenZeppelin Governance smart contracts](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/governance) (version 4.6.0) for governance (as well as the EUL token contract). It is a governance protocol — similar to the one Compound uses — where delegates vote on active proposals to make changes to the EulerDAO and Euler protocol.
 
 Euler uses the Tally governance dashboard application to manage the governance process. Through Tally, you can set up your wallet to become a delegate, create on-chain proposals, vote on active proposals, discover delegates in the community, and delegate your voting power to a community member.
 
