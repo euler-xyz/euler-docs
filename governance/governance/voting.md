@@ -32,6 +32,8 @@ Tally is a web-based governance application focused on enabling on-chain governa
 
 Tally empowers user owned governance through a voting dashboard, governance tooling, and real time research and analysis. Users can use the app to review data on governance systems, active and prior proposals, and individual delegates or token holders. The platform also enabled direct on-chain voting and vote delegation, helping users put their governance insights into action. Through integration with the Euler governance smart contract, Euler token holders can connect their wallets and create proposals, vote, delegate voting power to a community member, discover other delegates in the community, and more.
 
+
+
 ### Delegate
 
 If you wish to have a say in governance, you need to delegate your vote to self or someone in the community. 

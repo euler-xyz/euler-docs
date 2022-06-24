@@ -10,7 +10,7 @@ This page outlines the governance parameters for the Euler Governance smart cont
 
 Execution Delay, Voting Delay and Voting Period are based on the assumption of a 15 seconds block creation time on the Ethereum Mainnet.
 
-The governance smart contract inherits functionality from the OpenZeppelin [GovernorSettings.sol module](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/governance/extensions/GovernorSettings.sol) allowing Voting Delay, Voting Period and Proposal Threshold to be changed through an on-chain governance proposal and voting process.
+The governance smart contract inherits functionality from the OpenZeppelin [GovernorSettings.sol module](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/governance/extensions/GovernorSettings.sol) allowing Voting Delay, Voting Period and Proposal Threshold to be updated through an on-chain governance proposal and voting process.
 
 
 **Table 1** Euler Governance Parameters
