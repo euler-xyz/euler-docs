@@ -23,7 +23,11 @@ The governance smart contract inherits functionality from the OpenZeppelin [Gove
 | Quorum Numerator | 3% of EUL Supply |
 | Proposal Threshold | 75,000 EUL |
 
-When a governance proposal is created, it enters a 2 day review period (i.e., Voting Delay), after which voting weights are recorded and voting begins. Voting lasts for 3 days (i.e., Voting Period); once the voting period is over, if quorum was reached (enough voting power participated) and the majority voted in favour, the proposal is considered successful and can proceed to be executed 2 days (48 hours) later (i.e., Execution Delay).
+When a governance proposal is created, it enters a 2 day review period (i.e., Voting Delay), after which voting weights are recorded and voting begins. 
+
+Voting lasts for 3 days (i.e., Voting Period); once the voting period is over, if quorum was reached (enough voting power participated) and the majority voted in favour, the proposal is considered successful and can proceed to be executed 2 days (48 hours) later (i.e., Execution Delay).
+
+Addresses delegated at least 75,000 EUL can create governance proposals having met the Proposal Threshold.
 
 The image below depicts the on-chain governance phases and durations for each phase:
 
