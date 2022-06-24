@@ -75,7 +75,7 @@ To recap, delegates are token holders that have completed a one-time setup proce
 For developers who wish to interact with the EUL token contract directly, the EUL contract has a delegate function defined below with examples on how to interact with it.
 
     function delegate(address delegatee)
-* ```delegatee```: The address in which the sender wishes to delegate their votes to.
+* ```delegatee```: The address the sender wishes to delegate their votes to.
 * ```msg.sender```: The address of the EUL token holder that is attempting to delegate their votes.
 * ```RETURN```: No return.
 
