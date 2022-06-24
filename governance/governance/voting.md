@@ -10,7 +10,7 @@ The [Euler protocol](https://www.euler.finance/) is governed and upgraded by EUL
 
 EUL is an ERC-20 token that allows token holders to delegate voting rights to any address, including their own address. Changes to the owner’s token balance automatically adjust the voting rights of the delegate. In order to enable these features, the Euler Token smart contract inherits the features from the openzeppelin [ERC20Votes](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Votes.sol) abstract contract. 
 
-On the other hand, Euler uses [OpenZeppelin Governance smart contracts](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/governance) for governance. It is a governance protocol allowing voters/delegates vote on active proposals to make changes to the Euler governance configurations and Euler protocol.
+On the other hand, Euler uses [OpenZeppelin Governance smart contracts](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/governance) for governance. It is a governance protocol allowing voters/delegates vote on active proposals to make changes to the Euler governance configurations (i.e., voting delay, voting duration and proposal threshold) and Euler protocol.
 
 Euler will be managed by holders of a protocol native governance token called Euler Token (EUL). EUL tokens represent voting shares. A holder can vote on a governance proposal themselves or delegate their votes to a third party. Addresses that own or have been delegated at least 0.5% of the total EUL supply can create governance proposals.
 
