@@ -14,7 +14,7 @@ On the other hand, the Euler governance smart contracts inherit features from th
 
 Specifically, the smart contract functions capable of modifying the protocol and controlled via governance have been implemented in the Euler [Governance module](https://github.com/euler-xyz/euler-contracts/blob/457e5302fd506d5b578776e57188661e047fda81/contracts/modules/Governance.sol) of the protocol.
 
-Examples of the kinds of decisions token holders might vote on include proposals to modify:
+Examples of the decisions token holders might vote on include proposals to modify:
 * The tier of an asset
 * Collateral and borrow factors
 * Price oracle parameters
