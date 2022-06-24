@@ -22,8 +22,6 @@ Examples of the kinds of decisions token holders might vote on include proposals
 * Reserve factors
 * Governance configurations themselves, i.e., voting period, voting delay and proposal threshold via a newly released [GovernorSettings.sol base contract](https://github.com/OpenZeppelin/openzeppelin-contracts/pull/2904) in v4.6.0 of the OpenZeppelin Smart Contracts.
 
-When a governance proposal is created, it enters a 2 day review period, after which voting weights are recorded and voting begins. Voting lasts for 3 days; once the voting period is over, if quorum was reached (enough voting power participated) and the majority voted in favour, the proposal is considered successful and can proceed to be executed 2 days (48 hours) later.
-
 On-chain governance actions (proposal, voting, etc.) for the Euler protocol can be done via the [Tally](#tally) governance dashboard (described below). 
 
 ## Tally

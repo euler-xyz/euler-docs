@@ -16,10 +16,6 @@ The [General Governance Process](https://forum.euler.finance/t/welcome-to-the-eu
 The general flow for the governance process is proposed as follows:
 Governance forum Idea/Proposal Discussion → eIP (Euler Improvement Proposal) creation on Governance forum by forum moderator → eIP created on Tally (On-chain Proposal Creation) → On-chain Voting (and Execution if successful)
 
-The image below depicts the on-chain governance phases and durations for each phase:
-
-![](<../../.gitbook/governance/governance_process.png>)
-
 
 ### Idea
 A great place to start a discussion on a potential governance proposal is the idea section on the forum website. If you feel confident that your idea is relevant to the community and is well-formulated, head over to the Governance Forum to begin a discussion with the community around your idea (following the process described on the forum). 
