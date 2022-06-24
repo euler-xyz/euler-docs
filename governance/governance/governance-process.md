@@ -6,8 +6,8 @@ description: Learn more about the Euler Governance process
 
 ## Introduction
 
-On-chain governance, allows unique features such as delegated voting and proposition powers, rapid protocol (and governance configuration) upgrades via a time lock executor. 
-This ensures the protocol can quickly adapt to evolving market conditions, as well as upgrade core parts of the protocol over time.
+On-chain governance, allows unique features such as delegated voting and proposition powers, as well as protocol (and governance configuration) updates via a time lock executor. 
+This ensures the protocol can adapt to evolving market conditions, as well as upgrade core parts of the protocol over time.
 
 
 ## General Governance Process 
