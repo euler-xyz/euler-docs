@@ -1,0 +1,17 @@
+---
+description: Read the Euler white paper in different languages.
+---
+
+# Community Translations
+
+Members from the Euler community have translated the white paper into a number of other languages below. These are not hosted by Euler nor fully verified for word-for-word accuracy, but they may be used as reference to better understand the white paper.&#x20;
+
+Community translators' efforts are greatly appreciated! Feel free to submit other translations to the Euler [Discord](https://discord.com/invite/vyaufngA7n).&#x20;
+
+**Korean**: [https://m.blog.naver.com/PostView.naver?blogId=ahrmina\&logNo=222627632140\&proxyReferer=](https://m.blog.naver.com/PostView.naver?blogId=ahrmina\&logNo=222627632140\&proxyReferer=)
+
+**Japanese**: [https://holistic-thursday-21e.notion.site/Euler-Whitepaper-Japanese-044d74772b3541c58ba9b644c27e6b7c](https://holistic-thursday-21e.notion.site/Euler-Whitepaper-Japanese-044d74772b3541c58ba9b644c27e6b7c)
+
+**Russian**: [https://gitbook-guru.gitbook.io/euler/white-paper](https://gitbook-guru.gitbook.io/euler/white-paper)
+
+**Ukrainian**: [https://medium.com/@nina\_b33/white-paper-ed9cfb390c2](https://medium.com/@nina\_b33/white-paper-ed9cfb390c2)
