@@ -24,6 +24,9 @@ Examples of the decisions token holders might vote on include proposals to modif
 
 On-chain governance actions (proposal, voting, etc.) for the Euler protocol can be done via the [Tally](#tally) governance dashboard (described below). 
 
+On the other hand, off-chain governance actions (proposal, voting, etc.) for the Euler protocol can be done via the [Snapshot](#snapshot) governance dashboard (described below). For off-chain governance, there is no code to review or implement as such. It is mainly a call for the Euler Foundation to carry out an action. Issue a grant, or pay a bill, for example.
+
+
 ## Tally
 
 Tally is a web-based governance application focused on enabling on-chain governance. The Tally governance web application [provides transparency around the governance of various DeFi protocols, e.g., Compound, Uniswap, etc.](https://docs.tally.xyz/) bringing all of the proposals and voting for these protocols under a shared user interface.
@@ -144,3 +147,40 @@ Followed by casting a vote with or without a comment for the community
 ![](<../../.gitbook/governance/vote_for.png>)
 
 Full Tally documentation can be accessed online at: [Tally](https://docs.withtally.com). The documentation describes how to navigate the web app, voting and delegation and creating a Tally account.
+
+
+## Snapshot
+
+Snapshot is an off-chain, 'gasless', multi-governance community polling dashboard.
+
+It provides a simple interface to create governance proposals and lets users vote on them by connecting their wallets and the governance tokens contained within. However, the actual voting process is conducted off-chain to save on gas costs and complexity to enable community members 'signal' their preferences on proposals before any on-chain actions or governance process. 
+
+The image below shows the Snapshot user interface:
+![](<../../.gitbook/governance/snapshot_ui.png>)
+
+Snapshot proposals are not binding. Team members and multi-signature key holders for the projects are expected to execute the proposals, but the process relies entirely on their goodwill. Full Snapshot documentation can be accessed online at: [Snapshot](https://docs.snapshot.org).
+
+### Voting
+
+Head over to [https://snapshot.org/#/eulerdao.eth](https://snapshot.org/#/eulerdao.eth) and connect your metamask wallet. It should be the one where you hold your EUL tokens.
+
+The dashboard should look like this: 
+
+![](<../../.gitbook/governance/snapshot-home.png>)
+
+You can join the community as well as stay updated on proposals by clicking on the `Join` button. You will be prompted by Metamask to sign a transaction which is completely free.
+
+The image below shows a notification about an active Euler proposal.
+
+![](<../../.gitbook/governance/snapshot-notification.png>)
+
+
+To vote, click on an active proposal to view more details and see the voting options (as well as existing votes).
+
+![](<../../.gitbook/governance/snapshot-proposal.png>)
+
+Scrolling down on the page, you will see the current votes, voters (votes and voting power) and the options available for voting.
+
+![](<../../.gitbook/governance/snapshot-vote.png>)
+
+When you select an option to vote on, your voting power will be displayed and you will be prompted by Metamask to sign a transaction which is free.
