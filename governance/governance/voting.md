@@ -169,7 +169,7 @@ Full Snapshot documentation can be accessed online at: [Snapshot](https://docs.s
 The following subsections describe the proposal creation and voting process on Snapshot for off-chain governance.
 
 
-### Proposal Creation
+### Proposal Creation
 
 To create a new proposal on Snapshot, head over to [https://snapshot.org/#/eulerdao.eth](https://snapshot.org/#/eulerdao.eth) and connect your metamask wallet. It should be the one where you hold your EUL tokens. 
 
@@ -183,8 +183,7 @@ Click on `New Proposal` on the left hand side of the window. It should open up t
 
 It will also check your connected wallet and let you know the proposal threshold. Enter the proposal title, description (can be formatted using markdown) and you can also enter a link at the bottom pointing to your proposal on the Euler Governance Forum on Discourse. Once completed, when you click on create, you will be prompted by Metamask to sign a transaction which is free and the proposal will become active.
 
-
-### Voting
+### Voting
 
 Head over to [https://snapshot.org/#/eulerdao.eth](https://snapshot.org/#/eulerdao.eth) and connect your metamask wallet. It should be the one where you hold your EUL tokens.
 
