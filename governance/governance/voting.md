@@ -151,20 +151,44 @@ Full Tally documentation can be accessed online at: [Tally](https://docs.withtal
 
 ## Snapshot
 
-Snapshot is an off-chain, 'gasless', multi-governance community polling dashboard used by a number of decentralised finance projects including the likes of Aave and Balancer.
+[Snapshot](https://snapshot.org/#/) is an off-chain, 'gasless', multi-governance community polling dashboard used by a number of decentralised finance projects including the likes of Aave and Balancer.
 
 It provides a simple interface to create governance proposals and lets users vote on them by connecting their wallets and the governance tokens contained within. However, the actual voting process is conducted off-chain to save on gas costs and complexity to enable community members 'signal' their preferences on proposals before any on-chain actions or governance process. 
 
 The image below shows the Snapshot user interface:
+
 ![](<../../.gitbook/governance/snapshot_ui.png>)
 
+Searching for Euler should bring up the Euler logo and space which users can then click on to go over to the Euler space / dashboard on Snapshot. Optionally, users can navigate directly to the Euler space by navigating to [https://snapshot.org/#/eulerdao.eth](https://snapshot.org/#/eulerdao.eth).
+
+![](<../../.gitbook/governance/snapshot-euler-search.png>)
+
+
 Full Snapshot documentation can be accessed online at: [Snapshot](https://docs.snapshot.org).
+
+The following subsections describe the proposal creation and voting process on Snapshot for off-chain governance.
+
+
+### Proposal Creation
+
+To create a new proposal on Snapshot, head over to [https://snapshot.org/#/eulerdao.eth](https://snapshot.org/#/eulerdao.eth) and connect your metamask wallet. It should be the one where you hold your EUL tokens. 
+
+You should see the Euler space home page as shown below:
+
+![](<../../.gitbook/governance/snapshot-home.png>)
+
+Click on `New Proposal` on the left hand side of the window. It should open up the new proposal form for you to complete which looks like this:
+
+![](<../../.gitbook/governance/snapshot-new-proposal.png>)
+
+It will also check your connected wallet and let you know the proposal threshold. Enter the proposal title, description (can be formatted using markdown) and you can also enter a link at the bottom pointing to your proposal on the Euler Governance Forum on Discourse. Once completed, when you click on create, you will be prompted by Metamask to sign a transaction which is free and the proposal will become active.
+
 
 ### Voting
 
 Head over to [https://snapshot.org/#/eulerdao.eth](https://snapshot.org/#/eulerdao.eth) and connect your metamask wallet. It should be the one where you hold your EUL tokens.
 
-The dashboard should look like this: 
+You should see the Euler space home page as shown below: 
 
 ![](<../../.gitbook/governance/snapshot-home.png>)
 
