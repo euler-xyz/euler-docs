@@ -177,11 +177,20 @@ You should see the Euler space home page as shown below:
 
 ![](<../../.gitbook/governance/snapshot-home.png>)
 
+The proposal creation steps are outlined in the [Snapshot documentation](https://docs.snapshot.org/proposals/create).
+
 Click on `New proposal` on the left hand side of the window of the Euler space home page (above). It should open up the new proposal form for you to complete which looks like this:
 
 ![](<../../.gitbook/governance/snapshot-new-proposal.png>)
 
-It will also check your connected wallet and let you know the proposal threshold. Enter the proposal title, description (can be formatted using markdown) and you can also enter a link at the bottom pointing to your proposal on the Euler Governance Forum on Discourse. Once completed, when you click on create, you will be prompted by Metamask to sign a transaction which is free and the proposal will become active.
+It will also check your connected wallet and let you know the proposal threshold. Enter the proposal title, description (can be formatted using markdown) and you can also enter a link at the bottom pointing to your proposal on the Euler Governance Forum on Discourse. 
+
+Go to the `Actions` box and select the Voting type, start date and end date of your proposal. Make sure you allow enough time for voting.
+Use the default Snapshot block number or you can change it according to your needs. The block number is the snapshot where the balance of voters will be counted.
+
+Click on `Publish` and your proposal will be created. You will be prompted by Metamask to sign a transaction which is free and the proposal will then become active.
+
+
 
 ### Voting
 
