@@ -163,6 +163,15 @@ Searching for Euler should bring up the Euler logo and space which users can the
 
 ![](<../../.gitbook/governance/snapshot-euler-search.png>)
 
+Clicking on Euler should take you to the [Euler](https://snapshot.org/#/eulerdao.eth) space home page on Snapshot.
+
+![](<../../.gitbook/governance/snapshot-home.png>)
+
+You can join the community as well as stay updated on proposals by clicking on the `Join` button. You will be prompted by Metamask to sign a transaction which is completely free.
+
+The image below shows a notification about an active Euler proposal.
+
+![](<../../.gitbook/governance/snapshot-notification.png>)
 
 Full Snapshot documentation can be accessed online at: [Snapshot](https://docs.snapshot.org).
 
@@ -199,12 +208,6 @@ Head over to [https://snapshot.org/#/eulerdao.eth](https://snapshot.org/#/eulerd
 You should see the Euler space home page as shown below: 
 
 ![](<../../.gitbook/governance/snapshot-home.png>)
-
-You can join the community as well as stay updated on proposals by clicking on the `Join` button. You will be prompted by Metamask to sign a transaction which is completely free.
-
-The image below shows a notification about an active Euler proposal.
-
-![](<../../.gitbook/governance/snapshot-notification.png>)
 
 
 To vote, click on an active proposal to view more details and see the voting options (as well as existing votes).
