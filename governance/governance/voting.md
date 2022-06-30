@@ -177,7 +177,7 @@ You should see the Euler space home page as shown below:
 
 ![](<../../.gitbook/governance/snapshot-home.png>)
 
-Click on `New Proposal` on the left hand side of the window. It should open up the new proposal form for you to complete which looks like this:
+Click on `New proposal` on the left hand side of the window of the Euler space home page (above). It should open up the new proposal form for you to complete which looks like this:
 
 ![](<../../.gitbook/governance/snapshot-new-proposal.png>)
 
