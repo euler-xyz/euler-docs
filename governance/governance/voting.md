@@ -22,7 +22,7 @@ Examples of the decisions token holders might vote on include proposals to modif
 * Reserve factors
 * Governance configurations themselves, i.e., voting period, voting delay and proposal threshold via a newly released [GovernorSettings.sol base contract](https://github.com/OpenZeppelin/openzeppelin-contracts/pull/2904) in v4.6.0 of the OpenZeppelin Smart Contracts.
 
-On-chain governance actions (proposal, voting, etc.) for the Euler protocol can be done via the [Tally](#tally) governance dashboard (described below). 
+On-Chain governance actions (proposal, voting, etc.) for the Euler protocol can be done via the [Tally](#tally) governance dashboard (described below). 
 
 On the other hand, off-chain governance actions (proposal, voting, etc.) for the Euler protocol can be done via the [Snapshot](#snapshot) governance dashboard (described below). For off-chain governance, there is no code to review or implement as such. It is mainly a call for the Euler Foundation to carry out an action. Issue a grant, or pay a bill, for example.
 
