@@ -54,4 +54,4 @@ This section outlines the governance parameters for off-chain governance (manage
 
 There is no voting delay or execution delay for the off-chain governance process given there is no direct effect on the protocol's smart contracts.
 
-Addresses holding or delegated at least 50 EUL can create governance proposals having met the Proposal Threshold. With regards to voting power, the delegated voting power or EUL balance at the proposal creation block number is counted towards voting power. The Snapshot voting strategies enabled are `erc20-balance-of` and `erc20-votes`.
+Addresses holding or delegated at least 50 EUL can create governance proposals having met the Proposal Threshold. With regards to voting power, the delegated voting power or EUL balance at the proposal creation block number is counted towards voting power. The [Snapshot voting strategies](https://docs.snapshot.org/strategies/what-is-a-strategy) enabled are `erc20-balance-of` and `erc20-votes`.
