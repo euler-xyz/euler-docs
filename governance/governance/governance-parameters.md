@@ -8,7 +8,8 @@ description: Learn more about the Euler Governance smart contract parameters
 
 This page outlines the governance parameters for both on-chain and off-chain governance.
 
-### On-Chain Governance Parameters 
+
+### On-Chain Governance Parameters 
 
 This section outlines the governance parameters for the Euler Governance smart contracts (managed via [Tally](https://www.tally.xyz/governance/eip155:1:0xd8E2114f6bCbaee83CDEB1bD6650a28BBcF144D5)). All parameters are displayed in Table 1 below.
 
@@ -38,8 +39,7 @@ The image below depicts the on-chain governance phases and durations for each ph
 ![](<../../.gitbook/governance/governance_process.png>)
 
 
-
-### Off-Chain Governance Parameters 
+### Off-Chain Governance Parameters 
 
 This section outlines the governance parameters for off-chain governance via [Snapshot](https://snapshot.org/#/eulerdao.eth/proposal/0x3b4b7e79c40df6860e7d612bdccc4969753e283dfd84673dc5fc4d201abcb317). All parameters are displayed in Table 2 below.
 
