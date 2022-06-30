@@ -27,6 +27,8 @@ Creation of a formal Idea/Proposal on Governance forum for discussion → Propos
 
 It is noteworthy that not all off-chain proposals that are either binding or non-binding on the protocols smart contracts will end up having an on-chain proposal depending on the outcome of the off-chain 'gas-less' voting and for gas cost savings. On the other hand, not all on-chain proposals will require an off-chain counterpart.
 
+Depending on the outcome of an off-chain voting process, an on-chain proposal might be created which will be executed against a target protocol smart contract if successful. 
+
 If an off-chain proposal requires an on-chain proposal that will be executed against a protocol smart contract, then the general flow could be as follows:
 
 Creation of a formal Idea/Proposal on Governance forum for discussion → Proposal created on Snapshot (off-chain proposal creation) → Off-Chain Voting → (if on-chain governance is required) eIP (Euler Improvement Proposal) creation on Governance forum by forum moderator → eIP created on Tally (on-chain proposal creation) → On-Chain Voting (and Execution on target Euler protocol smart contract if successful).
