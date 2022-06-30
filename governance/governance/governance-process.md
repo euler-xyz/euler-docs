@@ -25,6 +25,14 @@ The general flow for the off-chain governance process is proposed as follows:
 Creation of a formal Idea/Proposal on Governance forum for discussion → Proposal created on Snapshot (off-chain proposal creation) → Off-Chain Voting (and Execution of proposal action by Euler Foundation if successful).
 
 
+It is noteworthy that not all off-chain proposals that are either binding or non-binding on the protocols smart contracts will end up having an on-chain proposal depending on the outcome of the off-chain 'gas-less' voting. On the other hand, not all on-chain proposals will require an off-chain counterpart.
+
+If an off-chain proposal requires an on-chain proposal that will be executed against a protocol smart contract, then the general flow could be as follows:
+
+Creation of a formal Idea/Proposal on Governance forum for discussion → Proposal created on Snapshot (off-chain proposal creation) → Off-Chain Voting → (if on-chain governance is required) eIP (Euler Improvement Proposal) creation on Governance forum by forum moderator → eIP created on Tally (on-chain proposal creation) → On-Chain Voting (and Execution on target Euler protocol smart contract if successful).
+
+
+
 ### Idea
 A great place to start a discussion on a potential governance proposal is the idea section on the forum website. If you feel confident that your idea is relevant to the community and is well-formulated, head over to the Governance Forum to begin a discussion with the community around your idea (following the process described on the forum). 
 
