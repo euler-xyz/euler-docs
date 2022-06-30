@@ -151,14 +151,14 @@ Full Tally documentation can be accessed online at: [Tally](https://docs.withtal
 
 ## Snapshot
 
-Snapshot is an off-chain, 'gasless', multi-governance community polling dashboard.
+Snapshot is an off-chain, 'gasless', multi-governance community polling dashboard used by a number of decentralised finance projects including the likes of Aave and Balancer.
 
 It provides a simple interface to create governance proposals and lets users vote on them by connecting their wallets and the governance tokens contained within. However, the actual voting process is conducted off-chain to save on gas costs and complexity to enable community members 'signal' their preferences on proposals before any on-chain actions or governance process. 
 
 The image below shows the Snapshot user interface:
 ![](<../../.gitbook/governance/snapshot_ui.png>)
 
-Snapshot proposals are not binding. Team members and multi-signature key holders for the projects are expected to execute the proposals, but the process relies entirely on their goodwill. Full Snapshot documentation can be accessed online at: [Snapshot](https://docs.snapshot.org).
+Full Snapshot documentation can be accessed online at: [Snapshot](https://docs.snapshot.org).
 
 ### Voting
 

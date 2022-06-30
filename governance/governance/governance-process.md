@@ -9,7 +9,7 @@ description: Learn more about the Euler Governance process
 On-chain governance, allows unique features such as delegated voting and proposition powers, as well as protocol (and governance configuration) updates via a time lock executor. 
 This ensures the protocol can adapt to evolving market conditions, as well as upgrade core parts of the protocol over time.
 
-On the other hand, for off-chain governance, there is no code to review or implement as such. It is mainly a call for the Euler Foundation to carry out an action. Issue a grant, or pay a bill, for example.
+On the other hand, for off-chain governance, there is no code to review or implement as such. It is mainly a call for the Euler Foundation to carry out an action. Issue a grant, or pay a bill, for example. Thus mainly used to aid Euler in making difficult decisions in collaboration with the community. 
 
 Euler uses the [Tally](https://www.tally.xyz/governance/eip155:1:0xd8E2114f6bCbaee83CDEB1bD6650a28BBcF144D5) governance interface for on-chain voting. [Snapshot](https://snapshot.org/#/eulerdao.eth/proposal/0x3b4b7e79c40df6860e7d612bdccc4969753e283dfd84673dc5fc4d201abcb317) on the other hand is an interface use for off-chain or 'gasless' voting. 
 
