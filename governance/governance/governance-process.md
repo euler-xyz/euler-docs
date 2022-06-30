@@ -25,7 +25,7 @@ The general flow for the off-chain governance process is proposed as follows:
 Creation of a formal Idea/Proposal on Governance forum for discussion → Proposal created on Snapshot (off-chain proposal creation) → Off-Chain Voting (and Execution of proposal action by Euler Foundation if successful).
 
 
-It is noteworthy that not all off-chain proposals that are either binding or non-binding on the protocols smart contracts will end up having an on-chain proposal depending on the outcome of the off-chain 'gas-less' voting. On the other hand, not all on-chain proposals will require an off-chain counterpart.
+It is noteworthy that not all off-chain proposals that are either binding or non-binding on the protocols smart contracts will end up having an on-chain proposal depending on the outcome of the off-chain 'gas-less' voting and for gas cost savings. On the other hand, not all on-chain proposals will require an off-chain counterpart.
 
 If an off-chain proposal requires an on-chain proposal that will be executed against a protocol smart contract, then the general flow could be as follows:
 
