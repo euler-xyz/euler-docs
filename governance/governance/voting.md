@@ -24,7 +24,7 @@ Examples of the decisions token holders might vote on include proposals to modif
 
 On-Chain governance actions (proposal, voting, etc.) for the Euler protocol can be done via the [Tally](#tally) governance dashboard (described below). 
 
-On the other hand, off-chain governance actions (proposal, voting, etc.) for the Euler protocol can be done via the [Snapshot](#snapshot) governance dashboard (described below). For off-chain governance, there is no code to review or implement as such. It is mainly a call for the Euler Foundation to carry out an action. Issue a grant, or pay a bill, for example.
+On the other hand, off-chain governance actions (proposal, voting, etc.) for the Euler protocol can be done via the [Snapshot](#snapshot) governance dashboard (described below). For off-chain governance, there is no code to review or implement as such. It is mainly a call for the Euler Foundation to carry out an action. Issue a grant, or pay a bill, for example. Thus mainly used to aid Euler in making difficult decisions in collaboration with the community.
 
 
 ## Tally
