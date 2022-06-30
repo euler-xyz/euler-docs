@@ -169,7 +169,7 @@ Clicking on Euler should take you to the [Euler](https://snapshot.org/#/eulerdao
 
 You can join the community as well as stay updated on proposals by clicking on the `Join` button. You will be prompted by Metamask to sign a transaction which is completely free.
 
-The image below shows a notification about an active Euler proposal.
+The image below shows a notification (received by a member of the Euler community on Snapshot) about an active Euler proposal.
 
 ![](<../../.gitbook/governance/snapshot-notification.png>)
 
