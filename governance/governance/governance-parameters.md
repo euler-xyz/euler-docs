@@ -41,7 +41,7 @@ The image below depicts the on-chain governance phases and durations for each ph
 
 ### Off-Chain Governance Parameters 
 
-This section outlines the governance parameters for off-chain governance via [Snapshot](https://snapshot.org/#/eulerdao.eth/proposal/0x3b4b7e79c40df6860e7d612bdccc4969753e283dfd84673dc5fc4d201abcb317). All parameters are displayed in Table 2 below.
+This section outlines the governance parameters for off-chain governance (managed via [Snapshot](https://snapshot.org/#/eulerdao.eth/proposal/0x3b4b7e79c40df6860e7d612bdccc4969753e283dfd84673dc5fc4d201abcb317)). All parameters are displayed in Table 2 below.
 
 
 **Table 2** Euler Off-Chain Governance Parameters
