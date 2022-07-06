@@ -41,7 +41,7 @@ A great place to start a discussion on a potential governance proposal is the id
 Once a discussion / commenting begins around your idea, be proactive with the community and be open to suggestions. It typically takes a week for the request for comments to mature before it becomes an eIP.
 
 ### Governance Proposal
-If the discussion is well-formulated and the community has a clear understanding of the proposal and supports your idea, (for on-chain proposals) it will be moved by a moderator to the governance category as an eIP: Euler Improvement Proposal. Once the proposal has an eIP, an on-chain proposal can be created on the [Tally governance dashboard](https://www.tally.xyz/governance/eip155:1:0xd8E2114f6bCbaee83CDEB1bD6650a28BBcF144D5).
+If the discussion is well-formulated and the community has a clear understanding of the proposal and supports your idea, (for on-chain proposals) it will be moved by a moderator to the governance category as an eIP: Euler Improvement Proposal. Once the proposal has an eIP, an on or off-chain proposal can be created on the [Tally governance dashboard](https://www.tally.xyz/governance/eip155:1:0xd8E2114f6bCbaee83CDEB1bD6650a28BBcF144D5) or on the [Snapshot governance dashboard](https://snapshot.org/#/eulerdao.eth/proposal/0x3b4b7e79c40df6860e7d612bdccc4969753e283dfd84673dc5fc4d201abcb317).
 
 A Tally or Snapshot proposal does not always need to be created by the original eIP author / proposer, it can be posted by someone else or by the core team in case the minimum threshold of EUL is not being met.
 
