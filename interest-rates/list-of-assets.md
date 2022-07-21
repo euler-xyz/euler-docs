@@ -45,6 +45,7 @@ The main consideration is maintaining target utilisation (typically at Kink%).&#
 | FLX | 0.00| 10.00 | 300.00 | 0.50 |
 | FNT | 0.00| 10.00 | 300.00 | 0.50 |
 | GAMMA | 0.00| 10.00 | 300.00 | 0.50 |
+| GFI | 0.00| 10.00 | 300.00 | 0.50 |
 | GRT | 0.00| 10.00 | 300.00 | 0.50 |
 | GTC | 0.00| 10.00 | 300.00 | 0.50 |
 | IDLE | 0.00| 10.00 | 300.00 | 0.50 |
@@ -65,6 +66,7 @@ The main consideration is maintaining target utilisation (typically at Kink%).&#
 | RENDOGE | 0.00| 10.00 | 300.00 | 0.50 |
 | REQ | 0.00| 10.00 | 300.00 | 0.50 |
 | RPL | 0.00| 10.00 | 300.00 | 0.50 |
+| SETH2 | 0.00| 10.00 | 300.00 | 0.50 |
 | SNX | 0.00| 10.00 | 300.00 | 0.50 |
 | SOS | 0.00| 10.00 | 300.00 | 0.50 |
 | STETH | 0.00| 10.00 | 300.00 | 0.50 |
@@ -73,6 +75,7 @@ The main consideration is maintaining target utilisation (typically at Kink%).&#
 | TORN | 0.00| 10.00 | 300.00 | 0.50 |
 | TRDL | 0.00| 10.00 | 300.00 | 0.50 |
 | UBI | 0.00| 10.00 | 300.00 | 0.50 |
+| VEGA | 0.00| 10.00 | 300.00 | 0.50 |
 | WILD | 0.00| 10.00 | 300.00 | 0.50 |
 | WNXM | 0.00| 10.00 | 300.00 | 0.50 |
 | WOO | 0.00| 10.00 | 300.00 | 0.50 |

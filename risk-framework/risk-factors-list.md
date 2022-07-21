@@ -33,11 +33,12 @@ This page outlines the main risk parameters on Euler, as determined by [governan
 | FLOAT | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | FNT | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | GAMMA | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| GFI | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | GRT | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | GTC | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | IDLE | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | ILV | 0| 0.28 | 0.23 | true | false | Default | 1 |
-| IMX | 0| 0.28 | 0.23 | true | false | Default | 1 |
+| IMX | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | INDEX | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | LRC | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | LUSD | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
@@ -53,6 +54,7 @@ This page outlines the main risk parameters on Euler, as determined by [governan
 | RENDOGE | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | REQ | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | RPL | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| SETH2 | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | SNX | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | SOS | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | STETH | 0| 0.28 | 0.23 | true | false | Default | 1 |
@@ -61,6 +63,7 @@ This page outlines the main risk parameters on Euler, as determined by [governan
 | TORN | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | TRDL | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | UBI | 0| 0.28 | 0.23 | true | false | Default | 1 |
+| VEGA | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | WILD | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | WNXM | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | WOO | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
