@@ -188,7 +188,7 @@ Euler therefore enables every Ethereum account using the protocol to access up t
 
 ## Governance
 
-Euler will broadly follow the governance model pioneered by Compound [(10)](white-paper.md#references#10). The protocol will be managed by holders of a protocol native governance token called Euler Governance Token (EUL). EUL tokens will represent voting powers of the protocol software. Holders with enough EUL tokens will be able to make a formal proposal for change on the protocol. Token holders will then be able to vote on the proposal themselves or delegate their vote shares to a third party. Examples of the kinds of decisions token holders might vote on include proposals to alter include:
+Euler will broadly follow the governance model pioneered by Compound [(10)](white-paper.md#ref10). The protocol will be managed by holders of a protocol native governance token called Euler Governance Token (EUL). EUL tokens will represent voting powers of the protocol software. Holders with enough EUL tokens will be able to make a formal proposal for change on the protocol. Token holders will then be able to vote on the proposal themselves or delegate their vote shares to a third party. Examples of the kinds of decisions token holders might vote on include proposals to alter include:
 
 * The tier of an asset
 * Collateral and borrow factors
