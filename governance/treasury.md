@@ -13,7 +13,3 @@ All newly created EUL tokens enter circulation initially via the Euler Treasury.
 ## Diversification
 
 Before the DAO went live in June 2022 a portion of the treasury was diversified from EUL tokens into USDC tokens. In total 2,410,708 EUL tokens (8.869% of the total supply) were diversified into 32,647,000 USDC and USDT tokens.
-
-
-
-##

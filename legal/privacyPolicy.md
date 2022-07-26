@@ -1,5 +1,7 @@
 # Privacy
+
 ## Privacy Policy
+
 This Privacy Policy describes the policies of The Euler Foundation,
 4th Floor, Harbour Place, 103 South Church Street, P.O. Box 10240,
 Grand Cayman KY1-1002, George Town, Cayman Islands on the
@@ -62,7 +64,7 @@ data, ask us to share (port) your personal information to another
 entity, withdraw any consent you provided to us to process your
 data, a right to lodge a complaint with a statutory authority and
 such other rights as may be relevant under applicable laws. To
-exercise these rights, you can write to us at [contact@euler.foundation](mailto:contact@euler.foundation). 
+exercise these rights, you can write to us at [contact@euler.foundation](mailto:contact@euler.foundation).
 We will respond to your request in accordance with applicable law.
 
 You may opt-out of direct marketing communications or the profiling
@@ -98,4 +100,3 @@ and we will address your concerns in accordance with applicable law.
 *Last updated on: 06-June-2022*
 
 *Effective date: 06-June-2022*
-

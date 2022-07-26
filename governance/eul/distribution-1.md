@@ -141,4 +141,3 @@ The following table outlines the (approximate) dates and block numbers for previ
 |    94 | 23730000 |  08/02/2026 |  31,587.60 |          0.12% |
 |    95 | 23830000 |  24/02/2026 |  31,559.53 |          0.12% |
 |    96 | 23930000 |  11/03/2026 |  17,864.18 |          0.07% |
-

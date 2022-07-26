@@ -62,4 +62,3 @@ When the proxy sees a call to its fallback from the Euler contract \(its creator
 ```
 
 The proxy unpacks this message and executes the appropriate log instruction, `log0`, `log1`, etc, depending on the number of topics.
-

@@ -413,4 +413,3 @@ Relatedly, on some tokens the `balanceOf` method can return different results wi
 Since we allow arbitrary tokens to be activated, our threat model is larger than that of Compound/AAVE. We need to worry about misbehaving tokens, even one-off tokens written specifically to attempt theft from the protocol. See the file `docs/attacks.md` for some more notes on the threat modelling.
 
 Tokens may return extremely large values in an attempt to cause math overflows. This could be disastrous, especially if a user could cause their own liquidity checks to fail. In this case, a user could create an un-liquidateable position. To prevent this, when we receive a very large result from `balanceOf`, we treat that result as though it were 0 \(which a malicious token could also do of course\). This way liquidity checks will at least succeed, allowing non-malicious collaterals to be liquidated.
-

@@ -1,5 +1,7 @@
 # Terms
+
 ## Terms of Use
+
 Please read these terms of use carefully before you start to use our
 Website, as these will apply to your use of our Website. We
 recommend that you print a copy of this for future reference. By
@@ -8,6 +10,7 @@ that you agree to comply with them. If you do not agree to these
 terms of use, you must not use our Site.
 
 ### 1. Your Relationship With Us
+
 1.1 Welcome to [euler.finance](https://www.euler.finance/) and [app.euler.finance](https://app.euler.finance/)
 (the “Website”), provided by The Euler Foundation (“Company”, “we”
 or “us”). The Company is registered in the Cayman Islands and our
@@ -22,13 +25,14 @@ limited to the Website) (collectively, the “Interface”). For
 purposes of these Terms, “you” and “your” means you as the user of
 the Interface.
 
-1.3 **The Terms form a legally binding agreement between you and us.** 
+1.3 **The Terms form a legally binding agreement between you and us.**
 Please read them carefully and we recommend that you seek legal
 advice on these Terms to understand your use of the Interface. If
 you do not agree to these Terms, you must not access or use the
 Interface.
 
 ### 2. Interface
+
 2.1 The Interface provides functionality for you to interact with
 the Euler Protocol (a permissionless non-custodial protocol for the
 lending and borrowing of Ethereum-based crypto assets). The
@@ -40,7 +44,7 @@ swapping, and shorting of crypto assets.
 operate the Euler Protocol and that protocol is managed, controlled
 and operated by the holders of the protocol-native governance tokens
 called the Euler Governance Token (“EUL”). For further information
-on the Euler Protocol, please visit: [docs.euler.finance](https://docs.euler.finance/). 
+on the Euler Protocol, please visit: [docs.euler.finance](https://docs.euler.finance/).
 Such information is provided for informational purposes only and
 we do not make any representation or warranty in any form whatsoever
 in relation to such information.
@@ -51,6 +55,7 @@ certain proposals with respect to the Euler Protocol for all EUL
 holders to perform several functions.
 
 ### 3. Fees
+
 3.1 Neither the Company, nor any of its parents, subsidiaries, and
 affiliates, and each of their respective officers, directors,
 employees, agents and advisors, charges or receives any form of fee
@@ -58,6 +63,7 @@ from any user of the Euler Protocol for operating, maintaining or
 developing the Interface.
 
 ### 4. Accepting the Terms
+
 4.1 **By accessing or using the Interface, you confirm that you** **can form a binding contract with us, that you accept these Terms and that you agree to comply with them.**
 Your access to and use of the Interface is also subject to our
 Privacy Policy, the terms of which can be found directly on the
@@ -87,6 +93,7 @@ the Interface as acceptance of the Terms from that point onwards.
 records.
 
 ### 5. Changes to These Terms and to the Interface
+
 5.1 We may amend these Terms from time to time, for instance when we
 update the functionality of the Interface or when there are
 regulatory changes. We may use commercially reasonable efforts to
@@ -101,6 +108,7 @@ you do not agree to the new Terms, you must stop accessing or using
 the Interface.
 
 ### 6. Accessing the Interface and Prohibited Activities
+
 6.1 Your access to and use of the Interface is subject to these
 Terms and all applicable laws and regulations. You may not, either
 directly or through a third party:
@@ -256,23 +264,23 @@ subcontractors and for fraud or fraudulent misrepresentation.
 any:
 
 * (a) loss of:
-    - (i) profit;
-    - (ii) goodwill;
-    - (iii) opportunity; or
-    - (iv) data suffered by you, (in each case whether direct or
+  * (i) profit;
+  * (ii) goodwill;
+  * (iii) opportunity; or
+  * (iv) data suffered by you, (in each case whether direct or
       indirect);
 * (b) indirect or consequential losses which may be incurred by you;
   or
 * (c) loss or damage which may be incurred by you as a result of:
-    - (i) any reliance placed by you on the completeness, accuracy
+  * (i) any reliance placed by you on the completeness, accuracy
       or existence of any advertising;
-    - (ii) any changes which we may make to the Interface, or for
+  * (ii) any changes which we may make to the Interface, or for
       any permanent or temporary cessation in the provision of the
       Interface (or any features within the Interface);
-    - (iii) the deletion of, corruption of, or failure to store, any
+  * (iii) the deletion of, corruption of, or failure to store, any
       content and other communications data maintained or
       transmitted by or through your use of the Interface; or
-    - (iv) your failure to provide us with accurate account
+  * (iv) your failure to provide us with accurate account
       information.
 
 10.3 Subject to paragraphs 10.1 and 10.2, our total aggregate
@@ -429,6 +437,7 @@ behalf (as applicable) is:
   will continue to be valid and enforceable.
 
 ### Contact Us
+
 To contact us, please email [contact@euler.foundation](mailto:contact@euler.foundation).
 
 *Last updated on: 06-June-2022*

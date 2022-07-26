@@ -4,10 +4,9 @@ description: Smart contract addresses for Euler Governance
 
 # Addresses
 
-
 ## Networks
-The EulerDAO is currently deployed to the following networks:
 
+The EulerDAO is currently deployed to the following networks:
 
 ### Mainnet
 
@@ -18,9 +17,7 @@ The EulerDAO is currently deployed to the following networks:
 | Timelock Controller | `0xd4Ee8939a537D943a4E46E7Ae04069C9451d724F` | [Etherscan](https://etherscan.io/address/0xd4Ee8939a537D943a4E46E7Ae04069C9451d724F) | [GitHub](https://github.com/euler-xyz/euler-governance/blob/master/contracts/governance/TimelockController.sol) |
 | Stub Target Contract | `0x8233f21dda26229c8b0586c3c2521be5da0e6328` | [Etherscan](https://etherscan.io/address/0x8233f21dda26229c8b0586c3c2521be5da0e6328) | [GitHub](https://github.com/euler-xyz/euler-governance/blob/master/contracts/governance/StubEulerGovernance.sol) |
 
-
 ### Ropsten
-
 
 | Contract | Address | Etherscan | Source Code |
 |-------|------|------|------|

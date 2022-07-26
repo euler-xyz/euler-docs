@@ -2,7 +2,6 @@
 
 swapAndRepay is a flexible primitive in the swap module that allows us to implement several advanced work-flows in a gas-efficient way. It works by using a uniswap3 "exact output" swap. This output is determined when the transaction is actually mined, so it will not leave any extra dust due to interest that was accrued while the transaction was pending.
 
-
 ## Un-short, single collateral
 
 In this case, a user has setup a long/short position. Their account contains only a collateral asset A and a loan in asset B. Typically this is setup by depositing some A, minting B, and then swapping B->A.
@@ -12,7 +11,6 @@ This is the canonical example for swapAndRepay. It simply performs the reverse o
 Steps:
 
 - swapAndRepay A -> B
-
 
 ## Un-short, multiple collaterals
 
@@ -26,8 +24,6 @@ Steps:
 - burn max B
 - swapAndRepay C -> B
 
-
-
 ## Un-mine, fully self-collateralised
 
 "Mining" in this case means a self-collateralised loan, for the purpose of earning EUL tokens. This method is very similar to un-shorting, except that all self-collateralising collateral should be burned first, to minimise swapping fees.
@@ -37,7 +33,6 @@ In this case, the additional collateral that is topping up the self-collateralis
 Steps:
 
 - max burn B
-
 
 ## Un-mine, different collateral
 
@@ -49,7 +44,6 @@ Steps:
 
 - max burn B
 - swapAndRepay A -> B
-
 
 ## Un-mine multiple different collaterals
 
@@ -63,9 +57,7 @@ Steps:
 
 Notes:
 
-* A and C are interchangeable here, although the one used in the final step will be the one left with an indeterminate amount after subtracting swapping fees and interest.
-
-
+- A and C are interchangeable here, although the one used in the final step will be the one left with an indeterminate amount after subtracting swapping fees and interest.
 
 ## Swap debt asset
 
@@ -79,10 +71,10 @@ Steps:
 
 Notes:
 
-* The "large" amount of C must be larger than required to pay off the loan in B, including accrued interest while the transaction is pending, and swap fees and slippage. There is no harm in minting a very large amount because any excess will be burned off at no cost. The amount could be the full pool (or maybe 90% in case there are withdrawals while transaction is pending), or could be the value of B adjusted upwards to account for the estimated costs of the above (plus some padding).
-* If B is self-collateralised, then "burn max B" should be executed first to reduce the cost of the swap.
-* If the user wishes to reduce the size of the debt, then beforehand:
+- The "large" amount of C must be larger than required to pay off the loan in B, including accrued interest while the transaction is pending, and swap fees and slippage. There is no harm in minting a very large amount because any excess will be burned off at no cost. The amount could be the full pool (or maybe 90% in case there are withdrawals while transaction is pending), or could be the value of B adjusted upwards to account for the estimated costs of the above (plus some padding).
+- If B is self-collateralised, then "burn max B" should be executed first to reduce the cost of the swap.
+- If the user wishes to reduce the size of the debt, then beforehand:
   - swap A -> B (amount calculated off-chain)
   - burn max B
-* If the user wishes to increase the size of the debt, then afterwards:
+- If the user wishes to increase the size of the debt, then afterwards:
   - borrow C (amount calculated off-chain)

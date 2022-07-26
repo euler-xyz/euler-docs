@@ -44,11 +44,6 @@ Euler-related configuration for an asset
         uint24 twapWindow;
     }
 
-
-
-
-
-
 ## IEulerMarkets
 
 Activating and querying markets, and maintaining entered markets lists
@@ -276,8 +271,6 @@ Parameters:
 * **subAccountId**: 0 for primary, 1-255 for a sub-account
 * **newMarket**: Underlying token address
 
-
-
 ### exitMarket
 
 Remove an asset from the entered market list, or do nothing if not already present
@@ -288,9 +281,6 @@ Parameters:
 
 * **subAccountId**: 0 for primary, 1-255 for a sub-account
 * **oldMarket**: Underlying token address
-
-
-
 
 ## IEulerExec
 
@@ -307,10 +297,6 @@ Liquidity status for an account, either in aggregate or for a particular asset
         bool borrowIsolated;
     }
 
-
-
-
-
 ### AssetLiquidity
 
 Aggregate struct for reporting detailed (per-asset) liquidity for an account
@@ -319,10 +305,6 @@ Aggregate struct for reporting detailed (per-asset) liquidity for an account
         address underlying;
         LiquidityStatus status;
     }
-
-
-
-
 
 ### EulerBatchItem
 
@@ -334,10 +316,6 @@ Single item in a batch request
         bytes data;
     }
 
-
-
-
-
 ### EulerBatchItemResponse
 
 Single item in a batch response
@@ -346,10 +324,6 @@ Single item in a batch response
         bool success;
         bytes result;
     }
-
-
-
-
 
 ### liquidity
 
@@ -421,8 +395,6 @@ Parameters:
 * **account**: The account to defer liquidity for. Usually address(this), although not always
 * **data**: Passed through to the onDeferredLiquidityCheck() callback, so contracts don't need to store transient data in storage
 
-
-
 ### batchDispatch
 
 Execute several operations in a single transaction
@@ -448,10 +420,6 @@ Results of a batchDispatch, but with extra information
         AssetLiquidity[][] liquidities;
     }
 
-
-
-
-
 ### batchDispatchExtra
 
 Call batchDispatch, but return extra information. Only intended to be used with callStatic.
@@ -476,11 +444,9 @@ Enable average liquidity tracking for your account. Operations will cost more ga
 
 Parameters:
 
-* **subAccountId**: subAccountId 0 for primary, 1-255 for a sub-account. 
+* **subAccountId**: subAccountId 0 for primary, 1-255 for a sub-account.
 * **delegate**: An address of another account that you would allow to use the benefits of your account's average liquidity (use the null address if you don't care about this). The other address must also reciprocally delegate to your account.
 * **onlyDelegate**: Set this flag to skip tracking average liquidity and only set the delegate.
-
-
 
 ### unTrackAverageLiquidity
 
@@ -491,8 +457,6 @@ Disable average liquidity tracking for your account and remove delegate
 Parameters:
 
 * **subAccountId**: subAccountId 0 for primary, 1-255 for a sub-account
-
-
 
 ### getAverageLiquidity
 
@@ -547,8 +511,6 @@ Parameters:
 * **underlying**: Token address
 * **amount**: The amount to wrap in underlying units
 
-
-
 ### pTokenUnWrap
 
 Transfer underlying tokens from the pToken wrapper to the sender's wallet.
@@ -559,8 +521,6 @@ Parameters:
 
 * **underlying**: Token address
 * **amount**: The amount to unwrap in underlying units
-
-
 
 ### usePermit
 
@@ -576,8 +536,6 @@ Parameters:
 * **v**: secp256k1 signature v
 * **r**: secp256k1 signature r
 * **s**: secp256k1 signature s
-
-
 
 ### usePermitAllowed
 
@@ -595,8 +553,6 @@ Parameters:
 * **r**: secp256k1 signature r
 * **s**: secp256k1 signature s
 
-
-
 ### usePermitPacked
 
 Apply allowance to tokens expecting the signature packed in a single bytes param
@@ -609,8 +565,6 @@ Parameters:
 * **value**: Allowance value
 * **deadline**: Permit expiry timestamp
 * **signature**: secp256k1 signature encoded as rsv
-
-
 
 ### doStaticCall
 
@@ -627,7 +581,6 @@ Returns:
 
 * **result**: Encoded return data
 
-
 ## IEulerEToken
 
 Tokenised representation of assets
@@ -638,19 +591,11 @@ Pool name, ie "Euler Pool: DAI"
 
     function name() external view returns (string memory);
 
-
-
-
-
 ### symbol
 
 Pool symbol, ie "eDAI"
 
     function symbol() external view returns (string memory);
-
-
-
-
 
 ### decimals
 
@@ -658,19 +603,11 @@ Decimals, always normalised to 18.
 
     function decimals() external pure returns (uint8);
 
-
-
-
-
 ### underlyingAsset
 
 Address of underlying asset
 
     function underlyingAsset() external view returns (address);
-
-
-
-
 
 ### totalSupply
 
@@ -678,19 +615,11 @@ Sum of all balances, in internal book-keeping units (non-increasing)
 
     function totalSupply() external view returns (uint);
 
-
-
-
-
 ### totalSupplyUnderlying
 
 Sum of all balances, in underlying units (increases as interest is earned)
 
     function totalSupplyUnderlying() external view returns (uint);
-
-
-
-
 
 ### balanceOf
 
@@ -698,19 +627,11 @@ Balance of a particular account, in internal book-keeping units (non-increasing)
 
     function balanceOf(address account) external view returns (uint);
 
-
-
-
-
 ### balanceOfUnderlying
 
 Balance of a particular account, in underlying units (increases as interest is earned)
 
     function balanceOfUnderlying(address account) external view returns (uint);
-
-
-
-
 
 ### reserveBalance
 
@@ -718,19 +639,11 @@ Balance of the reserves, in internal book-keeping units (non-increasing)
 
     function reserveBalance() external view returns (uint);
 
-
-
-
-
 ### reserveBalanceUnderlying
 
 Balance of the reserves, in underlying units (increases as interest is earned)
 
     function reserveBalanceUnderlying() external view returns (uint);
-
-
-
-
 
 ### convertBalanceToUnderlying
 
@@ -766,10 +679,6 @@ Updates interest accumulator and totalBorrows, credits reserves, re-targets inte
 
     function touch() external;
 
-
-
-
-
 ### deposit
 
 Transfer underlying tokens from sender to the Euler pool, and increase account's eTokens
@@ -780,8 +689,6 @@ Parameters:
 
 * **subAccountId**: 0 for primary, 1-255 for a sub-account
 * **amount**: In underlying units (use max uint256 for full underlying token balance)
-
-
 
 ### withdraw
 
@@ -794,8 +701,6 @@ Parameters:
 * **subAccountId**: 0 for primary, 1-255 for a sub-account
 * **amount**: In underlying units (use max uint256 for full pool balance)
 
-
-
 ### mint
 
 Mint eTokens and a corresponding amount of dTokens ("self-borrow")
@@ -806,8 +711,6 @@ Parameters:
 
 * **subAccountId**: 0 for primary, 1-255 for a sub-account
 * **amount**: In underlying units
-
-
 
 ### burn
 
@@ -820,8 +723,6 @@ Parameters:
 * **subAccountId**: 0 for primary, 1-255 for a sub-account
 * **amount**: In underlying units (use max uint256 to repay the debt in full or up to the available underlying balance)
 
-
-
 ### approve
 
 Allow spender to access an amount of your eTokens in sub-account 0
@@ -832,8 +733,6 @@ Parameters:
 
 * **spender**: Trusted address
 * **amount**: Use max uint256 for "infinite" allowance
-
-
 
 ### approveSubAccount
 
@@ -847,8 +746,6 @@ Parameters:
 * **spender**: Trusted address
 * **amount**: Use max uint256 for "infinite" allowance
 
-
-
 ### allowance
 
 Retrieve the current allowance
@@ -859,8 +756,6 @@ Parameters:
 
 * **holder**: Xor with the desired sub-account ID (if applicable)
 * **spender**: Trusted address
-
-
 
 ### transfer
 
@@ -873,8 +768,6 @@ Parameters:
 * **to**: Xor with the desired sub-account ID (if applicable)
 * **amount**: In internal book-keeping units (as returned from balanceOf).
 
-
-
 ### transferFromMax
 
 Transfer the full eToken balance of an address to another
@@ -885,8 +778,6 @@ Parameters:
 
 * **from**: This address must've approved the to address, or be a sub-account of msg.sender
 * **to**: Xor with the desired sub-account ID (if applicable)
-
-
 
 ### transferFrom
 
@@ -900,9 +791,6 @@ Parameters:
 * **to**: Xor with the desired sub-account ID (if applicable)
 * **amount**: In internal book-keeping units (as returned from balanceOf).
 
-
-
-
 ## IEulerDToken
 
 Tokenised representation of debts
@@ -913,19 +801,11 @@ Debt token name, ie "Euler Debt: DAI"
 
     function name() external view returns (string memory);
 
-
-
-
-
 ### symbol
 
 Debt token symbol, ie "dDAI"
 
     function symbol() external view returns (string memory);
-
-
-
-
 
 ### decimals
 
@@ -933,19 +813,11 @@ Decimals of underlying
 
     function decimals() external view returns (uint8);
 
-
-
-
-
 ### underlyingAsset
 
 Address of underlying asset
 
     function underlyingAsset() external view returns (address);
-
-
-
-
 
 ### totalSupply
 
@@ -953,19 +825,11 @@ Sum of all outstanding debts, in underlying units (increases as interest is accr
 
     function totalSupply() external view returns (uint);
 
-
-
-
-
 ### totalSupplyExact
 
 Sum of all outstanding debts, in underlying units normalized to 27 decimals (increases as interest is accrued)
 
     function totalSupplyExact() external view returns (uint);
-
-
-
-
 
 ### balanceOf
 
@@ -973,19 +837,11 @@ Debt owed by a particular account, in underlying units
 
     function balanceOf(address account) external view returns (uint);
 
-
-
-
-
 ### balanceOfExact
 
 Debt owed by a particular account, in underlying units normalized to 27 decimals
 
     function balanceOfExact(address account) external view returns (uint);
-
-
-
-
 
 ### borrow
 
@@ -998,8 +854,6 @@ Parameters:
 * **subAccountId**: 0 for primary, 1-255 for a sub-account
 * **amount**: In underlying units (use max uint256 for all available tokens)
 
-
-
 ### repay
 
 Transfer underlying tokens from the sender to the Euler pool, and decrease sender's dTokens
@@ -1010,8 +864,6 @@ Parameters:
 
 * **subAccountId**: 0 for primary, 1-255 for a sub-account
 * **amount**: In underlying units (use max uint256 for full debt owed)
-
-
 
 ### approveDebt
 
@@ -1025,8 +877,6 @@ Parameters:
 * **spender**: Trusted address
 * **amount**: In underlying units (use max uint256 for "infinite" allowance)
 
-
-
 ### debtAllowance
 
 Retrieve the current debt allowance
@@ -1037,8 +887,6 @@ Parameters:
 
 * **holder**: Xor with the desired sub-account ID (if applicable)
 * **spender**: Trusted address
-
-
 
 ### transfer
 
@@ -1051,8 +899,6 @@ Parameters:
 * **to**: Xor with the desired sub-account ID (if applicable)
 * **amount**: In underlying units. Use max uint256 for full balance.
 
-
-
 ### transferFrom
 
 Transfer dTokens from one address to another
@@ -1064,9 +910,6 @@ Parameters:
 * **from**: Xor with the desired sub-account ID (if applicable)
 * **to**: This address must've approved the from address, or be a sub-account of msg.sender
 * **amount**: In underlying units. Use max uint256 for full balance.
-
-
-
 
 ## IEulerLiquidation
 
@@ -1086,10 +929,6 @@ Information about a prospective liquidation opportunity
         uint discount;
         uint conversionRate;
     }
-
-
-
-
 
 ### checkLiquidation
 
@@ -1121,9 +960,6 @@ Parameters:
 * **collateral**: Token that is to be seized
 * **repay**: The amount of underlying DTokens to be transferred from violator to sender, in units of underlying
 * **minYield**: The minimum acceptable amount of collateral ETokens to be transferred from violator to sender, in units of collateral
-
-
-
 
 ## IEulerSwap
 
@@ -1157,8 +993,6 @@ Parameters:
 * **fee**: uniswap pool fee to use
 * **sqrtPriceLimitX96**: maximum acceptable price
 
-
-
 ### SwapUniExactInputParams
 
 Params for Uniswap V3 exact input trade routed through multiple pools
@@ -1182,8 +1016,6 @@ Parameters:
 * **amountOutMinimum**: minimum amount of bought token
 * **deadline**: trade must complete before this timestamp
 * **path**: list of pools to use for the trade
-
-
 
 ### SwapUniExactOutputSingleParams
 
@@ -1213,8 +1045,6 @@ Parameters:
 * **fee**: uniswap pool fee to use
 * **sqrtPriceLimitX96**: maximum acceptable price
 
-
-
 ### SwapUniExactOutputParams
 
 Params for Uniswap V3 exact output trade routed through multiple pools
@@ -1238,8 +1068,6 @@ Parameters:
 * **amountInMaximum**: maximum amount of sold token
 * **deadline**: trade must complete before this timestamp
 * **path**: list of pools to use for the trade
-
-
 
 ### Swap1InchParams
 
@@ -1265,8 +1093,6 @@ Parameters:
 * **amountOutMinimum**: minimum amount of bought token
 * **payload**: call data passed to 1Inch contract
 
-
-
 ### swapUniExactInputSingle
 
 Execute Uniswap V3 exact input trade on a single pool
@@ -1276,8 +1102,6 @@ Execute Uniswap V3 exact input trade on a single pool
 Parameters:
 
 * **params**: struct defining trade parameters
-
-
 
 ### swapUniExactInput
 
@@ -1289,8 +1113,6 @@ Parameters:
 
 * **params**: struct defining trade parameters
 
-
-
 ### swapUniExactOutputSingle
 
 Execute Uniswap V3 exact output trade on a single pool
@@ -1301,8 +1123,6 @@ Parameters:
 
 * **params**: struct defining trade parameters
 
-
-
 ### swapUniExactOutput
 
 Execute Uniswap V3 exact output trade routed through multiple pools
@@ -1312,8 +1132,6 @@ Execute Uniswap V3 exact output trade routed through multiple pools
 Parameters:
 
 * **params**: struct defining trade parameters
-
-
 
 ### swapAndRepayUniSingle
 
@@ -1326,8 +1144,6 @@ Parameters:
 * **params**: struct defining trade parameters (amountOut is ignored)
 * **targetDebt**: amount of debt that is expected to remain after trade and repay (0 to repay full debt)
 
-
-
 ### swapAndRepayUni
 
 Trade on Uniswap V3 through multiple pools pool and repay debt with bought asset
@@ -1339,8 +1155,6 @@ Parameters:
 * **params**: struct defining trade parameters (amountOut is ignored)
 * **targetDebt**: amount of debt that is expected to remain after trade and repay (0 to repay full debt)
 
-
-
 ### swap1Inch
 
 Execute 1Inch V4 trade
@@ -1350,9 +1164,6 @@ Execute 1Inch V4 trade
 Parameters:
 
 * **params**: struct defining trade parameters
-
-
-
 
 ## IEulerPToken
 
@@ -1364,19 +1175,11 @@ PToken name, ie "Euler Protected DAI"
 
     function name() external view returns (string memory);
 
-
-
-
-
 ### symbol
 
 PToken symbol, ie "pDAI"
 
     function symbol() external view returns (string memory);
-
-
-
-
 
 ### decimals
 
@@ -1384,19 +1187,11 @@ Number of decimals, which is same as the underlying's
 
     function decimals() external view returns (uint8);
 
-
-
-
-
 ### underlying
 
 Address of the underlying asset
 
     function underlying() external view returns (address);
-
-
-
-
 
 ### balanceOf
 
@@ -1404,19 +1199,11 @@ Balance of an account's wrapped tokens
 
     function balanceOf(address who) external view returns (uint);
 
-
-
-
-
 ### totalSupply
 
 Sum of all wrapped token balances
 
     function totalSupply() external view returns (uint);
-
-
-
-
 
 ### allowance
 
@@ -1429,8 +1216,6 @@ Parameters:
 * **holder**: Address giving permission to access tokens
 * **spender**: Trusted address
 
-
-
 ### transfer
 
 Transfer your own pTokens to another address
@@ -1441,8 +1226,6 @@ Parameters:
 
 * **recipient**: Recipient address
 * **amount**: Amount of wrapped token to transfer
-
-
 
 ### transferFrom
 
@@ -1456,8 +1239,6 @@ Parameters:
 * **recipient**: Recipient address
 * **amount**: Amount to transfer
 
-
-
 ### approve
 
 Allow spender to access an amount of your pTokens. It is not necessary to approve the euler address.
@@ -1469,8 +1250,6 @@ Parameters:
 * **spender**: Trusted address
 * **amount**: Use max uint256 for "infinite" allowance
 
-
-
 ### wrap
 
 Convert underlying tokens to pTokens
@@ -1480,8 +1259,6 @@ Convert underlying tokens to pTokens
 Parameters:
 
 * **amount**: In underlying units (which are equivalent to pToken units)
-
-
 
 ### unwrap
 
@@ -1493,8 +1270,6 @@ Parameters:
 
 * **amount**: In pToken units (which are equivalent to underlying units)
 
-
-
 ### claimSurplus
 
 Claim any surplus tokens held by the PToken contract. This should only be used by contracts.
@@ -1505,12 +1280,7 @@ Parameters:
 
 * **who**: Beneficiary to be credited for the surplus token amount
 
-
-
-
 ## IEulerEulDistributor
-
-
 
 ### claim
 
@@ -1525,12 +1295,7 @@ Parameters:
 * **proof**: Merkle proof that validates this claim
 * **stake**: If non-zero, then the address of a token to auto-stake to, instead of claiming
 
-
-
-
 ## IEulerEulStakes
-
-
 
 ### staked
 
@@ -1556,10 +1321,6 @@ Staking operation item. Positive amount means to increase stake on this underlyi
         int amount;
     }
 
-
-
-
-
 ### stake
 
 Modify stake of a series of underlyings. If the sum of all amounts is positive, then this amount of EUL will be transferred in from the sender's wallet. If negative, EUL will be transferred out to the sender's wallet.
@@ -1569,8 +1330,6 @@ Modify stake of a series of underlyings. If the sum of all amounts is positive, 
 Parameters:
 
 * **ops**: Array of operations to perform
-
-
 
 ### stakeGift
 
@@ -1583,8 +1342,6 @@ Parameters:
 * **beneficiary**: Who is given credit for this staked EUL
 * **underlying**: The underlying token to be staked upon
 * **amount**: How much EUL to stake
-
-
 
 ### stakePermit
 
@@ -1600,6 +1357,3 @@ Parameters:
 * **v**: Signature field
 * **r**: Signature field
 * **s**: Signature field
-
-
-

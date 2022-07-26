@@ -8,7 +8,7 @@ description: >-
 
 ## Introduction&#x20;
 
-In order to progressively decentralise governance of the Euler Protocol, EUL will be distibuted to protocol users over a period of (at least) 4 years. The distribution programme is broken down into cycles called [epochs](distribution-1.md). Every epoch EUL gets distributed to borrowers on a subset of community-selected markets. The markets eligible for a distribution are determined by an EUL staking [gauge ](gauges.md)system.
+In order to progressively decentralise governance of the Euler Protocol, EUL will be distibuted to protocol users over a period of (at least) 4 years. The distribution programme is broken down into cycles called [epochs](distribution-1.md). Every epoch EUL gets distributed to borrowers on a subset of community-selected markets. The markets eligible for a distribution are determined by an EUL staking [gauge](gauges.md)system.
 
 ## How it Works
 
@@ -47,4 +47,4 @@ The excess interest paid on debts will eventually eat into their initial $1,000 
 
 Users with an EUL distribution allocation can navigate to the rop right of the UI and click the 'Claim' button. That will open a dialogue box, showing a user's projected EUL distribution after the current epoch has completed. This will tick up second-by-second as a user accrues more time-weighted borrowing. The pending balance below that shows EUL tokens already distributed to the user but which remain in the distribution smart contract unclaimed. Users can click the Claim button in the bottom right of the dialogue to transfer those tokens to their wallet.&#x20;
 
-![](<../../.gitbook/assets/claim2 (1).png>)
+![claim](<../../.gitbook/assets/claim2 (1).png>)

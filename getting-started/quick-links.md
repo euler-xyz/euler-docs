@@ -38,6 +38,4 @@ description: Quick access to everything you need to know about Euler Finance
 
 **Dune Analytics**\
 ****By [ShippooorDAO](https://dune.xyz/shippooordao/Euler-Finance-Dashboard)\
-By [altooptimo.eth ](https://dune.com/altooptimo/Euler-Finance)
-
-\
+By [altooptimo.eth](https://dune.com/altooptimo/Euler-Finance)

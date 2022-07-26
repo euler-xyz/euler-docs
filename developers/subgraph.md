@@ -6,18 +6,18 @@ description: Subgraph
 
 ## Links
 
-- GitHub: https://github.com/euler-xyz/euler-subgraph
-- Querying the subgraph: https://thegraph.com/docs/en/developer/query-the-graph/
+- GitHub: <https://github.com/euler-xyz/euler-subgraph>
+- Querying the subgraph: <https://thegraph.com/docs/en/developer/query-the-graph/>
 
 ### Mainnet
 
-- The Graph: https://thegraph.com/hosted-service/subgraph/euler-xyz/euler-mainnet
-- API: https://api.thegraph.com/subgraphs/name/euler-xyz/euler-mainnet
+- The Graph: <https://thegraph.com/hosted-service/subgraph/euler-xyz/euler-mainnet>
+- API: <https://api.thegraph.com/subgraphs/name/euler-xyz/euler-mainnet>
 
 ### Ropsten
 
-- The Graph: https://thegraph.com/hosted-service/subgraph/euler-xyz/euler-ropsten
-- API: https://api.thegraph.com/subgraphs/name/euler-xyz/euler-ropsten
+- The Graph: <https://thegraph.com/hosted-service/subgraph/euler-xyz/euler-ropsten>
+- API: <https://api.thegraph.com/subgraphs/name/euler-xyz/euler-ropsten>
 
 ## About
 
@@ -124,12 +124,12 @@ type Balance @entity {
 }
 ```
 
-A BalanceChange is a transaction within the platform. `type` can be one of the following values: 
+A BalanceChange is a transaction within the platform. `type` can be one of the following values:
 
- - borrow
- - deposit
- - withdraw
- - repay
+- borrow
+- deposit
+- withdraw
+- repay
 
 ```GraphQL
 type BalanceChange @entity {
@@ -399,7 +399,7 @@ First we need to create our ID using the parameters define in the [Querying time
 ```GraphQL
 {
   dailyBorrow(id: "1644451200") {
-  	count
+   count
     totalUsdAmount
   }
 }
@@ -417,7 +417,7 @@ First we need to create our ID using the parameters define in the [Querying time
 }
 ```
 
-### All transactions between February 1st 2022 and February 3rd 2022 
+### All transactions between February 1st 2022 and February 3rd 2022
 
 ```GraphQL
 {
@@ -426,7 +426,7 @@ First we need to create our ID using the parameters define in the [Querying time
     type
     amount
     amountUsd
-  	account {
+   account {
       id
     }
     asset {
@@ -501,7 +501,7 @@ First we need to create our ID using the parameters define in the [Querying time
 ```GraphQL
 {
   dailyBorrow(id: "1644451200") {
-  	count
+   count
     totalUsdAmount
   }
 }
@@ -519,7 +519,7 @@ First we need to create our ID using the parameters define in the [Querying time
 }
 ```
 
-### All transactions between February 1st 2022 and February 3rd 2022 
+### All transactions between February 1st 2022 and February 3rd 2022
 
 ```GraphQL
 {
@@ -528,7 +528,7 @@ First we need to create our ID using the parameters define in the [Querying time
     type
     amount
     amountUsd
-  	account {
+   account {
       id
     }
     asset {

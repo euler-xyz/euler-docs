@@ -87,8 +87,6 @@ This page outlines the main risk parameters on Euler, as determined by [governan
 | WETH | 0.88| 0.91 | 0.23 | false | true | Default | Pegged |
 | USDC | 0.9| 0.94 | 0.23 | false | true | Stable | 0.3 |
 
-
-
 _Note: the Collateral Factor of the lent asset(s) is multiplied by the Borrow Factor of the borrowed asset(s) to arrive at the final factor._
 
 _For example, if you lend 1,000 USD worth of USDC, you can borrow UNI in line with a final factor of 0.648 (0.90 x 0.72). Hence, 648 USD worth of UNI._

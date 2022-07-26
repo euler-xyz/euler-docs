@@ -83,4 +83,3 @@ The supported price range was chosen for the following reason:
 
 * Fraction between 0 and 1, scaled by 2^32 - 1
 * Spec: At least 3 decimal places \(overkill\)
-

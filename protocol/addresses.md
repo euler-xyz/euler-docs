@@ -13,8 +13,8 @@ const markets = new Contract(MarketsABI, Markets_Proxy_Address); // proxy addres
 ```
 
 ## Networks
-The Euler protocol is currently deployed to the following networks:
 
+The Euler protocol is currently deployed to the following networks:
 
 ### Mainnet
 
@@ -27,7 +27,6 @@ The Euler protocol is currently deployed to the following networks:
 | Swap | 0x7123C8cBBD76c5C7fCC9f7150f23179bec0bA341 | [Etherscan](https://etherscan.io/address/0x7123C8cBBD76c5C7fCC9f7150f23179bec0bA341) | [Etherscan](https://etherscan.io/address/0xf40e8314143B4CF1764CCCd22588a8794a00d8Ca) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Swap.sol) |
 | Governance | 0xAF68CFba29D0e15490236A5631cA9497e035CD39 | [Etherscan](https://etherscan.io/address/0xAF68CFba29D0e15490236A5631cA9497e035CD39) | [Etherscan](https://etherscan.io/address/0x554ee3d9ed7E9ec21E186c7dd636430669812f73) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Governance.sol) |
 
-
 ### Ropsten
 
 | Contract | Proxy Address | Etherscan (Proxy) | Etherscan (Implementation) | Source Code |
@@ -38,7 +37,5 @@ The Euler protocol is currently deployed to the following networks:
 | Exec | 0xF7B8611008Ed073Ef348FE130671688BBb20409d | [Etherscan](https://ropsten.etherscan.io/address/0xF7B8611008Ed073Ef348FE130671688BBb20409d) | [Etherscan](https://ropsten.etherscan.io/address/0x8bE3F14630D395F6Bfa8886261F6E13DaD775f64) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Exec.sol) |
 | Swap | 0x86ea9f57d81Bf0C69Ff71114522fB3f29230DbA6 | [Etherscan](https://ropsten.etherscan.io/address/0x86ea9f57d81Bf0C69Ff71114522fB3f29230DbA6) | [Etherscan](https://ropsten.etherscan.io/address/0xf8a4bbbE6Cf87F2a142E20500B0D208Da7dF3204) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Swap.sol) |
 | Governance | 0x78eE171d6c8d3808B72dAb8CE647719dB3bb4cC9 | [Etherscan](https://etherscan.io/address/0x78eE171d6c8d3808B72dAb8CE647719dB3bb4cC9) | [Etherscan](https://ropsten.etherscan.io/address/0x45B49e1cF05899D369cC3043eD0143Edf24b061a) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Governance.sol) |
-
-
 
 _Note: the Governance smart contract is currently used for our risk-guarded launch (Phase 1 of the mainnet launch) while we build up to community-led governance in Phase 2._

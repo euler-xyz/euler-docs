@@ -15,8 +15,6 @@ While we eventually plan to move to a reactive interest rate model that will opt
 
 The main consideration is maintaining target utilisation (typically at Kink%).&#x20;
 
-
-
 | Asset | Base IR % | Kink IR % | Max IR % | Kink % |
 |-------|------|-------|-------|-------|
 | AGEUR | 0.00| 4.00 | 100.00 | 0.80 |
