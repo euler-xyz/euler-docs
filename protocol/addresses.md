@@ -37,7 +37,19 @@ The Euler protocol is currently deployed to the following networks:
 | Liquidation | 0xf9773f2D869Bdbe0B6aC6D6fD7df82b82C998DC7 | [Etherscan](https://ropsten.etherscan.io/address/0xf9773f2D869Bdbe0B6aC6D6fD7df82b82C998DC7) | [Etherscan](https://ropsten.etherscan.io/address/0xe6b5Cc3Da62fF1422143843d4ff3Ad1c94328c50) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Liquidation.sol) |
 | Exec | 0xF7B8611008Ed073Ef348FE130671688BBb20409d | [Etherscan](https://ropsten.etherscan.io/address/0xF7B8611008Ed073Ef348FE130671688BBb20409d) | [Etherscan](https://ropsten.etherscan.io/address/0x8bE3F14630D395F6Bfa8886261F6E13DaD775f64) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Exec.sol) |
 | Swap | 0x86ea9f57d81Bf0C69Ff71114522fB3f29230DbA6 | [Etherscan](https://ropsten.etherscan.io/address/0x86ea9f57d81Bf0C69Ff71114522fB3f29230DbA6) | [Etherscan](https://ropsten.etherscan.io/address/0xf8a4bbbE6Cf87F2a142E20500B0D208Da7dF3204) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Swap.sol) |
-| Governance | 0x78eE171d6c8d3808B72dAb8CE647719dB3bb4cC9 | [Etherscan](https://etherscan.io/address/0x78eE171d6c8d3808B72dAb8CE647719dB3bb4cC9) | [Etherscan](https://ropsten.etherscan.io/address/0x45B49e1cF05899D369cC3043eD0143Edf24b061a) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Governance.sol) |
+| Governance | 0x78eE171d6c8d3808B72dAb8CE647719dB3bb4cC9 | [Etherscan](https://ropsten.etherscan.io/address/0x78eE171d6c8d3808B72dAb8CE647719dB3bb4cC9) | [Etherscan](https://ropsten.etherscan.io/address/0x45B49e1cF05899D369cC3043eD0143Edf24b061a) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Governance.sol) |
+
+
+### Goerli
+
+| Contract | Proxy Address | Etherscan (Proxy) | Etherscan (Implementation) | Source Code |
+|-------|------|------|------|------|
+| Euler | 0x931172BB95549d0f29e10ae2D079ABA3C63318B3 | | [Etherscan](https://goerli.etherscan.io/address/0x931172BB95549d0f29e10ae2D079ABA3C63318B3) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/Euler.sol) |
+| Markets | 0x3EbC39b84B1F856fAFE9803A9e1Eae7Da016Da36 | [Etherscan](https://goerli.etherscan.io/address/0x3EbC39b84B1F856fAFE9803A9e1Eae7Da016Da36) | [Etherscan](https://goerli.etherscan.io/address/0xeE28839fde1e462C8e0b80DE618cB98dB3c017F8) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Markets.sol) |
+| Liquidation | 0x66326c072283feE63E1C3feF9BD024F8697EC1BB | [Etherscan](https://goerli.etherscan.io/address/0x66326c072283feE63E1C3feF9BD024F8697EC1BB) | [Etherscan](https://goerli.etherscan.io/address/0x849f5CC81d12887BC0e4e42D8C87AbA896bDCAC0) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Liquidation.sol) |
+| Exec | 0x4b62EB6797526491eEf6eF36D3B9960E5d66C394 | [Etherscan](https://goerli.etherscan.io/address/0x4b62EB6797526491eEf6eF36D3B9960E5d66C394) | [Etherscan](https://goerli.etherscan.io/address/0x6C933044542d6cAF8927E516B9A99632697bD4C0) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Exec.sol) |
+| Swap | 0xA0AAb1Ddd165cE80AE2b9bC9bBE3b6EEFBB2300c | [Etherscan](https://goerli.etherscan.io/address/0xA0AAb1Ddd165cE80AE2b9bC9bBE3b6EEFBB2300c) | [Etherscan](https://goerli.etherscan.io/address/0x034FCa46b265b4805e00E109A5ABA3E976625B1D) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Swap.sol) |
+| Governance | 0x496A8344497875D0D805167874f2f938aEa15600 | [Etherscan](https://goerli.etherscan.io/address/0x496A8344497875D0D805167874f2f938aEa15600) | [Etherscan](https://goerli.etherscan.io/address/0xc9314acCF0d3754A38DdE280D24c51D280C33D16) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Governance.sol) |
 
 
 
