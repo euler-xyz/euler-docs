@@ -22,8 +22,6 @@ EulerDAO is a decentralised autonomous organisation encapsulating all holders of
 
 Since DAOs not have a formal legal structure, the Euler Foundation was established as a non-profit Foundation Company designed to represent EulerDAO in the ‘real world’. The Euler Foundation has no shareholders and cannot pay out dividends to its members. Its purpose is to provide a vehicle by which EulerDAO can sign a contract or engage a company for a service that the DAO requires.
 
-###
-
 ### Community Involvement
 
 #### How can I get involved in EulerDAO?

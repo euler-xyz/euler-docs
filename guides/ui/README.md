@@ -178,4 +178,6 @@ Burn closes self-collateralised loan positions by removing an equal amount of de
 
 ### Errors
 
-* COMING SOON
+{% content-ref url="../../support/common-errors.md" %}
+[common-errors.md](../../support/common-errors.md)
+{% endcontent-ref %}

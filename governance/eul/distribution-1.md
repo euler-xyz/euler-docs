@@ -6,11 +6,11 @@ description: Learn more about the phases of the EUL Distribution programme
 
 ## Epoch 0
 
-Epoch 0 covers the 3 month period from 26/11/2021 to 21/03/2022 during which Euler was in a soft-launch mode. Users were experimenting with the protocol in a risk-minimised manner.
+Epoch 0 covers the 3 month period from 26/11/2021 to 21/03/2022 during which Euler protocol was in a soft-launch mode. Users were experimenting with the protocol in a risk-minimised manner.
 
-### Implementation&#x20;
+### Implementation
 
-**Lenders** and **borrowers** using the protocol during this period were allocated a share of 1% of the total supply of EUL as a one-off retroactive distribution.&#x20;
+**Lenders** and **borrowers** using the protocol during this period were allocated a share of 1% of the total supply of EUL as a one-off retroactive distribution.
 
 The distribution took place as follows:
 
@@ -28,17 +28,17 @@ In conclusion, 3407 unique addresses received at least 26.59 EUL tokens plus an 
 
 Epochs 1-96 cover the 4 year period from 21/03/2022 to 11/03/2026 during which Euler will progressively decentralise.
 
-### Implementation&#x20;
+### Implementation
 
 **Borrowers** using the protocol during this period will be allocated a share of 25% of the total supply of EUL via a rolling merkle distribution. The amount distributed each epoch will follow a non-linear schedule (see below).
 
-Within each market, borrowers will receive an EUL distribution proportional to their time-weighted borrowing on that market. The amount of EUL allocated to each market every epoch will be determined by EUL token holders (see [Gauges](https://app.gitbook.com/o/-MJloiaY-UMc3SjaxzA6/s/-MJlqpE4apPrZurt7BNr/\~/changes/8TZLu5aIjb41difegSzr/governance/gauges)). &#x20;
+Within each market, borrowers will receive an EUL distribution proportional to their time-weighted borrowing on that market. The amount of EUL allocated to each market every epoch will be determined by EUL token holders (see [Gauges](https://app.gitbook.com/o/-MJloiaY-UMc3SjaxzA6/s/-MJlqpE4apPrZurt7BNr/\~/changes/8TZLu5aIjb41difegSzr/governance/gauges)).
 
 Users will be able to claim their EUL governance tokens after an epoch has completed by using the 'Claim' button at [https://app.euler.finance/](https://app.euler.finance/).
 
 ## Schedule
 
-The amount of EUL distributed in each epoch has been determined in advance according to a non-linear schedule (see below). The schedule tries to match increasing protocol user numbers after launch with a concomitant increase in the EUL distribution, which should help to decentralise supply of the token rather than allocating a disproportionate amount to early users.&#x20;
+The amount of EUL distributed in each epoch has been determined in advance according to a non-linear schedule (see below). The schedule tries to match increasing protocol user numbers after launch with a concomitant increase in the EUL distribution, which should help to decentralise supply of the token rather than allocating a disproportionate amount to early users.
 
 The following table outlines the (approximate) dates and block numbers for previous and forthcoming epochs. Dates are approximate because the schedule is determined by the pace at which blocks are mined on the Ethereum network.
 
@@ -141,4 +141,3 @@ The following table outlines the (approximate) dates and block numbers for previ
 |    94 | 23730000 |  08/02/2026 |  31,587.60 |          0.12% |
 |    95 | 23830000 |  24/02/2026 |  31,559.53 |          0.12% |
 |    96 | 23930000 |  11/03/2026 |  17,864.18 |          0.07% |
-

@@ -12,7 +12,7 @@ EUL is an ERC20 token that acts as the native [governance](../governance/) token
 
 The total supply of EUL is 27,182,818 (in homage to Euler’s number, [e](https://en.wikipedia.org/wiki/E\_\(mathematical\_constant\))). The initial four-year allocation of the EUL total supply is as follows:
 
-* **25%** (6,795,705 EUL) to users who borrow on community-selected markets on Euler over 4 years (see [Distribution](distribution.md)).
+* **25%** (6,795,705 EUL) to users who borrow on community-selected markets on Euler protocol over 4 years (see [Distribution](distribution.md)).
 * **1%** (271,828 EUL) to all users who deposited or borrowed assets on Euler during its soft launch (see [Epoch0](distribution-1.md#epoch-0)).
 * **2.5%** (679,570 EUL) to users staking EUL to a safety staking pool over 4 years (see [Safety Module](../../security/vault.md)).
 * **9.082%** (2,468,672 EUL) to an ecosystem treasury, unlocked (see [Treasury](../treasury.md)).
