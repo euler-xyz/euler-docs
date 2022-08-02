@@ -1,6 +1,6 @@
 ---
 description: Welcome to the Euler documentation pages!
-cover: .gitbook/assets/EF_Math_Welcome_dark_v2.mp4
+cover: .gitbook/assets/EF_Math_Welcome_dark_v3.gif
 coverY: 0
 ---
 
