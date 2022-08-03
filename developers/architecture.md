@@ -137,6 +137,26 @@ Available swap methods:
 * all four methods of [UniswapV3 SwapRouter](https://docs.uniswap.org/protocol/reference/periphery/SwapRouter)
 * full 1inch aggregator functionality, integrated through [1Inch API](https://docs.1inch.io/api/quote-swap)
 
+_Note: The Swap module may become deprecated in favor of the new SwapHub module._
+
+### SwapHub
+
+This module is a redesigned version of the `Swap` module. The improvements include:
+* modular architecture, easily extendible to support additional DEXs
+* support for rebasing and fee-on-transfer tokens, like stETH
+
+`SwapHub` doesn't execute trades on its own. It relies on external swap handlers, which can be created by anyone and are not a part of the platform. 
+The swap handlers are required to share a common interface, namely an `executeSwap` function which takes a `SwapParams` struct with the requested trade options.
+It is up to the user to select a swap handler to use by passing its address to the module's function calls. The swap handlers receive a transfer of the sold token before being invoked, and are expected to return both the bought tokens as well as any unused input. The module's only responsibility is to process the trade and verify its results (tokens sold and received) fall within user specified bounds in terms of amounts requested and slippage settings. To support exact output swaps for rebasing and fee-on-transfer tokens, it is possible to set a maximum difference of tokens requested vs received: `exactOutTolerance`.
+
+#### Swap handlers
+Currently there are 3 swap handlers available in the Euler repository, executing trades on:
+* Uniswap V3 through [SwapRouter](https://github.com/Uniswap/v3-periphery/blob/main/contracts/SwapRouter.sol)
+* 1Inch
+* Uniswap V2 and V3 using Uniswap's [smart order router](https://github.com/Uniswap/smart-order-router)
+
+See [Swap Handlers](swap-handlers.md) for more details.
+
 ## Storage and Inheritance
 
 Most of the modules inherit from `BaseLogic` which provides common lending logic related functionality. This contract inherits from `BaseModule`, which inherits from `Base`, which inherits from `Storage`.

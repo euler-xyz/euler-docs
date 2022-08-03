@@ -96,7 +96,7 @@ Users can [transfer](ui/#transfer-etokens) deposits (eTokens) and debt (dTokens)
 
 #### Can I swap tokens?
 
-Yes, the swap feature enables users to exchange one deposited asset for another using Uniswap V3 and 1inch DEXs.
+Yes, the swap feature enables users to exchange one deposited asset for another using Uniswap and 1inch DEXs.
 
 #### How can I short a token?
 

@@ -1,6 +1,6 @@
 # swapAndRepay Work-Flows
 
-swapAndRepay is a flexible primitive in the swap module that allows us to implement several advanced work-flows in a gas-efficient way. It works by using a uniswap3 "exact output" swap. This output is determined when the transaction is actually mined, so it will not leave any extra dust due to interest that was accrued while the transaction was pending.
+swapAndRepay is a flexible primitive in the swap and swap-hub modules that allows us to implement several advanced work-flows in a gas-efficient way. It works by using a uniswap "exact output" swap. This output is determined when the transaction is actually mined, so it will not leave any extra dust due to interest that was accrued while the transaction was pending. Some dust may be left in case of tokens with special handling of the balances, like rebasing or fee-on-transfer tokens.
 
 
 ## Un-short, single collateral
