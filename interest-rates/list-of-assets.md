@@ -44,6 +44,7 @@ The main consideration is maintaining target utilisation (typically at Kink%).&#
 | FLOAT | 0.00| 10.00 | 300.00 | 0.50 |
 | FLX | 0.00| 10.00 | 300.00 | 0.50 |
 | FNT | 0.00| 10.00 | 300.00 | 0.50 |
+| FTT | 0.00| 10.00 | 300.00 | 0.50 |
 | GAMMA | 0.00| 10.00 | 300.00 | 0.50 |
 | GFI | 0.00| 10.00 | 300.00 | 0.50 |
 | GRT | 0.00| 10.00 | 300.00 | 0.50 |
@@ -52,6 +53,8 @@ The main consideration is maintaining target utilisation (typically at Kink%).&#
 | ILV | 0.00| 10.00 | 300.00 | 0.50 |
 | IMX | 0.00| 10.00 | 300.00 | 0.50 |
 | INDEX | 0.00| 10.00 | 300.00 | 0.50 |
+| LDO | 0.00| 10.00 | 300.00 | 0.50 |
+| LOOKS | 0.00| 10.00 | 300.00 | 0.50 |
 | LRC | 0.00| 10.00 | 300.00 | 0.50 |
 | LUSD | 0.00| 10.00 | 300.00 | 0.50 |
 | LYXE | 0.00| 10.00 | 300.00 | 0.50 |
@@ -68,6 +71,7 @@ The main consideration is maintaining target utilisation (typically at Kink%).&#
 | RPL | 0.00| 10.00 | 300.00 | 0.50 |
 | SETH2 | 0.00| 10.00 | 300.00 | 0.50 |
 | SNX | 0.00| 10.00 | 300.00 | 0.50 |
+| SOCKS | 0.00| 10.00 | 300.00 | 0.50 |
 | SOS | 0.00| 10.00 | 300.00 | 0.50 |
 | STETH | 0.00| 10.00 | 300.00 | 0.50 |
 | STG | 0.00| 10.00 | 300.00 | 0.50 |
@@ -79,6 +83,7 @@ The main consideration is maintaining target utilisation (typically at Kink%).&#
 | WILD | 0.00| 10.00 | 300.00 | 0.50 |
 | WNXM | 0.00| 10.00 | 300.00 | 0.50 |
 | WOO | 0.00| 10.00 | 300.00 | 0.50 |
+| XMON | 0.00| 10.00 | 300.00 | 0.50 |
 | YFI | 0.00| 10.00 | 300.00 | 0.50 |
 | 1INCH | 0.00| 20.00 | 300.00 | 0.80 |
 | AXS | 0.00| 20.00 | 300.00 | 0.80 |
