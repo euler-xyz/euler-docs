@@ -12,8 +12,10 @@
 
 * [How To](guides/ui/README.md)
   * [Lending and Borrowing](guides/ui/lending-and-borrowing-example.md)
+  * [Retrieve errors from developer console](guides/ui/retrieve-errors.md)
 * [FAQ](guides/faq.md)
 * [Glossary](guides/glossary.md)
+* [Errors](guides/common-errors.md)
 
 ## Protocol
 
@@ -62,11 +64,6 @@
 * [Bug Bounty](security/bug-bounty.md)
 * [Safety Module](security/vault.md)
 * [Insurance](security/insurance.md)
-
-## Support
-
-* [How to retrieve errors from developer console](support/retrieve-errors.md)
-* [Common Errors](support/common-errors.md)
 
 ## Languages
 
