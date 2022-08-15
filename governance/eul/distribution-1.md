@@ -4,6 +4,10 @@ description: Learn more about the phases of the EUL Distribution programme
 
 # Epochs
 
+## Introduction&#x20;
+
+The EUL Distribution programme has two phases. Epoch 0, in which governance tokens were distributed to early protocol users retroactively; and Epoch 1, in which governance tokens are distributed on an ongoing basis to borrowers on the protocol.
+
 ## Epoch 0
 
 Epoch 0 covers the 3 month period from 26/11/2021 to 21/03/2022 during which Euler protocol was in a soft-launch mode. Users were experimenting with the protocol in a risk-minimised manner.
@@ -38,7 +42,11 @@ Users will be able to claim their EUL governance tokens after an epoch has compl
 
 ## Schedule
 
-The amount of EUL distributed in each epoch has been determined in advance according to a non-linear schedule (see below). The schedule tries to match increasing protocol user numbers after launch with a concomitant increase in the EUL distribution, which should help to decentralise supply of the token rather than allocating a disproportionate amount to early users.
+The amount of EUL distributed in each epoch has been determined in advance according to a non-linear schedule (see graph below). The schedule tries to match increasing protocol user numbers after launch with a concomitant increase in the EUL distribution, which should help to decentralise supply of the token rather than allocating a disproportionate amount to early users.
+
+![](../../.gitbook/assets/image.png)
+
+### EUL Per Epoch
 
 The following table outlines the (approximate) dates and block numbers for previous and forthcoming epochs. Dates are approximate because the schedule is determined by the pace at which blocks are mined on the Ethereum network.
 

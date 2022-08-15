@@ -10,7 +10,9 @@ All newly created EUL tokens enter circulation initially via a smart contract ca
 
 ## Address
 
-The address for the treasury is: **0xcAD001c30E96765aC90307669d578219D4fb1DCe**. It can be viewed on Etherscan [here](https://etherscan.io/address/0xcAD001c30E96765aC90307669d578219D4fb1DCe).
+The address for the treasury is: `0xcAD001c30E96765aC90307669d578219D4fb1DCe`.&#x20;
+
+It can be viewed on Etherscan [here](https://etherscan.io/address/0xcAD001c30E96765aC90307669d578219D4fb1DCe).
 
 ## Multisig
 

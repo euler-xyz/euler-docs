@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn about how Euler protocol enables community-selected markets to receive
-  an EUL distribution
+  Learn about how Euler enables community-selected markets to receive a
+  governance token distribution
 ---
 
 # Gauges
