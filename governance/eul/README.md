@@ -24,11 +24,11 @@ The total supply of EUL is 27,182,818 (in homage to Euler’s number, [e](https:
 
 Here is the breakdown:
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (3).png>)
 
 The unlock schedule for different groups is as follows:
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../.gitbook/assets/image (5).png>)
 
 Note that the initial allocations may be subject to change as the ecosystem evolves. As EUL is distributed to users of the protocol they may see fit to vote to alter the EUL Distribution, for example.
 
@@ -38,6 +38,6 @@ The total supply of EUL is fixed for the first 4 years, after which EUL token ho
 
 The approximate schedule for the circulating supply of EUL is shown below.
 
-![](<../../.gitbook/assets/image (5).png>)
+![](../../.gitbook/assets/image.png)
 
 ##

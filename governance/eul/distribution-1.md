@@ -44,7 +44,7 @@ Users will be able to claim their EUL governance tokens after an epoch has compl
 
 The amount of EUL distributed in each epoch has been determined in advance according to a non-linear schedule (see graph below). The schedule tries to match increasing protocol user numbers after launch with a concomitant increase in the EUL distribution, which should help to decentralise supply of the token rather than allocating a disproportionate amount to early users.
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (7).png>)
 
 ### EUL Per Epoch
 
