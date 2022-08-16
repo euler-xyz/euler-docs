@@ -368,6 +368,19 @@ With bonuses and the Dutch action mechanism, our hope is that gas auctions will 
 
 Note that the liquidity used to claim a bonus must be held in the Euler contracts for a period of time. The full averaged liquidity will be achieved after a day \(see [Average Liquidity Tracking](architecture.md#average-liquidity-tracking). This means that no bonus will be applied if someone atomically supply liquidity, liquidates, and then withdraws.
 
+## Functional Diagram
+![diagram](../assets/functional-diagram/functional-diagram.png)
+
+The functional diagram depicts the smart contract architecture and how proxies, the Euler contract and modules relate to each other.
+
+Let's follow an execution of the `deposit` function on an eToken.
+1. The user interacts with an eToken proxy of the underlying she wants to deposit to Euler.
+2. The proxy attaches `msg.sender` to the call data and calls `dispatch` on Euler contract.
+3. Through a lookup of the proxy address `Euler` finds the currently installed module implementation for an eToken and delegate calls it, attaching the proxy address to the call data.
+4. The `deposit` function in `EToken` contract unpacks the trailing params from call data to determine the original sender's address. The proxy address determines the underlying of the eToken, which the `deposit` function pulls from the user's wallet. An underlying of an `eToken` can be a `pToken`, which wraps a collateral asset.
+5. Internal modules `IRM` and `RiskManager` are delegate called to compute the new interest rate, needed to set the new eToken balance for the user, and check the account health.
+6. Finally `emitViaProxy` function is called to emit standard `Transfer` event from the proxy address in compliance with ERC20. The proxy only allows this if the `msg.sender` is the `Euler` contract.
+
 ## Misc Details
 
 ### Average Liquidity Tracking
