@@ -1,10 +1,10 @@
 ---
 description: >-
-  Here is a explanation for different errors users might encounter from time on
-  the UI
+  Learn about different errors users might encounter from time on the UI and
+  what they mean
 ---
 
-# Errors
+# Common Errors
 
 ### You have a collateral violation
 

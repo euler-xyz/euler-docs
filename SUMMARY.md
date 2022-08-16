@@ -15,7 +15,7 @@
   * [Retrieve Browser Errors](guides/ui/retrieve-errors.md)
 * [FAQ](guides/faq.md)
 * [Glossary](guides/glossary.md)
-* [Errors](guides/common-errors.md)
+* [Common Errors](guides/common-errors.md)
 
 ## Protocol
 
