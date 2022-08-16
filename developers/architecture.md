@@ -369,7 +369,7 @@ With bonuses and the Dutch action mechanism, our hope is that gas auctions will 
 Note that the liquidity used to claim a bonus must be held in the Euler contracts for a period of time. The full averaged liquidity will be achieved after a day \(see [Average Liquidity Tracking](architecture.md#average-liquidity-tracking). This means that no bonus will be applied if someone atomically supply liquidity, liquidates, and then withdraws.
 
 ## Functional Diagram
-![diagram](../assets/functional-diagram/functional-diagram.png)
+![](../assets/functional-diagram/functional-diagram.png)
 
 The functional diagram depicts the smart contract architecture and how proxies, the Euler contract and modules relate to each other.
 
