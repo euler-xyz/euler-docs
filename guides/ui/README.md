@@ -17,16 +17,6 @@ description: >-
 
 Most of these primary transactions can be accessed through the Quick Action menu in the top navbar while several actions will appear as buttons throughout the site for convenience.
 
-#### Deposit
-
-1. Ensure that the asset you are interested in is already activated.
-   * If it's not, you can activate the asset from the Markets' table on the [homepage](https://app.euler.finance/).
-2. From the [Dashboard](https://app.euler.finance/dashboard), select the Euler sub-account that you want to deposit your tokens into.
-3. Click the Deposit button in the Supply column.
-4. The Quick Action menu will pop up. Click on Deposit and select the sub-account and the asset you are interested in depositing.
-   * If the asset is not already approved, you need to approve it by clicking on Sign Permit or Enable and confirming the transaction.
-5. Enter the amount you wish to deposit (or hit Max to send the full available balance in your wallet) and this will add it to our batch transaction slip.
-
 #### Withdraw
 
 1. Click on Withdraw and select the Euler sub-account that you want to withdraw your tokens from and ensure that you have funds deposited.

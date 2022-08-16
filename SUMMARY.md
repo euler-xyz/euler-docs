@@ -11,8 +11,9 @@
 ## Guides
 
 * [How To](guides/ui/README.md)
-  * [Lending and Borrowing](guides/ui/lending-and-borrowing-example.md)
+  * [Deposit](guides/ui/deposit.md)
   * [Retrieve Browser Errors](guides/ui/retrieve-errors.md)
+  * [Lending and Borrowing](guides/ui/lending-and-borrowing-example.md)
 * [FAQ](guides/faq.md)
 * [Glossary](guides/glossary.md)
 * [Common Errors](guides/common-errors.md)
