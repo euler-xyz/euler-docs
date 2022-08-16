@@ -12,7 +12,7 @@
 
 * [How To](guides/ui/README.md)
   * [Lending and Borrowing](guides/ui/lending-and-borrowing-example.md)
-  * [Retrieve errors from developer console](guides/ui/retrieve-errors.md)
+  * [Retrieve Browser Errors](guides/ui/retrieve-errors.md)
 * [FAQ](guides/faq.md)
 * [Glossary](guides/glossary.md)
 * [Errors](guides/common-errors.md)
