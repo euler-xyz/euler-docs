@@ -165,6 +165,20 @@ Returns:
 
 * **underlying**: Token address
 
+### dTokenToUnderlying
+
+Given a DToken address, looks up the associated underlying
+
+    function dTokenToUnderlying(address dToken) external view returns (address underlying);
+
+Parameters:
+
+* **dToken**: DToken address
+
+Returns:
+
+* **underlying**: Token address
+
 ### eTokenToDToken
 
 Given an EToken address, looks up the associated DToken
@@ -247,9 +261,23 @@ Parameters:
 
 Returns:
 
-* **pricingType**: (1=pegged, 2=uniswap3, 3=forwarded)
-* **pricingParameters**: If uniswap3 pricingType then this represents the uniswap pool fee used, otherwise unused
+* **pricingType**: (1=pegged, 2=uniswap3, 3=forwarded, 4=chainlink)
+* **pricingParameters**: If uniswap3 pricingType then this represents the uniswap pool fee used, if chainlink pricing type this represents the fallback uniswap pool fee or 0 if none
 * **pricingForwarded**: If forwarded pricingType then this is the address prices are forwarded to, otherwise address(0)
+
+### getChainlinkPriceFeedConfig
+
+Retrieves the Chainlink price feed config for an asset
+
+    function getChainlinkPriceFeedConfig(address underlying) external view returns (address chainlinkAggregator);
+
+Parameters:
+
+* **underlying**: Token address
+
+Returns:
+
+* **chainlinkAggregator**: Chainlink aggregator proxy address
 
 ### getEnteredMarkets
 
@@ -351,6 +379,16 @@ Single item in a batch response
 
 
 
+### BatchDispatchSimulation
+
+Error containing results of a simulated batch dispatch
+
+    error BatchDispatchSimulation(EulerBatchItemResponse[] simulation);
+
+
+
+
+
 ### liquidity
 
 Compute aggregate liquidity for an account
@@ -427,46 +465,27 @@ Parameters:
 
 Execute several operations in a single transaction
 
-    function batchDispatch(EulerBatchItem[] calldata items, address[] calldata deferLiquidityChecks) external returns (EulerBatchItemResponse[] memory);
+    function batchDispatch(EulerBatchItem[] calldata items, address[] calldata deferLiquidityChecks) external;
 
 Parameters:
 
 * **items**: List of operations to execute
 * **deferLiquidityChecks**: List of user accounts to defer liquidity checks for
 
-Returns:
-
-* List of operation results
-
-### EulerBatchExtra
-
-Results of a batchDispatch, but with extra information
-
-    struct EulerBatchExtra {
-        EulerBatchItemResponse[] responses;
-        uint gasUsed;
-        AssetLiquidity[][] liquidities;
-    }
 
 
+### batchDispatchSimulate
 
+Call batch dispatch, but instruct it to revert with the responses, before the liquidity checks.
 
-
-### batchDispatchExtra
-
-Call batchDispatch, but return extra information. Only intended to be used with callStatic.
-
-    function batchDispatchExtra(EulerBatchItem[] calldata items, address[] calldata deferLiquidityChecks, address[] calldata queryLiquidity) external returns (EulerBatchExtra memory output);
+    function batchDispatchSimulate(EulerBatchItem[] calldata items, address[] calldata deferLiquidityChecks) external;
 
 Parameters:
 
 * **items**: List of operations to execute
 * **deferLiquidityChecks**: List of user accounts to defer liquidity checks for
-* **queryLiquidity**: List of user accounts to return detailed liquidity information for
 
-Returns:
 
-* **output**: Structure with extra information
 
 ### trackAverageLiquidity
 
@@ -902,6 +921,19 @@ Parameters:
 
 
 
+### donateToReserves
+
+Donate eTokens to the reserves
+
+    function donateToReserves(uint subAccountId, uint amount) external;
+
+Parameters:
+
+* **subAccountId**: 0 for primary, 1-255 for a sub-account
+* **amount**: In internal book-keeping units (as returned from balanceOf).
+
+
+
 
 ## IEulerDToken
 
@@ -1010,6 +1042,19 @@ Parameters:
 
 * **subAccountId**: 0 for primary, 1-255 for a sub-account
 * **amount**: In underlying units (use max uint256 for full debt owed)
+
+
+
+### flashLoan
+
+Request a flash-loan. A onFlashLoan() callback in msg.sender will be invoked, which must repay the loan to the main Euler address prior to returning.
+
+    function flashLoan(uint amount, bytes calldata data) external;
+
+Parameters:
+
+* **amount**: In underlying units
+* **data**: Passed through to the onFlashLoan() callback, so contracts don't need to store transient data in storage
 
 
 
