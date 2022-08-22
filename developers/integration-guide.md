@@ -83,7 +83,7 @@ borrowedDToken.repay(0, type(uint).max);
 
 ## Flash loans
 
-Euler has flash loans built-in as an integral component of the protocol. There are two ways to take a flash loan, a low-level Euler-specific way, and a way that uses an [EIP-3156](https://eips.ethereum.org/EIPS/eip-3156) compatible flash-loan adaptor.
+Euler has flash loans built-in as an integral component of the protocol. There are three ways to take a flash loan, a low-level Euler-specific way, a way that uses an [EIP-3156](https://eips.ethereum.org/EIPS/eip-3156) compatible flash-loan adaptor, and a gas-efficient direct interface.
 
 ### Low-level Flash Loans
 
@@ -134,3 +134,41 @@ There is also an adaptor smart contract that exposes Euler's flash loan function
 The smart contract addresses are: [mainnet](https://etherscan.io/address/0x07df2ad9878F8797B4055230bbAE5C808b8259b3), [ropsten](https://ropsten.etherscan.io/address/0x0e60a8406a94787842f07221d2Fb5Bf19856CeA5).
 
 Examples of how to use the adaptor can be found in the EIP documentation, as well as the [Euler test suite](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/test/FlashLoanAdaptorTest.sol). The fee value is always 0.
+
+### Gas-Efficient Direct Flash Loans
+
+As of [eIP-14](https://forum.euler.finance/t/eip-14-contract-upgrades/305), DTokens also support a `flashLoan` method. In most cases, this is now the recommended way to perform a pure flash loan. It is simpler and consumes less gas than either of the above methods. 
+
+To use this, your contract should implement the `IFlashLoan` interface:
+
+    interface IFlashLoan {
+        function onFlashLoan(bytes memory data) external;
+    }
+
+When you wish to perform a flash loan, your contract should invoke the `flashLoan` function on the DToken that corresponds to the asset you wish to borrow:
+
+    function flashLoan(uint amount, bytes calldata data) external;
+
+The DToken contract will transfer the requested `amount` of tokens (decimals are the same as in the external token contract -- no normalisation needed), and then invoke your contract's `onFlashLoan` function. The `data` parameter you specify is passed to the callback unchanged, which allows you to pass extra data to your contract without requiring expensive storage writes.
+
+Note that any address could call `onFlashLoan` on your contract at any time. You may want to ensure that `msg.sender` is the Euler contract's address, or use some other kind of authentication scheme.
+
+Here is an example:
+
+    import "IEuler.sol";
+
+    contract MyContract {
+        function myFunction() external {
+            IEulerDToken dToken = IEulerDToken(markets.underlyingToDToken(underlying));
+            dToken.flashLoan(amount, abi.encode(underlying, amount));
+        }
+
+        function onFlashLoan(bytes memory data) external {
+            require(msg.sender == EulerAddrsMainnet.euler, "not allowed");
+            (address underlying, uint amount) = abi.decode(data, (uint));
+
+            // ...
+
+            IERC20(underlying).transfer(EulerAddrsMainnet.euler, amount);
+        }
+    }
