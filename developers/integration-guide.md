@@ -149,9 +149,11 @@ When you wish to perform a flash loan, your contract should invoke the `flashLoa
 
     function flashLoan(uint amount, bytes calldata data) external;
 
-The DToken contract will transfer the requested `amount` of tokens (decimals are the same as in the external token contract -- no normalisation needed), and then invoke your contract's `onFlashLoan` function. The `data` parameter you specify is passed to the callback unchanged, which allows you to pass extra data to your contract without requiring expensive storage writes.
+The DToken contract will transfer the requested `amount` of tokens to your contract address (decimals are the same as in the external token contract -- no normalisation needed), and then invoke your contract's `onFlashLoan` function. The `data` parameter you specify is passed to the callback unchanged, which allows you to pass extra data to your contract without requiring expensive storage writes.
 
 Note that any address could call `onFlashLoan` on your contract at any time. You may want to ensure that `msg.sender` is the Euler contract's address, or use some other kind of authentication scheme.
+
+Your contract is expected to repay `amount` back to the Euler contract (which will be `msg.sender`) within the `onFlashLoan` function.
 
 Here is an example:
 
@@ -159,6 +161,7 @@ Here is an example:
 
     contract MyContract {
         function myFunction() external {
+            require(msg.sender == myAdminAddress, "not allowed");
             IEulerDToken dToken = IEulerDToken(markets.underlyingToDToken(underlying));
             dToken.flashLoan(amount, abi.encode(underlying, amount));
         }
@@ -169,6 +172,6 @@ Here is an example:
 
             // ...
 
-            IERC20(underlying).transfer(EulerAddrsMainnet.euler, amount);
+            IERC20(underlying).transfer(msg.sender, amount); // repay
         }
     }
