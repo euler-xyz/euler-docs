@@ -12,7 +12,7 @@ Borrowing assets on Euler creates a loan that users can repay at any time. Borro
 
 1. Select `Borrow` in the `Quick Action` menu.
 2. Select the Euler sub-account that you want to borrow on.
-   * Ensure that you have sufficient collateral deposited in the sub-account, and the sub-account is entered into the market.
+   * Ensure that you have sufficient collateral deposited in the sub-account, and the asset is entered into the market.
 3. Select the asset you are interested in.
 4. Enter the amount you wish to borrow:
    * The `Max` button is representative of Liquidation x 1.5 to give a better UI experience, but we do not recommend you borrow more than `Safe Max` (unless it is a self-collateralized loan).
