@@ -41,7 +41,8 @@ description: Quick access to everything you need to know about Euler
 [DefiLlama](https://defillama.com/protocol/euler)\
 [Zerion](https://zerion.io/)\
 [DeBank](https://debank.com/projects/euler)\
-[Ape Board](https://apeboard.finance/)
+[Ape Board](https://apeboard.finance/)\
+[DeFiYield](https://defiyield.app/dashboard)
 
 **Dune Analytics**\
 By [ShippooorDAO](https://dune.xyz/shippooordao/Euler-Finance-Dashboard)\
