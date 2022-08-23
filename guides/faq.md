@@ -12,7 +12,7 @@ Euler is a non-custodial protocol on Ethereum that allows users to lend and borr
 
 #### Who developed Euler?
 
-Euler was initially created by a team of developers at a company called Euler XYZ Ltd (see website [here](http://euler.xyz)). Today it is progressively decentralising and receives contributions from the external developer community as well as ongoing contributions from Euler XYZ.
+Euler was initially created by a team of developers at a company called Euler Labs (see website [here](http://euler.xyz)). Today it is progressively decentralising and receives contributions from the external developer community as well as ongoing contributions from Euler Labs.
 
 #### What is EulerDAO?
 
@@ -40,7 +40,7 @@ The branding materials are located at the following link: [euler.finance/brandin
 
 #### How do I deposit and borrow?
 
-Go to the [Euler app](https://app.euler.finance/), login via the Connect button on ETH mainnet. Click on the Quick Action button. You can deposit and borrow through the same named action buttons. Choose the asset and amounts, then approve of the transactions.
+Check out the How To guides [here](ui/). Or just go to the [Euler app](https://app.euler.finance/), login via the Connect button on ETH mainnet. Click on the Quick Action button. You can deposit and borrow through the same named action buttons. Choose the asset and amounts, then approve of the transactions.
 
 **How do I activate a market?**
 
@@ -146,7 +146,7 @@ There is no public sale.
 
 #### Where can I trade EUL?
 
-While EUL token has been released, EulerDAO does not give financial advice on trading the token.
+While EUL token has been released, Euler Labs does not give financial advice on trading the token.
 
 #### How do I get an airdrop?
 
@@ -172,7 +172,7 @@ Feel free to reach out through Discord or other platforms in the Quick Links sec
 
 #### Can we list EUL on our exchange?
 
-EulerDAO cannot advise on exchange listings, nor pay for any listings.
+Euler Labs cannot advise on exchange listings, nor pay for any listings.
 
 #### Can we offer our token in your liquidity mining programme?
 
