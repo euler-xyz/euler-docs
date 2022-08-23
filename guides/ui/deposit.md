@@ -1,12 +1,12 @@
 ---
-description: Learn how to supply assets in Euler and begin earning interest
+description: Learn how to deposit assets on Euler and begin earning interest
 ---
 
 # Deposit
 
 ## About
 
-Depositing into Euler allows you to supply assets to borrowers and earn the Supply APY for an asset. Depositing collateral is also the first step in being able to borrow assets on Euler. Here are the steps for depositing.
+Depositing into Euler allows users to supply assets to borrowers and earn the Supply APY for an asset. Depositing collateral is also the first step in being able to borrow assets on Euler.&#x20;
 
 ## Step-by-step
 
@@ -23,4 +23,5 @@ Depositing into Euler allows you to supply assets to borrowers and earn the Supp
 
 ## FAQ
 
-TODO.
+**I deposited, but the asset does not show up in my account.**\
+****Make sure the deposit transactions did not fail, otherwise please create a support ticket in [Discord](https://discord.gg/CdG97VSYGk).
