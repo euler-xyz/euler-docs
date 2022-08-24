@@ -22,7 +22,7 @@ The governance smart contract inherits functionality from the OpenZeppelin [Gove
 | ------------------ | ---------------------- |
 | Voting Delay       | 11520 blocks (2 days)  |
 | Voting Period      | 17280 blocks (3 days)  |
-| Execution Delay    | 172800 blocks (2 days) |
+| Execution Delay    | 172800 seconds (2 days) |
 | Quorum Numerator   | 3% of EUL Supply       |
 | Proposal Threshold | 75,000 EUL             |
 
