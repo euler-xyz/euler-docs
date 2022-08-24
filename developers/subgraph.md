@@ -35,10 +35,21 @@ Contains information about all Euler markets, pulled from EulerGeneralView contr
 type Asset @entity {
   "asset_address"
   id: ID!
+  "Block hash at which asset was created"
   blockHash: Bytes!
+  "Block number at which asset was created"
   blockNumber: Int!
+  "Timestamp at which asset was created"
   timestamp: Int!
+  "Block hash at which asset was last updated"
+  updatedBlockHash: Bytes!
+  "Block number at which asset was last updated"
+  updatedBlockNumber: Int!
+  "Timestamp at which asset was last updated"
+  updatedTimestamp: Int!
+  "Tx hash at which asset was created"
   transactionHash: Bytes!
+  "Tx origin at which asset was created"
   transactionOrigin: Bytes!
   dTokenAddress: Bytes!
   eTokenAddress: Bytes!
@@ -60,6 +71,9 @@ type Asset @entity {
   borrowAPY: BigInt!
   supplyAPY: BigInt!
   twap: BigInt!
+  twapUsd: BigDecimal!
+  "Deprecated in favor of twapUsd. Do not use."
+  twapPrice: BigDecimal!
   twapPeriod: BigInt!
   currPrice: BigInt!
   currPriceUsd: BigInt!
@@ -71,9 +85,8 @@ type Asset @entity {
   numBorrows: BigInt!
   borrowIsolated: Boolean!
   poolSize: BigInt!
-  interestAccumulator: BigInt!
   interestRate: BigInt!
-  twapPrice: BigDecimal!
+  interestAccumulator: BigInt!
   config: AssetConfig
 }
 ```
@@ -255,7 +268,60 @@ type GovSetReserveFee @entity {
 }
 ```
 
+### Hourly/Daily/MonthlyAssetSnapshot
+Snapshot of Asset entity at the end of every hour, day and month.
+
+Useful for querying historical data on markets.
+
+```GraphQL
+type HourlyAssetSnapshot @entity {
+  "start_of_hour_timestamp:asset_address"
+  id: ID!
+  asset: Asset!
+  "Block number at which snapshot was created"
+  blockHash: Bytes!
+  "Block hash at which snapshot was created"
+  blockNumber: Int!
+  "Timestamp at which snapshot was created"
+  timestamp: Int!
+  "Tx hash at which asset was created"
+  transactionHash: Bytes!
+  "Tx origin at which asset was created"
+  transactionOrigin: Bytes!
+  totalSupply: BigInt!
+  totalBalances: BigInt!
+  totalBalancesUsd: BigInt!
+  totalBalancesEth: BigInt!
+  totalBorrows: BigInt!
+  totalBorrowsUsd: BigInt!
+  totalBorrowsEth: BigInt!
+  reserveBalance: BigInt!
+  reserveBalanceEth: BigInt!
+  reserveBalanceUsd: BigInt!
+  reserveFee: BigInt!
+  borrowAPY: BigInt!
+  supplyAPY: BigInt!
+  twap: BigInt!
+  twapUsd: BigDecimal!
+  twapPeriod: BigInt!
+  currPrice: BigInt!
+  currPriceUsd: BigInt!
+  pricingType: Int!
+  pricingParameters: BigInt!
+  pricingForwarded: Bytes!
+  collateralValue: BigInt!
+  liabilityValue: BigInt!
+  numBorrows: BigInt!
+  borrowIsolated: Boolean!
+  poolSize: BigInt!
+  interestAccumulator: BigInt!
+  interestRate: BigInt!
+}
+```
+
 ### Hourly/Daily/MonthlyAssetStatus
+
+> This entity has been deprecated in favor of Hourly/Daily/MonthlyAssetSnapshot
 
 Aggregated metrics of a specific market over hourly, daily and monthly time period.
 
@@ -271,6 +337,8 @@ type HourlyAssetStatus @entity {
   interestAccumulator: BigInt!
   interestRate: BigInt!
   twapPrice: BigDecimal!
+  twapUsd: BigDecimal!
+  asset: Asset!
 }
 ```
 
@@ -355,6 +423,20 @@ Every entity that has `hourly`, `daily` or `monthly` in its name can be queried 
     totalBorrows
     totalBorrowsUsd
     currPriceUsd
+  }
+}
+```
+
+### Fetch historical interest rate, supply and borrow balances of a given market
+
+```GraphQL
+{
+  hourlyAssetSnapshots(where: {asset: "0x03ab458634910aad20ef5f1c8ee96f1d6ac54919"}, orderBy: timestamp, orderDirection: desc, first: 1000) {
+    id
+    supplyAPY
+    borrowAPY
+    totalBorrowsUsd
+    totalBalancesUsd
   }
 }
 ```
