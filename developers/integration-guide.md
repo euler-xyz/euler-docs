@@ -168,7 +168,7 @@ Here is an example:
 
         function onFlashLoan(bytes memory data) external {
             require(msg.sender == EulerAddrsMainnet.euler, "not allowed");
-            (address underlying, uint amount) = abi.decode(data, (uint));
+            (address underlying, uint amount) = abi.decode(data, (address, uint));
 
             // ...
 
