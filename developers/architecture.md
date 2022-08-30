@@ -147,7 +147,7 @@ Almost all the functions in the Base modules are declared as private or internal
 
 ## Pricing
 
-Euler uses Uniswap 3 as its pricing oracle. In order to ensure that prices are not vulnerable to snapshot manipulation, this requires using the time-weighted average price \(TWAP\) of a recent time period.
+Euler uses Uniswap 3 as its default pricing oracle. In order to ensure that prices are not vulnerable to snapshot manipulation, this requires using the time-weighted average price \(TWAP\) of a recent time period.
 
 When a market is activated, the RiskManager calls `increaseObservationCardinalityNext()` on the uniswap pool to increase the size of the uniswap oracle's ring buffer to a minimum size. By default this size is 144, because this is on-average sufficient to satisfy a TWAP window of 30 minutes, assuming 12.5 second block times.
 
@@ -155,9 +155,17 @@ The Euler contracts will try to retrieve prices averaged over the per-instrument
 
 Our blog series describes our pricing system in more detail: [https://medium.com/euler-xyz/prices-and-oracles-2da0126a138](https://medium.com/euler-xyz/prices-and-oracles-2da0126a138)
 
+### Chainlink prices
+
+To support the assets that do not have a WETH pair on Uniswap 3 or the pair has insufficient liquidity to provide secure TWAP oracle, Euler extended its pricing types to include Chainlink price feeds as the pricing source.
+
+Chainlink is the most used data provider in the industry. It has a very good reputation and provides secure pricing feeds that are used by lending protocol industry leaders like Aave, Compound and others. Integration with Chainlink on Euler brings a reduction of the protocol's dependency on Uniswap. It lowers the oracle manipulation risks for those assets that have very little liquidity in WETH pair on Uniswap 3. Also, for all the assets that have the Chainlink oracle set as a price source, it reduces the gas usage for all the operations that require price fetching.
+
+Learn more about Chainlink Price Feeds: [https://docs.chain.link/docs/using-chainlink-reference-contracts/](https://docs.chain.link/docs/using-chainlink-reference-contracts/)
+
 ### Pegged prices
 
-An exception to the Uniswap 3 pricing above is for assets that are equivalent to the reference asset. These assets can have a pricing type of "pegged" which indicates their price is always 1:1 with the reference asset. Currently the only asset that is pegged _is_ the reference asset itself, which is WETH.
+An exception to the Uniswap 3 and Chainlink pricing above is for assets that are equivalent to the reference asset. These assets can have a pricing type of "pegged" which indicates their price is always 1:1 with the reference asset. Currently the only asset that is pegged _is_ the reference asset itself, which is WETH.
 
 ### Price forwarding
 
