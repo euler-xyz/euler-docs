@@ -30,7 +30,7 @@ Join the [Discord](https://discord.gg/CdG97VSYGk) and meet the community, make p
 
 #### Where is the developer documentation?
 
-Please refer to the [Developers](../developers/integration-guide.md) section and check out the [Euler SDK](https://blog.euler.finance/announcing-the-euler-sdk-976f6e34c73).
+Please refer to the [Developers](../developers/getting-started/integration-guide.md) section and check out the [Euler SDK](https://blog.euler.finance/announcing-the-euler-sdk-976f6e34c73).
 
 #### Where are your branding guidelines/materials?
 
@@ -64,7 +64,7 @@ By default Euler uses [Uniswap](https://docs.uniswap.org/protocol/concepts/V3-ov
 
 #### What is the oracle rating?
 
-The [Oracle Rating system](../risk-framework/methodology/oracle-rating.md) attempts to rank Uniswap v3 price oracles for different markets high, medium, or low based on the ease with which they can be manipulated.
+The [Oracle Rating system](../euler-protocol/getting-started/methodology/oracle-rating.md) attempts to rank Uniswap v3 price oracles for different markets high, medium, or low based on the ease with which they can be manipulated.
 
 #### What are the reserves?
 
@@ -120,7 +120,7 @@ Users can go to the [Euler app](https://app.euler.finance/), click on the Claim 
 
 #### What utility does EUL have?
 
-EUL’s main utility is as a [governance token](../governance/governance/voting.md) for the Euler protocol. Users with EUL can have a say in the future decisions and direction, as well as the EUL distribution in the Euler gauges.
+EUL’s main utility is as a [governance token](broken-reference) for the Euler protocol. Users with EUL can have a say in the future decisions and direction, as well as the EUL distribution in the Euler gauges.
 
 #### What is the distribution of EUL tokens for borrowers?
 
@@ -134,11 +134,11 @@ Users can add or remove EUL distribution eligible markets simply by staking EUL 
 
 #### Is there a token? How can I earn it?
 
-The Euler token (EUL) is distributed to borrowers on select markets on the platform. Please see the [Governance](../governance/eul/) section for more details.
+The Euler token (EUL) is distributed to borrowers on select markets on the platform. Please see the [Governance](broken-reference) section for more details.
 
 #### What are the tokenomics?
 
-Allocation, vesting and other information about the EUL token can be found in the EUL section under [Governance](../governance/eul/).
+Allocation, vesting and other information about the EUL token can be found in the EUL section under [Governance](broken-reference).
 
 #### Is there a TGE/ICO/IDO?
 
@@ -168,7 +168,7 @@ No, that is fake. No one related to Euler will ever message anyone directly, nor
 
 #### Who can I contact about partnerships/integrations?
 
-Feel free to reach out through Discord or other platforms in the Quick Links section. Also read the [integration guide](../developers/integration-guide.md) for more details.
+Feel free to reach out through Discord or other platforms in the Quick Links section. Also read the [integration guide](../developers/getting-started/integration-guide.md) for more details.
 
 #### Can we list EUL on our exchange?
 

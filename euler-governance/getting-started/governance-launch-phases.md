@@ -1,10 +1,10 @@
 ---
-description: Learn more about the Euler On-Chain Governance launch phases
+description: Learn more about the Euler Governance launch phases
 ---
 
-# Governance Launch Phases
+# Phases
 
-## On-Chain Governance Launch Phases
+## Governance Launch Phases
 
 ### Introduction
 

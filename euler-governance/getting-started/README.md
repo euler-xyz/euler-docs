@@ -1,10 +1,19 @@
----
-description: Learn more about the Euler Governance process
----
-
-# Governance Process
+# Getting Started
 
 ## Introduction
+
+The code for Euler Protocol is controlled by a decentralised community through on-chain governance on the Ethereum network. The community are holders of a protocol-native governance token called [EUL ](broken-reference)(pronounced 'oil'), which enables the community to effect change over the Euler Protocol code. Tokens can be used to propose upgrades to the protocol or vote on the proposals of others.
+
+## Protocol Code
+
+Governance can vote to effect change over the Euler Protocol for parameters such as:
+
+1. **Default isolated** tier borrow **factor**
+2. **Collateral** and **borrow factors** of specific assets
+3. Inclusion of an asset in the **cross** and **collateral tiers**
+4. Change in choice of **risk parameters** and general **methodology**
+
+****
 
 On-Chain governance, allows unique features such as delegated voting and proposition powers, as well as protocol (and governance configuration) updates via a time lock executor. This ensures the protocol can adapt to evolving market conditions, as well as upgrade core parts of the protocol over time.
 
@@ -12,7 +21,7 @@ On the other hand, for off-chain governance, there is no code to review or imple
 
 Euler protocol uses the [Tally](https://www.tally.xyz/governance/eip155:1:0xd8E2114f6bCbaee83CDEB1bD6650a28BBcF144D5) governance interface for on-chain voting. [Snapshot](https://snapshot.org/#/eulerdao.eth/proposal/0x3b4b7e79c40df6860e7d612bdccc4969753e283dfd84673dc5fc4d201abcb317) on the other hand is an interface use for off-chain or 'gasless' voting.
 
-## General Governance Process
+## Process
 
 The [General Governance Process](https://forum.euler.finance/t/welcome-to-the-euler-governance-forum/7) is documented on the Governance Forum.
 

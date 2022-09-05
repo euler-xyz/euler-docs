@@ -2,13 +2,13 @@
 description: Learn more about the Euler Governance smart contract parameters
 ---
 
-# Governance Parameters
+# Parameters
 
 ## Introduction
 
 This page outlines the governance parameters for both on-chain and off-chain governance.
 
-### On-Chain Governance Parameters
+### Tally (On-Chain) Governance Parameters
 
 This section outlines the governance parameters for the Euler Governance smart contracts (managed via [Tally](https://www.tally.xyz/governance/eip155:1:0xd8E2114f6bCbaee83CDEB1bD6650a28BBcF144D5)). All parameters are displayed in Table 1 below.
 
@@ -18,13 +18,13 @@ The governance smart contract inherits functionality from the OpenZeppelin [Gove
 
 **Table 1** Euler On-Chain Governance Parameters
 
-| Parameter          | Value                  |
-| ------------------ | ---------------------- |
-| Voting Delay       | 11520 blocks (2 days)  |
-| Voting Period      | 17280 blocks (3 days)  |
+| Parameter          | Value                   |
+| ------------------ | ----------------------- |
+| Voting Delay       | 11520 blocks (2 days)   |
+| Voting Period      | 17280 blocks (3 days)   |
 | Execution Delay    | 172800 seconds (2 days) |
-| Quorum Numerator   | 3% of EUL Supply       |
-| Proposal Threshold | 75,000 EUL             |
+| Quorum Numerator   | 3% of EUL Supply        |
+| Proposal Threshold | 75,000 EUL              |
 
 When a governance proposal is created, it enters a 2-day review period (i.e., Voting Delay), after which voting weights are recorded and voting begins.
 
@@ -34,9 +34,9 @@ Addresses delegated at least 75,000 EUL can create governance proposals having m
 
 The image below depicts the on-chain governance phases and durations for each phase:
 
-![](../../.gitbook/governance/governance\_process.png)
+![](../.gitbook/governance/governance\_process.png)
 
-### Off-Chain Governance Parameters
+### Snapshot (Off-Chain) Governance Parameters
 
 This section outlines the governance parameters for off-chain governance (managed via [Snapshot](https://snapshot.org/#/eulerdao.eth/proposal/0x3b4b7e79c40df6860e7d612bdccc4969753e283dfd84673dc5fc4d201abcb317)). All parameters are displayed in Table 2 below.
 
