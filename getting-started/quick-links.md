@@ -8,6 +8,11 @@ description: Quick access to everything you need to know about Euler
 [Website](https://www.euler.finance/#/)\
 [DApp](https://app.euler.finance/)
 
+**Governance**\
+****[Forum](https://forum.euler.finance/)\
+[Off-chain (Snapshot)](https://snapshot.org/#/eulerdao.eth)\
+[On-chain (WithTally)](https://www.tally.xyz/governance/eip155:1:0xd8E2114f6bCbaee83CDEB1bD6650a28BBcF144D5)
+
 **EUL**\
 [Etherscan](https://etherscan.io/token/0xd9fcd98c322942075a5c3860693e9f4f03aae07b)\
 [CoinMarketCap](https://coinmarketcap.com/currencies/euler-finance/)\
