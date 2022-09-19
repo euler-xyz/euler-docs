@@ -35,7 +35,7 @@ _A good governance proposal example can be found here:_ [eIP: Promote WBTC to co
 
 If the RFC is well-formulated and the community has a clear understanding of the proposal and supports your RFC, it will be moved by a mod to the governance category as an **eIP: Euler Improvement Proposal**. Please note that it usually takes a week (7 days) for a proposal to be moved from RFC to the eIP stage. Once an eIP has been assigned, the proposal can then be created on Snapshot or Tally using this eIP.
 
-A Snapshot or Tally proposal does not always need to be posted by the original eIP author, it can be posted by someone else or by the core team in case the minimum threshold of EUL is not being met. The proposal on Snapshot or Tally should always have the link to the eIP attached. The parameters of the poll (Yes, No, different options for values) need to mirror the options discussed in the eIP.
+A Snapshot or Tally proposal does not always need to be posted by the original eIP author, it can be posted by someone else or one of the delegates in case the minimum threshold of EUL is not being met. The proposal on Snapshot or Tally should always have the link to the eIP attached. The parameters of the poll (Yes, No, different options for values) need to mirror the options discussed in the eIP.
 
 Proposals that are rejected due to invalidity or insufficient support can be resubmitted. Approved proposals with sufficient support via governance/voting will be implemented by the Euler Foundation.
 
