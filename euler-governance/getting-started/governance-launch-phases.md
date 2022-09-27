@@ -16,7 +16,7 @@ Euler uses the Tally governance dashboard application to manage the governance p
 
 ### Phase 1
 
-The first phase of the launch will be such that actions to be performed directly on the Euler protocol smart contracts will be executed by the Euler team on behalf of the community. In this case, all on-chain governance proposals will point to or target a function in a stub smart contract (in place of the Euler protocol smart contracts).
+The first phase of the launch will be such that actions to be performed directly on the Euler protocol smart contracts will be executed by the Euler team on behalf of the community. In this case, all on-chain governance proposals will point to or target the `executeProposal(string description, bytes proposalData)` function in a [stub governance smart contract](https://etherscan.io/address/0x8233f21dda26229c8b0586c3c2521be5da0e6328) (in place of the Euler protocol smart contracts).
 
 Should the proposal become successful and executed, the target function will then be executed (via the TimelockController controller smart contract). It will emit the proposal description string and proposal transaction data, which will then be validated by the Euler team and executed against the Exec module via the Euler multisig.
 
@@ -24,7 +24,7 @@ Hence, the `governorOnly()` modifier in the Euler Governance module smart contra
 
 To create the proposal transaction data, we have implemented a [tool](https://proposal.euler.finance/) which will help the proposer to auto generate this depending on what actions should be executed.
 
-The proposer can select a token from the dropdown token list (this will auto populate the fields with the current configuration for the token/market on Euler), the proposer can then make modifications and generate the proposal transaction hex to be executed via the Euler Exec module (`batchDispatch()` function) and use this hex data as the input to the target function in the stub smart contract when creating a proposal on Tally.
+The proposer can select a token from the dropdown token list (this will auto populate the fields with the current configuration for the token/market on Euler), the proposer can then make modifications and generate the proposal transaction hex to be executed via the Euler Exec module (`batchDispatch()` function) and use this hex data as the input to the target function in the [stub governance smart contract](https://etherscan.io/address/0x8233f21dda26229c8b0586c3c2521be5da0e6328) when creating a proposal on Tally.
 
 Examples of the kinds of decisions token holders might vote on include proposals to modify:
 
@@ -52,7 +52,7 @@ Not only giving the community control over the Governance module for asset confi
 
 ### Introduction
 
-The first phase of Euler’s DAO / Governance launch will be where actions to be performed directly on the Euler protocol smart contracts will be performed or executed by the Euler team on behalf of the community. In this case, all on-chain governance proposals will point to or target a function in a stub smart contract (in place of the Euler protocol smart contracts).
+The first phase of Euler’s DAO / Governance launch will be where actions to be performed directly on the Euler protocol smart contracts will be performed or executed by the Euler team on behalf of the community. In this case, all on-chain governance proposals will point to or target a function in a [stub governance smart contract](https://etherscan.io/address/0x8233f21dda26229c8b0586c3c2521be5da0e6328) (in place of the Euler protocol smart contracts).
 
 Should the proposal become successful and executed, the target function will then be executed (via the TimelockController controller smart contract. It will emit the proposal description string and proposal transaction hex data, which will then be validated by the Euler team and executed against the `Exec` module via the Euler multisig (on OpenZeppelin Defender).
 
@@ -92,9 +92,9 @@ The image below shows the proposal description and the fields on the left popula
 
 #### Step 4
 
-The proposer can then make modifications and generate the proposal transaction hex data to be executed via the Euler Exec module (`batchDispatch()` function) and use this hex data as the input to the target function in the stub smart contract when creating a proposal on Tally (this is described in Section 2 below).
+The proposer can then make modifications and generate the proposal transaction hex data to be executed via the Euler Exec module (`batchDispatch()` function) and use this hex data as the input to the target function in the [stub governance smart contract](https://etherscan.io/address/0x8233f21dda26229c8b0586c3c2521be5da0e6328) when creating a proposal on Tally (this is described in Section 2 below).
 
-For example purposes, let’s change the borrow factor of USDC to 0.6. To do this, we simply change the current collateral factor to 0.6 in the text field on the left side of the screen for collateral factor and click on `CREATE PROPOSAL DATA`. Once we do this, we should see the markdown table showing the changes we want to make to the asset. We will also see the batch items Hex transaction data which we need for our on-chain governance proposal stub smart contract on Tally.
+For example purposes, let’s change the borrow factor of USDC to 0.6. To do this, we simply change the current collateral factor to 0.6 in the text field on the left side of the screen for collateral factor and click on `CREATE PROPOSAL DATA`. Once we do this, we should see the markdown table showing the changes we want to make to the asset. We will also see the batch items Hex transaction data which we need for our on-chain governance proposal [stub governance smart contract](https://etherscan.io/address/0x8233f21dda26229c8b0586c3c2521be5da0e6328)on Tally.
 
 ![](../../.gitbook/governance/gov\_tool\_4\_i.png)
 
@@ -152,7 +152,7 @@ In the next section, you will be required to specify the governance proposal act
 
 ![](../../.gitbook/governance/dao\_1\_tally\_4\_i.png)
 
-To add the proposal transaction hex from Section 1 and set the governance stub contract as the target smart contract, we will click on `Add custom action` => enter the stub smart contract address as the target smart contract. Then select the `executeProposal` function from the dropdown menu under `contract method` as the target function in the target smart contract. Here is the interesting part: enter the required parameters, i.e., proposal description string and the proposalData which is your proposal transaction hex data from Section 1.
+To add the proposal transaction hex from Section 1 and set the governance [stub governance smart contract](https://etherscan.io/address/0x8233f21dda26229c8b0586c3c2521be5da0e6328) as the target smart contract, we will click on `Add custom action` => enter the [stub governance smart contract](https://etherscan.io/address/0x8233f21dda26229c8b0586c3c2521be5da0e6328) address as the target smart contract. Then select the `executeProposal` function from the dropdown menu under `contract method` as the target function in the target smart contract. Here is the interesting part: enter the required parameters, i.e., proposal description string and the proposalData which is your proposal transaction hex data from Section 1.
 
 ![](../../.gitbook/governance/dao\_1\_tally\_4\_ii.png)
 
