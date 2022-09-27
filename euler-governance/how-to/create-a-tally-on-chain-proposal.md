@@ -14,7 +14,7 @@ The [Euler Governance Dashboard](https://www.tally.xyz/governance/eip155:1:0xd8E
 
 ## Step-by-step
 
-1\. Visit the [Euler on-chain governance dashboard](https://www.tally.xyz/governance/eip155:1:0xd8E2114f6bCbaee83CDEB1bD6650a28BBcF144D5) on Tally and connect your wallet where you have EUL voting power (see the how to guide on `Delegate Voting Power` for how to get voting power).
+1\. Now that you have created a proposal on [proposal.euler.finance](proposal.euler.finance), visit the [Euler on-chain governance dashboard](https://www.tally.xyz/governance/eip155:1:0xd8E2114f6bCbaee83CDEB1bD6650a28BBcF144D5) on Tally and connect your wallet where you have EUL voting power (see the how to guide on `Delegate Voting Power` for how to get voting power).
 
 2\. To create a new proposal, click on `Create New Proposal` from the DAO home page on Tally as shown in the top right corner in the image below.
 
@@ -28,7 +28,7 @@ This will then open up the proposal creation dialog taking users through the req
 
 ![](../../.gitbook/governance/new\_proposal\_2.png)
 
-4\. Users will need to add the actions to be executed should the proposal become successful or receive majority of vote in support. In this step, users can specify the target smart contract address (this should be the [stub governance smart contract address -](https://etherscan.io/address/0x8233f21dda26229c8b0586c3c2521be5da0e6328 `0x8233f21dda26229c8b0586c3c2521be5da0e6328`) for phase one of the governance launch), smart contract function and required function parameters. Up to a maximum of 10 actions can be added in a single proposal.
+4\. Users will need to add the actions to be executed should the proposal become successful or receive majority of vote in support. In this step, users can specify the target smart contract address (this should be the [stub governance smart contract address -](https://etherscan.io/address/0x8233f21dda26229c8b0586c3c2521be5da0e6328 `0x8233f21dda26229c8b0586c3c2521be5da0e6328`) for phase one of the governance launch), smart contract function and required function parameters (the proposal hex data for your proposal created on [proposal.euler.finance](proposal.euler.finance)). Up to a maximum of 10 actions can be added in a single proposal.
 
 You do not need to upload smart contract ABI file as it will be automatically imported from the verified contract on etherscan.
 
