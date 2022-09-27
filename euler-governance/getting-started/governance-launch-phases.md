@@ -94,7 +94,7 @@ The image below shows the proposal description and the fields on the left popula
 
 The proposer can then make modifications and generate the proposal transaction hex data to be executed via the Euler Exec module (`batchDispatch()` function) and use this hex data as the input to the target function in the [stub governance smart contract](https://etherscan.io/address/0x8233f21dda26229c8b0586c3c2521be5da0e6328) when creating a proposal on Tally (this is described in Section 2 below).
 
-For example purposes, let’s change the borrow factor of USDC to 0.6. To do this, we simply change the current collateral factor to 0.6 in the text field on the left side of the screen for collateral factor and click on `CREATE PROPOSAL DATA`. Once we do this, we should see the markdown table showing the changes we want to make to the asset. We will also see the batch items Hex transaction data which we need for our on-chain governance proposal [stub governance smart contract](https://etherscan.io/address/0x8233f21dda26229c8b0586c3c2521be5da0e6328)on Tally.
+For example purposes, let’s change the borrow factor of USDC to 0.6. To do this, we simply change the current collateral factor to 0.6 in the text field on the left side of the screen for collateral factor and click on `CREATE PROPOSAL DATA`. Once we do this, we should see the markdown table showing the changes we want to make to the asset. We will also see the batch items Hex transaction data which we need for our on-chain governance proposal [stub governance smart contract](https://etherscan.io/address/0x8233f21dda26229c8b0586c3c2521be5da0e6328) on Tally.
 
 ![](../../.gitbook/governance/gov\_tool\_4\_i.png)
 
