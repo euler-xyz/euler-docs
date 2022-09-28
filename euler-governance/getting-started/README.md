@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The code for Euler Protocol is controlled by a decentralised community through on-chain governance on the Ethereum network. The community are holders of a protocol-native governance token called [EUL ](broken-reference)(pronounced 'oil'), which enables the community to effect change over the Euler Protocol code. Tokens can be used to propose upgrades to the protocol or vote on the proposals of others.
+The code for Euler Protocol is controlled by a decentralised community through on-chain governance on the Ethereum network. The community are holders of a protocol-native governance token called [EUL ](broken-reference/)(pronounced 'oil'), which enables the community to effect change over the Euler Protocol code. Tokens can be used to propose upgrades to the protocol or vote on the proposals of others.
 
 ## Protocol Code
 
@@ -13,7 +13,7 @@ Governance can vote to effect change over the Euler Protocol for parameters such
 3. Inclusion of an asset in the **cross** and **collateral tiers**
 4. Change in choice of **risk parameters** and general **methodology**
 
-****
+***
 
 On-Chain governance, allows unique features such as delegated voting and proposition powers, as well as protocol (and governance configuration) updates via a time lock executor. This ensures the protocol can adapt to evolving market conditions, as well as upgrade core parts of the protocol over time.
 
@@ -25,9 +25,17 @@ Euler protocol uses the [Tally](https://www.tally.xyz/governance/eip155:1:0xd8E2
 
 The [General Governance Process](https://forum.euler.finance/t/welcome-to-the-euler-governance-forum/7) is documented on the Governance Forum.
 
-The general flow for the on-chain governance process is proposed as follows: Creation of a formal Idea/Proposal on Governance forum for discussion → eIP (Euler Improvement Proposal) creation on Governance forum by forum moderator → eIP created on Tally (on-chain proposal creation) → On-Chain Voting (and Execution on target Euler protocol smart contract if successful).
+The flow of the governance process is as follows:&#x20;
 
-The general flow for the off-chain governance process is proposed as follows: Creation of a formal Idea/Proposal on Governance forum for discussion → Proposal created on Snapshot (off-chain proposal creation) → Off-Chain Voting (and Execution of proposal action by Euler Foundation if successful).
+1. Discuss the idea/draft proposal in the [Euler Discord](https://discord.gg/CdG97VSYGk) #governance channel&#x20;
+2. Draft & create a [RFC (Request For Comment) Proposal](https://forum.euler.finance/c/rfc-request-for-comment/11) on Governance forum for further feedbacks&#x20;
+3. Contact a forum moderator to create a [eIP (Euler Improvement Proposal)](https://forum.euler.finance/c/eip/5) on the Governance forum &#x20;
+4.  eIP created on [Snapshot](https://snapshot.org/#/eulerdao.eth) (off-chain voting)​
+
+    This is a necessary step for all types of proposals, and execution will be carried out by Euler Foundation if the proposal is successful.
+5.  _Optional step — eIP created on_ [_Tally_](https://www.tally.xyz/governance/eip155:1:0xd8E2114f6bCbaee83CDEB1bD6650a28BBcF144D5) _(on-chain voting)_&#x20;
+
+    _If and only if the proposal includes changes to the smart contract, the proposal will be voted on Tally after Snapshot voting. Execution will be targeting Euler protocol smart contract if the proposal is successful._
 
 It is noteworthy that not all off-chain proposals that are either binding or non-binding on the protocols smart contracts will end up having an on-chain proposal depending on the outcome of the off-chain 'gas-less' voting and for gas cost savings. On the other hand, not all on-chain proposals will require an off-chain counterpart.
 
