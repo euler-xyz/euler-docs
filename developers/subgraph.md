@@ -6,7 +6,6 @@ description: Subgraph
 
 ## Links
 
-- GitHub: https://github.com/euler-xyz/euler-subgraph
 - Querying the subgraph: https://thegraph.com/docs/en/developer/query-the-graph/
 
 ### Mainnet
