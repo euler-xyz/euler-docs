@@ -1,8 +1,8 @@
 # Delegate Voting Power
 
-## About
+🚨 _If you wish to have a say in governance, you need to delegate your voting power to yourself or someone in the community. Without performing this action, you will not have any voting power which means being unable to create proposals or vote on Snapshot (off-chain) and Tally (on-chain)._ 🚨
 
-If you wish to have a say in governance, you need to delegate your voting power to yourself or someone in the community. Without performing this action, you will not have any voting power which means being unable to create proposals or vote on Snapshot (off-chain) and Tally (on-chain).
+## About
 
 In summary, delegates are token holders that have completed a one-time setup process (executing the delegate function of the token to delegate another user or the token holder themselves to enable the governor contract to determine their voting power). Once you become a delegate, you can vote on active proposals, and create proposals if you have enough voting power. If you choose not to directly vote on proposals, you can pass your voting power on to a delegate as well.
 

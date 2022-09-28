@@ -14,13 +14,15 @@ The [Euler Governance Dashbaord](https://snapshot.org/#/eulerdao.eth) can be acc
 
 ## Step-by-step
 
-1\. Navigate to the [Euler](https://snapshot.org/#/eulerdao.eth) home page on Snapshot and connect your wallet where you have EUL voting power (see the how to guide on `Delegate Voting Power` for how to get voting power). You should see the Euler space home page as shown below.
+1\. Navigate to the [Euler](https://snapshot.org/#/eulerdao.eth) home page on Snapshot and connect your wallet where you have EUL voting power. You should see the Euler space home page as shown below.
 
-![](../../.gitbook/governance/snapshot-home.png)
+⚠️ _You CANNOT vote if you have not delegated your token., You have to either delegate your token power to yourself or a delegate in order to vote in governance. Self-delegate or delegate to others_ [_here_](https://app.euler.finance/delegates)_._
+
+![](../../../.gitbook/governance/snapshot-home.png)
 
 2\. Click on `New proposal` on the left hand side of the window of the Euler space home page (shown above). It should open up the new proposal form for you to complete which looks like this:
 
-![](../../.gitbook/governance/snapshot-new-proposal.png)
+![](../../../.gitbook/governance/snapshot-new-proposal.png)
 
 It will also check your connected wallet for voting power and let you know the current proposal threshold.&#x20;
 

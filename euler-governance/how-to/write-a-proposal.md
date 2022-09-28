@@ -24,12 +24,30 @@ For consistency, the following proposal structure is advised:
 * **Simple Summary**: Give the community a TL;DR on your proposal; no more than 2-3 sentences.
 * **Abstract**: Introduce and expand on the proposal. Highlight key points on how the proposal will improve stakeholder/token holder experience, protocol performance, and the overall implementation process.
 * **Motivation**: What problems will this proposal address/solve? What’s the value-add?
-* **Specification & Implementation**: Present the implementation of the proposal and answer key relevant question to the protocol
+* **Specification**: Answer key relevant question to the protocol.
+
+1. What is the link between the eIP author and the asset?
+2. Provide a brief description of the asset
+3. How is the asset primarily used?
+4. Explain why the eIP would benefit Euler’s ecosystem?
+5. Where does the asset trade?
+6. What are the volumes and market capitalisation?
+7. What is the liquidity like in the Uniswap V3 liquidity pool versus ETH?
+8. What security/auditing reports have been done?
+
+* **Implementation**: Present the implementation of the proposal using [proposal transaction generation tool](https://proposal.euler.finance/).
+* **Risk Assessment**: Give evaluation of the risk parameters involved with the proposal&#x20;
+
+1. Oracle grading&#x20;
+2. Decentralisation&#x20;
+3. Volatility&#x20;
+4. Liquidity
+5. Smart Contract Risk
+
 * **Voting**: Define what a “yes” and “no” vote entails. If there are any Snapshot votes or forum polls associated with this proposal, please attach them.
+* **Relevant Links**: If you used Euler’s oracle grading tool or other tools/references please add it here, eg. ‘Oracle grading tool: [https://oracle.euler.finance/](https://oracle.euler.finance/)’
 
-_A good governance proposal example can be found here:_ [eIP: Promote WBTC to collateral tier ](https://forum.euler.finance/t/eip-1-promote-wbtc-to-collateral-tier/27)
-
-
+_A good governance proposal example can be found here:_ [eIP: Promote WBTC to collateral tier](https://forum.euler.finance/t/eip-1-promote-wbtc-to-collateral-tier/27)
 
 2\. Governance Proposal (on-chain or off-chain)
 

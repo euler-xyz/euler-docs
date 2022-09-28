@@ -6,7 +6,9 @@ This guide describes how to cast a vote on a proposal (off-chain) created on Sna
 
 ## Step-by-step
 
-1\. Navigate to the [Euler](https://snapshot.org/#/eulerdao.eth) home page on Snapshot and connect your wallet where you have EUL voting power (see the how to guide on `Delegate Voting Power` for how to get voting power).
+1\. Navigate to the [Euler](https://snapshot.org/#/eulerdao.eth) home page on Snapshot and connect your wallet where you have EUL voting power.
+
+⚠️ _You CANNOT vote if you have not delegated your token., You have to either delegate your token power to yourself or a delegate in order to vote in governance. Self-delegate or delegate to others_ [_here_](https://app.euler.finance/delegates)_._
 
 2\. Click on an active proposal of your choice to view more details and see the voting options (as well as existing votes).
 
