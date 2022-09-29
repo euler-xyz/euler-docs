@@ -20,9 +20,10 @@ description: Quick access to everything you need to know about Euler
 [Messari](https://messari.io/asset/euler/charts)
 
 **DEX**\
-[Balancer](https://app.balancer.fi/#/pool/0x8fe054748fc5c8ee50ab8860409a4e9e760e13f4000200000000000000000328)\
-[Uniswap v2](https://v2.info.uniswap.org/pair/0xe96c108da71dbdb2aa1056bc55c3a073061a2fa1)\
-[Uniswap v3](https://info.uniswap.org/#/pools/0xb003df4b243f938132e8cadbeb237abc5a889fb4)
+[Balancer (EUL/WETH)](https://app.balancer.fi/#/pool/0x8fe054748fc5c8ee50ab8860409a4e9e760e13f4000200000000000000000328)\
+[Uniswap v2 (EUL/WETH)](https://v2.info.uniswap.org/pair/0xe96c108da71dbdb2aa1056bc55c3a073061a2fa1)\
+[Uniswap v3 (EUL/WETH)\
+](https://info.uniswap.org/#/pools/0xb003df4b243f938132e8cadbeb237abc5a889fb4)[Uniswap v3 (EUL/USDC)](https://info.uniswap.org/#/pools/0x175cc167a320623c6e7f23a41f99e5bb696e3f34)
 
 **Social**\
 [Twitter](https://twitter.com/eulerfinance)\
