@@ -1,4 +1,4 @@
-name: Checks and Tests
+name: Check Markdown links
 'on':
   push:
     branches:
