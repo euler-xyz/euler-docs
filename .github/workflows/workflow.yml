@@ -1,0 +1,18 @@
+name: Checks and Tests
+'on':
+  push:
+    branches:
+      - develop
+      - master
+  pull_request:
+jobs:
+  markdown-link-check:
+    name: Check Links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: 'yes'
+          use-verbose-mode: 'yes'
+          config-file: .md-link-check.json
