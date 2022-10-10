@@ -154,7 +154,7 @@ There is no airdrop. 1% of the supply was allocated to users who interacted with
 
 #### Do testnet users receive rewards?
 
-No, [testnet](https://ropsten.euler.finance/) is to preview upcoming features and for users to learn about the protocol without any mainnet gas fees.
+No, [testnet](https://goerli.euler.finance/) is to preview upcoming features and for users to learn about the protocol without any mainnet gas fees.
 
 #### Can I invest in Euler for tokens?
 
