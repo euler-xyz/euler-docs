@@ -12,7 +12,7 @@ Collateral violation means you're trying to borrow something without having enou
 
 ### No match, code: NETWORK\_ERROR
 
-Please try refreshing the page and make sure you have a stable internet connection and your web3 wallet is on the correct RPC network (i.e. Ropsten Test Network).
+Please try refreshing the page and make sure you have a stable internet connection and your web3 wallet is on the correct RPC network (e.g., Goerli Test Network).
 
 ### No match, code: UNPREDICTABLE\_GAS\_LIMIT
 
