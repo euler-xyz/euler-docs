@@ -51,7 +51,7 @@ The Goerli testnet has a test ER20 token faucet smart contract deployed a [0x121
 
 To get testnet tokens for Goerli, connect open the smart contract on Etherscan by clicking the link above. Click on the tab with the green tick, then click on `Write Contract` and connect your wallet. Once connected, expand the withdraw feature and paste the underlying ERC20 token smart contract address and click on the `Write` button. This will require you to confirm the transaction in your wallet which costs gas. 
 
-Once confirmed, the token faucet contract will send some of the specified testnet ERC20 tokens (up to a pre-defined threshold) to your connected wallet address.
+Once confirmed, the token faucet smart contract will an amount of the specified testnet ERC20 token (up to a pre-defined threshold) to your connected wallet address.
 
 The Goerli testnet token faucet supports the following ERC20 tokens: [WETH](https://goerli.etherscan.io/address/0xa3401DFdBd584E918f59fD1C3a558467E373DacC), [UNI](https://goerli.etherscan.io/address/0x2980D241BEA2A49d3333AA931884d68C704E7Db7), [USDC](https://goerli.etherscan.io/address/0x693FaeC006aeBCAE7849141a2ea60c6dd8097E25), [USDT](https://goerli.etherscan.io/address/0x7594a0368F18e666480Ad897612f28ad17435B4C), [DOGE](https://goerli.etherscan.io/address/0x67cF0FF98bE17bF02F7c6346028C9e8BB3c203B2), [WBTC](https://goerli.etherscan.io/address/0xc49BB678a4d822f7F141D5bb4585d44cCe51e25E), [COMP](https://goerli.etherscan.io/address/0x6520f3394a2000eA76e7cA96449B78BB0eD07561), [CRV](https://goerli.etherscan.io/address/0x9eA3D1d18A0e7Ec379C577f615220e6D715F3b29).
 
