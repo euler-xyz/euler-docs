@@ -18,4 +18,4 @@ Connecting a web3 wallet is the first step to utilise the Euler platform. Euler 
 ## FAQ
 
 **What chains/networks does Euler support?**\
-****Ethereum Mainnet and Goerli testnet (replacement for Ropsten, coming soon).&#x20;
+****Ethereum Mainnet and Goerli testnet (replacement for Ropsten).&#x20;
