@@ -38,7 +38,7 @@ The Euler protocol is currently deployed to the following networks:
 | Exec | 0x4b62EB6797526491eEf6eF36D3B9960E5d66C394 | [Etherscan](https://goerli.etherscan.io/address/0x4b62EB6797526491eEf6eF36D3B9960E5d66C394) | [Etherscan](https://goerli.etherscan.io/address/0x6C933044542d6cAF8927E516B9A99632697bD4C0) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Exec.sol) |
 | Swap | 0xA0AAb1Ddd165cE80AE2b9bC9bBE3b6EEFBB2300c | [Etherscan](https://goerli.etherscan.io/address/0xA0AAb1Ddd165cE80AE2b9bC9bBE3b6EEFBB2300c) | [Etherscan](https://goerli.etherscan.io/address/0x034FCa46b265b4805e00E109A5ABA3E976625B1D) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Swap.sol) |
 | Governance | 0x496A8344497875D0D805167874f2f938aEa15600 | [Etherscan](https://goerli.etherscan.io/address/0x496A8344497875D0D805167874f2f938aEa15600) | [Etherscan](https://goerli.etherscan.io/address/0xc9314acCF0d3754A38DdE280D24c51D280C33D16) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Governance.sol) |
-| Testnet ERC20 Token Faucet | 0x1215396CB53774dCE60978d7237F32042cF3a1db | | https://goerli.etherscan.io/address/0x1215396CB53774dCE60978d7237F32042cF3a1db | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/smart-contract-deployments/contracts/test/TestERC20TokenFaucet.sol)
+| Testnet ERC20 Token Faucet | 0x1215396CB53774dCE60978d7237F32042cF3a1db | | [Etherscan](https://goerli.etherscan.io/address/0x1215396CB53774dCE60978d7237F32042cF3a1db) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/smart-contract-deployments/contracts/test/TestERC20TokenFaucet.sol)
 
 
 
