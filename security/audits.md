@@ -8,6 +8,10 @@ description: View smart contract and UI audits from our security partners
 
 The Euler protocol has been reviewed and audited by top security firms including: Halborn, Solidified and ZK Labs, Certora and Sherlock.
 
+#### Omniscia - September 2022
+
+[Audit Report](https://omniscia.io/reports/euler-finance-swaphub/)
+
 #### Omniscia - June 2022
 
 [Audit Report](https://omniscia.io/reports/euler-finance-chainlink-support/)
