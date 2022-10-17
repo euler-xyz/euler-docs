@@ -1399,6 +1399,60 @@ Parameters:
 
 
 
+## IEulerSwapHub
+
+Common logic for executing and processing trades through external swap handler contracts
+
+### SwapParams
+
+Params defining a swap request
+
+    struct SwapParams {
+        address underlyingIn;
+        address underlyingOut;
+        uint mode;
+        uint amountIn;
+        uint amountOut;
+        uint exactOutTolerance;
+        bytes payload;
+    }
+
+
+
+
+
+### swap
+
+Execute a trade using the requested swap handler
+
+    function swap(uint subAccountIdIn, uint subAccountIdOut, address swapHandler, SwapParams memory params) external;
+
+Parameters:
+
+* **subAccountIdIn**: sub-account holding the sold token. 0 for primary, 1-255 for a sub-account
+* **subAccountIdOut**: sub-account to receive the bought token. 0 for primary, 1-255 for a sub-account
+* **swapHandler**: address of a swap handler to use
+* **params**: struct defining the requested trade
+
+
+
+### swapAndRepay
+
+Repay debt by selling another deposited token
+
+    function swapAndRepay(uint subAccountIdIn, uint subAccountIdOut, address swapHandler, SwapParams memory params, uint targetDebt) external;
+
+Parameters:
+
+* **subAccountIdIn**: sub-account holding the sold token. 0 for primary, 1-255 for a sub-account
+* **subAccountIdOut**: sub-account to receive the bought token. 0 for primary, 1-255 for a sub-account
+* **swapHandler**: address of a swap handler to use
+* **params**: struct defining the requested trade
+* **targetDebt**: how much debt should remain after calling the function
+
+
+
+
 ## IEulerPToken
 
 Protected Tokens are simple wrappers for tokens, allowing you to use tokens as collateral without permitting borrowing
