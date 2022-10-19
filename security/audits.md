@@ -1,5 +1,5 @@
 ---
-description: View smart contract and UI audits from our security partners
+description: View smart contract and UI audits from a number of security partners
 ---
 
 # Audits

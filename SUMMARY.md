@@ -8,49 +8,75 @@
 * [White Paper](getting-started/white-paper.md)
 * [Quick Links](getting-started/quick-links.md)
 
-## Guides
+## App
 
-* [How To](guides/ui/README.md)
-  * [Lending and Borrowing](guides/ui/lending-and-borrowing-example.md)
-* [FAQ](guides/faq.md)
-* [Glossary](guides/glossary.md)
+* [Getting Started](app/getting-started/README.md)
+  * [Common Errors](app/getting-started/common-errors.md)
+* [How To](app/ui/README.md)
+  * [Connect a Wallet](app/ui/connect-a-wallet.md)
+  * [Deposit](app/ui/deposit.md)
+  * [Withdraw](app/ui/withdraw.md)
+  * [Borrow](app/ui/borrow.md)
+  * [Repay](app/ui/repay.md)
+  * [Mint](app/ui/mint.md)
+  * [Burn](app/ui/burn.md)
+  * [Sub-Accounts](app/ui/sub-accounts.md)
+  * [Transfer](app/ui/transfer.md)
+  * [Swap](app/ui/swap.md)
+  * [Short/Long](app/ui/short-long.md)
+  * [Protected Collateral](app/ui/protected-collateral.md)
+  * [Transaction Builder](app/ui/transaction-builder.md)
+  * [Wrap](app/ui/wrap.md)
+  * [Activate](app/ui/activate.md)
+  * [Allowances](app/ui/allowances.md)
+  * [Retrieve Browser Errors](app/ui/retrieve-errors.md)
+  * [Lending and Borrowing](app/ui/lending-and-borrowing-example.md)
+* [FAQ](app/faq.md)
 
-## Protocol
+## Euler Protocol
 
-* [Addresses](protocol/addresses.md)
-* [Parameters](protocol/eulers-default-parameters.md)
-  * [Interest Rates](interest-rates/list-of-assets.md)
-  * [Risk Factors](risk-framework/risk-factors-list.md)
+* [Getting Started](euler-protocol/getting-started/README.md)
+  * [Risk Methodology](euler-protocol/getting-started/methodology/README.md)
+    * [Asset Tiers](euler-protocol/getting-started/methodology/tiers.md)
+    * [Collateral and Borrow Factor](euler-protocol/getting-started/methodology/collateral-and-borrow-factors.md)
+    * [Ranking Assets](euler-protocol/getting-started/methodology/ranking-assets.md)
+    * [Oracle Rating](euler-protocol/getting-started/methodology/oracle-rating.md)
+  * [Simulation Environment](euler-protocol/getting-started/simulation-environment.md)
+* [Addresses](euler-protocol/addresses.md)
+* [Parameters](euler-protocol/eulers-default-parameters/README.md)
+  * [Interest Rates](euler-protocol/eulers-default-parameters/list-of-assets.md)
+  * [Risk Factors](euler-protocol/eulers-default-parameters/risk-factors-list.md)
 
-## Risk Framework
+## Euler Governance
 
-* [Methodology](risk-framework/methodology/README.md)
-  * [Asset Tiers](risk-framework/methodology/tiers.md)
-  * [Collateral and Borrow Factor](risk-framework/methodology/collateral-and-borrow-factors.md)
-  * [Ranking Assets](risk-framework/methodology/ranking-assets.md)
-  * [Oracle Rating](risk-framework/methodology/oracle-rating.md)
-* [Simulation Environment](risk-framework/simulation-environment.md)
+* [Getting Started](euler-governance/getting-started/README.md)
+  * [Phases](euler-governance/getting-started/governance-launch-phases.md)
+* [How To](euler-governance/how-to/README.md)
+  * [Delegate Voting Power](euler-governance/how-to/delegate-voting-power.md)
+  * [Write a Proposal](euler-governance/how-to/write-a-proposal.md)
+  * [Create a Tally (On-Chain) Proposal](euler-governance/how-to/create-a-tally-on-chain-proposal/README.md)
+    * [Create a Snapshot (Off-Chain) Proposal](euler-governance/how-to/create-a-tally-on-chain-proposal/create-a-snapshot-off-chain-proposal.md)
+  * [Vote on Tally (On-Chain)](euler-governance/how-to/vote-on-tally-on-chain.md)
+  * [Vote on Snapshot (Off-Chain)](euler-governance/how-to/vote-on-snapshot-off-chain.md)
+  * [Join the Forum](euler-governance/how-to/join-the-forum.md)
+* [Treasury](euler-governance/treasury.md)
+* [Grants](euler-governance/grants.md)
+* [Addresses](euler-governance/addresses.md)
+* [Parameters](euler-governance/governance-parameters.md)
 
-## Governance
+## EUL
 
-* [Governance](governance/governance/README.md)
-  * [Addresses](governance/governance/addresses.md)
-  * [Governance Parameters](governance/governance/governance-parameters.md)
-  * [Governance Process](governance/governance/governance-process.md)
-  * [Voting](governance/governance/voting.md)
-  * [Governance Launch Phases](governance/governance/governance-launch-phases.md)
-* [EUL](governance/eul/README.md)
-  * [Distribution](governance/eul/distribution.md)
-  * [Epochs](governance/eul/distribution-1.md)
-  * [Gauges](governance/eul/gauges.md)
-* [Treasury](governance/treasury.md)
-* [Grants](governance/grants.md)
+* [About](eul/about.md)
+* [Distribution](eul/distribution.md)
+* [Epochs](eul/distribution-1.md)
+* [Gauges](eul/gauges.md)
 
 ## Developers
 
-* [Contract Integration Guide](developers/integration-guide.md)
-* [Contract Reference](developers/contract-reference.md)
-* [Architecture](developers/architecture.md)
+* [Getting Started](developers/getting-started/README.md)
+  * [Contract Integration Guide](developers/getting-started/integration-guide.md)
+  * [Contract Reference](developers/getting-started/contract-reference.md)
+  * [Architecture](developers/getting-started/architecture.md)
 * [Proxy Protocol](developers/proxy-protocol.md)
 * [Numeric Limits](developers/numeric-limits.md)
 * [SDK](developers/sdk.md)
@@ -62,11 +88,6 @@
 * [Bug Bounty](security/bug-bounty.md)
 * [Safety Module](security/vault.md)
 * [Insurance](security/insurance.md)
-
-## Support
-
-* [How to retrieve errors from developer console](support/retrieve-errors.md)
-* [Common Errors](support/common-errors.md)
 
 ## Languages
 

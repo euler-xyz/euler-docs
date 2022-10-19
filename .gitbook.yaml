@@ -1,0 +1,3 @@
+redirects:
+  security/smart-contract-audits: security/audits.md
+  governance/eul: eul/distribution.md
