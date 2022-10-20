@@ -29,3 +29,25 @@ You don't have enough tokens in your wallet. If using the test, please make sure
 ### execution reverted: e/too-many-entered-markets
 
 For a given account, you can enter 10 markets max. You should try the transaction with another account or sub-account.
+
+### RPC error
+
+Some RPC providers on the market (i.e. [Flashbots Protect RPC](https://docs.flashbots.net/flashbots-protect/rpc/quick-start/)) are not compatibile with Euler simulation mode. If this error occurs, the user is advised to change the RPC (i.e. by changing the network in Metamask to default Ethereum network) and refresh the dapp. Having done that, the simulation feature should be functional again.
+
+If, due to any reason, user wants to use their originally selected RPC to send the transaction, the following should be done (example described based on Metamask, actions might differ for other wallets):
+- change the RPC to default Ethereum network
+- add all the desired transactions to the batch
+- assure that the simulation is passing without any error
+- click 'Send txs' button
+- when Metamask pops up 
+   - click on 'New address detected! Click here...' at the top. Then click 'Add a nickname'. Input 'Euler Exec' as a nickname and click 'Save'
+   - click on 'HEX', scroll down and click 'Copy raw transaction data'
+   - click 'Reject'
+   - disregard the error in the dapp
+   - open Metamask and click 'Send'
+   - select previously added 'Euler Exec' address
+   - leave the asset set to ETH
+   - leave the amount as 0 ETH
+   - paste your clipboard contents into the 'Hex Data' field
+   - change the network to desired
+   - click 'Next' and sign the transaction
