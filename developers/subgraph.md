@@ -13,11 +13,6 @@ description: Subgraph
 - The Graph: https://thegraph.com/hosted-service/subgraph/euler-xyz/euler-mainnet
 - API: https://api.thegraph.com/subgraphs/name/euler-xyz/euler-mainnet
 
-### Ropsten
-
-- The Graph: https://thegraph.com/hosted-service/subgraph/euler-xyz/euler-ropsten
-- API: https://api.thegraph.com/subgraphs/name/euler-xyz/euler-ropsten
-
 ## About
 
 - All amounts have a fixed decimal precision of 1e18.

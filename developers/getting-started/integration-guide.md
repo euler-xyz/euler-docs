@@ -131,7 +131,7 @@ contract MyFlashLoanContract {
 
 There is also an adaptor smart contract that exposes Euler's flash loan functionality as an [EIP-3156](https://eips.ethereum.org/EIPS/eip-3156) compatible API.
 
-The smart contract addresses are: [mainnet](https://etherscan.io/address/0x07df2ad9878F8797B4055230bbAE5C808b8259b3), [ropsten](https://ropsten.etherscan.io/address/0x0e60a8406a94787842f07221d2Fb5Bf19856CeA5).
+The smart contract addresses are: [mainnet](https://etherscan.io/address/0x07df2ad9878F8797B4055230bbAE5C808b8259b3), [goerli](https://goerli.etherscan.io/address/0xA119432BE658449C315E0a1054eab8a9057DE280).
 
 Examples of how to use the adaptor can be found in the EIP documentation, as well as the [Euler test suite](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/test/FlashLoanAdaptorTest.sol). The fee value is always 0.
 

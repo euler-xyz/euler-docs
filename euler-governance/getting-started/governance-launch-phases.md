@@ -76,7 +76,7 @@ The web application should look like the following image:
 
 The tool requires MetaMask to be installed in your browser. Switch your MetaMask wallet to mainnet.
 
-The tool currently supports the Ethereum Mainnet and our Ropsten testnet Exec modules. It will create the appropriate transaction data to be executed depending on the selected network.
+The tool currently supports the Ethereum Mainnet and our Goerli testnet Exec modules. It will create the appropriate transaction data to be executed depending on the selected network.
 
 #### Step 3
 
