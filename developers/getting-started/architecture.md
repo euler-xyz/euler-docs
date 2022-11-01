@@ -135,7 +135,7 @@ Paired with deferred liquidity check (see below), the swap module allows users t
 Available swap methods:
 
 * all four methods of [UniswapV3 SwapRouter](https://docs.uniswap.org/protocol/reference/periphery/SwapRouter)
-* full 1inch aggregator functionality, integrated through [1Inch API](https://docs.1inch.io/api/quote-swap)
+* full 1inch aggregator functionality, integrated through [1Inch API](https://docs.1inch.io/docs/aggregation-protocol/api/swap-params/)
 
 _Note: The Swap module may become deprecated in favor of the new SwapHub module._
 

@@ -10,7 +10,7 @@ Community translators' efforts are greatly appreciated! Feel free to submit othe
 
 **Korean**: [https://m.blog.naver.com/PostView.naver?blogId=ahrmina\&logNo=222627632140\&proxyReferer=](https://m.blog.naver.com/PostView.naver?blogId=ahrmina\&logNo=222627632140\&proxyReferer=)
 
-**Japanese**: [https://holistic-thursday-21e.notion.site/Euler-Whitepaper-Japanese-044d74772b3541c58ba9b644c27e6b7c](https://holistic-thursday-21e.notion.site/Euler-Whitepaper-Japanese-044d74772b3541c58ba9b644c27e6b7c)
+**Japanese**: [https://www.notion.so/Euler-Whitepaper-Japanese-044d74772b3541c58ba9b644c27e6b7c](https://www.notion.so/Euler-Whitepaper-Japanese-044d74772b3541c58ba9b644c27e6b7c)
 
 **Russian**: [https://gitbook-guru.gitbook.io/euler/white-paper](https://gitbook-guru.gitbook.io/euler/white-paper)
 
