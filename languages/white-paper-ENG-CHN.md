@@ -83,7 +83,7 @@ When lenders deposit into a liquidity to a pool on Euler, they receive interest-
 
 #### 代币化债务 - Tokenised Debts
 
-Similarly to Aave's [debt tokens](https://docs.aave.com/developers/the-core-protocol/debt-tokens), Euler also tokenises debts on the protocol with ERC20-compliant interfaces known as dTokens. The dToken interface allows the construction of positions without needing to interact with underlying assets and can be used to create derivative products that include debt obligations.
+Similarly to Aave's [debt tokens](https://docs.aave.com/developers/tokens/debttoken), Euler also tokenises debts on the protocol with ERC20-compliant interfaces known as dTokens. The dToken interface allows the construction of positions without needing to interact with underlying assets and can be used to create derivative products that include debt obligations.
 
 与 AAVE 的债务代币类似，Euler 也通过名为 dTokens 的，兼容 ERC20 代币的界面/接口，将债务代币化。dToken 接口/界面使得无需和标的资产交互就可以构筑仓位，也可以用来制作包含债务凭证的衍生品。
 
@@ -327,5 +327,5 @@ With special thanks to [Shaishav Todi](https://twitter.com/shaishav0x), [Luke Yo
 6. [https://www.theblockcrypto.com/post/82721/makerdao-issues-warning-after-a-flash-loan-is-used-to-pass-a-governance-vote](https://www.theblockcrypto.com/post/82721/makerdao-issues-warning-after-a-flash-loan-is-used-to-pass-a-governance-vote)
 7. [https://research.paradigm.xyz/MEV](https://research.paradigm.xyz/MEV)
 8. [https://docsend.com/view/bwiczmy](https://docsend.com/view/bwiczmy)
-9. [https://www.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory/](https://www.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory/)
+9. [https://members.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory](https://members.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory)
 10. [https://medium.com/compound-finance/compound-governance-5531f524cf68](https://medium.com/compound-finance/compound-governance-5531f524cf68)

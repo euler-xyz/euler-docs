@@ -53,7 +53,7 @@ When lenders deposit into a liquidity pool on Euler, they receive interest-beari
 
 ### Tokenised Debts
 
-Similarly to Aave's [debt tokens](https://docs.aave.com/developers/the-core-protocol/debt-tokens), Euler also tokenises debts on the protocol with ERC20-compliant interfaces known as dTokens. The dToken interface allows the construction of positions without needing to interact with underlying assets, and can be used to create derivative products that include debt obligations.
+Similarly to Aave's [debt tokens](https://docs.aave.com/developers/tokens/debttoken), Euler also tokenises debts on the protocol with ERC20-compliant interfaces known as dTokens. The dToken interface allows the construction of positions without needing to interact with underlying assets, and can be used to create derivative products that include debt obligations.
 
 Rather than providing non-standard methods to transfer debts, Euler uses the regular transfer/approve ERC20 methods. However, the permissioning logic is reversed: rather than being able to send tokens to anyone, but requiring approval to take them, dTokens can be taken by anyone, but require approval to accept them. This also prevents users from "burning" their dTokens. For example, the zero address has no way of approving an in-bound transfer of dTokens.
 
@@ -211,5 +211,5 @@ With special thanks to [Shaishav Todi](https://twitter.com/shaishav0x), [Luke Yo
 6. [https://www.theblockcrypto.com/post/82721/makerdao-issues-warning-after-a-flash-loan-is-used-to-pass-a-governance-vote](https://www.theblockcrypto.com/post/82721/makerdao-issues-warning-after-a-flash-loan-is-used-to-pass-a-governance-vote)
 7. [https://research.paradigm.xyz/MEV](https://research.paradigm.xyz/MEV)
 8. [https://docsend.com/view/bwiczmy](https://docsend.com/view/bwiczmy)
-9. [https://www.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory/](https://www.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory/)
+9. [https://members.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory](https://members.delphidigital.io/reports/dynamic-interest-rate-model-based-on-control-theory)
 10. [https://medium.com/compound-finance/compound-governance-5531f524cf68](https://medium.com/compound-finance/compound-governance-5531f524cf68)
