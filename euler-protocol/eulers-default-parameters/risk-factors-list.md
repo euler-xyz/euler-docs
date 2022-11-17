@@ -26,10 +26,13 @@ This page outlines the main risk parameters on Euler, as determined by [governan
 | BANK | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | BED | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | BRIGHT | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| BUSD | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | CARD | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | CNV | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | COMP | 0| 0.28 | 0.23 | true | false | Default | Chainlink |
+| CRV | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | CTX | 0| 0.28 | 0.23 | true | false | Default | 1 |
+| CVXCRV | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | DPI | 0| 0.28 | 0.23 | true | false | Default | Chainlink |
 | DPX | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | DYDX | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
@@ -45,6 +48,7 @@ This page outlines the main risk parameters on Euler, as determined by [governan
 | GFI | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | GRT | 0| 0.28 | 0.23 | true | false | Default | Chainlink |
 | GTC | 0| 0.28 | 0.23 | true | false | Default | Chainlink |
+| GUSD | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | IDLE | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | ILV | 0| 0.28 | 0.23 | true | false | Default | Chainlink |
 | IMX | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
@@ -77,6 +81,7 @@ This page outlines the main risk parameters on Euler, as determined by [governan
 | SOS | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | SSV | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | STG | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| SUSD | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | TCR | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | TON | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | TORN | 0| 0.28 | 0.23 | true | false | Default | 1 |
