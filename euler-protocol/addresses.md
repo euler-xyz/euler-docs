@@ -27,7 +27,7 @@ The Euler protocol is currently deployed to the following networks:
 | Swap | 0x7123C8cBBD76c5C7fCC9f7150f23179bec0bA341 | [Etherscan](https://etherscan.io/address/0x7123C8cBBD76c5C7fCC9f7150f23179bec0bA341) | [Etherscan](https://etherscan.io/address/0xf40e8314143B4CF1764CCCd22588a8794a00d8Ca) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Swap.sol) |
 | SwapHub | 0x542ACC8E1db037d6008587aBfB1B7fB44014c629 | [Etherscan](https://etherscan.io/address/0x7123C8cBBD76c5C7fCC9f7150f23179bec0bA341) | [Etherscan](https://etherscan.io/address/0x542ACC8E1db037d6008587aBfB1B7fB44014c629) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/SwapHub.sol) |
 | Governance | 0xAF68CFba29D0e15490236A5631cA9497e035CD39 | [Etherscan](https://etherscan.io/address/0xAF68CFba29D0e15490236A5631cA9497e035CD39) | [Etherscan](https://etherscan.io/address/0x554ee3d9ed7E9ec21E186c7dd636430669812f73) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Governance.sol) |
-
+| EulerSimpleLens | 0xAF68CFba29D0e15490236A5631cA9497e035CD39 | | [Etherscan](https://etherscan.io/address/0x5077B7642abF198b4a5b7C4BdCE4f03016C7089C) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/views/EulerSimpleLens.sol) |
 
 ### Goerli
 
@@ -39,8 +39,8 @@ The Euler protocol is currently deployed to the following networks:
 | Exec | 0x4b62EB6797526491eEf6eF36D3B9960E5d66C394 | [Etherscan](https://goerli.etherscan.io/address/0x4b62EB6797526491eEf6eF36D3B9960E5d66C394) | [Etherscan](https://goerli.etherscan.io/address/0x6C933044542d6cAF8927E516B9A99632697bD4C0) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Exec.sol) |
 | Swap | 0xA0AAb1Ddd165cE80AE2b9bC9bBE3b6EEFBB2300c | [Etherscan](https://goerli.etherscan.io/address/0xA0AAb1Ddd165cE80AE2b9bC9bBE3b6EEFBB2300c) | [Etherscan](https://goerli.etherscan.io/address/0x034FCa46b265b4805e00E109A5ABA3E976625B1D) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Swap.sol) |
 | Governance | 0x496A8344497875D0D805167874f2f938aEa15600 | [Etherscan](https://goerli.etherscan.io/address/0x496A8344497875D0D805167874f2f938aEa15600) | [Etherscan](https://goerli.etherscan.io/address/0xc9314acCF0d3754A38DdE280D24c51D280C33D16) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Governance.sol) |
-| ERC20 Token Faucet | 0x1215396CB53774dCE60978d7237F32042cF3a1db | | [Etherscan](https://goerli.etherscan.io/address/0x1215396CB53774dCE60978d7237F32042cF3a1db) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/smart-contract-deployments/contracts/test/TestERC20TokenFaucet.sol)
-
+| ERC20 Token Faucet | 0x1215396CB53774dCE60978d7237F32042cF3a1db | | [Etherscan](https://goerli.etherscan.io/address/0x1215396CB53774dCE60978d7237F32042cF3a1db) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/smart-contract-deployments/contracts/test/TestERC20TokenFaucet.sol) |
+| EulerSimpleLens | 0x62626a0f051B547b3182e55D1Eba667138790D8D | | [Etherscan](https://goerli.etherscan.io/address/0x62626a0f051B547b3182e55D1Eba667138790D8D) | [GitHub](https://github.com/euler-xyz/euler-contracts/blob/master/contracts/views/EulerSimpleLens.sol) |
 
 
 _Note: the Governance smart contract is currently used for our risk-guarded launch (Phase 1 of the mainnet launch) while we build up to community-led governance in Phase 2._
