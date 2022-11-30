@@ -73,6 +73,7 @@ The main consideration is maintaining target utilisation (typically at Kink%).&#
 | MPL | 0.00| 10.00 | 300.00 | 0.50 |
 | MTA | 0.00| 10.00 | 300.00 | 0.50 |
 | MVI | 0.00| 10.00 | 300.00 | 0.50 |
+| NEXO | 0.00| 10.00 | 300.00 | 0.50 |
 | NMR | 0.00| 10.00 | 300.00 | 0.50 |
 | OGN | 0.00| 10.00 | 300.00 | 0.50 |
 | QNT | 0.00| 10.00 | 300.00 | 0.50 |
@@ -96,6 +97,7 @@ The main consideration is maintaining target utilisation (typically at Kink%).&#
 | TON | 0.00| 10.00 | 300.00 | 0.50 |
 | TORN | 0.00| 10.00 | 300.00 | 0.50 |
 | TRDL | 0.00| 10.00 | 300.00 | 0.50 |
+| TRYB | 0.00| 10.00 | 300.00 | 0.50 |
 | UBI | 0.00| 10.00 | 300.00 | 0.50 |
 | VEGA | 0.00| 10.00 | 300.00 | 0.50 |
 | WAMPL | 0.00| 10.00 | 300.00 | 0.50 |
@@ -119,3 +121,4 @@ The main consideration is maintaining target utilisation (typically at Kink%).&#
 | SHIB | 0.00| 20.00 | 300.00 | 0.80 |
 | UNI | 0.00| 20.00 | 300.00 | 0.80 |
 | USDT | 0.00| 20.00 | 300.00 | 0.80 |
+

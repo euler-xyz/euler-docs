@@ -63,6 +63,7 @@ This page outlines the main risk parameters on Euler, as determined by [governan
 | MPL | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | MTA | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | MVI | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
+| NEXO | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | NMR | 0| 0.28 | 0.23 | true | false | Default | Chainlink |
 | OGN | 0| 0.28 | 0.23 | true | false | Default | Chainlink |
 | QNT | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
@@ -86,6 +87,7 @@ This page outlines the main risk parameters on Euler, as determined by [governan
 | TON | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | TORN | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | TRDL | 0| 0.28 | 0.23 | true | false | Default | 1 |
+| TRYB | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | UBI | 0| 0.28 | 0.23 | true | false | Default | 1 |
 | VEGA | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
 | WAMPL | 0| 0.28 | 0.23 | true | false | Default | 0.3 |
