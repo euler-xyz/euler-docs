@@ -1,4 +1,9 @@
-﻿# Staking on Euler
+---
+description: >-
+  Learn about how Euler rewards different assets with lending incentives 
+---
+
+# Staking on Euler
 
   
 
