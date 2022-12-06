@@ -28,5 +28,3 @@ While these eTokens are held in the staking contract, users should be aware that
 Make sure when depositing assets into the staking contract that if you have any outstanding liabilities, they are adequately collateralised AFTER you have deposited your USDC/USDT/WETH. Your account will be flagged for [liquidation](https://docs.euler.finance/getting-started/white-paper#liquidations) otherwise.
 
   
-
-Finally, you will not be able to see your staking deposit in the Euler front end. Do not worry, your staked assets are safely deposited and can be withdrawn at any time.
