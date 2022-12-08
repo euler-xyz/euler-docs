@@ -70,6 +70,7 @@
 * [Distribution](eul/distribution.md)
 * [Epochs](eul/distribution-1.md)
 * [Gauges](eul/gauges.md)
+* [Staking](eul/staking.md)
 
 ## Developers
 
