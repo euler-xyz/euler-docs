@@ -66,7 +66,7 @@ Euler uses risk-based [asset tiers](../getting-started/white-paper.md#asset-tier
 
 #### What are sub-accounts?
 
-[Sub-accounts](https://https://docs.euler.finance/developers/getting-started/architecture#sub-accounts) enable users to isolate positions into different accounts.
+[Sub-accounts](https://docs.euler.finance/developers/getting-started/architecture#sub-accounts) enable users to isolate positions into different accounts.
 
 #### What oracle does Euler use?
 
