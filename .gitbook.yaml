@@ -1,4 +1,4 @@
 redirects:
   security/smart-contract-audits: security/audits.md
   governance/eul: eul/distribution.md
-  developers/integration-guide: developers/getting-started.md
+  developers/integration-guide: developers/getting-started/integration-guide.md
