@@ -2,7 +2,7 @@
 description: Get answers to frequently asked questions about Euler.
 ---
 
-# FAQ a change made
+# FAQ
 
 ### General
 
