@@ -66,7 +66,7 @@ Euler uses risk-based [asset tiers](../getting-started/white-paper.md#asset-tier
 
 #### What are sub-accounts?
 
-[Sub-accounts](https://docs.euler.finance/developers/architecture#sub-accounts) enable users to isolate positions into different accounts.
+[Sub-accounts](https://docs.euler.finance/developers/getting-started/architecture#sub-accounts) enable users to isolate positions into different accounts.
 
 #### What oracle does Euler use?
 
@@ -116,7 +116,7 @@ Euler does not give financial advice, but users should note that mining at 19x i
 
 #### What is Time To Liquidation (TTL)?
 
-[TTL](https://blog.euler.finance/announcing-new-features-of-euler-dapp-8cadabb111ac) allows users to see the amount of time they have until their position is liquidated based on the current interest rates and prices of those positions.
+[TTL](https://www.euler.finance/blog/announcing-new-features-of-euler-dapp) allows users to see the amount of time they have until their position is liquidated based on the current interest rates and prices of those positions.
 
 #### What is a soft liquidation?
 
@@ -134,7 +134,7 @@ EUL’s main utility is as a [governance token](broken-reference) for the Euler 
 
 #### What is the distribution of EUL tokens for borrowers?
 
-The distribution is decided by the amount of EUL tokens staked in the [gauges](https://app.euler.finance/gaugeweight).
+The distribution is decided by the amount of EUL tokens staked in the [gauges](https://app.euler.finance/gauges).
 
 #### How are markets decided for each epoch?
 
@@ -144,11 +144,11 @@ Users can add or remove EUL distribution eligible markets simply by staking EUL 
 
 #### Is there a token? How can I earn it?
 
-The Euler token (EUL) is distributed to borrowers on select markets on the platform. Please see the [Governance](broken-reference) section for more details.
+The Euler token (EUL) is distributed to borrowers on select markets on the platform. Please see the [Gauges](https://docs.euler.finance/eul/gauges) section for more details.
 
 #### What are the tokenomics?
 
-Allocation, vesting and other information about the EUL token can be found in the EUL section under [Governance](broken-reference).
+Allocation, vesting and other information about the EUL token can be found in the About section under [EUL](https://docs.euler.finance/eul/about).
 
 #### Is there a TGE/ICO/IDO?
 
@@ -165,10 +165,6 @@ There is no airdrop. 1% of the supply was allocated to users who interacted with
 #### Do testnet users receive rewards?
 
 No, [testnet](https://goerli.euler.finance/) is to preview upcoming features and for users to learn about the protocol without any mainnet gas fees.
-
-#### Can I invest in Euler for tokens?
-
-No, you can only receive EUL distribution by borrowing.
 
 #### Someone messaged me promising free tokens/ICO/NFTs/etc, is it real?
 
@@ -191,10 +187,6 @@ Euler will be adding this feature in the near future. Please get in touch if you
 #### Can you market our company/token if we pay you or activate our token?
 
 Sorry, Euler does not accept payments or donations of any kind to promote activated markets.
-
-#### Do you have an Ambassador programme?
-
-Not yet, but you can earn Epoints for contributing to the Euler community. For more information, please check out the blog post on [Epoints](https://blog.euler.finance/whats-the-point-in-points-31c2d3ae040f).
 
 ### Miscellaneous
 
