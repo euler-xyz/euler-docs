@@ -87,7 +87,6 @@
 
 * [Audits](security/audits.md)
 * [Bug Bounty](security/bug-bounty.md)
-* [Safety Module](security/vault.md)
 * [Insurance](security/insurance.md)
 
 ## Languages

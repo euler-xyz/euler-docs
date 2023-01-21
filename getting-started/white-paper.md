@@ -117,25 +117,6 @@ To remedy these issues, Euler uses a different approach. Rather than a fixed dis
 
 However, by itself, this process does not prevent MEV because miners and front-runners can still steal a liquidator's transaction. To limit this form of MEV, we allow liquidity providers on Euler to make themselves eligible for a "discount booster", which allows them to become profitable in the Dutch auction before miners and front-runners (who do not have the booster).
 
-### Stability Pools
-
-On other lending protocols, liquidations are usually processed using an external source of liquidity. That is, a liquidator will generally source the repayment amount of the borrowed assets from a third-party exchange, repay the loan, and receive the collateral and any bonus for themselves. One of the downsides of this approach is that the price feed used to determine the liquidation price of a borrower will not always accurately reflect the exchange rate on external markets, meaning that liquidators will not always be able to liquidate at that price. Reasons for this include slippage, swap fees, extreme volatility, the use of price-smoothing algorithms such as TWAP (as on Euler), and delays posting new prices.
-
-To alleviate this issue, Euler enables lenders to support liquidations by providing liquidity to a stability pool associated with each lending market. Liquidity providers in the stability pool deposit eTokens and earn interest whilst they wait for liquidations to be processed. An unstaking period prevents them from moving assets in and out of the pool to try to game the system. When a liquidation is processed, the liquidator uses liquidity from the stability pool to cancel a borrower's debts, and they return discounted collateral to the stability pool in return (minus a fee, which they keep for themselves). Stability pool liquidity providers essentially end up swapping their eTokens for a discounted index of collateral assets.
-
-This approach can be thought of as an extended multi-collateral form of the stability pool idea pioneered by Liquity Protocol [(8)](white-paper.md#references). The main advantage of using a stability pool is that liquidations can be processed immediately using an internal source of liquidity at the point at which a borrower is deemed by the protocol to be in violation, without a liquidator needing to source the assets themselves from a third-party exchange. See Table 1 for some of the benefits of performing liquidations using internal versus external liquidity.
-
-**Table 1.** Comparison of using an internal stability pool for liquidations rather than using an external source of liquidity.
-
-|                      | External                                                                                                      | Internal                                                                                                        |
-| -------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Liquidity source     | Liquidator typically purchases from a DEX or has an existing source of funds themselves                       | Liquidator uses internal liquidity in the stability pool                                                        |
-| Transaction costs    | Gas costs may be high for DEX trades and cross-contract calls                                                 | Gas costs often relatively cheap for internal token transfers                                                   |
-| Explicit trade costs | Swap fees                                                                                                     | No swap fees                                                                                                    |
-| Implicit trade costs | Slippage on illiquid markets                                                                                  | No slippage                                                                                                     |
-| Liquidation price    | Liquidation expected to take place at price determined by the wider market                                    | Liquidation expected to take place at price determined by the internal price feed                               |
-| Liquidation timing   | Liquidation is expected to take place only after the dynamic discount exceeds operating costs and trade costs | Liquidation is expected to take place soon after the dynamic discount exceeds the operating cost of liquidation |
-
 ### Soft Liquidations
 
 The fraction of a borrower's debt that can be paid off by liquidators in one go is referred to by Compound as the 'close factor.' On both Compound and Aave, the close factor is currently fixed at 0.5, meaning liquidators can pay off up to half a borrower's loan in one go, regardless of how underwater their position is. This approach has a couple of potential drawbacks.
@@ -174,7 +155,7 @@ Compound interest is accrued on Euler on a per-second basis. This differs from o
 
 ### Gas Optimisations
 
-Euler’s smart contracts minimise the amount of storage used, implement a module system to reduce the amount of cross-contract calls, and have had a number of other gas usage optimisations applied. This makes the protocol cheaper on most operations than other lending protocols.&#x20;
+Euler’s smart contracts minimise the amount of storage used, implement a module system to reduce the amount of cross-contract calls, and have had a number of other gas usage optimisations applied. This makes the protocol cheaper on most operations than other lending protocols.
 
 ### Transaction Builder
 

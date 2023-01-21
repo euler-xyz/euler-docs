@@ -10,19 +10,15 @@ The delegate sections below describe the delegation using the EUL token smart co
 
 Delegate votes from the sender to a delegatee. Users can delegate to 1 address at a time, and the number of votes added to the delegatee’s vote count is equivalent to the balance of EUL in the user’s account. Votes are delegated from the current block and onward, until the sender delegates again, or transfers their EUL. Delegation can be carried out via the smart contract function described below or via the Tally user interface.
 
-
-
 ## Step-by-step
 
 Voting power delegation can be done via Etherscan, Tally (On-Chain) Governance dashboard or programmatically.
-
-
 
 ### Etherscan
 
 1\. Visit the [EUL token page](https://etherscan.io/address/0xd9fcd98c322942075a5c3860693e9f4f03aae07b) on Etherscan (shown below).
 
-<figure><img src="../../.gitbook/assets/eul_token_etherscan (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/eul_token_etherscan.png" alt=""><figcaption></figcaption></figure>
 
 2\. Click on `Contract` (shown below) to view the EUL token smart contract code and interact with the contract via etherscan.
 
@@ -40,7 +36,7 @@ Voting power delegation can be done via Etherscan, Tally (On-Chain) Governance d
 
 <figure><img src="../../.gitbook/assets/eul_delegatee_address.png" alt=""><figcaption></figcaption></figure>
 
-6\. Enter the address you wish to delegate your voting power to. This can be your wallet address if you are self-delegating or another wallet address (i.e., a community member or one of the active delegates on the [delegates list](https://app.euler.finance/delegates).&#x20;
+6\. Enter the address you wish to delegate your voting power to. This can be your wallet address if you are self-delegating or another wallet address (i.e., a community member or one of the active delegates on the [delegates list](https://app.euler.finance/delegates).
 
 7\. Click on the blue `Write` button directly under the delegatee address text field.
 
@@ -54,13 +50,11 @@ To check the address you are currently delegated to, you can click on the `Read 
 
 Click on `10. delegates` (shown below) and paste your address in the text field and click on `Query` and it should show the address you have set as a delegate. If it shows the zero address, (i.e., 0x0000000000000000000000000000000000000000) then it implies you have not delegated to your wallet or to another address.
 
-You can also check your current voting power.&#x20;
+You can also check your current voting power.
 
 To do this, click on `14. getVotes` (shown below) and paste your address in the text field and click on `Query`. If you have self-delegated, your voting power should be equal to the number of tokens you hold. If you have not self-delegated, or if you have delegated to another address, the query will return zero voting power.
 
 <figure><img src="../../.gitbook/assets/getvotes_delegates.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ### Tally (On-Chain) Governance Dashboard
 
@@ -78,7 +72,7 @@ If you choose to delegate to an address or delegate, the following screen will b
 
 ![](../../.gitbook/governance/delegate\_to\_other\_address.png)
 
-This will not transfer any of your EUL tokens to the delegate, but rather only delegate all your voting power, i.e., you will be voting via a delegate or proxy who will be voting on your behalf or representing you at the polls!&#x20;
+This will not transfer any of your EUL tokens to the delegate, but rather only delegate all your voting power, i.e., you will be voting via a delegate or proxy who will be voting on your behalf or representing you at the polls!
 
 You can always change the delegate later on or delegate to yourself again. This helps to ensure that there is a good degree of participation from the community on on-chain governance proposals voting.
 
