@@ -6,7 +6,7 @@ description: Learn more about the protocol-native governance token of Euler
 
 ## Introduction
 
-EUL tokens represent voting powers to effect change over the protocol code. EUL is an ERC20 token that acts as the native [governance](broken-reference) token of the Euler Protocol. The EUL token address is: `0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b`.&#x20;
+EUL tokens represent voting powers to effect change over the protocol code. EUL is an ERC20 token that acts as the native governancetoken of the Euler Protocol. The EUL token address is: `0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b`.&#x20;
 
 More information about EUL can be found on [Etherscan](https://etherscan.io/token/0xd9fcd98c322942075a5c3860693e9f4f03aae07b), [CoinMarketCap](https://coinmarketcap.com/currencies/euler-finance/) or [CoinGecko](https://www.coingecko.com/en/coins/euler).
 
