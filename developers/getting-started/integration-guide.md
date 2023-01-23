@@ -10,14 +10,14 @@ The Euler protocol is a collection of smart contracts connected together with a 
 
 Some modules are global, for example:
 
-* [markets](https://docs.euler.finance/developers/gettting-started/contract-reference#ieulermarkets): Activating markets, enter/exiting markets, and querying various market-related information.
-* [exec](https://docs.euler.finance/developers/gettting-started/contract-reference#ieulerexec): Batch requests, liquidity deferrals (ie, flash loans)
-* [liquidation](https://docs.euler.finance/developers/gettting-started/contract-reference#ieulerliquidation): Seizure of assets for users in violation
+* [markets](https://docs.euler.finance/developers/getting-started/contract-reference#ieulermarkets): Activating markets, enter/exiting markets, and querying various market-related information.
+* [exec](https://docs.euler.finance/developers/getting-started/contract-reference#ieulerexec): Batch requests, liquidity deferrals (ie, flash loans)
+* [liquidation](https://docs.euler.finance/developers/getting-started/contract-reference#ieulerliquidation): Seizure of assets for users in violation
 
 Other modules are asset-specific:
 
-* [eTokens](https://docs.euler.finance/developers/gettting-started/contract-reference#ieuleretoken): ERC20-compatible tokens that represent assets
-* [dTokens](https://docs.euler.finance/developers/gettting-started/contract-reference#ieulerdtoken): ERC20-compatible tokens that represent liabilities
+* [eTokens](https://docs.euler.finance/developers/getting-started/contract-reference#ieuleretoken): ERC20-compatible tokens that represent assets
+* [dTokens](https://docs.euler.finance/developers/getting-started/contract-reference#ieulerdtoken): ERC20-compatible tokens that represent liabilities
 
 ## Deposit and withdraw
 
