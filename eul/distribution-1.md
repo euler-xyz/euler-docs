@@ -48,7 +48,7 @@ The DAO voted to alter the initial EUL Distribution Programme. Beginning epoch 1
 
 ### Schedule
 
-The following table outlines the (approximate) dates and block numbers for previous and forthcoming epochs. Dates are approximate because the schedule is determined by the pace at which blocks are mined on the Ethereum network.
+The following table outlines the (approximate) dates and block numbers for previous and forthcoming epochs. The % Total Supply is a cumulative sum. Dates are approximate because the schedule is determined by the pace at which blocks are mined on the Ethereum network.
 
 | Epoch | Approx Date | EUL Distribution | % Total Supply |
 | ----- | ----------- | ---------------- | -------------- |

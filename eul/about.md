@@ -6,7 +6,7 @@ description: Learn more about the protocol-native governance token of Euler
 
 ## Introduction
 
-EUL tokens represent voting powers to effect change over the protocol code. EUL is an ERC20 token that acts as the native [governance](broken-reference) token of the Euler Protocol. The EUL token address is: `0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b`.&#x20;
+EUL tokens represent voting powers to effect change over the protocol code. EUL is an ERC20 token that acts as the native [governance](broken-reference/) token of the Euler Protocol. The EUL token address is: `0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b`.
 
 More information about EUL can be found on [Etherscan](https://etherscan.io/token/0xd9fcd98c322942075a5c3860693e9f4f03aae07b), [CoinMarketCap](https://coinmarketcap.com/currencies/euler-finance/) or [CoinGecko](https://www.coingecko.com/en/coins/euler).
 
@@ -14,7 +14,7 @@ More information about EUL can be found on [Etherscan](https://etherscan.io/toke
 
 The total supply of EUL is 27,182,818 (in homage to Euler’s number, [e](https://en.wikipedia.org/wiki/E\_\(mathematical\_constant\))). The initial four-year breakdown of the EUL total supply is as follows:
 
-* **25%** (6,795,705 EUL) to users who borrow on community-selected markets on Euler protocol over 4 years (see [Distribution](distribution.md)).
+* **25%** (6,795,705 EUL) to users of the Euler protocol over 4 years (see [Distribution](distribution.md)).&#x20;
 * **1%** (271,828 EUL) to all users who deposited or borrowed assets on Euler during its soft launch (see [Epoch0](distribution-1.md#epoch-0)).
 * **13.83%** (3,759,791 EUL) to the Euler Treasury, unlocked (see [Treasury](../euler-governance/treasury.md)).
 * **25.85%** (7,026,759 EUL) to Euler Labs shareholders, with an 18 month linear unlock schedule starting on 01/01/2022.
