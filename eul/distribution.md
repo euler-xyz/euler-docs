@@ -14,7 +14,7 @@ The distribution programme is broken down into cycles called [epochs](distributi
 
 ## How it Works
 
-The amount of EUL each borrower receives is proportional to the time-weighted amount of debt they held of an asset within the epoch. For example, if 50 EUL are to be distributed to the DAI market in epoch 3, and if Alice borrows 10 DAI for 1 day, and Bob borrows 5 DAI for 2 days, then at the end of the epoch they will both be able to claim an equal share of 25 EUL.
+The amount of EUL each borrower receives is proportional to the time-weighted amount of debt they held of an asset within the epoch. For example, if 50 EUL are to be distributed to the DAI market in epoch 3, and if Alice borrows 10 DAI for 1 day, and Bob borrows 5 DAI for 2 days, then at the end of the epoch, and after the merkle-root update (typically takes a few hours), they will both be able to claim an equal share of 25 EUL.
 
 ## How to Claim
 
