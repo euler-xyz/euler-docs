@@ -18,7 +18,7 @@ Euler uses the Tally governance dashboard application to manage the governance p
 
 The first phase of the launch will be such that actions to be performed directly on the Euler protocol smart contracts will be executed by the Euler team on behalf of the community. In this case, all on-chain governance proposals will point to or target the `executeProposal(string description, bytes proposalData)` function in a [stub governance smart contract](https://etherscan.io/address/0x8233f21dda26229c8b0586c3c2521be5da0e6328) (in place of the Euler protocol smart contracts).
 
-Should the proposal become successful and executed, the target function will then be executed (via the TimelockController controller smart contract). It will emit the proposal description string and proposal transaction data, which will then be validated by the Euler team and executed against the Exec module via the Euler multisig.
+Should the proposal become successful and executed, the target function will then be executed (via the TimelockController controller smart contract). Once executed, it will emit the proposal description string and proposal transaction data, which will then be validated by the Euler team and executed against the Exec module via the Euler multisig.
 
 Hence, the `governorOnly()` modifier in the Euler Governance module smart contract will be checking that the caller of its functions is the Euler mulisig and not the TimelockController smart contract.
 
