@@ -6,32 +6,19 @@ description: >-
 
 # White Paper
 
-## Authors
-
-Michael Bentley & Doug Hoyte\
-[https://www.euler.finance](https://www.euler.finance)
-
 ## Abstract
 
-Here, we present Euler: a permissionless lending protocol custom-built to help users lend and borrow more Ethereum-based tokens than ever before. The purpose of this white paper is to describe how Euler works at a high level and highlight new features and innovations that help to set it apart from other popular lending protocols, like Compound and Aave.
+Here, we present Euler: a permissionless lending protocol custom-built to help users lend and borrow digital assets. The purpose of this white paper is to describe how Euler works at a high level and highlight new features and innovations that help to set it apart from other popular lending protocols, like Compound and Aave.
 
 ## Introduction
 
-The ability to lend and borrow assets efficiently is a crucial feature of any financial system. In the world of traditional finance, this process is typically facilitated by trusted and permissioned third-parties such as banks, who connect people with a surplus of money to those who need access to it in the short term. In the world of decentralised finance (DeFi), trusted and permissioned third-parties are no longer needed; banks have been replaced by trustless and permissionless lending protocols running on the blockchain [(1)](white-paper.md#references).
-
-Among the first-generation of DeFi lending protocols are Compound [(2)](white-paper.md#references) and Aave [(3)](white-paper.md#references). These protocols provide users with access to lending and borrowing capabilities for a handful of the most liquid ERC20 tokens. However, these protocols were not designed to handle the risks associated with lending and borrowing illiquid or volatile assets and have therefore relied on a permissioned listing system to protect their users from the risks associated with such assets.
-
-Consequently, there remains significant unmet demand for lending and borrowing the long tail of crypto assets. On the lending side, users want to deposit tokens to earn yield and take leveraged long positions. On the borrowing side, users want to reduce their exposure to volatility and take leveraged short positions. Here, we present Euler: a permissionless lending protocol custom-built with an array of new features to help users lend and borrow more types of tokens than ever before.
-
-## Getting Started
-
 Euler comprises a set of smart contracts deployed on the Ethereum blockchain that can be openly accessed by anyone with an internet connection. Euler is managed by holders of a protocol native governance token called Euler Governance Token (EUL). Euler is entirely non-custodial; users are responsible for managing their own funds.
 
-As creators of the protocol, the Euler development team have produced a convenient and user-friendly front-end to the Euler smart contracts, which is hosted at [https://app.euler.finance](https://app.euler.finance). However, users are free to access the protocol in whatever format they wish, and we encourage developers to create their own front-end access points to the protocol to help decentralise access and increase censorship resistance.
+A convenient and user-friendly front-end to for the Euler smart contracts is hosted at [https://app.euler.finance](https://app.euler.finance). However, users are free to access the protocol in whatever format they wish; a popular alternative can be found at [https://instadapp.io/](https://instadapp.io/).&#x20;
 
 ## Permissionless Listing
 
-Euler lets its users determine which assets are listed. To enable this functionality, Euler uses Uniswap v3 as a core dependency [(4)](white-paper.md#references). Any asset that has a WETH pair on Uniswap v3 can be added as a lending market on Euler by anyone straight away [(5)](white-paper.md#references).
+Euler lets its users determine which assets are listed. To enable this functionality, Euler uses Uniswap v3 as a core dependency [(4)](white-paper.md#references). Any asset that has a WETH pair on Uniswap v3 can be added as a lending market on Euler [(5)](white-paper.md#references).
 
 ### Asset Tiers
 
