@@ -6,7 +6,7 @@ description: Learn how to burn assets on Euler to remove Mint positions
 
 ## About
 
-Burn enables users to 'repay' and undo their leveraged positions created by the Mint function by removing an equal amount of deposits and debts from an account.&#x20;
+Burn enables users to 'repay' and undo their multiplied positions created by the Mint function by removing an equal amount of deposits and debts from an account.&#x20;
 
 ## Step-by-step
 
