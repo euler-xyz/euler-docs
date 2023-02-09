@@ -6,7 +6,7 @@ Not all assets are eligible for mining rewards, however. A user could activate a
 
 ## EulDistributor
 
-This contract implements a merkle drop. Governance will seed it with an amount of EUL tokens at least necessary to cover the current cumulative distribution, although extra can be pre-committed if desired. It also supports distributing tokens other than EUL, so that token partners can leverage the distribution infrastructure if governance approves.
+This contract implements a merkle drop. Governance will seed it with an amount of EUL tokens at least necessary to cover the current cumulative distribution, although extra can be pre-committed if desired. It also supports distributing tokens other than EUL, so that token partners can utilise the distribution infrastructure if governance approves.
 
 The current merkle root as well as the previous merkle root is kept in storage. They are typically (but not necessarily) updated once per epoch. Either root is eligible to claim rewards so as to prevent pending transactions from failing when the root is updated.
 
