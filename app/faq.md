@@ -140,6 +140,8 @@ The distribution is decided by the amount of EUL tokens staked in the [gauges](h
 
 Users can add or remove EUL distribution eligible markets simply by staking EUL tokens in their preferred gauges. See the link in the above question for the results of these votes. Please see [eIP 51](https://snapshot.org/#/eulerdao.eth/proposal/0x551f9e6f3fba50a0fc2c69e361f7a81979189aa7f0ed923a1873bd578896942b) for the latest iteration of EUL distribution.
 
+In order to receive EUL emmission, assets (as per [eIP 24](https://snapshot.org/#/eulerdao.eth/proposal/0x7e65ffa930507d9116ebc83663000ade6ff93fc452f437a3e95d755ccc324f93)) need to have a Chainlink pirce feed as well as receive EUL votes in the gauge system.&#x20;
+
 ### EUL Token
 
 #### Is there a token? How can I earn it?
