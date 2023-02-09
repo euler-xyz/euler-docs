@@ -28,4 +28,4 @@ The `Mint` function mimics what would happen if a user deposited $1000 USDC, the
 ## FAQ
 
 **Can I be liquidated if I use mint?**\
-****Mint creates a multiplier position which poses liquidation risk when Mint an asset different from the user's collateral. Additionally, the interest rates also present risk of loss as they're variable and dependent on the market.
+****Mint creates a multiplied position which poses liquidation risk when Mint an asset different from the user's collateral. Additionally, the interest rates also present risk of loss as they're variable and dependent on the market.
