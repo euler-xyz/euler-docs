@@ -47,14 +47,14 @@ Check out the How To guides [here](ui/). Or just go to the [Euler app](https://a
 Search for an asset in the search bar on the [Euler app](https://app.euler.finance/). Unlisted assets can be activated by the Activate button, which will ask you to initiate the transaction. Once complete, the asset will be listed and activated.
 
 #### How do I get testnet tokens?
+
 The Goerli testnet has a test ER20 token faucet smart contract deployed a [0x1215396CB53774dCE60978d7237F32042cF3a1db](https://goerli.etherscan.io/address/0x1215396CB53774dCE60978d7237F32042cF3a1db).
 
-To get testnet tokens for Goerli, connect open the smart contract on Etherscan by clicking the link above. Click on the tab with the green tick, then click on `Write Contract` and connect your wallet. Once connected, expand the withdraw feature and paste the underlying ERC20 token smart contract address and click on the `Write` button. This will require you to confirm the transaction in your wallet which costs gas. 
+To get testnet tokens for Goerli, connect open the smart contract on Etherscan by clicking the link above. Click on the tab with the green tick, then click on `Write Contract` and connect your wallet. Once connected, expand the withdraw feature and paste the underlying ERC20 token smart contract address and click on the `Write` button. This will require you to confirm the transaction in your wallet which costs gas.
 
 Once confirmed, the token faucet smart contract will an amount of the specified testnet ERC20 token (up to a pre-defined threshold) to your connected wallet address.
 
 The Goerli testnet token faucet supports the following ERC20 tokens: [WETH](https://goerli.etherscan.io/address/0xa3401DFdBd584E918f59fD1C3a558467E373DacC), [UNI](https://goerli.etherscan.io/address/0x2980D241BEA2A49d3333AA931884d68C704E7Db7), [USDC](https://goerli.etherscan.io/address/0x693FaeC006aeBCAE7849141a2ea60c6dd8097E25), [USDT](https://goerli.etherscan.io/address/0x7594a0368F18e666480Ad897612f28ad17435B4C), [DOGE](https://goerli.etherscan.io/address/0x67cF0FF98bE17bF02F7c6346028C9e8BB3c203B2), [WBTC](https://goerli.etherscan.io/address/0xc49BB678a4d822f7F141D5bb4585d44cCe51e25E), [COMP](https://goerli.etherscan.io/address/0x6520f3394a2000eA76e7cA96449B78BB0eD07561), [CRV](https://goerli.etherscan.io/address/0x9eA3D1d18A0e7Ec379C577f615220e6D715F3b29).
-
 
 #### Why can't I find a specific token to activate?
 
@@ -130,7 +130,7 @@ Users can go to the [Euler app](https://app.euler.finance/), click on the Claim 
 
 #### What utility does EUL have?
 
-EUL’s main utility is as a [governance token](broken-reference) for the Euler protocol. Users with EUL can have a say in the future decisions and direction, as well as the EUL distribution in the Euler gauges.
+EUL’s main utility is as a [governance token](broken-reference/) for the Euler protocol. Users with EUL can have a say in the future decisions and direction, as well as the EUL distribution in the Euler gauges.
 
 #### What is the distribution of EUL tokens for borrowers?
 
@@ -138,7 +138,7 @@ The distribution is decided by the amount of EUL tokens staked in the [gauges](h
 
 #### How are markets decided for each epoch?
 
-Users can add or remove EUL distribution eligible markets simply by staking EUL tokens in their preferred gauges. Markets not in the top 10 staked will not be eligible for EUL distribution.
+Users can add or remove EUL distribution eligible markets simply by staking EUL tokens in their preferred gauges. See the link in the above question for the results of these votes. Please see [eIP 51](https://snapshot.org/#/eulerdao.eth/proposal/0x551f9e6f3fba50a0fc2c69e361f7a81979189aa7f0ed923a1873bd578896942b) for the latest iteration of EUL distribution.
 
 ### EUL Token
 
@@ -178,7 +178,7 @@ Feel free to reach out through Discord or other platforms in the Quick Links sec
 
 #### Can we list EUL on our exchange?
 
-Euler Labs cannot advise on exchange listings, nor pay for any listings.
+Euler cannot advise on exchange listings, nor pay for any listings.
 
 #### Can we offer our token in your liquidity mining programme?
 
