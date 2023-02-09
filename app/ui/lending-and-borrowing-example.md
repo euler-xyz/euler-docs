@@ -29,6 +29,6 @@ Similarly, should the value of ABC plummet, your eABC won’t be enough to maint
 
 ### Return Potential
 
-Alternatively, if you borrowed XYZ, sold it and XYZ price plummeted, you’d be able to repay your debts at a lower level and make a profit. You could also leverage your position by selling XYZ, buying more collateral, borrowing more XYZ etc. until you reach the borrowing limit. This way, you’d have a leveraged short XYZ/ABC position. More on the mechanics of leveraged positions [here](https://medium.com/@Hoytech/82402529c51b).
+Alternatively, if you borrowed XYZ, sold it and XYZ price plummeted, you’d be able to repay your debts at a lower level and make a profit. You could also utilize your position by selling XYZ, buying more collateral, borrowing more XYZ etc. until you reach the borrowing limit. This way, you’d have a leveraged short XYZ/ABC position. More on the mechanics of leveraged positions [here](https://medium.com/@Hoytech/82402529c51b).
 
 _Note: we have implemented the swap module that allows users to leverage their positions easily without incurring additional gas fees._
