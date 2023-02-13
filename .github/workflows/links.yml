@@ -1,13 +1,10 @@
-name: Links
+name: Links Checker Report
 
 on:
   repository_dispatch:
   workflow_dispatch:
   schedule:
-    - cron: "00 18 * * *"
-  pull_request:
-    branches:
-      - master
+    - cron: "00 09 * * 1"
 
 permissions:
   issues: write
