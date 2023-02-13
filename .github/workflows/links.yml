@@ -9,6 +9,9 @@ on:
     branches:
       - master
 
+permissions:
+  issues: write
+
 jobs:
   linkChecker:
     runs-on: ubuntu-latest
