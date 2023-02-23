@@ -93,3 +93,7 @@
 
 * [White Paper (ENG-CHN)](languages/white-paper-ENG-CHN.md)
 * [Community Translations](languages/community-translations.md)
+
+## Legal
+* [Terms and Conditions] (legal/termsAndConditions.md)
+* [Privacy Policy] (legal/privacyPolicy.md)
