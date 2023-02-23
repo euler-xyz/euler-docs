@@ -95,5 +95,5 @@
 * [Community Translations](languages/community-translations.md)
 
 ## Legal
-* [Terms and Conditions] (legal/termsAndConditions.md)
-* [Privacy Policy] (legal/privacyPolicy.md)
+* [Terms and Conditions](legal/termsAndConditions.md)
+* [Privacy Policy](legal/privacyPolicy.md)
