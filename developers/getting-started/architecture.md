@@ -258,6 +258,16 @@ Unlike Compound where the reserves are denominated in the underlying, Euler's re
 
 When we issue "eTokens" to the reserve, it inflates the eToken supply (making them less valuable). However, we only do this after we increase totalBorrows, ensuring that the inflation is less than what was earned as interest, proportional to the reserve fee configured for that asset.
 
+## Asset Config Overrides
+
+Asset config overrides allow setting a custom collateral and borrow factors for designated liability-collateral asset pairs. An override might be set on assets that are expected to have a correlated price and therefore lower pricing risk, like for example USD stable coins, however the mechanism can be applied to any asset pair. An override consists of the liability token address, collateral token address and a collateral factor to use for the pair.
+
+When depositing and borrowing assets with override configured, user's deposits will receive a custom collateral factor, while liabilities are always counted with borrow factor equal one. A single asset could have multiple overrides configured, both as collateral or liability. It is also possible to override the self-collateralization factor, when the asset is both the liability and the collateral in an override.
+
+The single limitation of the mechanism is the fact that override can only be applied when the account holds a single liability. In case of multiple borrows, regular collateral and borrow factors are applied in the liquidity calculations for all assets.
+
+In case when user deposits both override collateral and regular collateral, the liquidity calculation first applies the overrides, but then also counts the regular collateral with its collateral factor. If the liability is not fully covered by the override collateral, it's value is counted both with borrow factor one, for the part that is, and a regular borrow factor for the remaining part, covered by regular collateral. 
+
 ### Derivation of Reserves Formulas
 
 #### Compound
