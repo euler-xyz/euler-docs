@@ -7,15 +7,21 @@ description: >-
 
   
 
-Staking on Euler is based on Synthetix’s staking contracts. This is an overhaul to Euler’s gauge system, which thanks to [eIP 24](https://snapshot.org/#/eulerdao.eth/proposal/0x7e65ffa930507d9116ebc83663000ade6ff93fc452f437a3e95d755ccc324f93) is modified from its previous iteration coming into effect with the arrival of [Epoch 18.](https://docs.euler.finance/eul/distribution-1)
+Staking on Euler is based on Synthetix’s staking contracts. This is an overhaul to Euler’s gauge system, which thanks to [eIP51](https://snapshot.org/#/eulerdao.eth/proposal/0x551f9e6f3fba50a0fc2c69e361f7a81979189aa7f0ed923a1873bd578896942b) is modified from its previous iteration coming into effect with the arrival of [Epoch 24.](https://docs.euler.finance/eul/distribution-1)
 
-  
-
-For the duration of the three month trial, 5000 EUL a month (for a total of 15000 EUL) will be distributed to users staking these assets: USDT, USDC and WETH. To stake an asset and receive some of the EUL being distributed, users should stake their [eTokens](https://docs.euler.finance/developers/getting-started/architecture#etoken-less-than-greater-than-dtoken-symmetry) into the staking contract.
-
-  
+To stake an asset and receive some of the EUL being distributed, users should stake their [eTokens](https://docs.euler.finance/developers/getting-started/architecture#etoken-less-than-greater-than-dtoken-symmetry) into the staking contract.
 
 Should you please, you can immediately unstake your tokens at any time and the accrued EUL earnings will be instantly claimable. There is no lockup period for this staking process.
+
+According to [eIP51](https://snapshot.org/#/eulerdao.eth/proposal/0x551f9e6f3fba50a0fc2c69e361f7a81979189aa7f0ed923a1873bd578896942b), the DAO has made the decision to keep the staking rewards program running indefinitely, unless another vote is held to terminate the program. The staking contracts will receive EUL tokens distributed in the following manner:
+
+* 9,000 EUL per epoch to stakers of WETH market.
+* 5,000 EUL per epoch to stakers of USDC market.
+* 1,000 EUL per epoch to stakers of USDT market.
+
+  
+
+
 
 ## Considerations
 
