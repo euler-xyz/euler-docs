@@ -9,8 +9,11 @@ description: >-
 
 Staking on Euler is based on Synthetix’s staking contracts. This is an overhaul to Euler’s gauge system, which thanks to [eIP51](https://snapshot.org/#/eulerdao.eth/proposal/0x551f9e6f3fba50a0fc2c69e361f7a81979189aa7f0ed923a1873bd578896942b) is modified from its previous iteration coming into effect with the arrival of [Epoch 24.](https://docs.euler.finance/eul/distribution-1)
 
-  
-According to [eIP51](https://snapshot.org/#/eulerdao.eth/proposal/0x551f9e6f3fba50a0fc2c69e361f7a81979189aa7f0ed923a1873bd578896942b), the DAO has made the decision to keep the staking rewards program running indefinitely, unless another vote is held to terminate the program. The distribution of EUL tokens for staking contracts is as follows:
+To stake an asset and receive some of the EUL being distributed, users should stake their [eTokens](https://docs.euler.finance/developers/getting-started/architecture#etoken-less-than-greater-than-dtoken-symmetry) into the staking contract.
+
+Should you please, you can immediately unstake your tokens at any time and the accrued EUL earnings will be instantly claimable. There is no lockup period for this staking process.
+
+According to [eIP51](https://snapshot.org/#/eulerdao.eth/proposal/0x551f9e6f3fba50a0fc2c69e361f7a81979189aa7f0ed923a1873bd578896942b), the DAO has made the decision to keep the staking rewards program running indefinitely, unless another vote is held to terminate the program. The staking contracts will receive EUL tokens distributed in the following manner:
 
 * 9,000 EUL per epoch to stakers of WETH market.
 * 5,000 EUL per epoch to stakers of USDC market.
@@ -18,7 +21,7 @@ According to [eIP51](https://snapshot.org/#/eulerdao.eth/proposal/0x551f9e6f3fba
 
   
 
-Should you please, you can immediately unstake your tokens at any time and the accrued EUL earnings will be instantly claimable. There is no lockup period for this staking process.
+
 
 ## Considerations
 
