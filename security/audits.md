@@ -12,6 +12,10 @@ The Euler protocol has been reviewed and audited by top security firms including
 
 [Audit Report](https://omniscia.io/reports/euler-finance-swaphub/)
 
+#### Sherlock - July 2022
+
+[Audit Report](https://www.hacknote.co/17c261f7d8fWbdml/1821f966f40pJG_t#n_0)
+
 #### Omniscia - June 2022
 
 [Audit Report](https://omniscia.io/reports/euler-finance-chainlink-support/)
