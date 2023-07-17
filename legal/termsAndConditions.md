@@ -8,8 +8,7 @@ that you agree to comply with them. If you do not agree to these
 terms of use, you must not use our Site.
 
 ### 1. Your Relationship With Us
-1.1 Welcome to [euler.finance](https://www.euler.finance/) and [app.euler.finance](https://app.euler.finance/)
-(the “Website”), provided by The Euler Foundation (“Company”, “we”
+1.1 Welcome to [euler.finance](https://www.euler.finance/), [app.euler.finance](https://app.euler.finance/), and other subdomains such as [ethcc6.euler.finance](https://ethcc6.euler.finance) (the “Website”), provided by The Euler Foundation (“Company”, “we”
 or “us”). The Company is registered in the Cayman Islands and our
 registered office is at 4th Floor, Harbour Place, 103 South Church
 Street, P.O. Box 10240, Grand Cayman KY1-1002, George Town, Cayman
