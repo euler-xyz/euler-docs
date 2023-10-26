@@ -70,7 +70,7 @@ Euler uses risk-based [asset tiers](../getting-started/white-paper.md#asset-tier
 
 #### What oracle does Euler use?
 
-By default Euler uses [Uniswap](https://docs.uniswap.org/protocol/concepts/V3-overview/oracle) V3 Time Weighted Average Price (TWAP) as the pricing oracle. However, the oracle used can be changed in the governance process on one-to-one basis. Currently, Euler also supports Chainlink price feeds as a price source.
+By default Euler uses Uniswap V3 Time Weighted Average Price (TWAP) as the pricing oracle. However, the oracle used can be changed in the governance process on one-to-one basis. Currently, Euler also supports Chainlink price feeds as a price source.
 
 #### What is the oracle rating?
 
