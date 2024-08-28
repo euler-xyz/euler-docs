@@ -251,7 +251,7 @@ Some Products will allow you to download software components to facilitate your 
 
 **12.1 Data Collection**
 
-We collect and use your personal data in accordance with our Privacy Policy. By using the Products, you consent to the collection, use, and sharing of your data as described in the [Privacy Policy](https://euler.finance/privacy-policy).
+We collect and use your personal data in accordance with our Privacy Policy. By using the Products, you consent to the collection, use, and sharing of your data as described in the [Privacy Policy](/privacy-policy).
 
 **12.2 Blockchain Data**
 
