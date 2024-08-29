@@ -1,14 +1,14 @@
-**Euler Privacy Policy**
+# Euler Privacy Policy
 
 ***Updated and effective: 28 August 2024***
 
-**Introduction**
+## Introduction
 
 The Euler Foundation is committed to protecting and respecting your privacy. This Privacy Policy (the “Policy”) describes how Euler and its affiliates (“we”, “us”, or “our”), might collect, use, and/or share your personal data when you access our company websites, including but not limited to, euler.finance (including the Euler app) and its sub-domains, and  euler.foundation and its sub-domains, and all of our other properties, products, and services (collectively the “Services”).
 
 For the purposes of this Policy, personal data is any data related to an identified or identifiable individual. Your use of the Services is subject to this Policy as well as our Terms of Use. If you do not agree with the terms of this Policy, do not access or use these Services, or any other aspect of our business.
 
-**What Personal Data We Collect**
+## What Personal Data We Collect
 
 When you visit our company websites and use our Services, we may collect the following data:
 
@@ -20,7 +20,7 @@ Direct Communications that you send to us. Whenever you reach out to us through 
 
 Information from job applicants. When you apply for a position with us, we collect all data you provide through our Jobs form, including name, email phone, work and immigration status, and any other resume, cover letter, or free form text you include.
 
-**How We Use Your Data**
+## How We Use Your Data
 
 As the operator of the Websites and Services, we take the protection of your personal data very seriously. We may use your personal data for the following purposes:
 
@@ -44,11 +44,11 @@ We may use personal data relevant to any legal claims, disputes, or regulatory i
 
 We use cookies (small, often encrypted, text files that are stored on your computer or mobile device) and similar technologies (such as web beacons, pixels, and scripts) (collectively, “Cookies”) to provide you with certain functions on our Services and help collect data. This section explains how we use Cookies to collect information about the way you use our Services and how you can control them.
 
-**How We Use Cookies**
+## How We Use Cookies
 
 We use Cookies to track how you use our Services by providing usage statistics. Cookies are also used to deliver our information (including updates) and allow account authentication to you based upon your browsing history and previous visits to the Services. We may combine the information we collect from Cookies with personal information that we have collected from you to learn more about how you use our Services to improve it.
 
-**Types of Cookies**
+## Types of Cookies
 
 We may use both session Cookies (which expire once you close your web browser) and persistent Cookies (which stay on your device until you delete them). To make it easier for you to understand why we need them, the Cookies we use on our Services can be grouped into the following categories:
 
@@ -60,7 +60,7 @@ Performance/Analytics: These Cookies allow us to collect certain information abo
 
 Targeting: These Cookies are used to deliver relevant information related to our Services to an identified machine or other device (not a named or otherwise identifiable person) which has previously been used to visit our Services. Some of these types of Cookies on our Services are operated by third parties with our permission and are used to identify advertising sources that are effectively driving customers to our Services.
 
-**How to Control and Delete Cookies**
+## How to Control and Delete Cookies
 
 Cookies can be controlled, blocked, or restricted through your web browser settings. Information on how to do this can be found within the Help section of your browser. All Cookies are browser specific. Therefore, if you use multiple browsers or devices to access the Services, you will need to manage your Cookie preferences across these environments.
 
@@ -84,7 +84,7 @@ Please note that if you restrict, disable or block any or all Cookies from your 
 
 We do not control third parties’ collection or use of your information to serve interest-based advertising. However, these third parties may provide you with ways to choose not to have your information collected or used in this way. You can opt out of receiving targeted ads from members of the Network Advertising Initiative (“NAI”) on the NAI’s website.
 
-**How We Share Your Data**
+## How We Share Your Data
 
 We may share or disclose the data we collect in the limited circumstances as described below:
 
@@ -98,7 +98,7 @@ To enforce your agreements with us, including this Privacy Policy, and to respon
 
 We require such third parties to use the personal data we share with them only for the purpose for which the data was transferred and not to retain it for longer than is required for fulfilling the said purpose.
 
-**International Data Transfers**
+## International Data Transfers
 
 We, along with our affiliates, subsidiaries, and trusted third-party providers, may handle your personal information in countries outside of your own. The data privacy laws in these countries may differ from, and potentially offer less protection than, those in your home country.
 
@@ -106,33 +106,33 @@ When transferring your personal information internationally, and in accordance w
 
 This section will ensure that users are informed about how their data is managed when transferred internationally, in line with the rest of the privacy policy.
 
-**Security**
+## Security
 
 The security of your data is important to us, and we take reasonable security measures to prevent the loss, misuse, unauthorised access, modification, or disclosure of your personal data under our control. The security measures in place will, from time to time, be reviewed in line with legal and technical developments.
 
 However, given the inherent risks, we cannot guarantee absolute security and give no guarantee that such loss, misuse, unauthorised access, modification, or disclosure will not occur. You are responsible for all of your activity on the Services, including the security of your blockchain network addresses, cryptocurrency wallets, and their cryptographic keys.
 
-**Age limitations**
+## Age limitations
 
 Our Services are not intended for use by anyone under the age of 18\. If we learn that we have collected personal data from an individual under 18 without verification of parental consent, we will delete that information promptly. If you believe we may have any information from or about a person under 18, please contact us.
 
-**Links**
+## Links
 
 There may be links from our Sites to other websites and resources provided by third parties. This Privacy Policy applies only to our Sites. Accessing those third-party websites or sources requires you to leave our Sites. We do not control those third-party sites or any of the content contained therein, and you agree that we are in no circumstances responsible or liable for any of those third-party sites, including, without limitation, their content, policies, failures, promotions, products, services or actions and/or any damages, losses, failures or problems caused by, related to or arising from those sites. We encourage you to review all policies, rules, terms and regulations, including the privacy policies, of each site that you visit.
 
-**Changes to the Policy**
+## Changes to the Policy
 
 Please note that we may modify this Privacy Policy at any time without any prior notice. The revised Policy will be effective immediately from when the revised Policy is posted in the Service and your continued access or use of the Service after such time will constitute your acceptance of the revised Privacy Policy. We encourage you to regularly review the latest version of this Privacy Policy
 
-**Retention of Personal Information**
+## Retention of Personal Information
 
 We retain the personal data we collect only for as long as necessary to fulfil the purposes for which it was collected, to provide our Services, to resolve disputes, to enforce our agreements, and to comply with legal obligations. This period may vary depending on the nature of the data and the reasons for collecting it, having regard to the purposes described in this Privacy Policy and our own legal and regulatory requirements.
 
-**Contact information**
+## Contact information
 
 If you have any questions, comments, or concerns regarding our Privacy Policy, please contact us at contact@euler.foundation.
 
-**Acknowledgment of Risks**
+## Acknowledgment of Risks
 
 By using the Euler Protocol, you acknowledge that you have read, understood, and agree to this privacy policy. 
 
