@@ -242,10 +242,10 @@ Except as expressly permitted, you may not copy, modify, distribute, or create d
 
 Some Products will allow you to download software components to facilitate your use of the Products and Protocol. We provide access to these components through our GitHub repository (located at: [https://github.com/euler-xyz](https://github.com/euler-xyz/ethereum-vault-connector)). By downloading and/or using any of the software components we provide, you agree to abide by any additional licence terms. As of the "Last Updated" date, this includes the following:
 
-* EVC (Ethereum Vault Connector): [https://github.com/euler-xyz/ethereum-vault-connector/blob/master/LICENSE\#L43-L48](https://github.com/euler-xyz/ethereum-vault-connector/blob/master/LICENSE\#L43-L48)  
-* EVK (Euler Vault Kit): [https://github.com/euler-xyz/euler-vault-kit/blob/master/LICENSE\#L59-L63](https://github.com/euler-xyz/euler-vault-kit/blob/master/LICENSE\#L59-L63)  
-* EVK periphery: [https://github.com/euler-xyz/evk-periphery/blob/master/LICENSE\#L43-L48](https://github.com/euler-xyz/evk-periphery/blob/master/LICENSE\#L43-L48)  
-* Euler FeeFlow: [https://github.com/euler-xyz/fee-flow/blob/main/LICENSE\#L43-L48](https://github.com/euler-xyz/fee-flow/blob/main/LICENSE\#L43-L48)
+* EVC (Ethereum Vault Connector): [https://github.com/euler-xyz/ethereum-vault-connector/blob/master/LICENSE](https://github.com/euler-xyz/ethereum-vault-connector/blob/master/LICENSE)  
+* EVK (Euler Vault Kit): [https://github.com/euler-xyz/euler-vault-kit/blob/master/LICENSE](https://github.com/euler-xyz/euler-vault-kit/blob/master/LICENSE)  
+* EVK periphery: [https://github.com/euler-xyz/evk-periphery/blob/master/LICENSE](https://github.com/euler-xyz/evk-periphery/blob/master/LICENSE)  
+* Euler FeeFlow: [https://github.com/euler-xyz/fee-flow/blob/main/LICENSE](https://github.com/euler-xyz/fee-flow/blob/main/LICENSE)
 
 ## 12 Privacy
 
