@@ -433,7 +433,7 @@ For any disputes that are not subject to arbitration under these Terms, you agre
 
 Any claim arising out of or relating to these Terms or the use of the Products or Protocol must be brought within twelve (12) months from the date the cause of action accrues, or the date you become aware of the facts giving rise to the claim, whichever is later. Any claims not filed within this period shall be deemed waived and time-barred. The parties expressly agree that this limitation period supersedes any statutory limitations that might otherwise apply.
 
-## 16 Bug Bounties and Security Contests
+##  16 Bug Bounties and Security Contests
 
 ### 16.1 Independent Rules
 
