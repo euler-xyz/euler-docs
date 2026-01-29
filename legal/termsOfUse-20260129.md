@@ -507,4 +507,4 @@ Address: 4th Floor, Harbour Place, 103 South Church Street, P.O. Box 10240, Gran
 
 By accessing or using the Products, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use, as well as the Risk Disclosures, and Privacy Policy.
 
-***Updated and effective: 15 July 2025***
+***Updated and effective: 29 January 2026***
