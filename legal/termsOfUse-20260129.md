@@ -437,21 +437,35 @@ Any claim arising out of or relating to these Terms or the use of the Products o
 
 ### 16.1 Independent Rules
 
-Any bug bounty programs or security contests (“Contests”) offered by the Company will be governed by their own specific terms and conditions, which will be provided separately. These terms may include details regarding eligibility, scope, rewards, confidentiality, and other conditions related to participation in the Contests. Participation in any such Contest is subject to your acceptance of the specific rules and conditions applicable to that Contest.
+Any bug bounty or Safe Harbor programs or security contests (“Contests”) offered by the Company will be governed by their own specific terms and conditions, which will be provided separately. These terms may include details regarding eligibility, scope, rewards, confidentiality, and other conditions related to participation in the Contests. Participation in any such Contest is subject to your acceptance of the specific rules and conditions applicable to that Contest.
 
-### 16.2 No Guarantee of Payment
+### 16.2 Safe Harbor and Whitehat Agreement
+
+By accessing or using the Products or Protocol, you acknowledge and agree that you are a “User” and member of the “Protocol Community” for purposes of that certain Safe Harbor Agreement for Whitehats adopted by Euler (the “Whitehat Agreement”), available via a link published on or through the Products from time to time. Without limiting the generality of the foregoing, and with each capitalised term having the meaning given to it in the Whitehat Agreement:
+
+* You hereby consent to Whitehats attempting Eligible Funds Rescues of any and all Tokens deposited into the Protocol by you and the deduction of Bounties out of your deposited Tokens to compensate Eligible Whitehats for successful Eligible Funds Rescues;
+
+* You acknowledge and agree that Tokens may be lost, stolen, suffer diminished value, or become disabled or frozen in connection with attempts at Eligible Funds Rescues, and you assume all risk of the foregoing;
+
+* You acknowledge and agree that payment of a Bounty as a deduction from your Tokens to an Eligible Whitehat may constitute a taxable disposition by you of the deducted Tokens, and you agree to assume all risk of any such adverse tax treatment; and
+
+* You agree to hold the other Euler Community Members harmless from any loss, liability, or other damages you may suffer in connection with attempted Eligible Funds Exploits under the Whitehat Agreement.
+
+For the avoidance of doubt, the Whitehat Agreement is incorporated by reference into these Terms as between you and the Euler Community Members, and your continued use of the Products or Protocol constitutes your ongoing consent to and acceptance of the Whitehat Agreement.
+
+### 16.3 No Guarantee of Payment
 
 The Company reserves the right to determine, in its sole discretion, the eligibility of submissions, the severity of identified issues, and the corresponding rewards or compensation. The Company further reserves the right to modify, suspend, or terminate any bug bounty or security contest program at any time, without prior notice. The Company may, in its sole discretion, determine whether any submissions fall within the scope of the program and whether they meet the criteria for rewards. Participation in any such program does not constitute any contractual relationship between you and the Company, and you agree that the Company is under no obligation to provide any payment or compensation for your submissions. The Company is under no obligation to pay any reward or compensation for submissions that it deems invalid, out of scope, or in violation of the Contest rules.
 
-### 16.3 Limitation of Liability
+### 16.4 Limitation of Liability
 
 The Company disclaims all liability arising from or related to any Contest. By participating in a Contest, you agree to release the Company from any and all claims, liabilities, or damages that may arise in connection with your participation, including any issues related to the submission, evaluation, or reward process.
 
-### 16.4 No Contractual Relationship
+### 16.5 No Contractual Relationship
 
 Participation in a Contest does not create any contractual relationship between you and the Company, nor does it grant you any rights beyond those explicitly outlined in the specific Contest terms. The Company reserves the right to modify, suspend, or terminate any Contest at any time, without notice and at its sole discretion.
 
-### 16.5 Tax Responsibility and Indemnification
+### 16.6 Tax Responsibility and Indemnification
 
 By participating in a Contest, you shall be solely responsible for the reporting and payment of all applicable federal, state, local, and international taxes (including without limitation income, self-employment, and withholding taxes) arising from any payments, bounties, or other compensation received in connection with the Contest. To the fullest extent permitted by law, you shall hold harmless, indemnify, and defend us from and against any and all claims, liabilities, penalties, interest, costs, and expenses (including reasonable attorneys’ fees) arising out of or relating to any tax obligations or disputes asserted against us as a result of payments made to you, including but not limited to any failure by the you to properly report or remit any such taxes.
 
