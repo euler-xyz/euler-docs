@@ -22,7 +22,7 @@ Borrowing assets on Euler creates a loan that users can repay at any time. Borro
 ## FAQ
 
 **I've deposited an asset, but cannot borrow.**\
-****Make your transactions were completed successfully. You can only borrow using approved collateral-tier assets, unless you're borrowing the same asset you've deposited. Make sure your collateral is sufficient for the amount you're trying to borrow. Otherwise, please create a support ticket in [Discord](https://discord.gg/CdG97VSYGk).
+****Make your transactions were completed successfully. You can only borrow using approved collateral-tier assets, unless you're borrowing the same asset you've deposited. Make sure your collateral is sufficient for the amount you're trying to borrow. Otherwise, please create a support ticket in [Discord](https://discord.euler.finance/).
 
 **How come I can't borrow with an isolated asset?**\
 ****Note that isolated and Cross assets cannot be used as collateral, but Cross assets can be borrowed alongside other assets, while Isolated assets cannot. Euler aims to curb risk by limiting collateral tier assets to certain tokens with lower risk profiles.

@@ -13,7 +13,7 @@ Joining the forum helps members of the community to keep up to date with the lat
 
 To access the forum, simply navigate to [forum.euler.finance](https://forum.euler.finance). You will need to register an account in order to have full access to the features, e.g., replying to posts and proposals or creating a new proposal for others to comment on.
 
-If you need technical help, or want a place for more general discussion, visit the official [Euler Discord](https://discord.gg/cNg9NhWs).
+If you need technical help, or want a place for more general discussion, visit the official [Euler Discord](https://discord.euler.finance/).
 
 ## Step-by-step
 
