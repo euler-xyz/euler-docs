@@ -20,4 +20,4 @@ Users can withdraw assets from Euler at any time, directly to their wallet. Prio
 ## FAQ
 
 **I cannot withdraw my assets.**\
-****Make sure you have enough assets to cover any loans, otherwise please create a support ticket in [Discord](https://discord.gg/CdG97VSYGk).
+****Make sure you have enough assets to cover any loans, otherwise please create a support ticket in [Discord](https://discord.euler.finance/).

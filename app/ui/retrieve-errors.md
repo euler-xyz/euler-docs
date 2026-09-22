@@ -6,7 +6,7 @@ description: Learn how to retrieve errors from the developer console in your bro
 
 ## About
 
-Sometimes an error will occur that needs further investigation by the Euler Labs team. If you have created a support ticket in [Discord](https://discord.gg/CdG97VSYGk), then you may be asked to report errors from the browser console to the team. You will find the instructions for doing this below.&#x20;
+Sometimes an error will occur that needs further investigation by the Euler Labs team. If you have created a support ticket in [Discord](https://discord.euler.finance/), then you may be asked to report errors from the browser console to the team. You will find the instructions for doing this below.&#x20;
 
 **IMPORTANT**: the Euler Labs team will never ask for your private keys or passphrase. &#x20;
 

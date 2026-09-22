@@ -24,4 +24,4 @@ Depositing into Euler allows users to supply assets to borrowers and earn the Su
 ## FAQ
 
 **I deposited, but the asset does not show up in my account.**\
-****Make sure the deposit transactions did not fail, otherwise please create a support ticket in [Discord](https://discord.gg/CdG97VSYGk).
+****Make sure the deposit transactions did not fail, otherwise please create a support ticket in [Discord](https://discord.euler.finance/).

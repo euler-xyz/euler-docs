@@ -27,7 +27,7 @@ description: Quick access to everything you need to know about Euler
 
 **Social**\
 [Twitter](https://twitter.com/eulerfinance)\
-[Discord](https://t.co/yqSIrrJfWi?amp=1)\
+[Discord](https://discord.euler.finance/)\
 [Telegram](https://t.me/eulerfinance\_official)\
 [Telegram Announcements](https://t.me/eulerfinance)
 

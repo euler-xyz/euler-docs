@@ -27,7 +27,7 @@ The [General Governance Process](https://forum.euler.finance/t/welcome-to-the-eu
 
 The flow of the governance process is as follows:&#x20;
 
-1. Discuss the idea/draft proposal in the [Euler Discord](https://discord.gg/CdG97VSYGk) #governance channel&#x20;
+1. Discuss the idea/draft proposal in the [Euler Discord](https://discord.euler.finance/) #governance channel&#x20;
 2. Draft & create a [RFC (Request For Comment) Proposal](https://forum.euler.finance/c/rfc-request-for-comment/11) on Governance forum for further feedbacks&#x20;
 3. Contact a forum moderator to create a [eIP (Euler Improvement Proposal)](https://forum.euler.finance/c/eip/5) on the Governance forum &#x20;
 4.  eIP created on [Snapshot](https://snapshot.org/#/eulerdao.eth) (off-chain voting)​

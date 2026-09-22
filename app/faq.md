@@ -26,7 +26,7 @@ Since DAOs not have a formal legal structure, the Euler Foundation was establish
 
 #### How can I get involved in EulerDAO?
 
-Join the [Discord](https://discord.gg/CdG97VSYGk) and meet the community, make proposals and discussion on the [governance forum](https://forum.euler.finance/), or send a message if you have other ideas of contributing to the protocol.
+Join the [Discord](https://discord.euler.finance/) and meet the community, make proposals and discussion on the [governance forum](https://forum.euler.finance/), or send a message if you have other ideas of contributing to the protocol.
 
 #### Where is the developer documentation?
 
@@ -58,7 +58,7 @@ The Goerli testnet token faucet supports the following ERC20 tokens: [WETH](http
 
 #### Why can't I find a specific token to activate?
 
-Some tokens might not be on the token list or might not have a pool on Uniswap v3. Please [send a message](https://discord.gg/CdG97VSYGk) if you have trouble finding an unlisted asset.
+Some tokens might not be on the token list or might not have a pool on Uniswap v3. Please [send a message](https://discord.euler.finance/) if you have trouble finding an unlisted asset.
 
 #### What are asset tiers?
 
