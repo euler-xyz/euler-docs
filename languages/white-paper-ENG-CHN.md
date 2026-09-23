@@ -163,7 +163,7 @@ One of the challenges in using TWAP is determining the right interval over which
 
 A borrower is considered to be in violation on Euler when the value of their risk-adjusted liabilities exceeds the value of their risk-adjusted collateral. A borrower that has just become in violation still has enough collateral to repay their loan, but is adjudged to be at risk of defaulting on their loan. Consequently, they may be liquidated in order to limit the potential for them to default.
 
-当 Euler 用户的风险调整后负债超过了风险调整后债务时，就会被认为“违约”了。一个借款人刚刚进入“违约”状态时依然有足额的抵押来偿付它的贷款，但是会有被调整到可能无法偿付贷款的风险。结果来说，为了防止他们违约，就可能会对他们进行清算。
+当 Euler 用户的风险调整后负债值超过了风险调整后抵押物的价值时，就会被认为“违约”了。一个借款人刚刚进入“违约”状态时依然有足额的抵押来偿付它的贷款，但是会有被调整到可能无法偿付贷款的风险。结果来说，为了防止他们违约，就可能会对他们进行清算。
 
 #### MEV 抵抗 - MEV-resistance
 
